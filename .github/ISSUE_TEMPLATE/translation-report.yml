@@ -1,0 +1,45 @@
+name: 誤訳・訳の改善報告 / Translation report
+description: カード翻訳・FAQ和訳の間違いや、より良い訳の提案を報告する（JSONを編集できる方はPRも歓迎です）
+title: "[翻訳] "
+labels: [translation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます！ カード名と提案訳だけでも大歓迎です。
+        反映はサイトの次回データ更新時になります。
+  - type: input
+    id: card
+    attributes:
+      label: カード名
+      description: 英語名・日本語名どちらでも（サイトの報告リンクから来た場合は入力済み）
+      placeholder: "Merlin / マーリン"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 対象
+      options:
+        - カード翻訳（名前・ルール文・タイプ・フレーバー）
+        - FAQ和訳
+        - その他
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 現在の訳文（問題のある箇所）
+      description: サイトに表示されている訳をそのまま貼り付けてください
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案する訳文
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・根拠（任意）
+      description: 英語原文の解釈、公式裁定へのリンク、用語の統一など

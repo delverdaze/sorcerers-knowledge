@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ルール・裁定の質問（Q&A掲示板）
+    url: https://github.com/delverdaze/sorcerers-knowledge/discussions
+    about: カードの裁定やルールに関する質問・議論はDiscussionsへどうぞ（Issueは翻訳修正などの作業依頼用です）
