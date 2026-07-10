@@ -1,6 +1,13 @@
 {
-  "generated": "2026-07-10T09:18:19.391Z",
+  "generated": "2026-07-10T17:14:33.351Z",
   "threads": [
+    {
+      "slug": "orm_infestor",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/3",
+      "n": 1,
+      "last": "2026-07-10T17:14:19Z",
+      "answered": false
+    },
     {
       "slug": "bury",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/2",
