@@ -18,7 +18,7 @@ import { dirname, join } from "node:path";
 
 const SITE_ORIGIN = "https://sorcerers-den.pages.dev";
 const TWEET_EXCERPT_MAX = 60; // 和名/英名併記＋URLを足しても280(重み付き)に収まる上限
-const DISCORD_EXCERPT_MAX = 200;
+const DISCORD_EXCERPT_MAX = 150;
 
 const eventName = process.env.GITHUB_EVENT_NAME ?? "discussion_comment";
 const event = JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
@@ -70,35 +70,37 @@ async function resolveCard(title) {
 }
 
 const card = await resolveCard(discussion.title ?? "");
-const displayName = card?.name ?? discussion.title;
+// 非カードスレッドはタイトルが最長256字ありうるため表示用・ツイート用それぞれ短縮する
+const displayName = excerpt(card?.name ?? discussion.title, 80);
 const pageUrl = card?.url ?? discussion.html_url;
 const threadUrl = post.html_url ?? discussion.html_url;
 const author = post.user?.login ?? "unknown";
 const kind = eventName === "discussion" ? "スレッド" : "書き込み";
 
 const tweetText = [
-  `『${displayName}』のQ&Aに新しい${kind}があります。`,
+  `『${excerpt(displayName, 40)}』のQ&Aに新しい${kind}があります。`,
   `「${excerpt(post.body, TWEET_EXCERPT_MAX)}」`,
   pageUrl,
 ].join("\n");
-const intentUrl = `https://x.com/intent/post?text=${encodeURIComponent(tweetText)}`;
+// markdownのマスクリンク [t](url) は URL 内の ")" で壊れる。encodeURIComponent は
+// !'()* を素通しするため、リンクに埋める URL は括弧類を明示的にエスケープする
+const encodeForLink = (url) =>
+  url.replace(/[()*']/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
+const intentUrl = encodeForLink(`https://x.com/intent/post?text=${encodeURIComponent(tweetText)}`);
 
-const payload = {
-  embeds: [
-    {
-      title: `『${displayName}』に新しい${kind}`,
-      url: threadUrl,
-      description: [
-        `「${excerpt(post.body, DISCORD_EXCERPT_MAX)}」`,
-        `— ${author}`,
-        "",
-        `[📣 Xで告知する（本文入力済み・ポストを押すだけ）](${intentUrl})`,
-        ...(card ? [`[🃏 カードページを開く](${pageUrl})`] : []),
-      ].join("\n"),
-      color: 0x86a889, // サイトの灰緑
-    },
-  ],
-};
+// embed ではなく content（プレーン本文）で送る — クライアント設定で埋め込み表示を
+// 切っていても本文が見え、スマホのプッシュ通知プレビューにも文面が出るため。
+// URL を <> で囲むのはリンクプレビュー（embed化）の抑制。全体は2000字制限に対し
+// intentUrl(上限約1500)＋抜粋150で最悪でも収まる長さに設計してある
+const content = [
+  `**『${displayName}』に新しい${kind}**`,
+  `「${excerpt(post.body, DISCORD_EXCERPT_MAX)}」 — ${author}`,
+  `📣 [Xで告知する（本文入力済み・ポストを押すだけ）](<${intentUrl}>)`,
+  ...(card ? [`🃏 [カードページを開く](<${encodeForLink(pageUrl)}>)`] : []),
+  `💬 [スレッドを開く](<${encodeForLink(threadUrl)}>)`,
+].join("\n");
+
+const payload = { content };
 
 const webhook = process.env.DISCORD_WEBHOOK_URL;
 if (!webhook) {
