@@ -1,0 +1,24 @@
+# カード別Q&A（giscus / GitHub Discussions）の新規投稿をDiscordへ通知する。
+# 通知内の X Web Intent リンクで管理人が1タップ告知できる（scripts/qa-notify.mjs 参照）。
+# 必要シークレット: DISCORD_WEBHOOK_URL（未設定でも失敗しない — ログ出力のみ）
+name: Q&A notify
+
+on:
+  discussion:
+    types: [created]
+  discussion_comment:
+    types: [created]
+
+permissions: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/qa-notify.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
