@@ -1,0 +1,48 @@
+# カード別Q&A（giscus / GitHub Discussions）の活動状況を data/qa-activity.json に集計し、
+# 変化があればコミットする（scripts/qa-activity.mjs 参照）。
+# サイト（sorcerers-den）のTOPページ「議論中のカード」リストがこのファイルを
+# raw.githubusercontent.com 経由で読む。書き込みイベント駆動 + 毎日1回の取りこぼし保険。
+# シークレット不要（標準の GITHUB_TOKEN で自リポジトリのDiscussionsを読める）。
+name: Q&A activity feed
+
+on:
+  discussion:
+    types: [created, edited, deleted, answered, unanswered]
+  discussion_comment:
+    types: [created, edited, deleted]
+  schedule:
+    - cron: "17 3 * * *" # 毎日1回の保険（イベント取りこぼし・API障害からの回復）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: read
+
+# 書き込みが連続したとき、集計とコミットが並走して push が競合しないよう直列化する
+concurrency:
+  group: qa-activity
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/qa-activity.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: 変化があればコミット
+        run: |
+          if [ -z "$(git status --porcelain -- data/qa-activity.json)" ]; then
+            echo "変更なし — コミットしない"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/qa-activity.json
+          git commit -m "chore: Q&A活動状況を更新"
+          git pull --rebase origin main
+          git push
