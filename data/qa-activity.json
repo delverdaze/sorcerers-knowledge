@@ -1,6 +1,13 @@
 {
-  "generated": "2026-07-15T14:58:58.079Z",
+  "generated": "2026-07-15T15:40:05.982Z",
   "threads": [
+    {
+      "slug": "imposter",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/5",
+      "n": 1,
+      "last": "2026-07-15T15:39:53Z",
+      "answered": false
+    },
     {
       "slug": "blink",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/4",
