@@ -1,6 +1,13 @@
 {
-  "generated": "2026-07-15T15:40:05.982Z",
+  "generated": "2026-07-15T16:34:25.020Z",
   "threads": [
+    {
+      "slug": "satanic_panic",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/6",
+      "n": 1,
+      "last": "2026-07-15T16:34:12Z",
+      "answered": false
+    },
     {
       "slug": "imposter",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/5",
