@@ -134,8 +134,8 @@
         "q": "この能力は1ターンに複数回起動できますか？"
       },
       "official|If I pay to gain water affinity, does this count as a water site this turn?": {
-        "a": "いいえ。この能力の起動によって、スレッショルドはそのターンの間あなた自身に直接与えられるのであって、サイトに付与されるわけではありません。",
-        "q": "マナを支払って水のスレッショルドを得た場合、これはこのターン水のサイトとして数えられますか？"
+        "a": "いいえ。この能力の起動によって、親和性はそのターンの間あなた自身に直接与えられるのであって、サイトに付与されるわけではありません。",
+        "q": "マナを支払って水の親和性を得た場合、これはこのターン水のサイトとして数えられますか？"
       }
     },
     "apostles_of_thamariel": {
@@ -512,11 +512,11 @@
         "q": "戦闘で受けたダメージが致死量に満たなかった場合でも、その味方は死亡しますか？"
       },
       "official|How do I resolve this effect if control of the minion changes between fights (e.g. it had Infiltrate cast on it earlier)?": {
-        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。あなたの近くには[[Lugbog Cat]]とスケルトンもいて、私の近くには[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが破れ、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近くの敵はいるか？」と確認し、いれば戦闘する。近くに未戦闘の敵がいなくなるまで繰り返す、ということです。",
+        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。あなたの近隣には[[Lugbog Cat]]とスケルトンもいて、私の近隣には[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが破れ、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
         "q": "戦闘の合間にミニオンのコントロールが変わった場合（例: 事前に[[Infiltrate]]を唱えられていた場合）、この効果はどう解決しますか？"
       },
       "official|What is the proper way to resolve the timing for this spell?": {
-        "a": "味方1体を選び、その近くの敵1体を戦闘相手として宣言し、その戦闘をストーリーラインに置きます。その戦闘を、敵のデスライト能力も含めて解決し、死亡したなら墓地へ置きます。その後、選んだ味方が近くのすべての敵と戦闘し終わるまで、このプロセスを1戦闘ずつ繰り返します。最後に、味方が十分なダメージを受けていれば、ここで死亡します。\nつまり、次の戦闘へ進む前に、各戦闘を宣言して解決するということです。\nたとえば、あなたが[[Autumn Unicorn]]に[[Blaze of Glory]]をプレイしたとします。こちらの近くには[[Estranged Loner]]・[[Muddy Pigs]]・私のアバターがいます。あなたはまず私のアバターと戦闘することを選び、私は4ライフ失います。次に[[Estranged Loner]]との戦闘を選びます。それは死亡し、私は[[Horrible Hybrids]]を召喚し、[[Estranged Loner]]は私の墓地へ行きます。次にあなたは[[Horrible Hybrids]]と戦闘し、それも死亡して墓地へ。次に[[Muddy Pigs]]と戦闘し、それは死亡して私は3ライフ得て、墓地へ行きます。最後に、あなたのユニコーンは死亡するのに十分なダメージを受けているので、（あれば）デスライト能力をここで誘発させてから、あなたの墓地へ行きます。まさに華々しい最期（Blaze of Glory）です！",
+        "a": "味方1体を選び、その近隣の敵1体を戦闘相手として宣言し、その戦闘をストーリーラインに置きます。その戦闘を、敵のデスライト能力も含めて解決し、死亡したなら墓地へ置きます。その後、選んだ味方が近隣のすべての敵と戦闘し終わるまで、このプロセスを1戦闘ずつ繰り返します。最後に、味方が十分なダメージを受けていれば、ここで死亡します。\nつまり、次の戦闘へ進む前に、各戦闘を宣言して解決するということです。\nたとえば、あなたが[[Autumn Unicorn]]に[[Blaze of Glory]]をプレイしたとします。こちらの近くには[[Estranged Loner]]・[[Muddy Pigs]]・私のアバターがいます。あなたはまず私のアバターと戦闘することを選び、私は4ライフ失います。次に[[Estranged Loner]]との戦闘を選びます。それは死亡し、私は[[Horrible Hybrids]]を召喚し、[[Estranged Loner]]は私の墓地へ行きます。次にあなたは[[Horrible Hybrids]]と戦闘し、それも死亡して墓地へ。次に[[Muddy Pigs]]と戦闘し、それは死亡して私は3ライフ得て、墓地へ行きます。最後に、あなたのユニコーンは死亡するのに十分なダメージを受けているので、（あれば）デスライト能力をここで誘発させてから、あなたの墓地へ行きます。まさに華々しい最期（Blaze of Glory）です！",
         "q": "この呪文のタイミングはどう解決するのが正しいですか？"
       }
     },
@@ -954,7 +954,7 @@
     },
     "courtesan_thais": {
       "official|The beta foil version has 1 fire threshold and the normal version has 2 fire threshold. Which is correct?": {
-        "a": "通常版が正しいです。このミニオンを唱えるには、火のスレッショルドが2必要です。",
+        "a": "通常版が正しいです。このミニオンを唱えるには、火の親和性が2必要です。",
         "q": "ベータ版フォイルは火のスレッショルドが1、通常版は2です。どちらが正しいですか？"
       },
       "official|What does it mean for one player to be controlled by another player?": {
@@ -1394,7 +1394,7 @@
         "q": "[[Edge of the World]]の能力が失われ（例: [[Smokestacks of Gnaak]]）、その間にサイトに囲まれ、その後能力が戻った（例: [[Smokestacks of Gnaak]]が離れた）場合はどうなりますか？"
       },
       "official|What happens if an effect causes edge of the world to not be adjacent to the void?": {
-        "a": "その効果は解決されません。例:\n[[Cloud City]]を[[Edge of the World]]に隣接する唯一の虚空マスへ動かそうとしても、[[Cloud City]]は動きません。\n手札からサイトをプレイしようとしても機能せず、サイトは手札に残ります。\n[[Earthquake]]で[[Edge of the World]]が虚空に隣接しなくなるような並べ替えをしようとすると、並べ替え全体が失敗します（そのうえで、バロウの処理は引き続き試みます）。\n[[Magellan Globe]]が同じ場所に2つあり、それだけが[[Edge of the World]]と虚空の隣接を保っている状態で両方が[[Dispel]]された場合、片方は破壊され、もう片方は破壊されません。",
+        "a": "その効果は解決されません。例:\n[[Cloud City]]を[[Edge of the World]]に隣接する唯一の虚空マスへ動かそうとしても、[[Cloud City]]は動きません。\n手札からサイトをプレイしようとしても機能せず、サイトは手札に残ります。\n[[Earthquake]]で[[Edge of the World]]が虚空に隣接しなくなるような並べ替えをしようとすると、並べ替え全体が失敗します（そのうえで、バロウの処理は引き続き試みます）。\n[[Magellan Globe]]が同じ場所に2つあり、それだけが[[Edge of the World]]と虚空の隣接を保っている状態で両方が解呪された場合、片方は破壊され、もう片方は破壊されません。",
         "q": "何らかの効果によって[[Edge of the World]]が虚空に隣接しなくなる場合はどうなりますか？"
       }
     },
@@ -1794,7 +1794,7 @@
     },
     "garden_of_eden": {
       "official|Does this affect spells drawn by things like Morgana le Fay and the Omphaloi?": {
-        "a": "はい。それらのカードは別の領域に置かれますが、プレイヤーが引いたものとして数えられ、1ターンに引ける1枚の呪文の枠を消費します。\nたとえば、あるプレイヤーがターン開始時にサイトを引いてから[[Morgana le Fay]]をプレイした場合、モーガナは自分の手札に呪文を1枚しか引けず、そのプレイヤーがそのターンに引いた呪文は合計1枚だけになります。詳しくは「Only It Can Cast」の項を参照してください。",
+        "a": "はい。それらのカードは別の領域に置かれますが、プレイヤーが引いたものとして数えられ、1ターンに引ける1枚の呪文の枠を消費します。\nたとえば、あるプレイヤーがターン開始時にサイトを引いてから[[Morgana le Fay]]をプレイした場合、モーガナは自分の手札に呪文を1枚しか引けず、そのプレイヤーがそのターンに引いた呪文は合計1枚だけになります。詳しくは写本室の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
         "q": "これは[[Morgana le Fay]]やオムパロスなどが引く呪文にも影響しますか？"
       }
     },
@@ -1878,7 +1878,7 @@
         "q": "ユニットが同じサイトの中で移動した場合（例: 地表から水中、水中から地表）、[[Giant Shark]]は誘発しますか？"
       },
       "official|What happens if I summon my minion with Genesis into my opponent's Shark's body of water?": {
-        "a": "詳細はCodexの「storyline」の項を参照してください。",
+        "a": "詳細は写本室の「ストーリーライン（Storyline）」の項を参照してください。",
         "q": "相手の[[Giant Shark]]のいる水域に、ジェネシス持ちの自分のミニオンを召喚したらどうなりますか？"
       },
       "official|What path can I choose when resolving this ability?": {
@@ -1976,7 +1976,7 @@
         "q": "無力化されたユニットは[[Grapple Shot]]を使えますか？"
       },
       "official|Do I resolve all the steps at once, or can effects (e.g. Bottomless Pit) interrupt the movement?": {
-        "a": "詳細はCodexの「storyline」の項を参照してください。",
+        "a": "詳細は写本室の「ストーリーライン（Storyline）」の項を参照してください。",
         "q": "すべてのステップを一度に解決しますか？ それとも効果（例: [[Bottomless Pit]]）が移動に割り込めますか？"
       },
       "official|If I Grapple Shot a minion with Submerge through an area affected by Mariner's Curse, what happens?": {
@@ -2230,8 +2230,8 @@
     },
     "horns_of_behemoth": {
       "official|Does it continue to provide fire affinity after it transforms into a Demon?": {
-        "a": "はい。変身後のデーモンは、ゴールデンルールに沿ってスレッショルドを提供します。当然、デーモンが死亡すればそのスレッショルドは失われます。",
-        "q": "デーモンに変身したあとも、火のスレッショルドを提供し続けますか？"
+        "a": "はい。変身後のデーモンは、ゴールデンルールに沿って親和性を提供します。当然、デーモンが死亡すればその親和性は失われます。",
+        "q": "デーモンに変身したあとも、火の親和性を提供し続けますか？"
       },
       "official|Does it turn into a Demon minion?": {
         "a": "はい。デーモンのタイプを持つミニオンになり、もはやサイトではありません。",
@@ -2242,7 +2242,7 @@
         "q": "この能力は任意ですか？"
       },
       "official|What happens if you copy this after it has transformed?": {
-        "a": "変身効果は（[[Overpower]]のような一時的な特性の修正と違って）カードの特性を恒久的に変えるため、コピー効果はその新しい特性を写し取ります。たとえば、変身済みの[[Island Leviathan]]をコピーする[[Selfsame Simulacrum]]は、水のスレッショルド1つを提供するパワー8のモンスターのミニオンとして場に出ます。",
+        "a": "変身効果は（[[Overpower]]のような一時的な特性の修正と違って）カードの特性を恒久的に変えるため、コピー効果はその新しい特性を写し取ります。たとえば、変身済みの[[Island Leviathan]]をコピーする[[Selfsame Simulacrum]]は、水の親和性1つを提供するパワー8のモンスターのミニオンとして場に出ます。",
         "q": "変身したあとのこれをコピーしたらどうなりますか？"
       },
       "official|When it awakens, is it summoning sick?": {
@@ -2404,8 +2404,8 @@
     },
     "island_leviathan": {
       "official|Does it continue to provide water affinity after it transforms into a Monster?": {
-        "a": "はい。水没した瓦礫はあなたにスレッショルドを提供しません（あなたがコントロールしていないため）が、[[Island Leviathan]]自身はスレッショルドを提供します。これはゴールデンルールに沿った扱いです。当然、モンスターが死亡すればそのスレッショルドは失われます。",
-        "q": "モンスターに変身したあとも、水のスレッショルドを提供し続けますか？"
+        "a": "はい。水没した瓦礫はあなたに親和性を提供しません（あなたがコントロールしていないため）が、[[Island Leviathan]]自身は親和性を提供します。これはゴールデンルールに沿った扱いです。当然、モンスターが死亡すればその親和性は失われます。",
+        "q": "モンスターに変身したあとも、水の親和性を提供し続けますか？"
       },
       "official|Does it turn into a Monster minion?": {
         "a": "はい。モンスターのタイプを持つミニオンになり、もはやサイトではありません。",
@@ -2420,7 +2420,7 @@
         "q": "この能力は任意ですか？"
       },
       "official|What happens if you copy this after it has transformed?": {
-        "a": "変身効果は（[[Overpower]]のような一時的な特性の修正と違って）カードの特性を恒久的に変えるため、コピー効果はその新しい特性を写し取ります。たとえば、変身済みの[[Island Leviathan]]をコピーする[[Selfsame Simulacrum]]は、水のスレッショルド1つを提供するパワー8のモンスターのミニオンとして場に出ます。",
+        "a": "変身効果は（[[Overpower]]のような一時的な特性の修正と違って）カードの特性を恒久的に変えるため、コピー効果はその新しい特性を写し取ります。たとえば、変身済みの[[Island Leviathan]]をコピーする[[Selfsame Simulacrum]]は、水の親和性1つを提供するパワー8のモンスターのミニオンとして場に出ます。",
         "q": "変身したあとのこれをコピーしたらどうなりますか？"
       },
       "official|When it awakens, is it summoning sick?": {
@@ -2592,7 +2592,7 @@
         "q": "[[King Arthur]]の能力はアーティファクトとどう相互作用しますか？"
       },
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての属性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
         "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
       },
       "official|What happens if King Arthur is in the realm and my opponent would control a card I own?": {
@@ -2624,7 +2624,7 @@
         "q": "[[Kingdom of Agartha]]の能力が有効なとき、バロウ能力が印刷されていないミニオンを地下に召喚することを選べますか？"
       },
       "official|When is Kingdom of Agartha's ability active?": {
-        "a": "土のスレッショルドが3つあるときは常にです！ これは任意ではなく、必要なスレッショルドがある間ずっと有効な常在型能力です。",
+        "a": "土の親和性が3つあるときは常にです！ これは任意ではなく、必要な親和性がある間ずっと有効な常在型能力です。",
         "q": "[[Kingdom of Agartha]]の能力はいつ有効ですか？"
       }
     },
@@ -3109,7 +3109,7 @@
     "morgana_le_fay": {
       "judge|Can card draw, card discard, or hand-related effects interact with Morgana’s hand?": {
         "a": "いいえ。そうした効果は常にプレイヤーの手札を参照します。たとえば[[Apprentice Wizard]]が呪文を引けるのはあなたの手札へだけです。[[Court Jester]]はモーガナの手札からカードを捨てさせられません。[[Payload Trebuchet]]が捨てられるのはあなたの手札からだけ。[[Lookout]]や[[Swiven Scout]]が公開するのはあなたの手札で、モーガナのものではありません。等々。",
-        "q": "カードのドロー・ディスカード・手札関連の効果は、モーガナの手札に作用しますか？"
+        "q": "カードを引く・捨てる・手札関連の効果は、モーガナの手札に作用しますか？"
       },
       "judge|Do the three spells she draws count as drawn cards for me?": {
         "a": "はい。あなたがカードを引いたことになります（例: [[Queen of Midland]]、[[Chains of Prometheus]]）。ただし、それらは手札とは別の領域（モーガナの手札）に置かれます。[[Queen of Midland]]が見るのはドロー後のあなたの手札の枚数で、モーガナの手札ではありません。",
@@ -3140,7 +3140,7 @@
         "q": "モーガナが何か別のもの — たとえばカエル！ — に変身したら、彼女の手札はどうなりますか？"
       },
       "official|Where do I keep Morgana's hand of cards?": {
-        "a": "Codexの「Only It Can Cast」を参照してください。",
+        "a": "写本室の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
         "q": "モーガナの手札はどこに置きますか？"
       }
     },
@@ -3193,7 +3193,7 @@
       },
       "official|I have a minion on my Mountain Pass, and a voidwalk minion on an adjacent square. Can I move from the void to Mountain Pass?": {
         "a": "はい。地上の移動は、ユニットがサイトの地表から出発することを要求します。虚空はサイトではないので、虚空から[[Mountain Pass]]への移動は地上の移動と見なされません。",
-        "q": "私のミニオンが[[Mountain Pass]]にいて、隣のマスにヴォイドウォークのミニオンがいます。虚空から[[Mountain Pass]]へ移動できますか？"
+        "q": "私のミニオンが[[Mountain Pass]]にいて、隣接するマスにヴォイドウォークのミニオンがいます。虚空から[[Mountain Pass]]へ移動できますか？"
       },
       "official|What does “enter this site on the ground” mean?": {
         "a": "地上から入るとは、別のサイトの地表から[[Mountain Pass]]の地表への移動だけを指し、エアボーンやテレポートは含みません。",
@@ -3500,7 +3500,7 @@
     },
     "philosophers_stone": {
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての属性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
         "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
       },
       "official|If I have two (e.g. via Replication), do the effects stack?": {
@@ -3608,7 +3608,7 @@
     },
     "queen_guinevere": {
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての属性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
         "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
       }
     },
@@ -4073,7 +4073,7 @@
     "sir_kay": {
       "judge|Could Sir Kay untap if I cast a spell like Joust! or Shatter Strike with him as the ally?": {
         "a": "はい。より弱いミニオンが対象であるかぎり可能です。それらのカードでは、対象を取るのはスペルキャスターではなく、その味方だと指定されているからです。",
-        "q": "[[Joust]]や[[Shatter Strike]]のような呪文で[[Sir Kay]]を味方に選んだ場合、彼はアンタップしますか？"
+        "q": "[[Joust]]や[[Shatter Strike]]のような呪文を唱えて[[Sir Kay]]を味方に選んだ場合、彼はアンタップしますか？"
       },
       "judge|Could Sir Kay untap if he is a spellcaster of a spell that targets a weaker minion?": {
         "a": "はい。スペルキャスターを得た場合（あるいは[[Grievous Insult]]のようなものを唱えた場合）、対象がより弱いミニオンであるかぎりアンタップします。",
@@ -4126,7 +4126,7 @@
     },
     "sisters_of_silence": {
       "judge|If Sisters of Silence end up somewhere they’ll die (e.g. the void from Chaos Twister, underground from Bury), will their passive ability apply before they go to the cemetery?": {
-        "a": "はい。新しい場所に到着した瞬間、（あれば）デスライトの解決やミニオンの墓地への移動より前に、常在型の効果が適用されます。したがって、ヴォイドウォークのミニオンの近くの虚空に行き着いたなら、そのミニオンはヴォイドウォークを失い、シスターズとともに死亡します。バロウのミニオンの近くの地下に行き着いた場合も同様に、そのミニオンはバロウを失い、シスターズとともに死亡します。",
+        "a": "はい。新しい場所に到着した瞬間、（あれば）デスライトの解決やミニオンの墓地への移動より前に、常在型の効果が適用されます。したがって、ヴォイドウォークのミニオンの近隣の虚空に行き着いたなら、そのミニオンはヴォイドウォークを失い、シスターズとともに死亡します。バロウのミニオンの近くの地下に行き着いた場合も同様に、そのミニオンはバロウを失い、シスターズとともに死亡します。",
         "q": "[[Sisters of Silence]]が死亡する場所（例: [[Chaos Twister]]で虚空、[[Bury]]で地下）に行き着いた場合、墓地へ行く前に常在型能力は適用されますか？"
       }
     },
@@ -4294,8 +4294,8 @@
         "q": "[[Squirming Mass]]が恒久的にパワーを得たあとで沈黙させられたらどうなりますか？"
       },
       "judge|What happens when a minion with split power (attack power and defense power) dies nearby Squirming Mass?": {
-        "a": "[[Squirming Mass]]はその分かれたパワーを吸収し、自身も攻撃力と防御力を別々に保持します。分かれていないパワーのミニオンが近くで死亡した場合は、攻撃力と防御力の両方を通常どおり増やします。",
-        "q": "攻撃力と防御力が分かれたミニオンが[[Squirming Mass]]の近くで死亡したらどうなりますか？"
+        "a": "[[Squirming Mass]]はその分かれたパワーを吸収し、自身も攻撃力と防御力を別々に保持します。分かれていないパワーのミニオンが近隣で死亡した場合は、攻撃力と防御力の両方を通常どおり増やします。",
+        "q": "攻撃力と防御力が分かれたミニオンが[[Squirming Mass]]の近隣で死亡したらどうなりますか？"
       },
       "official|If a minion's current power is different from its printed power when it dies, which value does Squirming Mass gain?": {
         "a": "死亡するミニオンの現在のパワーです。",
@@ -4450,8 +4450,8 @@
     },
     "the_colour_out_of_space": {
       "official|If it’s not adjacent to void and is the target of a flood, does it still gain water affinity?": {
-        "a": "はい。このサイトは通常はスレッショルドを提供しませんが、何らかの形で修正されている（例: [[Flood]]）なら提供します。",
-        "q": "虚空に隣接しておらず、洪水（flood）の対象になった場合、それでも水のスレッショルドを得ますか？"
+        "a": "はい。このサイトは通常は親和性を提供しませんが、何らかの形で修正されている（例: [[Flood]]）なら提供します。",
+        "q": "虚空に隣接しておらず、洪水（flood）の対象になった場合、それでも水の親和性を得ますか？"
       },
       "official|If it’s not adjacent to void and is within Abundance, does it still gain extra mana?": {
         "a": "はい。このサイトは通常はマナを提供しませんが、何らかの形で修正されている（例: [[Abundance]]）なら追加のマナを提供できます。0+1=1です。",
@@ -4732,7 +4732,7 @@
         "q": "召喚されたミニオンは、誰がコントロールしますか？"
       },
       "official|The alpha foil version has 3 air threshold and the normal version has 2 air threshold. Which is correct?": {
-        "a": "通常版が正しいです。このミニオンを唱えるのに必要な風のスレッショルドは2だけです。",
+        "a": "通常版が正しいです。このミニオンを唱えるのに必要な風の親和性は2だけです。",
         "q": "アルファ版フォイルは風のスレッショルドが3、通常版は2です。どちらが正しいですか？"
       },
       "official|When Ultimate Horror summons dead voidwalk minions, can they go to different nearby sites and voids?": {
