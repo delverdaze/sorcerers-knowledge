@@ -27,7 +27,12 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      # ref: main — イベント発火時点の SHA ではなく実行時点の main 先端を使う。
+      # discussion と discussion_comment が同時発火すると、直列化されても後発が
+      # 古い SHA の上で生成ファイルをコミットし、rebase が必ず衝突するため
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 20
