@@ -1,6 +1,13 @@
 {
-  "generated": "2026-07-20T07:11:52.954Z",
+  "generated": "2026-07-20T07:13:07.160Z",
   "threads": [
+    {
+      "slug": "khamaseen_mummy",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/12",
+      "n": 1,
+      "last": "2026-07-20T07:12:57Z",
+      "answered": false
+    },
     {
       "slug": "fenvale_muse",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/11",
