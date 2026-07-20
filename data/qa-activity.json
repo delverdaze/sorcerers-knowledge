@@ -1,6 +1,13 @@
 {
-  "generated": "2026-07-15T16:45:12.434Z",
+  "generated": "2026-07-20T04:22:33.475Z",
   "threads": [
+    {
+      "slug": "perilous_bridge",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/9",
+      "n": 1,
+      "last": "2026-07-20T04:22:21Z",
+      "answered": false
+    },
     {
       "slug": "dark_alley",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/7",
