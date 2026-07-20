@@ -34,6 +34,12 @@
         "q": "ダメージは同時に与えられますか？"
       }
     },
+    "accursed_albatross": {
+      "official|Does this effect kill minions near the Albatross, or near the killer?": {
+        "a": "倒した者の近隣にいるミニオンが死亡します。",
+        "q": "この効果で死亡するのは、[[Accursed Albatross]]の近隣にいるミニオンですか、それとも倒した者の近隣にいるミニオンですか？"
+      }
+    },
     "accusation": {
       "official|What does \"cards or allies\" mean?": {
         "a": "相手の手札にあるカード、またはレルムにいる相手の味方のことです。",
@@ -60,8 +66,8 @@
     },
     "alabaster_box": {
       "official|Does this need to be carried to have an effect?": {
-        "a": "はい。「あなた（you / your）」はこのアーティファクトのコントローラーを指し、所持できるアーティファクトはコントロールされるためには所持されている必要があるからです。",
-        "q": "効果を発揮するには、これが所持されている必要がありますか？"
+        "a": "はい。「あなた（you / your）」はこのアーティファクトのコントローラーを指し、運べるアーティファクトは、ユニットに運ばれていなければコントロールされないからです。",
+        "q": "効果を発揮するには、これがユニットに運ばれている必要がありますか？"
       }
     },
     "algor_omphalos": {
@@ -176,7 +182,7 @@
     },
     "archangel_gabriel": {
       "official|Does the chosen minion need to have the Spellcaster ability to cast the spell which they draw from this Genesis ability?": {
-        "a": "いいえ。その呪文を唱えるという目的に限って、スペルキャスター能力を得ます。詳細はルールの「Only They Can Cast（その者だけが唱えられる）」を参照してください。",
+        "a": "いいえ。その呪文を唱えるという目的に限って、スペルキャスター能力を得ます。詳細はルールの写本室（Codex）の「それだけが唱えられる（Only It Can Cast）」を参照してください。",
         "q": "このジェネシス能力で呪文を引いたミニオンは、その呪文を唱えるためにスペルキャスター能力を持っている必要がありますか？"
       }
     },
@@ -187,14 +193,6 @@
       }
     },
     "archimago": {
-      "judge|When I use the Archimago’s ability to banish 3 magic spells and cast 1, do I still have to pay mana and meet threshold?": {
-        "a": "はい。",
-        "q": "[[Archimago]]の能力で3枚のマジック呪文を追放して1枚を唱えるとき、マナの支払いとスレッショルドは依然として必要ですか？"
-      },
-      "judge|When using that ability, must the Archimago be the caster?No, any of your spellcasters can cast the copied spell. Can I use that ability to cast Valor or Dodge Roll?": {
-        "a": "いいえ。[[Archimago]]の能力は起動型能力であり、ストーリーラインに何もないあなたのメインフェイズ中にしか使えないからです。",
-        "q": "この能力を使うとき、[[Archimago]]自身が唱え手でなければなりませんか？（いいえ。あなたのスペルキャスターなら誰でもコピーされた呪文を唱えられます。）この能力で[[Valor]]や[[Dodge Roll]]を唱えられますか？"
-      },
       "official|Can I use this ability to cast Valor or Dodge Roll?": {
         "a": "いいえ。[[Archimago]]の能力は起動型能力であり、ストーリーラインに何もないあなたのメインフェイズ中にしか使えないからです。",
         "q": "この能力で[[Valor]]や[[Dodge Roll]]を唱えられますか？"
@@ -217,6 +215,10 @@
       }
     },
     "army_of_the_dead": {
+      "official|Are the skeletons spawned by this ability summoned? Do they enter the location?": {
+        "a": "はい！ それらは召喚され、出現した場所に入ります。",
+        "q": "この能力で生まれるスケルトンは召喚されますか？ その場所に入りますか？"
+      },
       "official|If an effect grants this free movement (e.g. Arcade of Bones), can I spawn infinite Skeleton tokens?": {
         "a": "いいえ。移動経路を宣言するとき、特定のステップを繰り返すことはできません。サイトが横一列にA・B・Cと並んでいて、[[Army of the Dead]]が[[Arcade of Bones]]とともにサイトAから出発するとします。\n\n軍勢の移動経路として、次のように宣言できます:\nAからB\nBからC\nCからB\nBからA\nどのステップもまったく同じものの繰り返しではないため、これはすべて適正で、各ステップごとにスケルトンが1体ずつ、合計4体生まれます。しかし、この経路にもう一度「AからB」のステップを加えることはできません。それは最初のステップの繰り返しになるからです。",
         "q": "移動が無料になる効果（例: [[Arcade of Bones]]）がある場合、スケルトントークンを無限に生み出せますか？"
@@ -227,10 +229,6 @@
       }
     },
     "askelon_phoenix": {
-      "judge|How does the ability really work?": {
-        "a": "「[[Askelon Phoenix]]が火のダメージを受ける場合、代わりにこのターン+1のパワーを得る」として扱ってください。\n「火のダメージ」とは、火の発生源からのあらゆるダメージのことです。たとえば火のミニオン（そのストライクを含む）、火のサイト、火の呪文などです。\n[[Morgana le Fay]]が[[Lightning Bolt]]を唱えても火のダメージではありません。[[Lightning Bolt]]は風の呪文だからです。[[Apprentice Wizard]]が[[Firebolts]]を唱えるのは火のダメージです。[[Firebolts]]は火の呪文だからです（実際には3つの別々の火のダメージになります）。誰かが[[Grapple Shot]]を唱えてミニオンをフェニックスに突っ込ませる場合は、ストライクを行うそのミニオンを見ます。それが火のミニオンなら、火のダメージです。\nフェニックスが攻撃して防御側が複数いる場合、ストライクする防御側の火のミニオン1体ごとに、別々の火のダメージ源として数えます。",
-        "q": "この能力は実際のところどう機能しますか？"
-      },
       "official|What is \"fire damage\" ?": {
         "a": "「火のダメージ」とは、火の発生源からのあらゆるダメージのことです。たとえば火のミニオン（そのストライクを含む）、火のサイト、火のマジックなどです。\n[[Morgana le Fay]]が[[Lightning Bolt]]を唱えても火のダメージではありません。[[Lightning Bolt]]は風の呪文だからです。[[Apprentice Wizard]]が[[Firebolts]]を唱えるのは火のダメージです。[[Firebolts]]は火のマジックだからです（実際には3つの別々の火のダメージになります）。誰かが[[Grapple Shot]]を唱えてミニオンをフェニックスに突っ込ませる場合は、ストライクを行うそのミニオンを見ます。それが火のミニオンなら、火のダメージです。\nフェニックスが攻撃して防御側が複数いる場合、ストライクする防御側の火のミニオン1体ごとに、別々の火のダメージ源として数えます。",
         "q": "「火のダメージ（fire damage）」とは何ですか？"
@@ -248,8 +246,12 @@
         "q": "[[Atlantean Fate]]の影響範囲に[[Rift Valley]]をプレイできますか？"
       },
       "official|If one of the sites it occupies is an Ordinary water site, are minions and artifacts there still submerged?": {
-        "a": "はい。そのサイトもこのオーラの影響を受けていますが、その効果はジェネシス能力を除いて、オーディナリーのサイトには何も及ぼしません。",
-        "q": "占有するサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトはそれでも潜水しますか？"
+        "a": "はい。そのサイトもオーラの影響範囲に含まれます。オーディナリーのサイトにはジェネシス能力以外の効果は適用されませんが、そのジェネシス能力によって、そこにいるミニオンとアーティファクトは潜水します。",
+        "q": "占有するサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
+      },
+      "official|If my Vindictive Nation is affected by my opponent's Atlantean Fate, do they lose 1 or 2 life?": {
+        "q": "私の[[Vindictive Nation]]が相手の[[Atlantean Fate]]の影響を受けた場合、相手は1ライフと2ライフのどちらを失いますか？",
+        "a": "2ライフです。[[Vindictive Nation]]は水没し（これは修正に数えます）、その後沈黙します（これも修正に数えます）。"
       }
     },
     "atlas_wanderers": {
@@ -300,11 +302,11 @@
     },
     "backstab": {
       "official|Can I target my opponent’s minion(s) with Backstab?": {
-        "a": "はい（ただし、唱えるスペルキャスターはすべての対象と同じ領域にいなければならないことに注意してください）。",
+        "a": "はい（ただし、唱えるスペルキャスターはすべての対象と同じリージョンにいなければならないことに注意してください）。",
         "q": "[[Backstab]]で対戦相手のミニオンを対象にできますか？"
       },
       "official|If a minion has voidwalk and is in the void, could Backstab move it to an adjacent site to strike a tapped minion there?": {
-        "a": "いいえ。あなたのスペルキャスターは（異なる領域にいる）両方のミニオンを対象にしなければなりませんが、呪文を唱える際にはスペルキャスターが占める1つの場所を選ぶため、それは不可能です。対象にできるのは、呪文が唱えられている領域のミニオンだけです。詳しくは「Casting Spells（呪文を唱える）」を参照してください。",
+        "a": "いいえ。あなたのスペルキャスターは（異なるリージョンにいる）両方のミニオンを対象にしなければなりませんが、呪文を唱える際にはスペルキャスターが占める1つの場所を選ぶため、それは不可能です。対象にできるのは、呪文が唱えられているリージョンのミニオンだけです。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
         "q": "ヴォイドウォークを持つミニオンが虚空にいる場合、[[Backstab]]でそれを隣接するサイトへ移動させ、そこのタップ状態のミニオンにストライクさせられますか？"
       }
     },
@@ -330,8 +332,8 @@
     },
     "balor_of_the_evil_eye": {
       "official|Does this ability damage units at locations in other regions?": {
-        "a": "はい。選んだ基本方位のすべてのマスの、各場所にいるユニット1体ずつです！ これにはサイトの地表と地下・水中、さらに虚空も含まれます。邪眼にご用心！",
-        "q": "この能力は、他の領域にある場所のユニットにもダメージを与えますか？"
+        "a": "はい。選んだ基本方位のすべてのマスの、各場所にいるユニット1体ずつです！ これにはサイトの地表と下層、さらに虚空も含まれます。邪眼にご用心！",
+        "q": "この能力は、他のリージョンにある場所のユニットにもダメージを与えますか？"
       },
       "official|If I choose to do 2 damage at one location, do I need to do damage at all the locations in that cardinal direction?": {
         "a": "はい。この効果を解決することを選んだなら、選んだ方向の他の各場所にいるユニット1体に2点のダメージを与えなければなりません。",
@@ -352,7 +354,7 @@
     },
     "battlemage": {
       "official|If I declare an attack against one target, but then a different enemy defends, does that satisfy this ability?": {
-        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットが撃破の手柄を得たのであれば、この能力の条件は満たされます。",
+        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力の条件は満たされます。",
         "q": "ある対象への攻撃を宣言したものの、別の敵が防御した場合、この能力の条件を満たしますか？"
       },
       "official|If the Battlemage activates the \"Move and Attack\" ability, doesn't actually attack, and then is intercepted, does that count as “attacking” the intercepting unit?": {
@@ -364,33 +366,17 @@
         "q": "[[Battlemage]]が攻撃して、1回の戦闘で敵を2体倒した場合（相手が複数の防御側を加えることを選んだ場合）、[[Battlemage]]はカードを2枚引きますか？"
       },
       "official|If the Battlemage with a Flaming Sword attacks one enemy, and then another enemy dies as a result of the Flaming Sword, does the Battlemage get to draw a card?": {
-        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットが撃破の手柄を得たのであれば、この能力は誘発します。",
+        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力は誘発します。",
         "q": "[[Flaming Sword]]を持った[[Battlemage]]が敵1体を攻撃し、[[Flaming Sword]]の効果で別の敵が死亡した場合、[[Battlemage]]はカードを引けますか？"
       }
     },
     "beast_of_burden": {
-      "judge|Does it automatically drop the minions it's carrying when in a Silence aura? Can it choose to drop them?": {
-        "a": "自動的に降ろすことはありません。降ろす（Drop）は基本能力なので、降ろすことを選ぶのは引き続き可能です。",
-        "q": "沈黙（Silence）のオーラの中にいるとき、運んでいるミニオンを自動的に降ろしますか？ 自分で降ろすことを選べますか？"
-      },
-      "judge|Does it use up its once-per-turn-per-unit ability to Pick Up?": {
-        "a": "はい。",
-        "q": "拾い上げ（Pick Up）に、ユニットごとの1ターン1回の能力を消費しますか？"
-      },
-      "judge|When this picks up another minion, is that a basic ability?": {
-        "a": "はい。",
-        "q": "これが他のミニオンを拾い上げるとき、それは基本能力ですか？"
-      },
       "official|What happens when a minion carries another minion that's carrying a minion?": {
         "a": "自分が直接運んでいるミニオンだけが上限に数えられます。カーニバルを楽しんでください！",
         "q": "ミニオンを運んでいるミニオンを、さらに別のミニオンが運ぶとどうなりますか？"
       }
     },
     "bedrock": {
-      "judge|Does Bedrock benefit from Abundance?": {
-        "a": "いいえ。追加のマナを生み出すことも修正の一種です。（もしサイトの生み出すマナを減らす効果があったなら、[[Bedrock]]はそれにも影響されません。）",
-        "q": "[[Bedrock]]は[[Abundance]]の恩恵を受けますか？"
-      },
       "official|If my opponent plays an effect that tries to cancel Bedrock in some way (e.g. Atlantean Fate, Smokestacks of Gnaak, etc.), what happens?": {
         "a": "[[Bedrock]]が勝ち、一切の修正を受けません。",
         "q": "相手が[[Bedrock]]を何らかの形で打ち消そうとする効果（例: [[Atlantean Fate]]、[[Smokestacks of Gnaak]]など）をプレイしたらどうなりますか？"
@@ -398,7 +384,7 @@
     },
     "begone": {
       "official|Does this effect target the minion?": {
-        "a": "いいえ！ したがって、追放されるミニオンは別の領域にいてもよく、ステルスを持っていても構いません。",
+        "a": "いいえ！ したがって、追放されるミニオンは別のリージョンにいてもよく、ステルスを持っていても構いません。",
         "q": "この効果はミニオンを対象にしますか？"
       }
     },
@@ -410,8 +396,8 @@
     },
     "bitter_departed": {
       "official|What if there was more than one killer last turn?": {
-        "a": "[[Bitter Departed]]は、そのうちいずれか1体のもとへテレポートしてストライクできます。",
-        "q": "前のターンに倒したものが複数いた場合はどうなりますか？"
+        "a": "[[Bitter Departed]]は、そのうちいずれか1体のもとへテレポートし、そのユニットにストライクできます。",
+        "q": "前のターンにミニオンを倒したユニットが複数いた場合はどうなりますか？"
       }
     },
     "black_cat": {
@@ -512,18 +498,18 @@
         "q": "戦闘で受けたダメージが致死量に満たなかった場合でも、その味方は死亡しますか？"
       },
       "official|How do I resolve this effect if control of the minion changes between fights (e.g. it had Infiltrate cast on it earlier)?": {
-        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。あなたの近隣には[[Lugbog Cat]]とスケルトンもいて、私の近隣には[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが破れ、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
+        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。そのユニコーンの近隣には、あなたがコントロールする[[Lugbog Cat]]とスケルトン、私がコントロールする[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが破れ、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
         "q": "戦闘の合間にミニオンのコントロールが変わった場合（例: 事前に[[Infiltrate]]を唱えられていた場合）、この効果はどう解決しますか？"
       },
       "official|What is the proper way to resolve the timing for this spell?": {
-        "a": "味方1体を選び、その近隣の敵1体を戦闘相手として宣言し、その戦闘をストーリーラインに置きます。その戦闘を、敵のデスライト能力も含めて解決し、死亡したなら墓地へ置きます。その後、選んだ味方が近隣のすべての敵と戦闘し終わるまで、このプロセスを1戦闘ずつ繰り返します。最後に、味方が十分なダメージを受けていれば、ここで死亡します。\nつまり、次の戦闘へ進む前に、各戦闘を宣言して解決するということです。\nたとえば、あなたが[[Autumn Unicorn]]に[[Blaze of Glory]]をプレイしたとします。こちらの近くには[[Estranged Loner]]・[[Muddy Pigs]]・私のアバターがいます。あなたはまず私のアバターと戦闘することを選び、私は4ライフ失います。次に[[Estranged Loner]]との戦闘を選びます。それは死亡し、私は[[Horrible Hybrids]]を召喚し、[[Estranged Loner]]は私の墓地へ行きます。次にあなたは[[Horrible Hybrids]]と戦闘し、それも死亡して墓地へ。次に[[Muddy Pigs]]と戦闘し、それは死亡して私は3ライフ得て、墓地へ行きます。最後に、あなたのユニコーンは死亡するのに十分なダメージを受けているので、（あれば）デスライト能力をここで誘発させてから、あなたの墓地へ行きます。まさに華々しい最期（Blaze of Glory）です！",
+        "a": "味方1体を選び、その近隣の敵1体を戦闘相手として宣言し、その戦闘をストーリーラインに置きます。その戦闘を、敵のデスライト能力も含めて解決し、死亡したなら墓地へ置きます。その後、選んだ味方が近隣のすべての敵と戦闘し終わるまで、このプロセスを1戦闘ずつ繰り返します。最後に、味方が十分なダメージを受けていれば、ここで死亡します。\nつまり、次の戦闘へ進む前に、各戦闘を宣言して解決するということです。\nたとえば、あなたが[[Autumn Unicorn]]に[[Blaze of Glory]]をプレイしたとします。そのユニコーンの近隣には、[[Estranged Loner]]・[[Muddy Pigs]]・私のアバターがいます。あなたはまず私のアバターと戦闘することを選び、私は4ライフ失います。次に[[Estranged Loner]]との戦闘を選びます。それは死亡し、私は[[Horrible Hybrids]]を召喚し、[[Estranged Loner]]は私の墓地へ行きます。次にあなたは[[Horrible Hybrids]]と戦闘し、それも死亡して墓地へ。次に[[Muddy Pigs]]と戦闘し、それは死亡して私は3ライフ得て、墓地へ行きます。最後に、あなたのユニコーンは死亡するのに十分なダメージを受けているので、（あれば）デスライト能力をここで誘発させてから、あなたの墓地へ行きます。まさに華々しい最期（Blaze of Glory）です！",
         "q": "この呪文のタイミングはどう解決するのが正しいですか？"
       }
     },
     "bleeding_skull": {
       "official|Does this need to be carried to have an effect?": {
-        "a": "はい。「あなた（you / your）」はこのアーティファクトのコントローラーを指し、所持できるアーティファクトはコントロールされるためには所持されている必要があるからです。",
-        "q": "効果を発揮するには、これが所持されている必要がありますか？"
+        "a": "はい。「あなた（you / your）」はこのアーティファクトのコントローラーを指し、運べるアーティファクトは、ユニットに運ばれていなければコントロールされないからです。",
+        "q": "効果を発揮するには、これがユニットに運ばれている必要がありますか？"
       }
     },
     "blink": {
@@ -601,6 +587,10 @@
       }
     },
     "boulevard_of_bones": {
+      "official|If the adjacent site silences the Boulevard (e.g. Smokestacks of Gnaak, Fields of Phyxis), is a Skeleton token is summoned?": {
+        "a": "いいえ。プレイされたサイトの常在型能力が先に[[Boulevard of Bones]]を沈黙させ、その後に[[Boulevard of Bones]]の誘発を確認します。",
+        "q": "隣接するサイトが[[Boulevard of Bones]]を沈黙させる場合（例: [[Smokestacks of Gnaak]]、[[Fields of Phyxis]]）、スケルトン・トークンは召喚されますか？"
+      },
       "official|If Geomancer creates a Rubble adjacent to Boulevard of Bones, do they create a skeleton?": {
         "a": "いいえ。瓦礫はその場で生成されるのであって、プレイされるわけではありません。",
         "q": "[[Geomancer]]が[[Boulevard of Bones]]に隣接する瓦礫を作った場合、スケルトンは生まれますか？"
@@ -623,7 +613,7 @@
       },
       "judge|What if Brobdingnag Bullfrog ended up in a region it couldn’t survive but the carried minion could? For example it gets buried?": {
         "a": "運ばれているユニットは埋められた時点でも無力化されたままで、牛蛙と同時に死亡が確定します。両方が同時に墓地へ置かれます。",
-        "q": "[[Brobdingnag Bullfrog]]が生存できない領域に行き着き、運ばれているミニオンは生存できる場合はどうなりますか？ たとえば埋められた（buried）場合は？"
+        "q": "[[Brobdingnag Bullfrog]]が生存できないリージョンに行き着き、運ばれているミニオンは生存できる場合はどうなりますか？ たとえば埋められた（buried）場合は？"
       },
       "official|Can the Bullfrog choose to drop the minion it swallowed?": {
         "a": "いいえ。呑み込んだミニオンを降ろすことは選べません。（呑み込まれたミニオンがテレポートで離れた場合は、自動的に降ろされます。）",
@@ -652,7 +642,7 @@
         "q": "[[Bureau of Occult Control]]は[[Wormelow Tump]]とどう相互作用しますか？"
       },
       "official|How does this effect resolve?": {
-        "a": "「アクセス」が発生するのは、カードがコレクションまたは墓地の領域を離れる場合です。別の領域（つまりレルム）へ移動する場合も、追放される場合も含みます。自分のコレクションや墓地を自由に見ることや、そこへカードを加えることは引き続き可能です。\n(2)の支払いが必要になるのは、カードに「アクセス」する能力がストーリーラインに置かれる時点で、これにより効果全体がアクセスを許可されます。[[Bureau of Occult Control]]は詠唱コストを増やすものではなく、これは別個のコストです。詠唱コストを減らす効果（例: [[Mix Aer]]）でも減りません。詠唱コストではありませんし、何も唱えずにアクセスする効果も多いからです（例: [[Adept Illusionist]]、[[Imposter]]など）。\nたとえば[[Archimago]]は、追放されるのは3枚でも、能力の起動に(2)を支払わなければなりません。同様に[[Deathspeaker]]も、死の淵にいたとしても能力の使用に(2)を支払わなければなりません。これは能力のコストの増加ではなく、事前に支払うべき別個のコストだからです。\n(2)を支払わないことを選び、コレクションや墓地のカードにアクセスできないまま、効果の残りを解決することもできます。たとえば[[Feast for Crows]]は他の領域を探し、墓地からは呪文を取り除かない、という処理ができます。[[Adept Illusionist]]は呪文書と手札から自身のコピーを探し、墓地は探さない、という処理ができます。",
+        "a": "「アクセス」が発生するのは、カードがコレクションまたは墓地のゾーンを離れる場合です。別のゾーン（つまりレルム）へ移動する場合も、追放される場合も含みます。自分のコレクションや墓地を自由に見ることや、そこへカードを加えることは引き続き可能です。\n(2)の支払いが必要になるのは、カードに「アクセス」する能力がストーリーラインに置かれる時点で、これにより効果全体がアクセスを許可されます。[[Bureau of Occult Control]]は詠唱コストを増やすものではなく、これは別個のコストです。詠唱コストを減らす効果（例: [[Mix Aer]]）でも減りません。詠唱コストではありませんし、何も唱えずにアクセスする効果も多いからです（例: [[Adept Illusionist]]、[[Imposter]]など）。\nたとえば[[Archimago]]は、追放されるのは3枚でも、能力の起動に(2)を支払わなければなりません。同様に[[Deathspeaker]]も、死の淵にいたとしても能力の使用に(2)を支払わなければなりません。これは能力のコストの増加ではなく、事前に支払うべき別個のコストだからです。\n(2)を支払わないことを選び、コレクションや墓地のカードにアクセスできないまま、効果の残りを解決することもできます。たとえば[[Feast for Crows]]は他のゾーンを探し、墓地からは呪文を取り除かない、という処理ができます。[[Adept Illusionist]]は呪文書と手札から自身のコピーを探し、墓地は探さない、という処理ができます。",
         "q": "この効果はどう解決しますか？"
       },
       "official|When casting a spell from my cemetery that would banish itself after casting (e.g. Ghostfire), can I choose not to pay the extra cost to keep it from banishing itself?": {
@@ -682,6 +672,12 @@
         "q": "ミニオンをここに「閉じ込める（lock）」とはどういう意味ですか？ この檻はどう機能しますか？"
       }
     },
+    "call_of_the_sea": {
+      "official|Will this affect minions in the void or underground?": {
+        "a": "いいえ。隣接するサイトではなく隣接するミニオンを探すため、リージョンの境界を無視できません。",
+        "q": "これは虚空や地下にいるミニオンにも影響しますか？"
+      }
+    },
     "candlemas_monks": {
       "official|If these die during my end phase, does their deathrite cause the game to proceed to the next end phase, essentially skipping my opponent's turn?": {
         "a": "いいえ。終了フェイズ中にデスライトが解決しても、ゲームが次の終了フェイズへ進むことはありません。すでに終了フェイズの中にいるからです。",
@@ -696,7 +692,7 @@
     },
     "cast_into_exile": {
       "judge|I cast Cast into Exile targeting my opponent's transformed Island Leviathan, which is an atlas card. What happens?": {
-        "a": "[[Island Leviathan]]はアトラスのカードなので、相手のアトラスに切り直して混ぜます。「味方のサイトを占める対象のミニオン1体を、オーナーのデッキに切り直して混ぜる」として扱ってください。",
+        "a": "[[Island Leviathan]]はアトラスのカードなので、相手のアトラスに切り混ぜます。「味方のサイトを占める対象のミニオン1体を、持ち主のデッキに切り混ぜる」として扱ってください。",
         "q": "相手の変身した[[Island Leviathan]]（アトラスのカード）を対象に[[Cast into Exile]]を唱えました。どうなりますか？"
       }
     },
@@ -740,8 +736,8 @@
         "q": "「あなたの場所（your location）」とはどういう意味ですか？"
       },
       "official|What does “can’t move itself away” mean?": {
-        "a": "[[Cerberus in Chains]]は、現在地よりもあなたのアバターから遠くなる場所への移動を、自分で選ぶことができません。（距離は、ケルベロス自身の移動手段によるステップで数えます。たとえば何らかの方法でエアボーンを得ていれば、それも含めます。）",
-        "q": "「自分から離れるように移動できない（can't move itself away）」とはどういう意味ですか？"
+        "a": "[[Cerberus in Chains]]は、現在地よりもあなたのアバターから遠くなる場所へ、自ら移動することを選べません。（距離は[[Cerberus in Chains]]自身の移動手段によるステップ数で数えます。たとえば、何らかの方法でエアボーン（飛行）を得ていれば、それも含めます。）",
+        "q": "「自力であなたのアバターから離れる方向へ移動できない（can’t move itself away）」とはどういう意味ですか？"
       }
     },
     "chain_lightning": {
@@ -750,8 +746,8 @@
         "q": "稲妻を対象Aから対象Bへ、そしてまた対象Aへ連鎖させられますか？"
       },
       "official|Can additional targets be in different regions (as long as they’re nearby the previous target)?": {
-        "a": "いいえ。直前の対象の近隣にいることは追加の対象制限であって、対象ルールの緩和ではありません。したがって、すべての対象は唱え手と同じ領域にいなければなりません。",
-        "q": "追加の対象は（直前の対象の近隣にいるかぎり）別の領域にいてもよいですか？"
+        "a": "いいえ。直前の対象の近隣にいることは追加の対象制限であって、対象ルールの緩和ではありません。したがって、すべての対象は唱え手と同じリージョンにいなければなりません。",
+        "q": "追加の対象は（直前の対象の近隣にいるかぎり）別のリージョンにいてもよいですか？"
       },
       "official|Do I pay all the costs and choose all the targets when the spell is cast?": {
         "a": "はい。",
@@ -794,7 +790,7 @@
         "q": "「着地したサイト（the site it lands on）」とは、実際には何を指しますか？"
       },
       "judge|What happens if something triggers when the minion lands on the new site?": {
-        "a": "ストーリーラインのルールに従い、何かが移動しているときは、効果はストーリーライン上で分割されます。この場合、[[Chaos Twister]]の解決時に、2つの別々の効果に分割されます:\n• ミニオンをある場所へテレポートさせる\n• （ミニオンがサイトに着地したなら）ダメージを与える\n基本能力の「移動と攻撃」と同様、移動のあと・ダメージの前に、他のことが起こり得ます（例: [[Giant Shark]]）。ミニオンがもうレルムにいない場合、[[Chaos Twister]]は実際にはダメージを与えません。領域を移動したカードは別のオブジェクトとして扱われるからです。",
+        "a": "ストーリーラインのルールに従い、何かが移動しているときは、効果はストーリーライン上で分割されます。この場合、[[Chaos Twister]]の解決時に、2つの別々の効果に分割されます:\n• ミニオンをある場所へテレポートさせる\n• （ミニオンがサイトに着地したなら）ダメージを与える\n基本能力の「移動と攻撃」と同様、移動のあと・ダメージの前に、他のことが起こり得ます（例: [[Giant Shark]]）。ミニオンがもうレルムにいない場合、[[Chaos Twister]]は実際にはダメージを与えません。ゾーンを移動したカードは別のオブジェクトとして扱われるからです。",
         "q": "ミニオンが新しいサイトに着地したときに何かが誘発したらどうなりますか？"
       },
       "official|Does the minion continue to carry whatever it was carrying?": {
@@ -898,7 +894,7 @@
         "q": "複数のマスを占める特大ユニットやオーラも一緒に運びますか？"
       },
       "official|What happens if an oversized avatar is occupying a site, and then some effect moves that site?": {
-        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは「mandatory actions（強制の行動）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
+        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
         "q": "特大のアバターがサイトを占めているときに、何らかの効果でそのサイトが移動したらどうなりますか？"
       }
     },
@@ -910,12 +906,12 @@
     },
     "cone_of_flame": {
       "official|All the empty boxes are void and the letters are sites. If the spell is cast from the surface of X, is Z affected?": {
-        "a": "はい。虚空で隔てられていても、呪文の効果と同じ領域にあるからです。",
+        "a": "はい。虚空で隔てられていても、呪文の効果と同じリージョンにあるからです。",
         "q": "（図で）空のマスはすべて虚空、文字はサイトです。呪文がXの地表から唱えられた場合、Zは影響を受けますか？"
       },
       "official|Does Cone of Flame extend across multiple regions?": {
-        "a": "いいえ。影響を受けるすべての場所は、唱え手と同じ領域になければなりません。基本的に、ダメージのグリッドは唱え手の領域に限定されます。唱え手が複数の領域を占めている場合（例: 特大ユニット）、呪文を唱える領域を1つ選びます。",
-        "q": "[[Cone of Flame]]は複数の領域にまたがりますか？"
+        "a": "いいえ。影響を受けるすべての場所は、唱え手と同じリージョンになければなりません。基本的に、ダメージのグリッドは唱え手のリージョンに限定されます。唱え手が複数のリージョンを占めている場合（例: 特大ユニット）、呪文を唱えるリージョンを1つ選びます。",
+        "q": "[[Cone of Flame]]は複数のリージョンにまたがりますか？"
       }
     },
     "conqueror_worm": {
@@ -932,13 +928,13 @@
     },
     "consecrated_ground": {
       "official|Does \"has no power here\" mean Evil units here have zero power?": {
-        "a": "はい。なお、ストライクの際はまず自分のパワーを決定し、その後で与えるダメージ量を決定します。したがって、ランスを持つ邪悪なミニオンは、パワー0でもランスの+1ダメージにより、1点のダメージでストライクします。詳しくは「Damage（ダメージ）」を参照してください。",
+        "a": "はい。なお、ストライクの際はまず自分のパワーを決定し、その後で与えるダメージ量を決定します。したがって、ランスを持つ邪悪なミニオンは、パワー0でもランスの+1ダメージにより、1点のダメージでストライクします。詳しくは写本室（Codex）の「ダメージ（Damage）」を参照してください。",
         "q": "「ここではパワーを持たない（has no power here）」とは、ここにいる邪悪なユニットのパワーが0という意味ですか？"
       }
     },
     "corpse_explosion": {
       "official|How do I resolve this effect?": {
-        "a": "任意の墓地からミニオンを取り、1枚ずつ表向きに配っていきます。どのミニオンをどのサイトに配るかはあなたが選びます。この効果で死亡ミニオンが実際にレルムに「入る」ことはありません。その後、ダメージは同時に与えられます。",
+        "a": "任意の墓地からミニオンを取り、1枚ずつ表向きに配っていきます。どのミニオンをどのサイトに配るかはあなたが選びます。この効果で死亡しているミニオンが実際にレルムに「入る」ことはありません。その後、ダメージは同時に与えられます。",
         "q": "この効果はどう解決しますか？"
       }
     },
@@ -950,6 +946,12 @@
       "official|Does this ability completely replace their normal type, or simply add a new type?": {
         "a": "追加のタイプを加えます。たとえばあなたのモータルはアンデッドかつモータルであり、[[Bower of Bliss]]によって依然として沈黙させられます。別の例として、あなたのビーストはモンスターかつビーストなので、[[Pond]]によるコスト減少も引き続き受けられます。",
         "q": "この能力は通常のタイプを完全に置き換えますか？ それとも新しいタイプを追加するだけですか？"
+      }
+    },
+    "court_of_equity": {
+      "official|For Mock Court, Court of Equity, and Mobbed Court, do these effects stack with themselves if multiple copies are in the realm?": {
+        "a": "はい。",
+        "q": "[[Mock Court]]、[[Court of Equity]]、[[Mobbed Court]]について、同じカードが複数レルムにある場合、その効果は重なりますか？"
       }
     },
     "courtesan_thais": {
@@ -976,7 +978,7 @@
     },
     "cradle_of_etherrum": {
       "official|Do I still need to meet threshold and summoning requirements when I cast the spell?": {
-        "a": "はい。メインフェイズ中に、自分のサイトに向けて唱える、といった条件はそのままです。手札ではなくデッキの一番上から唱えることと、コストが(1)少ないことを除けば、通常どおりのミニオン呪文の詠唱です。",
+        "a": "はい。自分のメインフェイズ中に、自分のサイトへ唱えるなど、通常の条件を満たす必要があります。手札ではなく呪文書の一番上から唱えることと、コストが(1)少ないことを除けば、通常どおりミニオン呪文を唱えます。",
         "q": "この呪文を唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
       },
       "official|Is the ability to look at my top spell a passive abililty?": {
@@ -990,7 +992,7 @@
         "q": "[[Orb of Ba'al Berith]]で[[Craterize]]を2回分唱えるとき、同じサイトを2回対象にできますか？"
       },
       "official|All the empty boxes are void and the letters are sites. If the spell is cast from the surface of X, is Z affected?": {
-        "a": "はい。虚空で隔てられていても、呪文の効果と同じ領域にあるからです。",
+        "a": "はい。虚空で隔てられていても、呪文の効果と同じリージョンにあるからです。",
         "q": "（図で）空のマスはすべて虚空、文字はサイトです。呪文がXの地表から唱えられた場合、Zは影響を受けますか？"
       },
       "official|Do I have to choose \"above\" or \"below,\" or does it damage both automatically?": {
@@ -1074,7 +1076,7 @@
         "q": "アバターとストライクしたユニットの両方を[[Darkest Dungeon]]に連れて行ける経路がない場合（たとえば[[Perilous Bridge]]のせいで）、どうなりますか？"
       },
       "official|What path can I choose when resolving this ability?": {
-        "a": "Codexの「Moving to a Specific Location Via a Special Ability or Magic（特殊能力やマジックで特定の場所へ移動する）」を参照してください。",
+        "a": "写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」を参照してください。",
         "q": "この能力の解決時、どんな経路を選べますか？"
       }
     },
@@ -1084,8 +1086,8 @@
         "q": "十字は回転させられますか？"
       },
       "official|Does this affect multiple regions, such as the void and subsurface as well?": {
-        "a": "はい！ カードのテキストは「影響を受けるマス（affected squares）」であり、これには地表・地下・水中、そして虚空が含まれます。",
-        "q": "これは虚空や地下・水中など、複数の領域に影響しますか？"
+        "a": "はい！ カードのテキストは「影響を受けるマス（affected squares）」であり、これには地表・下層、そして虚空が含まれます。",
+        "q": "これは虚空や下層など、複数のリージョンに影響しますか？"
       },
       "official|How do I properly resolve the banish and damage effects?": {
         "a": "まず邪悪なミニオンを追放し、その追放の結果として生じる効果（あれば）を解決します。その後、その6マスを占めるすべてのユニットにダメージを与えます。",
@@ -1109,14 +1111,6 @@
       }
     },
     "deathspeaker": {
-      "judge|Must the Deathspeaker be the spellcaster to use its ability?": {
-        "a": "はい（[[Sparkmage]]のFAQと同様です）。",
-        "q": "この能力を使うには、[[Deathspeaker]]自身がスペルキャスター（唱え手）でなければなりませんか？"
-      },
-      "judge|Who controls the minion after it's summoned?": {
-        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。オーナーではありません。",
-        "q": "召喚されたミニオンは、誰がコントロールしますか？"
-      },
       "official|At Death’s Door, does the Deathspeaker need to meet the threshold requirements?": {
         "a": "はい。(0)になるのは詠唱コストだけです。",
         "q": "死の淵にいるとき、[[Deathspeaker]]はスレッショルド条件を満たす必要がありますか？"
@@ -1130,7 +1124,7 @@
         "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
       },
       "official|How does this ability resolve, in detail?": {
-        "a": "あなたはそのミニオン呪文を唱えます。\nマナを支払い、スレッショルドを満たし、墓地からそれを追放し、召喚先を決めます。\nミニオンがレルムに入ります（これは追放されたミニオンのコピーです）。\n「レルムに入ったとき」の効果が誘発・解決します。これには以下が含まれます:\nジェネシス能力。\n[[Wayfaring Pilgrim]]・[[Giant Shark]]・[[Mariner's Curse]]・[[Bottomless Pit]]などの効果。詳しくはCodexの「Simultaneous Triggers（同時誘発）」を参照。\nその後、ミニオンは追放されます。\n意図としては、[[Deathspeaker]]は死者と語らい、その能力を呼び起こし、そして死後の世界（それが何であれ）へ解き放つ、というものです。\n「Splitting Events on the Storyline（ストーリーライン上での事象の分割）」と、Tawnyとサイトのジェネシスの例も参照してください。[[Deathspeaker]]の能力も同様で、ミニオンが入るとストーリーライン上で能力が分割され、ジェネシス能力が（ミニオンがレルムに入ったことによる他の誘発型能力とともに）解決し、その後ミニオンが追放されます。",
+        "a": "あなたはそのミニオン呪文を唱えます。\nマナを支払い、スレッショルドを満たし、墓地からそれを追放し、召喚先を決めます。\nミニオンがレルムに入ります（これは追放されたミニオンのコピーです）。\n「レルムに入ったとき」の効果が誘発・解決します。これには以下が含まれます:\nジェネシス能力。\n[[Wayfaring Pilgrim]]・[[Giant Shark]]・[[Mariner's Curse]]・[[Bottomless Pit]]などの効果。詳しくは写本室（Codex）の「同時トリガー（Simultaneous Triggers）」を参照。\nその後、ミニオンは追放されます。\n意図としては、[[Deathspeaker]]は死者と語らい、その能力を呼び起こし、そして死後の世界（それが何であれ）へ解き放つ、というものです。\n写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」と、Tawnyとサイトのジェネシスの例も参照してください。[[Deathspeaker]]の能力も同様で、ミニオンが入るとストーリーライン上で能力が分割され、ジェネシス能力が（ミニオンがレルムに入ったことによる他の誘発型能力とともに）解決し、その後ミニオンが追放されます。",
         "q": "この能力は、詳細にはどう解決しますか？"
       },
       "official|When using the Deathspeaker's ability, are passive abilities applied before the banishing effect? The updated text only mentions Genesis abilities.": {
@@ -1138,7 +1132,7 @@
         "q": "[[Deathspeaker]]の能力を使ったとき、常在型能力は追放の効果より先に適用されますか？ 更新後のテキストにはジェネシス能力しか書かれていません。"
       },
       "official|When using the Deathspeaker’s ability, do Genesis abilities trigger before the banishing effect?": {
-        "a": "はい。カードがレルムに入るとき、ストーリーライン上の事象は分割されるからです。詳しくはCodexの「Splitting Events on the Storyline」を参照してください。",
+        "a": "はい。カードがレルムに入るとき、ストーリーライン上の事象は分割されるからです。詳しくは写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」を参照してください。",
         "q": "[[Deathspeaker]]の能力を使ったとき、ジェネシス能力は追放の効果より先に誘発しますか？"
       },
       "official|When using the Deathspeaker’s ability, do I trigger Deathrite effects (perhaps because the minion is on The Geistwood)?": {
@@ -1190,11 +1184,11 @@
     },
     "displace": {
       "official|Can this teleport a minion or artifact from a site to the void?": {
-        "a": "いいえ。ミニオンやアーティファクトのテレポート先は元の場所から斜めに1ステップの場所でなければならず、ステップは同じ領域内でのみ数えます。たとえば地表の場所から始まるミニオンやアーティファクトは、別の地表の場所にしかテレポートできません。",
+        "a": "いいえ。ミニオンやアーティファクトのテレポート先は元の場所から斜めに1ステップの場所でなければならず、ステップは同じリージョン内でのみ数えます。たとえば地表の場所から始まるミニオンやアーティファクトは、別の地表の場所にしかテレポートできません。",
         "q": "これでミニオンやアーティファクトをサイトから虚空へテレポートさせられますか？"
       },
       "official|Can this teleport an aura from a site to the void?": {
-        "a": "はい！ オーラを動かすときは、地表と虚空の場所の間の領域の境界を無視します。",
+        "a": "はい！ オーラを動かすときは、地表と虚空の場所の間のリージョンの境界を無視します。",
         "q": "これでオーラをサイトから虚空へテレポートさせられますか？"
       }
     },
@@ -1258,8 +1252,8 @@
         "q": "[[Dragonlord]]が[[Ignis Rex]]の能力を得た場合、それは火のダメージと見なされますか？ [[Adtonitum]]と風のダメージについても同様に教えてください。"
       },
       "official|If the Dragonlord gains Voidwalk, Burrowing, or Submerge, may it enter other regions?": {
-        "a": "いいえ。アバターは地表以外の領域には入れません。",
-        "q": "[[Dragonlord]]がヴォイドウォーク・バロウ・サブマージを得た場合、他の領域に入れますか？"
+        "a": "いいえ。アバターは地表以外のリージョンには入れません。",
+        "q": "[[Dragonlord]]がヴォイドウォーク・バロウ・サブマージを得た場合、他のリージョンに入れますか？"
       },
       "official|When do I choose my set aside Dragon? Can it change during a tournament?": {
         "a": "脇に置くドラゴンは「セットアップの前」、つまりデッキ構築の時点で選ばなければなりません。大会中の変更はできません。[[Dragonlord]]はおのれの代理人に忠実であり、そんな気まぐれは起こさないのです！",
@@ -1300,11 +1294,11 @@
     },
     "drought": {
       "official|Can Floodplain still flood a site affected by Drought?": {
-        "a": "はい。Codexの「Example - Flood vs. Drought（例 - 洪水と干ばつ）」を参照してください。",
+        "a": "はい。写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
         "q": "[[Drought]]の影響を受けているサイトを、[[Floodplain]]は水没させられますか？"
       },
       "official|How do Drought and Flood interact?": {
-        "a": "Codexの「Example - Flood vs. Drought」を参照してください。",
+        "a": "写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
         "q": "[[Drought]]と洪水（Flood）はどう相互作用しますか？"
       }
     },
@@ -1322,11 +1316,11 @@
         "q": "[[Druid]]が裏返ったあと、ダメージの発生源は[[Druid]]ですか、それとも近隣のサイトですか？"
       },
       "judge|What is Bruin?": {
-        "a": "Bruinは、「あなたのアバターの近くにいる間、Bruinがアバターの代わりにダメージを受ける」を持つパワー4のユニークのビースト・トークンです。",
-        "q": "Bruinとは何ですか？"
+        "a": "ブルーインは、「あなたのアバターの近隣にいる間、ブルーインがアバターの代わりにダメージを受ける」を持つ、パワー4のユニーク・ビースト・トークンです。",
+        "q": "ブルーインとは何ですか？"
       },
       "judge|What is Tawny?": {
-        "a": "Tawnyは、「エアボーン、スペルキャスター、防御できない」を持つパワー1のユニークのビースト・トークンです。",
+        "a": "Tawnyは、「エアボーン（飛行）、スペルキャスター、防御できない」を持つ、パワー1のユニーク・ビースト・トークンです。",
         "q": "Tawnyとは何ですか？"
       },
       "judge|When I play a site, do I summon Tawny before or after the Genesis ability?": {
@@ -1334,8 +1328,8 @@
         "q": "サイトをプレイしたとき、Tawnyの召喚はジェネシス能力の前ですか、後ですか？"
       },
       "official|Can the Druid's flip side ability give the Druid kill credit?": {
-        "a": "いいえ。撃破の手柄を得られるのはユニットだけで、ダメージの発生源はサイトです。この誘発型能力はサイトの能力であって、[[Druid]]の能力ではありません。詳しくはCodexの「kill credit（撃破の手柄）」の項を参照してください。",
-        "q": "[[Druid]]の裏面の能力で、[[Druid]]が撃破の手柄を得られますか？"
+        "a": "いいえ。キル・クレジットを得られるのはユニットだけで、ダメージの発生源はサイトです。この誘発型能力はサイトの能力であって、[[Druid]]の能力ではありません。詳しくは写本室（Codex）の「キル・クレジット（Kill Credit）」の項を参照してください。",
+        "q": "[[Druid]]の裏面の能力で、[[Druid]]がキル・クレジットを得られますか？"
       },
       "official|Does the Druid's flip side ability work with Poisonous Dagger?": {
         "a": "いいえ。能力を得てダメージを与えているのはサイト自身です。",
@@ -1352,7 +1346,7 @@
     },
     "drums_of_doom": {
       "official|I strike your minion, which is nearby the Drums. Then, you redirect the damage to a bodyguard (e.g. Royal Bodyguard, Sir Gawain), who is not nearby the Drums. Does your bodyguard take lethal damage?": {
-        "a": "いいえ。実際にダメージを受けるミニオンが太鼓の近くにいないなら、そのダメージはリーサルではありません。",
+        "a": "いいえ。実際にダメージを受けるミニオンが[[Drums of Doom]]の近隣にいないなら、そのダメージはリーサル（致死）ではありません。",
         "q": "私があなたのミニオン（[[Drums of Doom]]の近隣にいる）にストライクし、あなたがそのダメージをボディガード（例: [[Royal Bodyguard]]、[[Sir Gawain]]。太鼓の近隣にいない）に肩代わりさせました。ボディガードはリーサルのダメージを受けますか？"
       }
     },
@@ -1417,7 +1411,7 @@
       },
       "judge|Must the Enchantress be the spellcaster to use its ability?": {
         "a": "はい（[[Sparkmage]]のFAQと同様です）。",
-        "q": "この能力を使うには、[[Enchantress]]自身がスペルキャスター（唱え手）でなければなりませんか？"
+        "q": "この能力を使うには、[[Enchantress]]自身が唱え手でなければなりませんか？"
       },
       "judge|Where can I learn more about Enchantress?": {
         "a": "解説記事「Enchantress: Understanding Her Rules」を参照してください。",
@@ -1428,7 +1422,7 @@
         "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
       },
       "official|Can you animate your opponent’s auras?": {
-        "a": "はい。対象にできるかぎり（つまり[[Enchantress]]と同じ領域にあるかぎり）可能です。そのオーラのミニオンは、引き続き相手がコントロールします。",
+        "a": "はい。対象にできるかぎり（つまり[[Enchantress]]と同じリージョンにあるかぎり）可能です。そのオーラのミニオンは、引き続き相手がコントロールします。",
         "q": "相手のオーラをアニメイトできますか？"
       },
       "official|Do animated aura change size?": {
@@ -1452,14 +1446,14 @@
         "q": "オーラをミニオンに変える！？ 本当ですか？"
       },
       "official|What is the proper timing of resolution for this effect?": {
-        "a": "あなたが呪文を唱えるたび、その呪文が解決する前、かつ対象が指定された後です。詳しくは「storyline（ストーリーライン）」の項を参照してください。",
+        "a": "あなたが呪文を唱えるたび、その呪文が解決する前、かつ対象が指定された後です。詳しくは写本室（Codex）の「ストーリーライン（Storyline）」の項を参照してください。",
         "q": "この効果の正しい解決タイミングは？"
       }
     },
     "entangle_terrain": {
       "official|Does this affect subsurface units, as well as surface?": {
         "a": "はい。「上に（atop）」とは書かれていないからです。ただし、虚空はサイトではないため、虚空にいるミニオンには影響しません。",
-        "q": "これは地表だけでなく、地下・水中のユニットにも影響しますか？"
+        "q": "これは地表だけでなく、下層のユニットにも影響しますか？"
       }
     },
     "eriks_curiosa": {
@@ -1494,7 +1488,7 @@
     },
     "ether_core": {
       "official|Must one of my units carry this to gain the mana?": {
-        "a": "はい！ 誰も運んでいなければ、あなたのコントロール下にはありません。コントローラーがいなければ、[[Ether Core]]は誰にもマナを提供しません。所持できるアーティファクトは、コントロールされるためには所持されている必要があることを忘れずに！",
+        "a": "はい！ 誰も運んでいなければ、あなたのコントロール下にはありません。コントローラーがいなければ、[[Ether Core]]は誰にもマナを提供しません。運べるアーティファクトは、コントロールされるためにはユニットに運ばれている必要があることを忘れずに！",
         "q": "マナを得るには、自分のユニットがこれを運んでいなければなりませんか？"
       }
     },
@@ -1512,8 +1506,8 @@
     },
     "excalibur": {
       "judge|Does my Elementalist avatar have +4 power and become immune to damage while carrying Excalibur?": {
-        "a": "いいえ、残念！ アバターはエレメントの属性を持たないため、[[Excalibur]]を所持してもボーナスは得られません。",
-        "q": "私の[[Elementalist]]のアバターは、[[Excalibur]]を所持している間、+4のパワーとダメージへの耐性を持ちますか？"
+        "a": "いいえ、残念！ アバターはエレメントの属性を持たないため、[[Excalibur]]を運んでいてもボーナスは得られません。",
+        "q": "私の[[Elementalist]]のアバターは、[[Excalibur]]を運んでいる間、+4のパワーとダメージへの耐性を持ちますか？"
       }
     },
     "failed_mutation": {
@@ -1534,7 +1528,7 @@
         "q": "他のユニットへのストライクはすべて同時ですか？"
       },
       "official|How does this resolve if I summon an oversized minion?": {
-        "a": "召喚先のサイトの少なくとも1つは、影響を受けたサイトを含んでいなければなりません。「着地した場所で他の各ユニットにストライクする」効果は、（召喚されたミニオンが占める）影響を受けたサイトのうち、あなたが選んだ1つで発生します。",
+        "a": "召喚先に選ぶサイトのうち、少なくとも1つが影響を受けたサイトでなければなりません。「着地した場所で他の各ユニットにストライクする」効果は、召喚したミニオンが占める影響を受けたサイトのうち、あなたが選んだ1つで発生します。",
         "q": "特大ミニオンを召喚する場合、これはどう解決しますか？"
       },
       "official|If my summoned minion has a genesis effect, does the genesis resolve before the strike?": {
@@ -1558,7 +1552,7 @@
         "q": "能力を使ったら、[[Far East Assassin]]はステルスを失いますか？"
       },
       "official|When you use the ability, what happens to the “thrown” artifact?": {
-        "a": "もう[[Far East Assassin]]には所持されておらず、対象の場所でコントロールされていない状態になります。どのユニットでも通常どおり拾えます（その場所にいれば、アサシン自身も含みます）。",
+        "a": "もう[[Far East Assassin]]には運ばれておらず、対象の場所でコントロールされていない状態になります。どのユニットでも通常どおり拾えます（その場所にいれば、アサシン自身も含みます）。",
         "q": "能力を使ったとき、「投げられた」アーティファクトはどうなりますか？"
       }
     },
@@ -1584,7 +1578,7 @@
     },
     "fenvale_muse": {
       "official|What happens if I use this to trigger the Genesis ability of a site my opponent controls?": {
-        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、自分の次の呪文を見て呪文書の一番下に置くかを選ぶのは相手です。",
+        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、相手は自分自身の次の呪文を見て、それを自分の呪文書の一番下に置くかどうかを選びます。",
         "q": "これを使って、相手がコントロールするサイトのジェネシス能力を誘発させたらどうなりますか？"
       }
     },
@@ -1606,7 +1600,7 @@
     },
     "finwife": {
       "judge|When do I get the mana from Finwife?": {
-        "a": "少なくとも1体の敵アバターの近くにいる前提で、レルムに入ったとき、およびあなたの各ターンの開始時です。",
+        "a": "少なくとも1体の敵アバターの近隣にいる前提で、レルムに入ったとき、およびあなたの各ターンの開始時です。",
         "q": "[[Finwife]]からマナを得るのはいつですか？"
       }
     },
@@ -1616,12 +1610,12 @@
         "q": "カードを引くためだけに、対象なしでこの呪文を唱えられますか？"
       },
       "official|Does the target need to be in the same region as the caster?": {
-        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、唱え手はどの領域（地表・地下・水中・虚空）にいてもかまいません。唱え手に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それは唱え手の場所へ引き寄せられます。",
-        "q": "対象は唱え手と同じ領域にいなければなりませんか？"
+        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、唱え手はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。唱え手に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それは唱え手の場所へ引き寄せられます。",
+        "q": "対象は唱え手と同じリージョンにいなければなりませんか？"
       },
       "official|Does the “adjacent Water site” need to be in the same region as the caster?": {
-        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトは唱え手と同じ領域にある必要はありません。",
-        "q": "「隣接する水のサイト」は、唱え手と同じ領域になければなりませんか？"
+        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトは唱え手と同じリージョンにある必要はありません。",
+        "q": "「隣接する水のサイト」は、唱え手と同じリージョンになければなりませんか？"
       }
     },
     "firebolts": {
@@ -1679,7 +1673,7 @@
     "flaming_sword": {
       "judge|1) Identify the unit(s) you are striking. These units are safe from the special flames, even if you did 0 damage in your strike to them. 2) Identify the locations those struck units occupy. All non-struck enemies at those locations take the special flame damage, equal to your strike’s damage. (Remember, struck enemies are safe from the special flames.) If I strike a large minion while carrying a Flaming Sword, does the special splash damage hurt all enemies at the large minion's locations?": {
         "a": "はい！ [[Flaming Sword]]の魔法の炎は、他のユニットへと飛び散ります。",
-        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットが占める場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を所持して大型ミニオンにストライクした場合、飛び散るダメージは大型ミニオンが占めるすべての場所の敵に及びますか？"
+        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットが占める場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を運んでいる状態で大型ミニオンにストライクした場合、飛び散るダメージは大型ミニオンが占めるすべての場所の敵に及びますか？"
       },
       "judge|How does Flaming Sword really work?": {
         "a": "特別な炎を宿しているのです！ 飛び散るダメージを正しく適用するには、次の手順に従ってください:",
@@ -1687,7 +1681,7 @@
       },
       "judge|Is the splash damage fire damage? Is the main strike by the unit carrying the sword fire damage?": {
         "a": "飛び散るダメージは火のダメージです。元のストライクのエレメント種別は変わりません。通常の剣（+1のパワー）と特別な炎（火の飛散ダメージ）の組み合わせだと考えてください。",
-        "q": "飛び散るダメージは火のダメージですか？ 剣を所持したユニットの本体のストライクは火のダメージですか？"
+        "q": "飛び散るダメージは火のダメージですか？ 剣を運んでいるユニットによる本体のストライクは火のダメージですか？"
       },
       "official|Does the splash damage occur whenever the unit strikes?": {
         "a": "はい。たとえば[[Grapple Shot]]などのストライクも含まれ、基本能力「移動と攻撃」による攻撃だけではありません。",
@@ -1698,7 +1692,7 @@
         "q": "ユニットが[[Flaming Sword]]を2本持っている場合、それぞれがダメージを飛び散らせますか？"
       },
       "official|If the Battlemage with a Flaming Sword attacks one enemy, and then another enemy dies as a result of the Flaming Sword, does the Battlemage get to draw a card?": {
-        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットが撃破の手柄を得たのであれば、この能力は誘発します。",
+        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力は誘発します。",
         "q": "[[Flaming Sword]]を持った[[Battlemage]]が敵1体を攻撃し、[[Flaming Sword]]の効果で別の敵が死亡した場合、[[Battlemage]]はカードを引けますか？"
       },
       "official|If the attack damage was increased or decreased, does the splash damage include the change?": {
@@ -1706,7 +1700,7 @@
         "q": "攻撃のダメージが増減した場合、飛び散る（splash）ダメージにもその変化は含まれますか？"
       },
       "official|If the struck unit isn’t an enemy, is any damage splashed?": {
-        "a": "いいえ。「ストライクされたユニット」がいなければ、その場所も存在しません。また、そもそも敵がいないなら「他の敵」も存在しません。Codexの「enemy（敵）」を参照してください。",
+        "a": "いいえ。「ストライクされたユニット」がいなければ、その場所も存在しません。また、そもそも敵がいないなら「他の敵」も存在しません。写本室（Codex）の「敵（Enemy）」を参照してください。",
         "q": "ストライクした相手が敵でない場合でも、ダメージは飛び散りますか？"
       },
       "official|Is the splash damage a strike?": {
@@ -1720,19 +1714,19 @@
         "q": "[[Flanking Maneuver]]で、適切な移動能力を持たない自分のミニオンを虚空・地下・水中へ送り込めますか？ 友達に聞かれたもので。"
       },
       "official|Do the locations need to be in the same region?": {
-        "a": "いいえ。テレポート効果は、特に指定がないかぎり領域の境界を無視します。この効果の唯一の制限は、2つの場所が盤上でチェスのナイトの動きの位置関係にあることです。\nたとえばAが虚空のマスで、Bにサイトがある場合、[[Flanking Maneuver]]はその虚空の場所からサイトの地表または地下・水中へユニットを動かせます。",
-        "q": "2つの場所は同じ領域になければなりませんか？"
+        "a": "いいえ。テレポート効果は、特に指定がないかぎりリージョンの境界を無視します。この効果の唯一の制限は、2つの場所が盤上でチェスのナイトの動きの位置関係にあることです。\nたとえばAが虚空のマスで、Bにサイトがある場合、[[Flanking Maneuver]]はその虚空の場所からサイトの地表または下層へユニットを動かせます。",
+        "q": "2つの場所は同じリージョンになければなりませんか？"
       }
     },
     "flood": {
       "official|How do Drought and Flood interact?": {
-        "a": "Codexの「Example - Flood vs. Drought（例 - 洪水と干ばつ）」を参照してください。",
+        "a": "写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
         "q": "[[Drought]]と洪水（Flood）はどう相互作用しますか？"
       }
     },
     "floodplain": {
       "official|Can Floodplain still flood a site affected by Drought?": {
-        "a": "はい。Codexの「Example - Flood vs. Drought」を参照してください。",
+        "a": "はい。写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
         "q": "[[Drought]]の影響を受けているサイトを、[[Floodplain]]は水没させられますか？"
       },
       "official|Can I use Floodplain before Maelström triggers?": {
@@ -1794,7 +1788,7 @@
     },
     "garden_of_eden": {
       "official|Does this affect spells drawn by things like Morgana le Fay and the Omphaloi?": {
-        "a": "はい。それらのカードは別の領域に置かれますが、プレイヤーが引いたものとして数えられ、1ターンに引ける1枚の呪文の枠を消費します。\nたとえば、あるプレイヤーがターン開始時にサイトを引いてから[[Morgana le Fay]]をプレイした場合、モーガナは自分の手札に呪文を1枚しか引けず、そのプレイヤーがそのターンに引いた呪文は合計1枚だけになります。詳しくは写本室の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
+        "a": "はい。それらのカードは別のゾーンに置かれますが、プレイヤーが引いたものとして数えられ、1ターンに引ける1枚の呪文の枠を消費します。\nたとえば、あるプレイヤーがターン開始時にサイトを引いてから[[Morgana le Fay]]をプレイした場合、モーガナは自分の手札に呪文を1枚しか引けず、そのプレイヤーがそのターンに引いた呪文は合計1枚だけになります。詳しくは写本室（Codex）の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
         "q": "これは[[Morgana le Fay]]やオムパロスなどが引く呪文にも影響しますか？"
       }
     },
@@ -1814,7 +1808,7 @@
         "q": "[[Mirror Realm]]（土のサイトをコピー）は[[Geomancer]]の1つ目の能力の対象になりますか？"
       },
       "official|Does Mirror Realm (copying an earth site), Valley of Delight (choosing earth), or one of the Bloom sites (i.e. Twilight Bloom) count for Geomancer's first ability?": {
-        "a": "はい。[[Mirror Realm]]はレルムに入る時点で適用されるので機能します。[[Valley of Delight]]とBloom系サイトは、サイトのジェネシス効果が[[Geomancer]]の能力の解決に割り込むため機能します。[[Geomancer]]の能力の後半が実際に解決してサイトを見る時点で、そのサイトは確かに土(E)のサイトになっています。[[Valley of Delight]]との相互作用の詳細は「Splitting Events on the Storyline」を参照してください。Tawnyの例やドルイドの能力の分割と同様の理屈です。",
+        "a": "はい。[[Mirror Realm]]はレルムに入る時点で適用されるので機能します。[[Valley of Delight]]とBloom系サイトは、サイトのジェネシス効果が[[Geomancer]]の能力の解決に割り込むため機能します。[[Geomancer]]の能力の後半が実際に解決してサイトを見る時点で、そのサイトは確かに土(E)のサイトになっています。[[Valley of Delight]]との相互作用の詳細は写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」を参照してください。Tawnyの例やドルイドの能力の分割と同様の理屈です。",
         "q": "[[Mirror Realm]]（土のサイトをコピー）、[[Valley of Delight]]（土を選択）、Bloom系サイト（例: [[Twilight Bloom]]）は、[[Geomancer]]の1つ目の能力の対象になりますか？"
       },
       "official|If Geomancer creates a Rubble adjacent to Boulevard of Bones, do they create a skeleton?": {
@@ -1838,7 +1832,7 @@
     },
     "ghost_ship": {
       "judge|Who controls the minion after it's summoned?": {
-        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。オーナーではありません。",
+        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。持ち主ではありません。",
         "q": "召喚されたミニオンは、誰がコントロールしますか？"
       },
       "official|If I summon a Spirit from my opponent’s cemetery, do I control it?": {
@@ -1878,11 +1872,11 @@
         "q": "ユニットが同じサイトの中で移動した場合（例: 地表から水中、水中から地表）、[[Giant Shark]]は誘発しますか？"
       },
       "official|What happens if I summon my minion with Genesis into my opponent's Shark's body of water?": {
-        "a": "詳細は写本室の「ストーリーライン（Storyline）」の項を参照してください。",
+        "a": "詳細は写本室（Codex）の「ストーリーライン（Storyline）」の項を参照してください。",
         "q": "相手の[[Giant Shark]]のいる水域に、ジェネシス持ちの自分のミニオンを召喚したらどうなりますか？"
       },
       "official|What path can I choose when resolving this ability?": {
-        "a": "Codexの「Moving to a Specific Location Via a Special Ability or Magic（特殊能力やマジックで特定の場所へ移動する）」を参照してください。",
+        "a": "写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」を参照してください。",
         "q": "この能力の解決時、どんな経路を選べますか？"
       },
       "official|Will it fight units that are Airborne or Stealthed?": {
@@ -1976,15 +1970,15 @@
         "q": "無力化されたユニットは[[Grapple Shot]]を使えますか？"
       },
       "official|Do I resolve all the steps at once, or can effects (e.g. Bottomless Pit) interrupt the movement?": {
-        "a": "詳細は写本室の「ストーリーライン（Storyline）」の項を参照してください。",
+        "a": "詳細は写本室（Codex）の「ストーリーライン（Storyline）」の項を参照してください。",
         "q": "すべてのステップを一度に解決しますか？ それとも効果（例: [[Bottomless Pit]]）が移動に割り込めますか？"
       },
       "official|If I Grapple Shot a minion with Submerge through an area affected by Mariner's Curse, what happens?": {
         "a": "[[Grapple Shot]]の投射物がユニットに命中すると、ゲームは味方のための具体的な移動ステップをストーリーラインに加えます: A（地表）→B（地表）、B（地表）→C（地表）。その後、これらのステップの解決を始めます。サイトBに[[Mariner's Curse]]があるなら、引きずられているユニットはサイトBに到達した時点で潜水し、生き延びます。次にゲームはB（地表）→C（地表）の移動を解決しようとしますが、ユニットはもうサイトBの地表にいないため失敗します。その結果、命中したユニットの場所に到達していないので、[[Grapple Shot]]によるストライクは発生しません。",
-        "q": "サブマージを持つミニオンを、[[Mariner's Curse]]の影響範囲を通るように[[Grapple Shot]]した場合、どうなりますか？"
+        "q": "サブマージ（潜水）を持つミニオンを、[[Mariner's Curse]]の影響範囲を通るように[[Grapple Shot]]した場合、どうなりますか？"
       },
       "official|If the most direct path is blocked (Gnome Hollows, Wall of Ice) will the grappling unit move around those obstacles to reach its target?": {
-        "a": "いいえ。「引きずられる（Dragged）」は「引き寄せ（Pull）」と同等で、「Pull」では入る各場所が目的地に近づいていなければなりません。迂回は近づくことにならないため、その経路は取れません。",
+        "a": "いいえ。「引きずられる（Dragged）」は「引き寄せ（Pull）」と同等で、「Pull」では入る各場所が目的地に近づいていなければなりません。迂回はアバターに近づくことにならないため、その経路は取れません。",
         "q": "最短経路が塞がれている場合（[[Gnome Hollows]]、[[Wall of Ice]]）、グラップルされたユニットは障害物を迂回して対象に到達しますか？"
       },
       "official|The alpha and beta text is different, which should I use?": {
@@ -2028,7 +2022,7 @@
     },
     "grievous_insult": {
       "judge|Can my underwater ally target another underwater minion, even though my Avatar is not underwater?": {
-        "a": "はい。この呪文のスペルキャスター（唱え手）は、その水中の味方だからです！",
+        "a": "はい。この呪文の唱え手は、その水中の味方だからです！",
         "q": "アバターが水中にいなくても、水中の味方は別の水中のミニオンを対象にできますか？"
       }
     },
@@ -2048,7 +2042,7 @@
         "q": "[[Grim Reaper]]がミニオンを殺したとき、そのデスライトは誘発しますか？"
       },
       "official|How does this ability work?": {
-        "a": "[[Grim Reaper]]がミニオンを殺すと、そのミニオンは死亡する代わりに追放されます。加えて、場にあるそのミニオンのコピーも（誰がコントロールしていようと）すべて追放されます。最後に、殺されたミニオンのオーナーのデッキを探します（そのプレイヤーのデッキだけです）。",
+        "a": "[[Grim Reaper]]がミニオンを殺すと、そのミニオンは死亡する代わりに追放されます。加えて、場にあるそのミニオンのコピーも（誰がコントロールしていようと）すべて追放されます。最後に、殺されたミニオンの持ち主のデッキを探します（そのプレイヤーのデッキだけです）。",
         "q": "この能力はどう機能しますか？"
       }
     },
@@ -2072,14 +2066,14 @@
         "q": "この効果の解決中にユニットのパワーが変化して、もう「より弱い」状態でなくなった場合はどうなりますか？"
       },
       "official|What path can I choose when resolving this ability?": {
-        "a": "Codexの「Moving to a Specific Location Via a Special Ability or Magic（特殊能力やマジックで特定の場所へ移動する）」を参照してください。",
+        "a": "写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」を参照してください。",
         "q": "この能力の解決時、どんな経路を選べますか？"
       }
     },
     "guile_sirens": {
       "official|Can it target a unit in a different region?": {
-        "a": "いいえ。対象を取ることは（デフォルトでは）発生源と対象が同じ領域にいることを要求します。",
-        "q": "別の領域にいるユニットを対象にできますか？"
+        "a": "いいえ。対象を取ることは（デフォルトでは）発生源と対象が同じリージョンにいることを要求します。",
+        "q": "別のリージョンにいるユニットを対象にできますか？"
       },
       "official|Consider the group of sites below. An oversized minion occupies 1-2-4-5. Guile Sirens is #5. Can the oversized minion be pulled in any way?": {
         "a": "はい。特大ユニットを引き寄せたり押したりするときは、その特大ユニットが占める場所のうち（効果の条件を満たす）1つを選び、そこから押し引きします。したがって、サイト2を選ぶと特大ミニオンは南へ引かれ、4-5-7-8に落ち着きます。あるいはサイト4を選ぶと東へ引かれ、2-3-5-6に落ち着きます。あるいはサイト5を選ぶと、まったく引き寄せられません。",
@@ -2114,8 +2108,8 @@
     },
     "harassing_ruffians": {
       "judge|Does Harassing Ruffians' ability permanently make a minion undefendable?": {
-        "a": "いいえ。これは常在型能力で、攻撃されているユニットに、攻撃されている間だけ影響します。",
-        "q": "[[Harassing Ruffians]]の能力は、ミニオンを恒久的に防御不能にしますか？"
+        "a": "いいえ。これは常在型能力で、そのミニオンが[[Harassing Ruffians]]に攻撃されている間だけ、他のユニットはそのミニオンの防御側になれません。",
+        "q": "[[Harassing Ruffians]]に攻撃されたミニオンのために、以後ずっと防御側を出せなくなりますか？"
       }
     },
     "harbinger": {
@@ -2142,7 +2136,7 @@
         "q": "この効果の解決中にユニットのパワーが変化して、もう「より弱い」状態でなくなった場合はどうなりますか？"
       },
       "official|What path can I choose when resolving this ability?": {
-        "a": "Codexの「Moving to a Specific Location Via a Special Ability or Magic」を参照してください。",
+        "a": "写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」を参照してください。",
         "q": "この能力の解決時、どんな経路を選べますか？"
       }
     },
@@ -2164,7 +2158,7 @@
     },
     "heat_ray": {
       "judge|How does Heat Ray function?": {
-        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、領域の境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Heat Ray]]のテキストは「貫通する投射物を発射する。命中した各ユニットに2点のダメージを与える」として扱ってください。",
+        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Heat Ray]]のテキストは「貫通する投射物を発射する。命中した各ユニットに2点のダメージを与える」として扱ってください。",
         "q": "[[Heat Ray]]はどう機能しますか？"
       }
     },
@@ -2197,7 +2191,7 @@
     "hillock_basilisk": {
       "judge|Does “in front” cross regional boundaries?": {
         "a": "いいえ。その点では「隣接」や「近隣」と似ています。バジリスクが地表にいるなら、虚空のミニオンには影響しません（万一バジリスクが地下にいるなら、水中のミニオンには影響しません）。",
-        "q": "「前方」は領域の境界を越えますか？"
+        "q": "「前方」はリージョンの境界を越えますか？"
       },
       "judge|How does “at rest” really work? Do minions trigger and resolve their Genesis before being at rest?": {
         "a": "はい。ミニオンはジェネシス能力が解決したあとになるまで、静止と見なされません。Comprehensive Rulebookの「At Rest」の定義を参照してください。",
@@ -2291,10 +2285,6 @@
       }
     },
     "ice_lance": {
-      "judge|How does Ice Lance function?": {
-        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、領域の境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。テキストは「貫通する投射物を発射する。経路上の最初の3つの場所それぞれで、命中したユニット最大1体に、3点、次に2点、次に1点のダメージを与える」として扱ってください。",
-        "q": "[[Ice Lance]]はどう機能しますか？"
-      },
       "official|If Ice Lance doesn't hit anything at the first location where the projectile appears, and then hits something at the 2nd location, how much damage does it do at that 2nd location?": {
         "a": "2番目の場所では2点です。[[Ice Lance]]のダメージは投射物が入った場所の数に応じて減るのであって、何かに命中したかどうかには依りません。",
         "q": "[[Ice Lance]]の投射物が出現した最初の場所で何にも命中せず、2番目の場所で命中した場合、その2番目の場所でのダメージはいくつですか？"
@@ -2302,7 +2292,7 @@
     },
     "ignis_rex": {
       "official|What is a fire card?": {
-        "a": "火のサイトと火の呪文が火のカードです。詳しくはCodexの「element（エレメント）」の項を参照してください。",
+        "a": "火のサイトと火の呪文が火のカードです。詳しくは写本室（Codex）の「エレメント（元素）（Element）」の項を参照してください。",
         "q": "火のカードとは何ですか？"
       },
       "official|What is fire damage?": {
@@ -2313,7 +2303,7 @@
     "imperial_road": {
       "official|If I play a Village on my opponent's turn via Imperial Road, can I pay 1 mana to summon a Foot Soldier?": {
         "a": "ジェネシス効果は誘発しますが、相手のターン中、あなたには使えるマナがないため、できません。",
-        "q": "[[Imperial Road]]で相手のターンに村（Village）をプレイした場合、1マナ支払って歩兵（Foot Soldier）を召喚できますか？"
+        "q": "[[Imperial Road]]で相手のターンに村（Village）をプレイした場合、1マナ支払ってフット・ソルジャーを召喚できますか？"
       }
     },
     "imposter": {
@@ -2337,7 +2327,7 @@
     "infiltrate": {
       "judge|If a minion has Infiltrate cast on it, and it is then disabled by some effect before losing Stealth, what happens?": {
         "a": "ユニットは無力化された時点でステルスを失い、コントロールは戻り、[[Infiltrate]]の効果は終わります。無力化が解けても、ステルスは一度失われたら戻らないので、ステルスを再び得ることはありません。",
-        "q": "[[Infiltrate]]がかけられたミニオンが、ステルスを失う前に何らかの効果で無力化されたらどうなりますか？"
+        "q": "[[Infiltrate]]を唱えられたミニオンが、ステルスを失う前に何らかの効果で無力化されたらどうなりますか？"
       },
       "judge|What happens if I cast Grapple Shot on an infiltrated unit and it loses Stealth before resolving the strike effect?": {
         "a": "ステルスを失った時点で、[[Infiltrate]]していたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、唱え手が選べばストライクは依然として発生し得ます。",
@@ -2365,7 +2355,7 @@
     "into_the_abyss": {
       "official|Normally pull effects can't cross regional boundaries. Can I actually pull the target minion into the void?": {
         "a": "はい、もちろん！",
-        "q": "通常、引き寄せ（Pull）効果は領域の境界を越えられません。対象のミニオンを本当に虚空へ引きずり込めるのですか？"
+        "q": "通常、引き寄せ（Pull）効果はリージョンの境界を越えられません。対象のミニオンを本当に虚空へ引きずり込めるのですか？"
       }
     },
     "iron_man_talus": {
@@ -2388,11 +2378,11 @@
     },
     "iron_shackles": {
       "official|Can I target a burrowed minion or a voidwalk minion?": {
-        "a": "穴掘り状態のスペルキャスターや虚空にいるスペルキャスターがいないかぎり、できません。この効果は「対象（target）」という語を使っているため、スペルキャスターは対象と同じ領域にいなければなりません。（領域は4つ: 地表・地下・水中・虚空です。）",
+        "a": "穴掘り状態のスペルキャスターや虚空にいるスペルキャスターがいないかぎり、できません。この効果は「対象（target）」という語を使っているため、スペルキャスターは対象と同じリージョンにいなければなりません。（リージョンは4つ: 地表・地下・水中・虚空です。）",
         "q": "穴掘り状態のミニオンやヴォイドウォークのミニオンを対象にできますか？"
       },
       "official|What happens if I target a minion with a Ward when conjuring this?": {
-        "a": "解決時、ワードが対象のミニオンを守ります。ゴールデンルールにより、ワードは破れ、[[Iron Shackles]]は所持されていない状態で同じ場所に置かれます。",
+        "a": "解決時、ワードが対象のミニオンを守ります。ゴールデンルールにより、ワードは破れ、[[Iron Shackles]]はどのユニットにも運ばれていない状態で同じ場所に置かれます。",
         "q": "これを設置する際、ワードを持つミニオンを対象にしたらどうなりますか？"
       }
     },
@@ -2431,7 +2421,7 @@
     "jack_the_ripper": {
       "official|Can Jack be cast to a Mortal in a region other than the surface?": {
         "a": "はい。ただし虚空に向けて唱えた場合、詠唱能力の残りが解決する前に追放されます。地下や水中（あるいは彼を殺す効果のある場所）に召喚された場合も、その場所で生存できる能力を即座に得ないかぎり、任務を果たす前に死亡します。つまり、獲物を沈黙させることも殺すこともできません。",
-        "q": "ジャックを地表以外の領域にいるモータルに向けて唱えられますか？"
+        "q": "ジャックを地表以外のリージョンにいるモータルに向けて唱えられますか？"
       },
       "official|Is Jack the Ripper a Monster as well as a Mortal?": {
         "a": "はい！ タイプ行に大文字の「Monstrous」が含まれているため、彼はモンスターです（したがって邪悪です）。",
@@ -2464,7 +2454,7 @@
     },
     "kairos_the_archivist": {
       "official|Can you give a complicated Kairos example?": {
-        "a": "どうぞお楽しみください:\n私はマス8の[[Gnome Hollows]]の上に[[Kettletop Leprechaun]]を持っています。\nあなたはマス3の[[Cloud City]]の上に[[Cloud Spirit]]を持っています。\nレルムが記録されます。その後:\n[[Cloud City]]がマス9へ移動し、あなたはそこに[[Bluecap Knockers]]を召喚。\n私は[[Grim Guisarme]]をレプラコーンの手に唱え、レプラコーンはマス9へ移動。\n私は[[House Arn Bannerman]]を[[Gnome Hollows]]に唱えます。\nそしてカイロスが死亡。以下がすべて同時に起こります:\n私の[[Kettletop Leprechaun]]はマス8へ戻ります。そこは[[Gnome Hollows]]で、レプラコーンは[[House Arn Bannerman]]のおかげでパワー3ですが、「戻る」効果は移動ではなく「入る」ことでもないのを思い出してください。\n[[Grim Guisarme]]は記録されたカードではないので、マス9に残ります。所持されたアーティファクトは所持者の移動時には一緒に動きますが、「戻る」は移動効果ではないため、自動的にレプラコーンについて行くことはありません。\n[[Cloud Spirit]]と[[Cloud City]]はマス3へ戻ります。これは移動ではないため、[[Bluecap Knockers]]はそれを妨げられません。[[Bluecap Knockers]]は虚空に取り残されて追放されます。マス9の虚空には[[Grim Guisarme]]が残ります。もしマス3にサイトがあったなら、[[Cloud City]]がそのマスへ戻る際に追放されていたでしょう。\n迷ったら常にゴールデンルールを。カイロスのときは特に！",
+        "a": "どうぞお楽しみください:\n私はマス8の[[Gnome Hollows]]の上に[[Kettletop Leprechaun]]を持っています。\nあなたはマス3の[[Cloud City]]の上に[[Cloud Spirit]]を持っています。\nレルムが記録されます。その後:\n[[Cloud City]]がマス9へ移動し、あなたはそこに[[Bluecap Knockers]]を召喚。\n私は[[Grim Guisarme]]をレプラコーンの手に唱え、レプラコーンはマス9へ移動。\n私は[[House Arn Bannerman]]を[[Gnome Hollows]]に唱えます。\nそしてカイロスが死亡。以下がすべて同時に起こります:\n私の[[Kettletop Leprechaun]]はマス8へ戻ります。そこは[[Gnome Hollows]]で、レプラコーンは[[House Arn Bannerman]]のおかげでパワー3ですが、「戻る」効果は移動ではなく「入る」ことでもないのを思い出してください。\n[[Grim Guisarme]]は記録されたカードではないので、マス9に残ります。運ばれているアーティファクトは所持者の移動時には一緒に動きますが、「戻る」は移動効果ではないため、自動的にレプラコーンについて行くことはありません。\n[[Cloud Spirit]]と[[Cloud City]]はマス3へ戻ります。これは移動ではないため、[[Bluecap Knockers]]はそれを妨げられません。[[Bluecap Knockers]]は虚空に取り残されて追放されます。マス9の虚空には[[Grim Guisarme]]が残ります。もしマス3にサイトがあったなら、[[Cloud City]]がそのマスへ戻る際に追放されていたでしょう。\n迷ったら常にゴールデンルールを。カイロスのときは特に！",
         "q": "カイロスの複雑な例を挙げてもらえますか？"
       },
       "official|Can your avatar end up in the void after Kairos dies, and if so, what happens?": {
@@ -2480,7 +2470,7 @@
         "q": "「レルムの状態を記録（アーカイブ）する」にはどうすればいいですか？"
       },
       "official|How do I \"return all archived cards to their recorded state\" ?": {
-        "a": "撮った写真を見て、各カードを元あった場所へ戻します。ただし追放されたカードは決して戻せません。ときに知識は本当に失われるのです。[[Kairos, the Archivist]]がレルムに入った時点から、カードはこのデスライトのためだけに、領域をまたいで追跡されます。それほど優秀な司書なのです！ 隠された情報のせいで領域をまたぐ追跡ができない場合（例: デッキに切り混ぜられた）、プレイヤーはそのカードを任意の領域から戻してかまいません（ただし追放領域からは決して戻せません）。",
+        "a": "撮った写真を見て、各カードを元あった場所へ戻します。ただし追放されたカードは決して戻せません。ときに知識は本当に失われるのです。[[Kairos, the Archivist]]がレルムに入った時点から、カードはこのデスライトのためだけに、ゾーンをまたいで追跡されます。それほど優秀な司書なのです！ 隠された情報のせいでゾーンをまたぐ追跡ができない場合（例: デッキに切り混ぜられた）、プレイヤーはそのカードを任意のゾーンから戻してかまいません（ただし追放ゾーンからは決して戻せません）。",
         "q": "「記録されたすべてのカードを記録された状態に戻す」にはどうすればいいですか？"
       },
       "official|Is the state of the Storyline archived? Does the Storyline get restored to its snapshotted state?": {
@@ -2488,8 +2478,8 @@
         "q": "ストーリーラインの状態は記録されますか？ ストーリーラインもスナップショットの状態に復元されますか？"
       },
       "official|Let's say the realm is archived, then I cast an artifact into my unit's hands, then my unit moves. Then Kairos dies. Does my unit bring its carried artifact when it returns to its recorded state?": {
-        "a": "いいえ！ 所持されたアーティファクトは所持者が移動するときには一緒に移動しますが、「記録された状態に戻る」ことは移動と見なされません！ これは唯一無二の直接配置効果です。したがって、アーティファクトは今ある場所に置き去りにされます。カードを動かしているのではなく、時間を巻き戻しているようなものです。",
-        "q": "レルムを記録し、その後ユニットの手にアーティファクトを唱え、そのユニットが移動したとします。そこでカイロスが死亡。ユニットは記録された状態に戻るとき、所持しているアーティファクトを持って行きますか？"
+        "a": "いいえ！ 運ばれているアーティファクトは所持者が移動するときには一緒に移動しますが、「記録された状態に戻る」ことは移動と見なされません！ これは唯一無二の直接配置効果です。したがって、アーティファクトは今ある場所に置き去りにされます。カードを動かしているのではなく、時間を巻き戻しているようなものです。",
+        "q": "レルムを記録し、その後ユニットの手にアーティファクトを唱え、そのユニットが移動したとします。そこでカイロスが死亡。ユニットは記録された状態に戻るとき、自分が運んでいるアーティファクトも一緒に戻しますか？"
       },
       "official|What about Earthquake or Rubble?": {
         "a": "カイロスが瓦礫を含むレルムを記録したなら、カードが記録された状態に戻るとき、瓦礫はそこにあるどんなサイトをも置き換え、塞いでいるサイトは追放されます！\n[[Earthquake]]については、次の流れを想像してください: マス3・8・9にサイトがある状態でレルムが記録される。その後マス4に[[Lone Tower]]がプレイされる。[[Earthquake]]がプレイされてサイトが並べ替えられる。カイロスが死亡。サイトは記録された状態に戻ります。つまり、もともとマス3・8・9にあったサイトが、すべて同時に元の場所へ戻ります。[[Lone Tower]]は記録されたカードではないのでマスを変えませんが、それがいまマス3・8・9のいずれかにあって行き先を塞いでいるなら、そこへ戻ってくるサイトによって追放されます。アーキビストを怒らせてはいけません！",
@@ -2504,7 +2494,7 @@
         "q": "[[Kairos, the Archivist]]が複数場に出ていたら？"
       },
       "official|When I \"archive the state of the realm,\" does that include cards outside the realm?": {
-        "a": "いいえ！ 他の領域は一切含みません。注目すべきは、文字どおり「今この瞬間のレルムにあるカードの状態」です。",
+        "a": "いいえ！ 他のゾーンは一切含みません。注目すべきは、文字どおり「今この瞬間のレルムにあるカードの状態」です。",
         "q": "「レルムの状態を記録する」とき、レルムの外のカードも含まれますか？"
       },
       "official|When I \"archive the state of the realm,\" does that include players' life totals?": {
@@ -2552,11 +2542,11 @@
     },
     "key_to_the_city": {
       "official|How does this ability interact with Flooded sites?": {
-        "a": "水没（Flooded）の能力はサイトに最低1つの水のスレッショルドを与え、水のサイトにします。[[Key to the City]]の所持者であっても、その水のスレッショルドを認識し、水のサイトとして扱います。たとえば、サブマージを持たなければ地下・水中で死亡しますし、強制的に埋められることはない、などです。",
+        "a": "水没（Flooded）の能力はサイトに最低1つの水のスレッショルドを与え、水のサイトにします。[[Key to the City]]の所持者であっても、その水のスレッショルドを認識し、水のサイトとして扱います。たとえば、サブマージ（潜水）を持たなければ下層で死亡しますし、強制的にバロウ（穴掘り）させられることはありません。",
         "q": "この能力は水没したサイトとはどう相互作用しますか？"
       },
       "official|How does this ability work?": {
-        "a": "サイトの能力は、[[Key to the City]]の所持者を、対象にできず、ダメージを与えられず、破壊できず、追放できず、修正できず、移動させられず、移動や攻撃を妨げられません。さらに、サイトの能力は所持者にライフを失わせたり得させたりできず、所持者が受ける回復にも影響できません。例:\n[[Gnome Hollows]]は、パワー3以上の鍵の所持者の進入を止められません。鍵の所持者は[[Perilous Bridge]]の上を地上を歩いて渡れます。\n[[Remote Desert]]は鍵の所持者にダメージを与えられません。\n[[Poisoned Well]]は所持者にライフを失わせられません。\n鍵を所持するアバターは[[Holy Ground]]でライフを得ず、[[Poisoned Well]]でライフを失いません。\n鍵を所持するアバターの回復は[[River of Blood]]で半減しません。（[[River of Blood]]の回復半減を無視するには、アバター自身が鍵を持たなければなりません。）\n[[Fields of Camlann]]は、選ばれたミニオンでなくても、鍵の所持者を破壊しません。\n[[River Rapids]]は鍵の所持者を動かせません。\n「修正されない」の一部として、多くのサイト効果が適用されません:\n[[Gilman House]]は鍵の所持者を変身させられません\n[[Babbling Brook]]は鍵の所持者を無力化できません\n[[Bog]]は鍵の所持者を移動不能にできません\n[[Silent Hills]]は鍵の所持者を沈黙させられません\n[[Road to Perdition]]は鍵の所持者のパワーを増減できません\n[[Accursed Desert]]は鍵の所持者のワードを打ち破れません\n一方、機能し続けるサイト能力もあります:\n[[Wizard's Den]]は、鍵を所持するアバターにも呪文を引かせます（呪文を引くのはユニットではなくプレイヤーだからです）。\n[[Garden of Eden]]は、鍵を所持するアバターの追加の呪文ドローも止めます（同上）。\n[[Beacon]]は敵の鍵の所持者も数えます。\n鍵を持った[[Asmodeus]]でも[[Bedrock]]は破壊できません。\n鍵を所持するアバターも[[Bureau of Occult Control]]の追加の(2)は支払わなければなりません（マナの獲得と支払いはプレイヤーが行うためです）。\n鍵を所持するアバターは[[The Empyrean]]のサイト能力が提供するスレッショルドを引き続き使えます（スレッショルドの管理はプレイヤーが行うためです）。\n[[The Void]]というサイトは、ヴォイドウォークを持たない鍵の所持者ミニオンを依然として追放します。ミニオンを追放しているのはゲームそのものだからです。",
+        "a": "サイトの能力は、[[Key to the City]]の所持者を、対象にできず、ダメージを与えられず、破壊できず、追放できず、修正できず、移動させられず、移動や攻撃を妨げられません。さらに、サイトの能力は所持者にライフを失わせたり得させたりできず、所持者が受ける回復にも影響できません。例:\n[[Gnome Hollows]]は、パワー3以上の鍵の所持者の進入を止められません。鍵の所持者は、地上を移動して[[Perilous Bridge]]を越えられます。\n[[Remote Desert]]は鍵の所持者にダメージを与えられません。\n[[Poisoned Well]]は所持者にライフを失わせられません。\n鍵を所持するアバターは[[Holy Ground]]でライフを得ず、[[Poisoned Well]]でライフを失いません。\n鍵を所持するアバターの回復は[[River of Blood]]で半減しません。（[[River of Blood]]の回復半減を無視するには、アバター自身が鍵を持たなければなりません。）\n[[Fields of Camlann]]は、選ばれたミニオンでなくても、鍵の所持者を破壊しません。\n[[River Rapids]]は鍵の所持者を動かせません。\n「修正されない」の一部として、多くのサイト効果が適用されません:\n[[Gilman House]]は鍵の所持者を変身させられません\n[[Babbling Brook]]は鍵の所持者を無力化できません\n[[Bog]]は鍵の所持者を移動不能にできません\n[[Silent Hills]]は鍵の所持者を沈黙させられません\n[[Road to Perdition]]は鍵の所持者のパワーを増減できません\n[[Accursed Desert]]は鍵の所持者のワードを打ち破れません\n一方、機能し続けるサイト能力もあります:\n[[Wizard's Den]]は、鍵を所持するアバターにも呪文を引かせます（呪文を引くのはユニットではなくプレイヤーだからです）。\n[[Garden of Eden]]は、鍵を所持するアバターの追加の呪文ドローも止めます（同上）。\n[[Beacon]]は敵の鍵の所持者も数えます。\n鍵を持った[[Asmodeus]]でも[[Bedrock]]は破壊できません。\n鍵を所持するアバターも[[Bureau of Occult Control]]の追加の(2)は支払わなければなりません（マナの獲得と支払いはプレイヤーが行うためです）。\n鍵を所持するアバターは[[The Empyrean]]のサイト能力が提供するスレッショルドを引き続き使えます（スレッショルドの管理はプレイヤーが行うためです）。\n[[The Void]]というサイトは、ヴォイドウォークを持たない鍵の所持者ミニオンを依然として追放します。ミニオンを追放しているのはゲームそのものだからです。",
         "q": "この能力はどう機能しますか？"
       },
       "official|When does this artifact provide mana?": {
@@ -2566,13 +2556,13 @@
     },
     "khamaseen_mummy": {
       "official|What happens if I use this to trigger the Genesis ability of a site my opponent controls?": {
-        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、自分の次の呪文を見て呪文書の一番下に置くかを選ぶのは相手です。",
+        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、相手は自分自身の次の呪文を見て、それを自分の呪文書の一番下に置くかどうかを選びます。",
         "q": "これを使って、相手がコントロールするサイトのジェネシス能力を誘発させたらどうなりますか？"
       }
     },
     "king_arthur": {
       "judge|Can I cast spells discarded from my opponent's spellbook via Sea Raider or Captain Baldassare while they control King Arthur?": {
-        "a": "はい。ただし、あなたが唱えたミニオン・アーティファクト・オーラは、あなたがコントロールできないため、相手のコントロール下で（ジェネシス効果も含めて）レルムに入ります！ あとで[[King Arthur]]が死亡したら、あなたのコントロールに戻ります。マジック呪文は通常どおり解決します。",
+        "a": "はい。ただし、あなたが唱えたミニオン・アーティファクト・オーラは、相手のコントロール下でレルムに入ります。ジェネシス能力がある場合、その能力も相手がコントロールします。あとで[[King Arthur]]が死亡したら、それらはあなたのコントロールに戻ります。マジック呪文は通常どおり解決します。",
         "q": "相手が[[King Arthur]]をコントロールしている間、[[Sea Raider]]や[[Captain Baldassare]]で相手の呪文書から捨てられた呪文を唱えられますか？"
       },
       "judge|Can I sacrifice an artifact (e.g. Mix Ignis) if I don’t control it?": {
@@ -2588,16 +2578,16 @@
         "q": "[[King Arthur]]は[[Courtesan Thaïs]]の効果とどう相互作用しますか？"
       },
       "judge|How does King Arthur's ability interact with artifacts?": {
-        "a": "他のプレイヤーがオーナーのアーティファクトを拾うことはできますが、コントロールはしません。多くの場合、恩恵は受けられます（例: 剣や盾）が、受けられない場合もあります（例: [[Onyx Core]]はコントローラーにのみマナとスレッショルドを提供するので、相手のコアを運んでいる場合は誰もコントロールしておらず、恩恵がありません）。",
+        "a": "他のプレイヤーが持ち主のアーティファクトを拾うことはできますが、コントロールはしません。多くの場合、恩恵は受けられます（例: 剣や盾）が、受けられない場合もあります（例: [[Onyx Core]]はコントローラーにのみマナとスレッショルドを提供するので、相手のコアを運んでいる場合は誰もコントロールしておらず、恩恵がありません）。",
         "q": "[[King Arthur]]の能力はアーティファクトとどう相互作用しますか？"
       },
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
-        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
+        "a": "複数のエレメント記号を持つカードは、それらすべての親和性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーをストーンで唱える場合、コストは3マナですか、それとも0マナですか？"
       },
       "official|What happens if King Arthur is in the realm and my opponent would control a card I own?": {
-        "a": "[[King Arthur]]がレルムを統べる間、あなたがオーナーのカードを相手がコントロールすることになる場合、代わりにあなたがコントロールします（両プレイヤーに等しく適用されます）。例:\n相手が[[Lilith]]をプレイして私のデッキからミニオンを召喚。通常は召喚した相手がコントロールしますが、[[King Arthur]]がレルムにいる間は私がコントロールします。\n私が[[Heirloom Lost]]・[[Postern Gate]]・[[Desecrate]]（[[Desecrated Ground]]の獲得）などをプレイ。通常は相手が私のサイトをコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がレリック（例: [[Ring of Morrigan]]）をプレイし、相手が何らかの方法（例: [[Swap]]）で奪取。通常は所持している相手がコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がコントロールしていても、相手のユニットが依然として所持者であり、所持者向けの能力の恩恵は受けられます。\n私がコントロールしているので、「味方」「敵」といった用語は私（コントローラー）の視点で適用されます。\n落とされたら、通常どおり誰のコントロールでもなくなります。\n私が[[Enchantress]]でオーラをアニメイトし、あなたがそれに[[Mesmerism]]をプレイ。通常のオーラに戻ったあとも本来はあなたがコントロールするはずですが、[[King Arthur]]がいる間は私がコントロールします。",
-        "q": "[[King Arthur]]がレルムにいるとき、私がオーナーのカードを相手がコントロールすることになったらどうなりますか？"
+        "a": "[[King Arthur]]がレルムを統べる間、あなたが持ち主のカードを相手がコントロールすることになる場合、代わりにあなたがコントロールします（両プレイヤーに等しく適用されます）。例:\n相手が[[Lilith]]をプレイして私のデッキからミニオンを召喚。通常は召喚した相手がコントロールしますが、[[King Arthur]]がレルムにいる間は私がコントロールします。\n私が[[Heirloom Lost]]・[[Postern Gate]]・[[Desecrate]]（[[Desecrated Ground]]の獲得）などをプレイ。通常は相手が私のサイトをコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がレリック（例: [[Ring of Morrigan]]）をプレイし、相手が何らかの方法（例: [[Swap]]）で奪取。通常なら、そのレリックを運んでいる間は相手がコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がコントロールしていても、相手のユニットが依然として所持者であり、所持者向けの能力の恩恵は受けられます。\n私がコントロールしているので、「味方」「敵」といった用語は私（コントローラー）の視点で適用されます。\n落とされたら、通常どおり誰のコントロールでもなくなります。\n私が[[Enchantress]]でオーラをアニメイトし、あなたがそれに[[Mesmerism]]をプレイ。通常のオーラに戻ったあとも本来はあなたがコントロールするはずですが、[[King Arthur]]がいる間は私がコントロールします。",
+        "q": "[[King Arthur]]がレルムにいるとき、私が持ち主のカードを相手がコントロールすることになったらどうなりますか？"
       }
     },
     "king_of_the_realm": {
@@ -2614,7 +2604,7 @@
         "q": "1つ目の能力の影響を受けるモータルはどれですか？"
       },
       "official|What happens if a second King of the Realm enters play?": {
-        "a": "Codexの「Example - Two Kings of the Realm（例 - 2人のレルムの王）」を参照してください。",
+        "a": "写本室（Codex）の「例 — 2体の Kings of the Realm（Example - Two Kings of the Realm）」を参照してください。",
         "q": "2体目の[[King of the Realm]]が場に出たらどうなりますか？"
       }
     },
@@ -2650,13 +2640,13 @@
         "q": "2つが場にあり（私のほうが先にプレイ）、私が自分のものを降ろして拾い直したら、私のほうが優先されますか？"
       },
       "official|If two are played, which one takes precedence?": {
-        "a": "最後にプレイされたほうです。詳しくは「ongoing effects（継続的な効果）」を参照してください。",
+        "a": "最後にプレイされたほうです。詳しくは写本室（Codex）の「継続効果（Ongoing Effect）」を参照してください。",
         "q": "2つプレイされていたら、どちらが優先されますか？"
       }
     },
     "lacuna_entity": {
       "official|What happens if I cast Lacuna Entity to a void location and then pull in a minion with a passive ability which will silence or disable the Entity?": {
-        "a": "[[Lacuna Entity]]が、自分の能力を失わせる何か（例: [[Sisters of Silence]]）を引き込んだ場合、エンティティは一瞬ヴォイドウォークなしで虚空にいることになり、追放されます。ただし、相手のミニオンを自分の場所へ引き込むこと自体は完了しています。\nなお、[[Hillock Basilisk]]のように「静止した」他のミニオンを無力化するミニオンを引き込んだ場合、そのミニオンの移動が終わって常在型が適用されるまでエンティティは静止しません。つまりバジリスクは、エンティティを無力化できる前に追放されます。",
+        "a": "[[Lacuna Entity]]が、自分の能力を失わせる何か（例: [[Sisters of Silence]]）を引き込んだ場合、エンティティは一瞬ヴォイドウォークなしで虚空にいることになり、追放されます。ただし、もう一方のミニオンを自分の場所へ引き込むこと自体は完了しています。\nなお、[[Hillock Basilisk]]のように「静止した」他のミニオンを無力化するミニオンを引き込んだ場合、そのミニオンの移動が終わって常在型が適用されるまでエンティティは静止しません。つまりバジリスクは、エンティティを無力化できる前に追放されます。",
         "q": "[[Lacuna Entity]]を虚空の場所に唱え、これを沈黙または無力化する常在型能力を持つミニオンを引き込んだらどうなりますか？"
       },
       "official|What happens if the power of one of the units changes during the resolution of this effect so that it's no longer weaker?": {
@@ -2680,7 +2670,7 @@
         "q": "自分のターンの途中でサイトのコントロールを得た場合、そのサイトは即座にマナを生み出しますか？"
       },
       "official|What happens if I have a Land Deed on Rubble?": {
-        "a": "あなたはその瓦礫をコントロールし、瓦礫がダメージを受ければあなたのアバターがライフを失いますが、それでも瓦礫はマナを提供しません。つまり、価値のない岩の塊の所有者というわけです！",
+        "a": "あなたはその瓦礫をコントロールし、瓦礫がダメージを受ければあなたのアバターがライフを失いますが、それでも瓦礫はマナを提供しません。つまり、価値のない岩の塊の持ち主というわけです！",
         "q": "瓦礫の上に[[Land Deed]]がある場合はどうなりますか？"
       },
       "official|What happens if I have a minion that occupies more than one site (e.g. Mountain Giant) and also carries Land Deed?": {
@@ -2708,7 +2698,7 @@
     },
     "lightning_bolt": {
       "official|Can I lightning bolt the void?": {
-        "a": "はい。ただしスペルキャスターが虚空にいる場合だけです（[[Lightning Bolt]]は対象を取るため、スペルキャスターは対象と同じ領域にいなければなりません）。",
+        "a": "はい。ただしスペルキャスターが虚空にいる場合だけです（[[Lightning Bolt]]は対象を取るため、スペルキャスターは対象と同じリージョンにいなければなりません）。",
         "q": "虚空に[[Lightning Bolt]]を撃てますか？"
       }
     },
@@ -2718,7 +2708,7 @@
         "q": "[[Lilith]]がターン終了時の能力を持つミニオン（例: [[Infernal Legion]]）を召喚したらどうなりますか？"
       },
       "official|Who controls the summoned minion?": {
-        "a": "[[Lilith]]のコントローラーです。なお、カードはコントローラーにかかわらず、常にオーナーの墓地へ行きます。",
+        "a": "[[Lilith]]のコントローラーです。なお、カードはコントローラーにかかわらず、常に持ち主の墓地へ行きます。",
         "q": "召喚されたミニオンは誰がコントロールしますか？"
       }
     },
@@ -2730,13 +2720,13 @@
     },
     "lord_of_fear": {
       "official|What does \"defend alone\" mean?": {
-        "a": "防御のウィンドウが閉じたとき（詳しくはCodexの「Attack（攻撃）」参照）、防御（Defend）能力を使った敵ユニットが1体だけなら、その防御側は戦闘から取り除かれ、元の攻撃対象が復元されます。防御側は通常どおり1体ずつ到着しますが、1体しかいなければ、その防御は事実上打ち消されます（ただし、その防御側はタップして攻撃の場所へ移動したままです）。",
+        "a": "防御のウィンドウが閉じたとき（詳しくは写本室（Codex）の「攻撃（Attack）」参照）、防御（Defend）能力を使った敵ユニットが1体だけなら、その防御側は戦闘から取り除かれ、元の攻撃対象が復元されます。防御側は通常どおり1体ずつ到着しますが、1体しかいなければ、その防御は事実上打ち消されます（ただし、その防御側はタップして攻撃の場所へ移動したままです）。",
         "q": "「単独で防御する（defend alone）」とはどういう意味ですか？"
       }
     },
     "lord_of_greed": {
       "official|How do I properly resolve this effect?": {
-        "a": "[[Lord of Greed]]は、レルムのどこからでも（同じ場所にいる他のユニットからでも）、所持できるアーティファクトを1つ取ることができ、また取らなければなりません。この場合の「よそ（elsewhere）」とは、[[Lord of Greed]]の手の中以外のすべてです！ 味方からも奪います。\nこれはアーティファクトを対象に取らないので、ステルスを持つミニオンが運んでいるアーティファクトでさえ、[[Lord of Greed]]からは安全ではありません。",
+        "a": "[[Lord of Greed]]は、レルムのどこからでも（同じ場所にいる他のユニットからでも）、運べるアーティファクトを1つ取ることができ、また取らなければなりません。この場合の「よそ（elsewhere）」とは、[[Lord of Greed]]の手の中以外のすべてです！ 味方からも奪います。\nこれはアーティファクトを対象に取らないので、ステルスを持つミニオンが運んでいるアーティファクトでさえ、[[Lord of Greed]]からは安全ではありません。",
         "q": "この効果はどう解決するのが正しいですか？"
       }
     },
@@ -2766,8 +2756,8 @@
     },
     "lure": {
       "official|Can my allied minion tempt an enemy in a different region to take a step closer?": {
-        "a": "はい。敵が近隣のサイトを占めているかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れない領域へのステップを誘うことはできません（例: バロウを持たない敵を地下に踏み込ませることはできません）。",
-        "q": "味方のミニオンは、別の領域にいる敵を誘って1歩近づかせられますか？"
+        "a": "はい。敵が近隣のサイトを占めているかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れないリージョンへ踏み込ませることはできません（例: バロウ（穴掘り）を持たない敵を地下へ1ステップ移動させることはできません）。",
+        "q": "味方のミニオンは、別のリージョンにいる敵を誘って1ステップ近づかせられますか？"
       },
       "official|If the tempted enemy has multiple equally closer steps, who chooses the specific step taken?": {
         "a": "等しく近づく選択肢の中から、この呪文の唱え手が決めます。",
@@ -2776,7 +2766,7 @@
     },
     "maddening_bells": {
       "official|If Maddening Bells tries to increase the cost of a spell that has an alternate casting cost of zero (e.g. Deathspeaker ability while on death's door, Aramos Mercenaries), what happens?": {
-        "a": "その呪文のコストは0のままです。詳しくは「Cost（コスト）」を参照してください。",
+        "a": "その呪文のコストは0のままです。詳しくは写本室（Codex）の「コスト（Cost）」を参照してください。",
         "q": "[[Maddening Bells]]が、代替の詠唱コストが0の呪文（例: 死の淵での[[Deathspeaker]]の能力、[[Aramos Mercenaries]]）のコストを増やそうとしたらどうなりますか？"
       },
       "official|If the Spellcaster is nearby Maddening Bells but the spell affects something not nearby, does it still cost 2 extra mana?": {
@@ -2821,14 +2811,14 @@
       },
       "official|Can Airborne units in one corner of the realm fly directly to the opposite corner if Magellan Globe is in the realm?": {
         "a": "はい。",
-        "q": "[[Magellan Globe]]がレルムにあれば、エアボーンのユニットはレルムの一方の隅から反対側の隅へ直接飛べますか？"
+        "q": "[[Magellan Globe]]がレルムにあれば、エアボーン（飛行）のユニットはレルムの一方の角から反対側の角へ直接飛べますか？"
       },
       "official|Can I play Earthquake or other similar 2x2 area effects around the edge of the realm with Magellan Globe in play?": {
         "a": "はい。",
         "q": "[[Magellan Globe]]がある状態で、[[Earthquake]]などの2x2範囲の効果をレルムの端をまたいでプレイできますか？"
       },
       "official|Can projectiles go around the edges of the realm?": {
-        "a": "はい。領域を変えないかぎり可能です。Sorceryの領域はちょうど4つ、地表・虚空・水中・地下です。",
+        "a": "はい。リージョンを変えないかぎり可能です。Sorceryのリージョンはちょうど4つ、地表・虚空・水中・地下です。",
         "q": "投射物はレルムの端を回り込めますか？"
       },
       "official|If Magellan Globe is in play and an Oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
@@ -2867,7 +2857,7 @@
       },
       "official|What if an effect specifies a spell or site from a zone other than my spellbook?": {
         "a": "カードが呪文書の外にあるときに呪文かサイトかを参照する効果がある場合、その効果が解決される時点で正しく従わなければなりません。\nいくつか例を挙げます:\n[[Stone Rain]]を解決するなら、その時点で手札に何枚サイトがあるかを正直に申告しなければなりません。\nカードをスリーブから少し出して裏面を見せることで、正確な枚数を相手に示せます。フォイルカードがある場合は大会ならジャッジを呼んでください（またはフォイル対策として、内側の色が異なるスリーブで二重スリーブにしてください）。\n相手が[[Pith Imp]]をプレイしたなら、手札の呪文を正直に特定し、その中からだけランダムに選びます。\n相手が初めてあなたの[[Wizard's Den]]を攻撃したとき、手札に呪文がなければ、手札がサイトだけであることを正直に示さなければなりません。\n[[Sisters of Avalon]]をプレイして手札に呪文がなければ、呪文がないことを正直に示さなければなりません。\n手札の呪文とサイトの枚数を公開する必要のある効果が解決したあとは、手札を混ぜ直して、どれが呪文でどれがサイトか相手にわからなくしてかまいません。",
-        "q": "呪文書以外の領域で、呪文かサイトかを指定する効果があったら？"
+        "q": "呪文書以外のゾーンで、呪文かサイトかを指定する効果があったら？"
       }
     },
     "magnetic_muzzle": {
@@ -2885,7 +2875,7 @@
     "mariners_curse": {
       "judge|If a minion has Submerge and Movement +X, can it declare a non-contiguous movement path, accounting for the effects of Mariner’s Curse?": {
         "a": "はい。連続しない移動経路の宣言は可能です（例: [[Waypoint Portal]]）。（サメのことを考えているのでしょう、わかりますよ。ただしサメは能力の使用時、目的地までに必要なステップ数で測った最短の移動経路を宣言しなければならない点に注意してください。）",
-        "q": "サブマージと移動+Xを持つミニオンは、[[Mariner's Curse]]の効果を織り込んで、連続しない移動経路を宣言できますか？"
+        "q": "サブマージ（潜水）と移動+Xを持つミニオンは、[[Mariner's Curse]]の効果を織り込んで、連続しない移動経路を宣言できますか？"
       },
       "judge|If a minion moves to defend against an attack in a location Mariner’s Curse effects, does the attack get redirected?": {
         "a": "いいえ。移動のあと、防御側が攻撃を自分に向け直す機会を得る前に、[[Mariner's Curse]]の潜水効果が解決するからです。",
@@ -2897,10 +2887,10 @@
       },
       "official|If I Grapple Shot a minion with Submerge through an area affected by Mariner's Curse, what happens?": {
         "a": "[[Grapple Shot]]の投射物がユニットに命中すると、ゲームは味方のための具体的な移動ステップをストーリーラインに加えます: A（地表）→B（地表）、B（地表）→C（地表）。その後、これらのステップの解決を始めます。サイトBに[[Mariner's Curse]]があるなら、引きずられているユニットはサイトBに到達した時点で潜水し、生き延びます。次にゲームはB（地表）→C（地表）の移動を解決しようとしますが、ユニットはもうサイトBの地表にいないため失敗します。その結果、命中したユニットの場所に到達していないので、[[Grapple Shot]]によるストライクは発生しません。",
-        "q": "サブマージを持つミニオンを、[[Mariner's Curse]]の影響範囲を通るように[[Grapple Shot]]した場合、どうなりますか？"
+        "q": "サブマージ（潜水）を持つミニオンを、[[Mariner's Curse]]の影響範囲を通るように[[Grapple Shot]]した場合、どうなりますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Mariner's Curse]]が移動して水のサイトに入ると、（可能なら）自分自身を潜水させ、（サブマージを持たない前提で）死亡します。死亡しなかった場合は、その後自分自身をオーナーの手札に戻します。移動は攻撃より先に起こるため、効果が解決する前に攻撃する機会はありません。",
+        "a": "アニメイトされた[[Mariner's Curse]]が移動して水のサイトに入ると、（可能なら）自分自身を潜水させ、（サブマージ（潜水）を持たない前提で）死亡します。死亡しなかった場合は、その後自分自身を持ち主の手札に戻します。移動は攻撃より先に起こるため、効果が解決する前に攻撃する機会はありません。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -2911,11 +2901,11 @@
       },
       "official|My minion starts nearby the Mask and thus must attack. During my Move and Attack mandatory action, my minion moves so that it's no longer near the Mask. Do I still have to attack?": {
         "a": "いいえ。実際に攻撃するのは移動のあとだからです。移動後にミニオンが仮面の近隣にいないなら、攻撃する義務はありません。",
-        "q": "私のミニオンは仮面の近隣から始まるため、攻撃しなければなりません。強制の「移動と攻撃」の最中に移動して、仮面の近くでなくなりました。それでも攻撃しなければなりませんか？"
+        "q": "私のミニオンは仮面の近隣から始まるため、攻撃しなければなりません。強制の「移動と攻撃」の最中に移動して、仮面の近隣でなくなりました。それでも攻撃しなければなりませんか？"
       },
       "official|What happens if the striking unit and the unit-being-struck are at different locations (e.g. from a unit with the Ranged ability, or Quarrelsome Kobolds)?": {
         "a": "ストライクは、ストライクされるユニットの場所で発生します。ストライクされるユニットが[[Mask of Mayhem]]の近隣にいるなら、2倍のダメージを受けます。",
-        "q": "ストライクするユニットとされるユニットが別の場所にいる場合（例: レンジド能力を持つユニットや[[Quarrelsome Kobolds]]）はどうなりますか？"
+        "q": "ストライクするユニットとストライクされるユニットが別の場所にいる場合（例: レンジド（射撃）を持つユニットや[[Quarrelsome Kobolds]]）はどうなりますか？"
       }
     },
     "master_tracker": {
@@ -2936,8 +2926,8 @@
     },
     "megalurker": {
       "official|Can this Genesis effect drag a minion into a different region?": {
-        "a": "はい。ゴールデンルールによります。アバターは地表以外の場所へは入れないので、この効果でアバターが引きずられる場合は、地表の領域に留まりながら可能なかぎり引きずられます。",
-        "q": "このジェネシス効果は、ミニオンを別の領域へ引きずり込めますか？"
+        "a": "はい。ゴールデンルールによります。アバターは地表以外の場所へは入れないので、この効果でアバターが引きずられる場合は、地表のリージョンに留まりながら可能なかぎり引きずられます。",
+        "q": "このジェネシス効果は、ミニオンを別のリージョンへ引きずり込めますか？"
       }
     },
     "megamoeba": {
@@ -2966,7 +2956,7 @@
         "q": "[[Megamoeba]]が敵とサイトを共有している場合、基本能力「移動と攻撃」でまず移動し、それから元の敵を攻撃して、先にパワーを増やせますか？"
       },
       "official|What happens if Megamoeba gains burrow or submerge?": {
-        "a": "1つのサイトの地表と地下・水中の両方の場所を占められ、カードのテキストどおり、占めた各場所が+1のパワーを与えます。パワー40の[[Megamoeba]]も夢ではありません！",
+        "a": "1つのサイトの地表と下層の両方の場所を占められ、カードのテキストどおり、占めた各場所が+1のパワーを与えます。パワー40の[[Megamoeba]]も夢ではありません！",
         "q": "[[Megamoeba]]がバロウやサブマージを得たらどうなりますか？"
       },
       "official|What happens if Megamoeba is forcefully burrowed or submerged without the burrow or submerge ability?": {
@@ -3001,10 +2991,6 @@
       }
     },
     "merlin": {
-      "judge|How does Merlin’s ability work and what does “any time” actually permit?": {
-        "a": "これは起動型能力です。ルールブック（27ページ）によると:\n• カードのコントローラーだけが使えます\n• 自分のターンのメインフェイズ中だけ\n• ストーリーラインが空のときだけ\nマーリンの「いつでも」というテキストは、メインフェイズ中に好きなだけこの能力を使うことを許しますが、上記の制限は守らなければなりません。\n終了フェイズに移る前に一番上のカードを見ておけば、次のターンにどちらのデッキから引くべきかがわかります。マーリンは先を読むのです！",
-        "q": "[[Merlin]]の能力はどう機能しますか？「いつでも（any time）」は実際に何を許すのですか？"
-      },
       "official|How does Merlin’s ability work and what does “any time” actually permit?": {
         "a": "これは常在型能力で、あなたのターンの間ならいつでも、カードを引く前の開始フェイズ中でも使えます。ただし、呪文を唱えられるのは通常許されるタイミングだけです（つまり、この能力以外に何もストーリーラインにない、あなたのメインフェイズ中）。理屈のうえでは、あなたの開始フェイズ中に[[Crave Golem]]が攻撃してきたなら、そのときマーリンは[[Dodge Roll]]を唱えられます！",
         "q": "[[Merlin]]の能力はどう機能しますか？「いつでも（any time）」は実際に何を許すのですか？"
@@ -3017,8 +3003,12 @@
       }
     },
     "mimic": {
+      "official|What happens if this is cast from a cemetery by Deathspeaker?": {
+        "a": "運べるアーティファクトを[[Mimic]]に変身させる、任意の代替召喚能力を使えます。その後、[[Mimic]]は追放されます。",
+        "q": "これが[[Deathspeaker]]によって墓地から唱えられたらどうなりますか？"
+      },
       "official|How does this ability work?": {
-        "a": "[[Mimic]]を召喚するとき、通常どおり召喚するか、代わりにレルムのどこかにある所持できるアーティファクトを1つ選べます。そのアーティファクトは追放され、[[Mimic]]が変身しながらそのアーティファクトの場所に置かれます。\n[[Mimic]]はあなたがコントロールし、そのアーティファクトがこのターンにレルムに入ったのでなければ、[[Mimic]]に召喚酔いはありません。あのアーティファクトは、実はずっとミミックの化けた姿だったのです！",
+        "a": "[[Mimic]]を召喚するとき、通常どおり召喚するか、代わりにレルムのどこかにある運べるアーティファクトを1つ選べます。そのアーティファクトは追放され、[[Mimic]]が変身しながらそのアーティファクトの場所に置かれます。\n[[Mimic]]はあなたがコントロールし、そのアーティファクトがこのターンにレルムに入ったのでなければ、[[Mimic]]に召喚酔いはありません。あのアーティファクトは、実はずっとミミックの化けた姿だったのです！",
         "q": "この能力はどう機能しますか？"
       }
     },
@@ -3039,12 +3029,8 @@
         "a": "はい。入れ替えは[[Mirage]]が場に出ると同時に起こり、虚空になる瞬間は存在しません。[[Mirage]]が場に出た（そして入れ替わった）時点で、その能力はすでに解決済みです。",
         "q": "入れ替えたいサイトが[[Atlantean Fate]]や[[Smokestacks of Gnaak]]の影響を受けている場合でも、[[Mirage]]でサイトを手札に戻せますか？"
       },
-      "judge|How does Mirage's ability work with Pathfinder?": {
-        "a": "公式FAQにあるとおり、この2つの能力は併用できません。",
-        "q": "[[Mirage]]の能力は[[Pathfinder]]とはどう機能しますか？"
-      },
       "official|What happens if I try to use Mirage's alternate play text when it's played via Pathfinder?": {
-        "a": "[[Pathfinder]]の能力を使う場合、サイトを公開してから隣接する瓦礫または虚空にプレイします（その後[[Pathfinder]]がそこへ移動します）。[[Mirage]]の能力は[[Pathfinder]]と組み合わせられません。",
+        "a": "隣接するサイトの持ち主があなたであり、かつあなたがそれをコントロールしているなら、[[Mirage]]の能力は[[Pathfinder]]によるプレイ制限を変更し、そのサイトを手札に戻せるようにします。",
         "q": "[[Pathfinder]]経由でプレイされた[[Mirage]]の代替プレイテキストを使おうとしたらどうなりますか？"
       }
     },
@@ -3062,7 +3048,7 @@
         "q": "[[Mirror Realm]]は選んだサイトのレアリティもコピーしますか？"
       },
       "official|How do Smokestacks of Gnaak and Mirror Realm interact?": {
-        "a": "[[Mirror Realm]]がレルムに入る時点で、すでにコピーになっています。したがって近隣のサイトをコピーでき、その直後にコピーしたサイトの能力をすべて失います（能力なしのコピーのままです）。細かい話はCodexの「Apply Ongoing Effects In Order（継続的な効果を順に適用する）」を参照してください。",
+        "a": "[[Mirror Realm]]がレルムに入る時点で、すでにコピーになっています。したがって近隣のサイトをコピーでき、その直後にコピーしたサイトの能力をすべて失います（能力なしのコピーのままです）。細かい話は写本室（Codex）の「継続効果の順序付け — レイヤーシステム（Ordering Ongoing Effects - The Layer System）」を参照してください。",
         "q": "[[Smokestacks of Gnaak]]と[[Mirror Realm]]はどう相互作用しますか？"
       },
       "official|What happens if Mirror Realm copies a Rubble?": {
@@ -3084,13 +3070,29 @@
         "q": "[[Mismanaged Mortuary]]が偶数枚場にあれば、打ち消し合いますか？"
       },
       "official|Once this is in play, do I put cards into the cemetery that I own or the cemetery that I control?": {
-        "a": "カードは常に、あなたがオーナーの墓地（あなたのデッキの近くにあるもの）に置きます。",
-        "q": "これが場に出たら、カードを置くのは自分がオーナーの墓地ですか、自分がコントロールする墓地ですか？"
+        "a": "カードは常に、あなたが持ち主の墓地（あなたのデッキの近くにあるもの）に置きます。",
+        "q": "これが場に出たら、カードを置くのは自分が持ち主の墓地ですか、自分がコントロールする墓地ですか？"
+      }
+    },
+    "mobbed_court": {
+      "official|For Mock Court, Court of Equity, and Mobbed Court, do these effects stack with themselves if multiple copies are in the realm?": {
+        "a": "はい。",
+        "q": "[[Mock Court]]、[[Court of Equity]]、[[Mobbed Court]]について、同じカードが複数レルムにある場合、その効果は重なりますか？"
+      }
+    },
+    "mock_court": {
+      "official|For Mock Court, Court of Equity, and Mobbed Court, do these effects stack with themselves if multiple copies are in the realm?": {
+        "a": "はい。",
+        "q": "[[Mock Court]]、[[Court of Equity]]、[[Mobbed Court]]について、同じカードが複数レルムにある場合、その効果は重なりますか？"
+      },
+      "official|For Mock Court, how does this extra cost work?": {
+        "a": "召喚しようとするオーディナリーのミニオン1体ごとに、それがレルムへ召喚される時点で1マナを支払わなければなりません（場にある[[Mock Court]]1枚につき）。これは追加の詠唱コストではなく、召喚コストです。支払えるなら支払わなければなりません。複数のオーディナリーのミニオンを同時に召喚する場合（例: [[Border Militia]]）に全員分を支払えなければ、どれについて支払うかを選べます。支払えなかったものは召喚されません。\nこの効果は、唱えずに召喚されるオーディナリーのトークン・ミニオン（例: スケルトン、蛙、歩兵）にも、通常どおり唱えるオーディナリーのミニオン（例: [[Apprentice Wizard]]）にも適用されます。",
+        "q": "[[Mock Court]]の追加コストはどのように機能しますか？"
       }
     },
     "monstermorphosis": {
       "official|If I transform an enemy minion into a Monster from my hand or Horrible Hybrids from my collection, who controls it?": {
-        "a": "変身してもミニオンのコントローラーは変わらないので、その場合は相手がコントロールします。カードは常にオーナーの墓地へ行くので、そのミニオンが死亡したときはあなたの墓地へ行きます。",
+        "a": "変身してもミニオンのコントローラーは変わらないので、その場合は相手がコントロールします。カードは常に持ち主の墓地へ行くので、そのミニオンが死亡したときはあなたの墓地へ行きます。",
         "q": "敵のミニオンを、手札のモンスターやコレクションの[[Horrible Hybrids]]に変身させた場合、コントロールするのは誰ですか？"
       }
     },
@@ -3112,7 +3114,7 @@
         "q": "カードを引く・捨てる・手札関連の効果は、モーガナの手札に作用しますか？"
       },
       "judge|Do the three spells she draws count as drawn cards for me?": {
-        "a": "はい。あなたがカードを引いたことになります（例: [[Queen of Midland]]、[[Chains of Prometheus]]）。ただし、それらは手札とは別の領域（モーガナの手札）に置かれます。[[Queen of Midland]]が見るのはドロー後のあなたの手札の枚数で、モーガナの手札ではありません。",
+        "a": "はい。あなたがカードを引いたことになります（例: [[Queen of Midland]]、[[Chains of Prometheus]]）。ただし、それらは手札とは別のゾーン（モーガナの手札）に置かれます。[[Queen of Midland]]が見るのはドロー後のあなたの手札の枚数で、モーガナの手札ではありません。",
         "q": "彼女が引く3枚の呪文は、私が引いたカードとして数えますか？"
       },
       "judge|Does Morgana le Fay lose stealth when casting spells?": {
@@ -3128,11 +3130,11 @@
         "q": "モーガナがレルムを離れたら、彼女の手札の呪文はどうなりますか？"
       },
       "official|What happens my opponent gains control of my Morgana?": {
-        "a": "相手は、マナと適切なスレッショルドがあるかぎり、モーガナに手札の呪文を唱えさせることができます。あなたはコントロールしていない間、彼女の手札を見られません。\nモーガナの手札からプレイされたカードがレルムを離れるときは、誰が彼女をコントロールしていようと、常にオーナーの墓地・手札・デッキへ戻ることを忘れないでください。",
+        "a": "相手は、マナと適切なスレッショルドがあるかぎり、モーガナに手札の呪文を唱えさせることができます。あなたはコントロールしていない間、彼女の手札を見られません。\nモーガナの手札からプレイされたカードがレルムを離れるときは、誰が彼女をコントロールしていようと、常に持ち主の墓地・手札・デッキへ戻ることを忘れないでください。",
         "q": "相手が私の[[Morgana le Fay]]のコントロールを得たらどうなりますか？"
       },
       "official|What happens to Morgana's hand if she is silenced or disabled?": {
-        "a": "彼女の手札は独自の領域として存在し続けますが、スペルキャスター能力がない間、モーガナはそれらの呪文を唱えられません。モーガナをコントロールしているのはあなたなので、カードを見ることは引き続きできます。",
+        "a": "彼女の手札は独自のゾーンとして存在し続けますが、スペルキャスター能力がない間、モーガナはそれらの呪文を唱えられません。モーガナをコントロールしているのはあなたなので、カードを見ることは引き続きできます。",
         "q": "モーガナが沈黙または無力化されたら、彼女の手札はどうなりますか？"
       },
       "official|What happens to Morgana's hand if she is transformed into something else? A frog, for instance?!": {
@@ -3140,7 +3142,7 @@
         "q": "モーガナが何か別のもの — たとえばカエル！ — に変身したら、彼女の手札はどうなりますか？"
       },
       "official|Where do I keep Morgana's hand of cards?": {
-        "a": "写本室の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
+        "a": "写本室（Codex）の「それだけが唱えられる（Only It Can Cast）」の項を参照してください。",
         "q": "モーガナの手札はどこに置きますか？"
       }
     },
@@ -3156,7 +3158,7 @@
         "q": "逃げた結果、何らかの理由で聖域に到達できなかった場合でも、ワードは得られますか？"
       },
       "official|What path can I choose when resolving this ability?": {
-        "a": "Codexの「Moving to a Specific Location Via a Special Ability or Magic（特殊能力やマジックで特定の場所へ移動する）」を参照してください。",
+        "a": "写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」を参照してください。",
         "q": "この能力の解決時、どんな経路を選べますか？"
       },
       "official|When I flee, is it step by step movement or teleportation?": {
@@ -3204,7 +3206,7 @@
         "q": "あなたのミニオンが私の[[Mountain Pass]]にいます。私はそのサイトにミニオンを召喚できますか？"
       },
       "official|Your minion attacks my Mountain Pass. Can my adjacent minion defend?": {
-        "a": "いいえ。そのミニオンがサイトの地表から出発し、エアボーン能力を持っていない前提です。\nすでに別のミニオンが[[Mountain Pass]]の地表にいるため、その場所はあなたのミニオンの移動範囲に含まれず、防御能力を起動できません。",
+        "a": "いいえ。防御に入ろうとするミニオンが移動開始時にサイトの地表にいて、エアボーン（飛行）能力を持っていない場合は、防御できません。\nすでに別のミニオンが[[Mountain Pass]]の地表にいるため、その場所は防御に入ろうとするミニオンの移動範囲に含まれず、防御能力を起動できません。",
         "q": "あなたのミニオンが私の[[Mountain Pass]]を攻撃しました。隣接する私のミニオンは防御できますか？"
       }
     },
@@ -3227,7 +3229,7 @@
     "occult_ritual": {
       "official|The alpha, alternate art version of this card from the pledge pack has the text \"Spellcaster nearby,\" while the regular foil and non-foil versions have the text \"Spellcaster here.\" which is correct?": {
         "a": "通常版が正しいです。テキストは「Spellcaster here」であるべきです。別アート版は大会での使用は認められません。",
-        "q": "プレッジパックのアルファ版・別アート版には「Spellcaster nearby」、通常のフォイル/非フォイル版には「Spellcaster here」とあります。どちらが正しいですか？"
+        "q": "プレッジパックのアルファ版・別アート版には「近隣にスペルキャスター（Spellcaster nearby）」、通常のフォイル/非フォイル版には「ここにスペルキャスター（Spellcaster here）」とあります。どちらが正しいですか？"
       }
     },
     "old_salt_anchorman": {
@@ -3261,21 +3263,13 @@
       }
     },
     "orb_of_baal_berith": {
-      "judge|Can I target the same site twice when casting two copies of Craterize with Orb?": {
-        "a": "厳密には可能ですが、ご注意を！ 最初の[[Craterize]]が対象のサイトの破壊に成功すると、2つ目の[[Craterize]]はレルム内に適正な対象を失って不発となり、その[[Craterize]]からのダメージはなくなります。",
-        "q": "オーブで[[Craterize]]を2回分唱えるとき、同じサイトを2回対象にできますか？"
-      },
       "judge|If I cast a spell with Orb, does that count toward Sparkmage’s ability?": {
         "a": "いいえ。[[Sparkmage]]の公式FAQにあるとおり、その能力に数えるには[[Sparkmage]]自身が呪文の唱え手でなければなりません。",
         "q": "オーブで呪文を唱えた場合、それは[[Sparkmage]]の能力に数えられますか？"
       },
       "judge|If I cast a spell with X in the cost, while near Orb of Ba'al Berith, does the copy have the same value of X or is it 0?": {
         "a": "オーブはコストの支払い後に呪文をコピーするので、Xは確定した値です。元の呪文のXが何であれ、オーブはそれをコピーします。",
-        "q": "[[Orb of Ba'al Berith]]の近くでコストにXを含む呪文を唱えた場合、コピーのXは同じ値ですか、それとも0ですか？"
-      },
-      "judge|If I cast a spell with an additional cost (e.g. Craterize), do I need to pay the additional cost again?": {
-        "a": "いいえ。オーブはコストの支払い後に呪文をコピーします。",
-        "q": "追加コストのある呪文（例: [[Craterize]]）を唱えた場合、追加コストをもう一度支払う必要はありますか？"
+        "q": "[[Orb of Ba'al Berith]]の近隣でコストにXを含む呪文を唱えた場合、コピーのXは同じ値ですか、それとも0ですか？"
       },
       "official|Can I target the same site twice when casting two copies of Craterize with Orb?": {
         "a": "厳密には可能ですが、ご注意を！ 最初の[[Craterize]]が対象のサイトの破壊に成功すると、2つ目の[[Craterize]]はレルム内に適正な対象を失って不発となり、そのコピーからのダメージはなくなります。",
@@ -3299,28 +3293,32 @@
       }
     },
     "order_of_the_white_wing": {
+      "official|If Order of the White Wing is summoned along with other minions simultaneously (e.g. Boneyard, Golden Dawn, etc.), what happens?": {
+        "a": "同時に召喚されたすべてのミニオンは、問題なくレルムに入ります。[[Order of the White Wing]]の能力は、これがレルムに入ってからのみ適用されます。",
+        "q": "[[Order of the White Wing]]が他のミニオンと同時に召喚された場合（例: [[Boneyard]]、[[Golden Dawn]]など）、どうなりますか？"
+      },
       "official|Does the minion that's being summoned from elsewhere enter the realm for a moment before it's banished?": {
         "a": "いいえ。一切レルムに入りません。たとえばジェネシスは誘発せず、ランスも得ず、[[Mariner's Curse]]も誘発しません。これは置換効果なので、実際にはまったくレルムに入らないのです。",
         "q": "別の場所から召喚されるミニオンは、追放される前に一瞬レルムに入りますか？"
       },
       "official|Does this prevent minions from being cast from other \"hand\" zones (e.g. Morgana le Fay, or an Omphalos)?": {
         "a": "はい。[[Order of the White Wing]]は、プレイヤーの手札から直接以外のあらゆる場所からのミニオンの召喚を防ぎます。",
-        "q": "これは、他の「手札」領域（例: [[Morgana le Fay]]やオムパロス）からミニオンが唱えられるのも防ぎますか？"
+        "q": "これは、他の「手札」ゾーン（例: [[Morgana le Fay]]やオムパロス）からミニオンが唱えられるのも防ぎますか？"
       }
     },
     "ormund_harpooneers": {
       "official|Does the target need to be in the same region as the Harpooneers?": {
-        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、[[Ormund Harpooneers]]はどの領域（地表・地下・水中・虚空）にいてもかまいません。ハープーン兵に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それはハープーン兵の場所へ引き寄せられます。",
-        "q": "対象は[[Ormund Harpooneers]]と同じ領域にいなければなりませんか？"
+        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、[[Ormund Harpooneers]]はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。ハープーン兵に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それはハープーン兵の場所へ引き寄せられます。",
+        "q": "対象は[[Ormund Harpooneers]]と同じリージョンにいなければなりませんか？"
       },
       "official|Does the “adjacent Water site” need to be in the same region as the Harpooneers?": {
-        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトはハープーン兵と同じ領域にある必要はありません。",
-        "q": "「隣接する水のサイト」は、[[Ormund Harpooneers]]と同じ領域になければなりませんか？"
+        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトはハープーン兵と同じリージョンにある必要はありません。",
+        "q": "「隣接する水のサイト」は、[[Ormund Harpooneers]]と同じリージョンになければなりませんか？"
       }
     },
     "orpheus_crossing": {
       "official|On my turn when I go to Death's Door, can I still take damage and lose life?": {
-        "a": "はい。ダメージを受けたことでゲームに敗北することはありませんが、ダメージやライフの喪失は、可能なかぎりライフ合計を減らします。詳しくは「Death's Door（死の淵）」を参照してください。",
+        "a": "はい。ダメージを受けたことでゲームに敗北することはありませんが、ダメージやライフの喪失は、可能なかぎりライフ合計を減らします。詳しくは写本室（Codex）の「死の淵（Death's Door）」を参照してください。",
         "q": "自分のターンに死の淵（デスズ・ドア）に至ったあとも、ダメージを受けたりライフを失ったりしますか？"
       }
     },
@@ -3328,6 +3326,12 @@
       "judge|What is royalty?": {
         "a": "名前にKing・Queen・Prince・Princessを含むミニオンのことです。",
         "q": "王族（royalty）とは何ですか？"
+      }
+    },
+    "overflowing_court": {
+      "official|Does Overflowing Court disable other Overflowing Courts? Other cards with \"Court\" in the title?": {
+        "a": "はい。英語のカード名に独立した語として「Court」を含むカードはすべて無力化されます。たとえば[[Mock Court]]と[[Court Jester]]は無力化されますが、[[Courtesan Thaïs]]はされません。",
+        "q": "[[Overflowing Court]]は他の[[Overflowing Court]]も無力化しますか？ カード名に「Court」を含む他のカードはどうですか？"
       }
     },
     "pact_with_the_devil": {
@@ -3358,10 +3362,6 @@
       "judge|Can Pathfinder include an unlimited number of copies of the draft sites like Valley, Spire, Wasteland, and Stream?": {
         "a": "いいえ。[[Pathfinder]]の制限は依然として適用されます。",
         "q": "[[Pathfinder]]は、Valley・Spire・Wasteland・Streamのようなドラフト用サイトを無制限に入れられますか？"
-      },
-      "judge|How does Mirage's ability work with Pathfinder?": {
-        "a": "この2つの能力は併用できません。",
-        "q": "[[Mirage]]の能力は[[Pathfinder]]とはどう機能しますか？"
       },
       "judge|If a Pathfinder is under the effect of Quagmire, can it still activate its site placement ability?": {
         "a": "はい。ただし、サイトが場に出てもそこへは移動しません。",
@@ -3396,7 +3396,7 @@
         "q": "アルファ版とベータ版でテキストが違います。どちらを使うべきですか？"
       },
       "official|What happens if I try to use Mirage's alternate play text when it's played via Pathfinder?": {
-        "a": "[[Pathfinder]]の能力を使う場合、サイトを公開してから隣接する瓦礫または虚空にプレイします（その後[[Pathfinder]]がそこへ移動します）。[[Mirage]]の能力は[[Pathfinder]]と組み合わせられません。",
+        "a": "隣接するサイトの持ち主があなたであり、かつあなたがそれをコントロールしているなら、[[Mirage]]の能力は[[Pathfinder]]によるプレイ制限を変更し、そのサイトを手札に戻せるようにします。",
         "q": "[[Pathfinder]]経由でプレイされた[[Mirage]]の代替プレイテキストを使おうとしたらどうなりますか？"
       },
       "official|What happens if I try to use Rift Valley's ability when it's played via Pathfinder?": {
@@ -3424,7 +3424,7 @@
         "q": "[[Peace Offering]]がレルムを離れても、休戦は続きますか？"
       },
       "official|If some effect prevents me from giving the Peace Offering to the other player (i.e. King Arthur), can they attack me on their next turn?": {
-        "a": "いいえ、攻撃できます（保護は発生しません）。相手が一瞬でも[[Peace Offering]]をコントロールする状態にならなかったなら、渡すことに成功しておらず、相手は自由にあなたを攻撃できます。",
+        "a": "はい。能力の解決と常在型効果の適用後に相手が[[Peace Offering]]をコントロールしていなければ、相手へ渡すことには成功していません。そのため、相手は次のターンにあなたを自由に攻撃できます。",
         "q": "何らかの効果（例: [[King Arthur]]）で[[Peace Offering]]を相手に渡せなかった場合、相手は次のターンに私を攻撃できますか？"
       },
       "official|What does \"can't attack you\" actually mean?": {
@@ -3458,8 +3458,8 @@
         "q": "同じターンに、敵に烙印を押し、かつ最も近い邪悪へ向かってステップできますか？"
       },
       "official|Can I brand an enemy in a different region, or one with Stealth?": {
-        "a": "はい！ 烙印は対象を取らないので、別の領域のミニオンやステルス持ちも選べます。ミニオンが邪悪であることを参照する他のカードとうまく組み合わせられます！",
-        "q": "別の領域にいる敵や、ステルスを持つ敵に烙印を押せますか？"
+        "a": "はい！ 烙印は対象を取らないので、別のリージョンのミニオンやステルス持ちも選べます。ミニオンが邪悪であることを参照する他のカードとうまく組み合わせられます！",
+        "q": "別のリージョンにいる敵や、ステルスを持つ敵に烙印を押せますか？"
       },
       "official|Can I brand an enemy who can't be modified, e.g. Monks of Kobalsa?": {
         "a": "はい、押せますし、あなたのカードは彼らを邪悪として扱います。実際に修正されたり邪悪になったりしているわけではなく、あなたのカードがそう扱うだけです。",
@@ -3470,8 +3470,8 @@
         "q": "相手のワードされたミニオンに邪悪の烙印を押した場合、ワードは失われますか？"
       },
       "official|When determining \"closest Evil,\" do I only consider units in my region?": {
-        "a": "はい！ 詳しくは「Closest（最も近い）」を参照してください。",
-        "q": "「最も近い邪悪（closest Evil）」を決めるとき、自分の領域のユニットだけを考えますか？"
+        "a": "はい！ 詳しくは写本室（Codex）の「最も近い（Closest）」を参照してください。",
+        "q": "「最も近い邪悪（closest Evil）」を決めるとき、自分のリージョンのユニットだけを考えますか？"
       }
     },
     "phantasmal_shade": {
@@ -3500,8 +3500,8 @@
     },
     "philosophers_stone": {
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
-        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
+        "a": "複数のエレメント記号を持つカードは、それらすべての親和性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーをストーンで唱える場合、コストは3マナですか、それとも0マナですか？"
       },
       "official|If I have two (e.g. via Replication), do the effects stack?": {
         "a": "はい。",
@@ -3535,16 +3535,16 @@
     "pith_imp": {
       "official|If Pith Imp somehow gains Spellcaster, can it pretty please cast the spell it stole?": {
         "a": "はい、それは確かに楽しそうですね！",
-        "q": "[[Pith Imp]]が何らかの方法でスペルキャスターを得たら、どうかどうか、盗んだ呪文を唱えさせてもらえませんか？"
+        "q": "[[Pith Imp]]が何らかの方法でスペルキャスターを得たら、盗んだ呪文を唱えさせてもらえませんか？"
       },
       "official|Where does the stolen spell go?": {
-        "a": "[[Pith Imp]]がその呪文を運んでいるかのような、別の領域へ行きます。あなたの手札には入りません。あなたはその呪文を見てよく、相手は見られません（ただし盗まれる瞬間に相手はその呪文を見ることになります）。",
+        "a": "[[Pith Imp]]がその呪文を運んでいるかのような、別のゾーンへ行きます。あなたの手札には入りません。あなたはその呪文を見てよく、相手は見られません（ただし盗まれる瞬間に相手はその呪文を見ることになります）。",
         "q": "盗まれた呪文はどこへ行きますか？"
       }
     },
     "plague_of_frogs": {
       "official|Where can I summon the frogs?": {
-        "a": "それぞれを、最大限に鬱陶しくなる場所へ召喚できます。",
+        "a": "レルム内の任意の場所1つを選び、7体すべての蛙をその場所に召喚します。",
         "q": "カエルはどこに召喚できますか？"
       }
     },
@@ -3608,8 +3608,8 @@
     },
     "queen_guinevere": {
       "official|How does the Philosopher's Stone work with multi-element cards, such as King Arthur and Queen Guienevere? Would King Arthur, who requires 4 mana, cost 3 or 0 Mana to cast using the Stone?": {
-        "a": "複数のエレメント記号を持つカードは、それらすべての元素の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
-        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーは、ストーンを使うと3マナですか、0マナですか？"
+        "a": "複数のエレメント記号を持つカードは、それらすべての親和性の呪文として数えられます。つまりアーサーとグィネヴィアはそれぞれ、風の呪文であり、土の呪文であり、火の呪文であり、水の呪文でもあります（すべて同時に）。しかし唱えるのはあくまで1つの呪文としてです。したがって、アーサーがそのスペルキャスターのそのターン最初の呪文なら、ストーンの割引は1マナで、アーサーは3マナになります。\nこれは同時に、アーサーをプレイするとそのスペルキャスターのそのターンのストーンを使い切ることも意味します。彼は同時に、このターン最初の風・土・火・水の呪文だからです。そのスペルキャスターはそのターン、ストーンを使い続けることはできません。",
+        "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーをストーンで唱える場合、コストは3マナですか、それとも0マナですか？"
       }
     },
     "questing_beast": {
@@ -3624,7 +3624,7 @@
         "q": "どちらの墓地からでもミニオンを召喚できますか？"
       },
       "judge|Who controls the minion after it's summoned?": {
-        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。オーナーではありません。",
+        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。持ち主ではありません。",
         "q": "召喚されたミニオンは、誰がコントロールしますか？"
       },
       "official|Where can I summon the raised minion?": {
@@ -3654,14 +3654,14 @@
         "q": "アーティファクトまたは所持者のどちらかが引き寄せられない場合、これはどう解決しますか？"
       },
       "official|What does \"Artifacts can't be carried here\" mean?": {
-        "a": "[[Red Rock of Ravannis]]と場所を共有するアーティファクトは、所持されなくなります。降ろされるのではなく、単に所持状態でなくなるだけなので、「降ろせない」アーティファクトにもこの効果は適用されます。これらのアーティファクトは、拾い上げ（Pick Up）能力の対象にもなりません。",
-        "q": "「ここではアーティファクトは所持されない（Artifacts can't be carried here）」とはどういう意味ですか？"
+        "a": "[[Red Rock of Ravannis]]と場所を共有するアーティファクトは、運ばれなくなります。降ろされるのではなく、単に運ばれていない状態になるだけなので、「降ろせない」アーティファクトにもこの効果は適用されます。これらのアーティファクトは、拾い上げ（Pick Up）能力の対象にもなりません。",
+        "q": "「ここではアーティファクトを運べない（Artifacts can't be carried here）」とはどういう意味ですか？"
       }
     },
     "redbreast_robin": {
       "judge|If Redbreast Robin is carrying a Poisonous Dagger, is the end of turn damage Lethal?": {
-        "a": "はい。ダメージの発生源は[[Redbreast Robin]]であり、[[Poisonous Dagger]]は所持者にリーサル能力を与えるからです。",
-        "q": "[[Redbreast Robin]]が[[Poisonous Dagger]]を運んでいる場合、ターン終了時のダメージはリーサルですか？"
+        "a": "はい。ダメージの発生源は[[Redbreast Robin]]であり、[[Poisonous Dagger]]は所持者にリーサル（致死）能力を与えるからです。",
+        "q": "[[Redbreast Robin]]が[[Poisonous Dagger]]を運んでいる場合、ターン終了時のダメージはリーサル（致死）ですか？"
       }
     },
     "redmane_hyena": {
@@ -3684,7 +3684,7 @@
     },
     "replication": {
       "judge|How does Replication work, exactly?": {
-        "a": "「唱え手が所持しているアーティファクトのトークン・コピー1つを、任意の場所に設置する」として扱ってください。\n新しいアーティファクトは設置時点では所持されていませんが、通常どおり拾い上げ（Pick Up）能力を使えます。",
+        "a": "「唱え手が運んでいるアーティファクトのトークン・コピー1つを、任意の場所に設置する」として扱ってください。\n新しいアーティファクトは設置時点ではどのユニットにも運ばれていませんが、通常どおり拾い上げ（Pick Up）能力を使えます。",
         "q": "[[Replication]]は正確にはどう機能しますか？"
       },
       "official|Where can I conjure the copy?": {
@@ -3694,15 +3694,15 @@
     },
     "rhongomyniad": {
       "judge|How does the throw effect function?": {
-        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、領域の境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Rhongomyniad]]のテキストは次のように扱ってください:\n所持者は先制でストライクし、「タップ → [[Rhongomyniad]]を貫通する投射物として投げる。命中した各ユニットに3点のダメージを与える」を持つ。\n投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも所持されていません。",
+        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Rhongomyniad]]のテキストは次のように扱ってください:\n所持者は先制でストライクし、「タップ → [[Rhongomyniad]]を貫通する投射物として投げる。命中した各ユニットに3点のダメージを与える」を持つ。\n投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも運ばれていません。",
         "q": "投擲の効果はどう機能しますか？"
       },
       "judge|If I choose a direction to throw it that would immediately change regions (e.g. toward the void) and thus it won’t leave my location, can I still hit an enemy at my location?": {
         "a": "はい。上記のエラッタによります。その後、[[Rhongomyniad]]をすぐに拾い直すこともできます。",
-        "q": "投げる方向として、即座に領域が変わる方向（例: 虚空に向かって）を選んだ場合、槍は自分の場所を離れませんが、それでも自分の場所の敵に命中させられますか？"
+        "q": "投げる方向として、即座にリージョンが変わる方向（例: 虚空に向かって）を選んだ場合、槍は自分の場所を離れませんが、それでも自分の場所の敵に命中させられますか？"
       },
       "official|How does this work?": {
-        "a": "投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも所持されていません。",
+        "a": "投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも運ばれていません。",
         "q": "これはどう機能しますか？"
       },
       "official|What happens when two things that strike first clash at the same time?": {
@@ -3783,7 +3783,7 @@
       },
       "official|If River of Flame casts a spell, must you pick a region that it's casting from?": {
         "a": "はい。呪文を唱えるときに地表か地下（水没しているなら水中）を選びます。",
-        "q": "[[River of Flame]]が呪文を唱えるとき、どの領域から唱えるかを選ばなければなりませんか？"
+        "q": "[[River of Flame]]が呪文を唱えるとき、どのリージョンから唱えるかを選ばなければなりませんか？"
       }
     },
     "river_rapids": {
@@ -3816,7 +3816,7 @@
         "q": "[[Magellan Globe]]が場にあって、横列や縦列を一周するように岩を押したらどうなりますか？"
       },
       "official|What path does the boulder take?": {
-        "a": "選ばれた基本方位へ、同じ領域内に留まりながら進みます。",
+        "a": "選ばれた基本方位へ、同じリージョン内に留まりながら進みます。",
         "q": "岩はどんな経路を進みますか？"
       }
     },
@@ -3880,12 +3880,12 @@
         "q": "押すカードごとに別の方向を選べますか？"
       },
       "official|Can I push an oversized unit?": {
-        "a": "はい。基本方位を選び、ユニットのどの部分も領域が変わらないかぎり、その方向へ特大ユニットを1ステップ押します。",
+        "a": "はい。基本方位を選び、ユニットのどの部分もリージョンが変わらないかぎり、その方向へ特大ユニットを1ステップ押します。",
         "q": "特大ユニットを押せますか？"
       },
       "official|Can I push something into another region?": {
-        "a": "いいえ。「押す（push）」は強制移動の一種であり、特に明記されていないかぎり、領域を変えさせることはできません。",
-        "q": "何かを別の領域へ押し込めますか？"
+        "a": "いいえ。「押す（push）」は強制移動の一種であり、特に明記されていないかぎり、リージョンを変えさせることはできません。",
+        "q": "何かを別のリージョンへ押し込めますか？"
       },
       "official|Does the site itself get pushed?": {
         "a": "いいえ。",
@@ -3934,7 +3934,7 @@
         "q": "[[Sea Raider]]で攻撃して2体のミニオンが防御し、その両方が攻撃の結果死亡した場合、相手が呪文書から捨てるのは1枚ですか、2枚ですか？"
       },
       "official|If I declare an attack against one target, but then a different enemy defends, does that satisfy this ability?": {
-        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットが撃破の手柄を得たのであれば、この能力の条件は満たされます。",
+        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力の条件は満たされます。",
         "q": "ある対象への攻撃を宣言したものの、別の敵が防御した場合、この能力の条件を満たしますか？"
       },
       "official|If Sea Raider attacks a 3 power minion, killing it but also dying in the process, does the Raider have time to use their ability before they die?": {
@@ -3944,7 +3944,7 @@
     },
     "searing_truth": {
       "official|Does this actually target the Avatar?": {
-        "a": "はい。相手がこれを唱えてあなたのワードされたアバターを対象にしたなら、あなたはカードを引かず、ワードが破れます。通常の対象ルールが適用されます（例: 虚空や地下・水中にいるスペルキャスターは、同じ領域にいないアバターをこのマジックの対象にできません）。",
+        "a": "はい。相手がこれを唱えてあなたのワードされたアバターを対象にしたなら、あなたはカードを引かず、ワードが破れます。通常の対象ルールが適用されます（例: 虚空や下層にいるスペルキャスターは、同じリージョンにいないアバターをこのマジックの対象にできません）。",
         "q": "これは実際にアバターを対象に取りますか？"
       },
       "official|How does this interact with damage prevention effects?": {
@@ -4014,8 +4014,8 @@
     },
     "shrike_orchard": {
       "official|Can this target sub-surface minions?": {
-        "a": "はい。ミニオンはこのサイトの近隣にいればよく、つまりサイトのいずれかの場所の近くにいればよいのです。したがって地下（あるいは[[Shrike Orchard]]が水没していれば水中）のミニオンも、この効果の対象にできます。",
-        "q": "これは地下・水中のミニオンを対象にできますか？"
+        "a": "はい。ミニオンはこのサイトの近隣にいればよく、つまりサイトのいずれかの場所の近隣にいればよいのです。したがって地下（あるいは[[Shrike Orchard]]が水没していれば水中）のミニオンも、この効果の対象にできます。",
+        "q": "これは下層のミニオンを対象にできますか？"
       }
     },
     "siege_ballista": {
@@ -4126,7 +4126,7 @@
     },
     "sisters_of_silence": {
       "judge|If Sisters of Silence end up somewhere they’ll die (e.g. the void from Chaos Twister, underground from Bury), will their passive ability apply before they go to the cemetery?": {
-        "a": "はい。新しい場所に到着した瞬間、（あれば）デスライトの解決やミニオンの墓地への移動より前に、常在型の効果が適用されます。したがって、ヴォイドウォークのミニオンの近隣の虚空に行き着いたなら、そのミニオンはヴォイドウォークを失い、シスターズとともに死亡します。バロウのミニオンの近くの地下に行き着いた場合も同様に、そのミニオンはバロウを失い、シスターズとともに死亡します。",
+        "a": "はい。新しい場所に到着した瞬間、（あれば）デスライトの解決やミニオンの墓地への移動より前に、常在型の効果が適用されます。したがって、ヴォイドウォークのミニオンの近隣の虚空に行き着いたなら、そのミニオンはヴォイドウォークを失い、シスターズとともに死亡します。バロウのミニオンの近隣の地下に行き着いた場合も同様に、そのミニオンはバロウを失い、シスターズとともに死亡します。",
         "q": "[[Sisters of Silence]]が死亡する場所（例: [[Chaos Twister]]で虚空、[[Bury]]で地下）に行き着いた場合、墓地へ行く前に常在型能力は適用されますか？"
       }
     },
@@ -4154,7 +4154,7 @@
     },
     "slumbering_giantess": {
       "judge|How does first strike (e.g. Lance, Albespine Pikemen) interact with Slumbering Giantess in a fight?": {
-        "a": "巨人の女は先にダメージを受け、それで目を覚まします。そのストライクで死亡せず、かつ相手もランスなどで先制ストライクをしていないかぎり、反撃のストライクができます。",
+        "a": "女巨人は先にダメージを受け、それによって目を覚まします。そのストライクで死亡せず、かつ女巨人自身もランスによって先制ストライクする状態ではないなら、その後ストライクを返せます。",
         "q": "先制のストライク（例: ランス、[[Albespine Pikemen]]）は、戦闘において[[Slumbering Giantess]]とどう相互作用しますか？"
       },
       "official|If attacked by a minion that strikes first, does the Giantess end up striking back?": {
@@ -4168,7 +4168,7 @@
         "q": "[[Smokestacks of Gnaak]]はジェネシス能力を打ち消しますか？"
       },
       "official|How do Smokestacks of Gnaak and Mirror Realm interact?": {
-        "a": "[[Mirror Realm]]がレルムに入る時点で、すでにコピーになっています。したがって近隣のサイトをコピーでき、その直後にコピーしたサイトの能力をすべて失います（能力なしのコピーのままです）。細かい話はCodexの「Apply Ongoing Effects In Order（継続的な効果を順に適用する）」を参照してください。",
+        "a": "[[Mirror Realm]]がレルムに入る時点で、すでにコピーになっています。したがって近隣のサイトをコピーでき、その直後にコピーしたサイトの能力をすべて失います（能力なしのコピーのままです）。細かい話は写本室（Codex）の「継続効果の順序付け — レイヤーシステム（Ordering Ongoing Effects - The Layer System）」を参照してください。",
         "q": "[[Smokestacks of Gnaak]]と[[Mirror Realm]]はどう相互作用しますか？"
       },
       "official|How do Smokestacks of Gnaak and Rift Valley interact?": {
@@ -4176,7 +4176,7 @@
         "q": "[[Smokestacks of Gnaak]]と[[Rift Valley]]はどう相互作用しますか？"
       },
       "official|What happens if there are two Smokestacks of Gnaak nearby each other?": {
-        "a": "Codexの「Example - Two Smokestacks of Gnaak（例 - 2つのグナークの煙突）」を参照してください！",
+        "a": "写本室（Codex）の「例 — 2つの Smokestacks of Gnaak（Example - Two Smokestacks of Gnaak）」を参照してください！",
         "q": "[[Smokestacks of Gnaak]]が2つ、互いの近隣にあったらどうなりますか？"
       }
     },
@@ -4284,7 +4284,7 @@
     },
     "squeakers": {
       "judge|What happens if I can't legally summon Pigs of the Sounder to the site (e.g. Gnome Hollows)?": {
-        "a": "[[Pigs of the Sounder]]は召喚されず、他の公開されたカードと一緒にランダムな順でデッキの一番下に置かれます。",
+        "a": "[[Pigs of the Sounder]]は召喚されず、他の公開したカードと一緒に、ランダムな順で呪文書の一番下に置かれます。",
         "q": "そのサイトに[[Pigs of the Sounder]]を適正に召喚できない場合（例: [[Gnome Hollows]]）はどうなりますか？"
       }
     },
@@ -4340,12 +4340,12 @@
     },
     "sturmgeist": {
       "official|If the spellcaster dies before the spell they cast resolves, will their spell still resolve?": {
-        "a": "いいえ！ 呪文の解決前に唱え手が死んでいるなら、呪文はまったく解決されません。詳しくは「Source is No Longer in the Realm（発生源がレルムにいない場合）」を参照してください。",
+        "a": "いいえ！ 呪文の解決前に唱え手が死んでいるなら、呪文はまったく解決されません。詳しくは写本室（Codex）の「発生源がレルムに存在しない（Source is No Longer in the Realm）」を参照してください。",
         "q": "唱え手が、唱えた呪文の解決前に死亡した場合、その呪文は解決されますか？"
       },
       "official|What does \"closer\" mean?": {
-        "a": "通常の移動で踏み込める場所のうち、誘発の原因となった唱え手に最も近くなる場所を特定します。\nたとえば、[[Sturmgeist]]が場所S、スペルキャスターが場所Cにいるとします:\n[[Sturmgeist]]はエアボーン能力を持つため、1ステップでSからCへ到達できます。そうしなければならず、唱え手から0ステップの位置になります。AやBには移動できません。それらの場所は唱え手からまだ1ステップ離れており、0ステップより遠いからです。",
-        "q": "「より近く（closer）」とはどういう意味ですか？"
+        "a": "まず、[[Sturmgeist]]が通常の移動で1ステップ移動できる場所を確認します。その中で、この能力を誘発させた唱え手までのステップ数が最も少なくなる場所を特定します。\nたとえば、[[Sturmgeist]]が場所Sにいて、スペルキャスターが場所Cにいるとします。\n[[Sturmgeist]]はエアボーン（飛行）を持つため、SからCへ1ステップで移動できます。そのため、Cへ移動しなければなりません。移動後は唱え手と同じ場所にいるので、唱え手までの距離は0ステップになります。AやBでは唱え手までの距離が1ステップのままなので、この能力の移動先には選べません。",
+        "q": "「近づく（closer）」とは、どのように判定しますか？"
       },
       "official|What if the Magic is cast by something other than a unit?": {
         "a": "[[Sturmgeist]]が聞きつけるのは敵、つまりユニットが唱えた呪文だけです。アーティファクト（例: オムパロス）やサイト（例: [[River of Flame]]）が唱えた呪文では、この能力は誘発しません。",
@@ -4374,8 +4374,8 @@
     },
     "swap": {
       "official|Can this effect swap cards into different regions?": {
-        "a": "いいえ。入れ替える2枚の両方を対象に取り、対象は唱え手と同じ領域にいなければなりません。詳しくは「Casting Spells（呪文を唱える）」を参照してください。",
-        "q": "この効果でカードを別の領域へ入れ替えられますか？"
+        "a": "いいえ。入れ替える2枚の両方を対象に取り、対象は唱え手と同じリージョンにいなければなりません。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
+        "q": "この効果でカードを別のリージョンへ入れ替えられますか？"
       },
       "official|How exactly do I resolve a \"swap\" effect?": {
         "a": "2枚のカードが同時に互いの場所へテレポートします。どちらかの対象が対象に取れないかテレポートできない場合（例: [[Iron Man Talus]]）、どちらも移動しません。",
@@ -4386,12 +4386,12 @@
         "q": "一方の対象がミニオンなら、もう一方の対象はアーティファクトでもよいですか？ 逆も？"
       },
       "official|What if an oversized unit is involved?": {
-        "a": "特大ユニットが占める場所のうち1つを、もう一方のカードの行き先として選びます。詳しくは「Teleporting Oversized Units（特大ユニットのテレポート）」を参照してください。",
+        "a": "特大ユニットが占める場所のうち1つを、もう一方のカードの行き先として選びます。詳しくは写本室（Codex）の「特大ユニットのテレポート（Teleporting Oversized Units）」を参照してください。",
         "q": "特大ユニットが関わる場合は？"
       },
       "official|What if one or both of the swapped cards were being carried?": {
-        "a": "どちらかのカードがユニットに所持されていた場合、ゴールデンルールにより、そのユニットは入れ替わってきたアーティファクト/ミニオンを所持することになります。\nたとえば、所持された2つのアーティファクトが入れ替われば、それぞれの所持者は新しく入れ替わってきたアーティファクトを持つことになります（両者が同じ場所にいる場合も同様です）。\nミニオンとアーティファクトが入れ替わった場合、（新しい所持者がミニオンを運べないかぎり）ミニオンはおそらく即座に降ろされ、アーティファクトは（入れ替わったミニオンが入れ替え前に所持されていたのでないかぎり）所持されない状態になります。",
-        "q": "入れ替わる2枚のうち、片方または両方が所持されていた場合は？"
+        "a": "どちらかのカードがユニットに運ばれていた場合、ゴールデンルールにより、そのユニットは入れ替わってきたアーティファクト/ミニオンを運ぶことになります。\nたとえば、運ばれている2つのアーティファクトが入れ替われば、それぞれの所持者は新しく入れ替わってきたアーティファクトを運ぶことになります（両者が同じ場所にいる場合も同様です）。\nミニオンとアーティファクトが入れ替わった場合、（新しい所持者がミニオンを運べないかぎり）ミニオンはおそらく即座に降ろされ、アーティファクトは（入れ替わったミニオンが入れ替え前に運ばれていたのでないかぎり）運ばれていない状態になります。",
+        "q": "入れ替わる2枚のうち、片方または両方が運ばれていた場合は？"
       }
     },
     "symmetric_suffering": {
@@ -4417,14 +4417,6 @@
       }
     },
     "templar": {
-      "judge|If my Apprentice Wizard casts a Knight, then later in the turn my Templar casts a Knight, do I still get the discount?": {
-        "a": "はい。「あなたの[[Templar]]が各ターンに唱える最初のKnight・Sir・Dameのミニオン呪文」だからです。",
-        "q": "[[Apprentice Wizard]]がナイトを唱え、その後同じターンに[[Templar]]がナイトを唱えた場合でも、割引は受けられますか？"
-      },
-      "judge|Must the Templar be the spellcaster to use its ability?": {
-        "a": "はい（[[Sparkmage]]のFAQと同様です）。",
-        "q": "この能力を使うには、[[Templar]]自身がスペルキャスター（唱え手）でなければなりませんか？"
-      },
       "official|Can any of my spellcasters cast a spell and still benefit from my avatar's ability?": {
         "a": "はい！ あなたがそのスペルキャスターをコントロールしているかぎり、ゲームはそれを「あなた」（プレイヤー）が唱えた呪文と見なします。",
         "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
@@ -4451,7 +4443,7 @@
     "the_colour_out_of_space": {
       "official|If it’s not adjacent to void and is the target of a flood, does it still gain water affinity?": {
         "a": "はい。このサイトは通常は親和性を提供しませんが、何らかの形で修正されている（例: [[Flood]]）なら提供します。",
-        "q": "虚空に隣接しておらず、洪水（flood）の対象になった場合、それでも水の親和性を得ますか？"
+        "q": "虚空に隣接しておらず、水没効果の対象になった場合、それでも水の親和性を得ますか？"
       },
       "official|If it’s not adjacent to void and is within Abundance, does it still gain extra mana?": {
         "a": "はい。このサイトは通常はマナを提供しませんが、何らかの形で修正されている（例: [[Abundance]]）なら追加のマナを提供できます。0+1=1です。",
@@ -4466,7 +4458,7 @@
     },
     "the_flood": {
       "official|Can I choose to save a minion that has no minion type e.g. Maiden, Mother, Crone?": {
-        "a": "いいえ。[[Maiden, Mother, Crone]]はタイプを持たないため、水没から救えません。",
+        "a": "いいえ。[[Maiden, Mother, Crone]]はミニオンタイプを持たないため、潜水を免れさせることはできません。",
         "q": "ミニオンタイプを持たないミニオン（例: [[Maiden, Mother, Crone]]）を救うことを選べますか？"
       },
       "official|If Draconian Bonekite, Sir Pelleas, and Azuridge Caravan are all in the realm, can I choose to keep the Caravan and another minion?": {
@@ -4537,6 +4529,14 @@
       }
     },
     "the_inquisition": {
+      "official|What happens if I name this card when playing Feast for Crows?": {
+        "a": "探索効果を完了し、[[The Inquisition]]が誘発する前にそれを追放します。どうやら、相手に読まれていることもあるようです。",
+        "q": "[[Feast for Crows]]をプレイするときにこのカード名を指定したらどうなりますか？"
+      },
+      "official|What happens if my opponent searches my spellbook but doesn't see this card when searching?": {
+        "a": "これがあなたの呪文書にあり、相手が見ることのできる範囲にあったなら、[[The Inquisition]]は誘発して召喚されます！ このカードが呪文書にあることを相手に伝え、公開してください。\n相手が呪文書の一部だけを探している場合（例: [[Haystack]]）、[[The Inquisition]]が実際に探された範囲にあったときだけ誘発します。疑義があれば、ジャッジが[[The Inquisition]]がそこになかったことを確認できます。",
+        "q": "相手が私の呪文書を探したものの、探索中にこのカードを見つけなかった場合はどうなりますか？"
+      },
       "official|When does this ability trigger?": {
         "a": "効果によって手札や呪文書からこれを公開させられたとき、または相手があなたの呪文書を探すときです。",
         "q": "この能力はいつ誘発しますか？"
@@ -4556,12 +4556,12 @@
     },
     "the_ninth_legion": {
       "judge|Can I cast The Ninth Legion to a corner with a site controlled by my opponent?": {
-        "a": "いいえ。「隅に向けて唱えなければならない」は、通常の詠唱ルールに加わる追加の詠唱制限です。",
-        "q": "[[The Ninth Legion]]を、相手のコントロールするサイトのある隅に向けて唱えられますか？"
+        "a": "いいえ。「角に向けて唱えなければならない」は、通常の詠唱ルールに加わる追加の詠唱制限です。",
+        "q": "[[The Ninth Legion]]を、相手がコントロールするサイトのある角に唱えられますか？"
       },
       "judge|If Magellan Globe is in play, are there corners?": {
-        "a": "はい。隅は依然として存在し、マス1・5・16・20です。",
-        "q": "[[Magellan Globe]]が場にあるとき、隅は存在しますか？"
+        "a": "はい。角は依然として存在し、マス1・5・16・20です。",
+        "q": "[[Magellan Globe]]が場にあるとき、角は存在しますか？"
       }
     },
     "the_rack": {
@@ -4574,7 +4574,7 @@
         "q": "アバターを引き伸ばす？ からかってますよね（pulling my leg）！ これで私のアバターは特大ユニットになるんですか？"
       },
       "official|What happens if an oversized avatar is occupying a site, and then some effect moves that site?": {
-        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは「mandatory actions（強制の行動）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
+        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
         "q": "特大のアバターがサイトを占めているときに、何らかの効果でそのサイトが移動したらどうなりますか？"
       },
       "official|When an avatar is stretched by this effect, does it count as entering the new location?": {
@@ -4598,19 +4598,19 @@
         "q": "アバターはこのサイトに入れますか？"
       },
       "official|How does this site work?": {
-        "a": "このサイトにも地表と地下・水中がありますが、それらの場所は同時に虚空としても数えられます。つまり「地表+虚空」の場所と「地下+虚空」の場所を持ちます。\nヴォイドウォークを持たないミニオンがこのサイトに入ると、追放されます。\nたとえば、「地表+虚空」の場所から唱える呪文は、地表または虚空にあるカードを対象にできます。\n投射物は「地表+虚空」の場所から虚空へ飛んでいけます。",
+        "a": "このサイトにも地表と下層がありますが、それらの場所は同時に虚空としても数えられます。つまり「地表+虚空」の場所と「下層+虚空」の場所を持ちます。\nヴォイドウォークを持たないミニオンがこのサイトに入ると、追放されます。\nたとえば、「地表+虚空」の場所から唱える呪文は、地表または虚空にあるカードを対象にできます。\n投射物は「地表+虚空」の場所から虚空へ飛んでいけます。",
         "q": "このサイトはどう機能しますか？"
       },
       "official|Normally, when moving from void to a site, a minion (e.g. Hounds of Ondaros) can move directly to the surface OR subsurface. Therefore, when moving from the subsurface + void location of this site, can a minion like Hounds of Ondaros move directly to the surface of an adjacent site? Could they move from the surface + void location directly to the subsurface of an adjacent site?": {
         "a": "はい！ ヴォイドウォークを持つミニオンは、ヴォイドウォークの能力を使ってそのように移動し続けられます。",
-        "q": "通常、虚空からサイトへ移動するとき、ミニオン（例: [[Hounds of Ondaros]]）は地表または地下・水中へ直接移動できます。では、このサイトの「地下+虚空」の場所から、隣接するサイトの地表へ直接移動できますか？「地表+虚空」の場所から隣接するサイトの地下・水中へ直接移動できますか？"
+        "q": "通常、虚空からサイトへ移動するとき、ミニオン（例: [[Hounds of Ondaros]]）は地表または下層へ直接移動できます。では、このサイトの「下層+虚空」の場所から、隣接するサイトの地表へ直接移動できますか？「地表+虚空」の場所から隣接するサイトの下層へ直接移動できますか？"
       },
       "official|When my opponent casts a minion spell with Voidwalk, can they choose The Void as its summoning location, even though it's my site?": {
         "a": "はい！ ここは虚空なので、相手は望むならヴォイドウォークのミニオンをここに向けて唱えられます。",
         "q": "相手がヴォイドウォークを持つミニオン呪文を唱えるとき、[[The Void]]が私のサイトであっても、召喚場所として選べますか？"
       },
       "official|While my Avatar occupies the surface + void location of The Void site, can I target something occupying the underground + void location of The Void site?": {
-        "a": "はい！ 対象はスペルキャスターと同じ領域（虚空）にいるので、対象にできます！",
+        "a": "はい！ 対象はスペルキャスターと同じリージョン（虚空）にいるので、対象にできます！",
         "q": "私のアバターが[[The Void]]の「地表+虚空」の場所を占めている間、[[The Void]]の「地下+虚空」の場所を占める何かを対象にできますか？"
       }
     },
@@ -4696,6 +4696,12 @@
         "q": "「単独の敵（lone enemy）」とは何ですか？"
       }
     },
+    "troubled_town": {
+      "official|In limited play (i.e. Sealed and Draft), may I cast Serava Townsfolk and Eltham Townsfolk from outside my card pool?": {
+        "a": "はい！ それらのカードは名前に「Townsfolk」を含むため、リミテッド戦の「特定のカード名を指定するカード」のルールが適用されます。ドラフトやシールドでは、自分のコレクションに用意しておく必要はありません。ただし、唱えるにはスレッショルドの条件を満たす必要があります！",
+        "q": "リミテッド戦（シールドやドラフト）で、カードプール外から[[Serava Townsfolk]]と[[Eltham Townsfolk]]を唱えられますか？"
+      }
+    },
     "truesight_crossbow": {
       "official|Can the bearer shoot or defend against a stealthed enemy?": {
         "a": "はい。所持者はステルスのミニオンを呪文の対象にでき、投射物で撃て、攻撃や迎撃ができ、その攻撃に対する防御さえできます。",
@@ -4704,7 +4710,7 @@
     },
     "tufted_turtles": {
       "official|My Tufted Turtles attack (having taken no damage so far this turn), and then 3 Foot Soldiers defend. How much damage do my Tufted Turtles take?": {
-        "a": "0です。3体の[[Foot Soldiers]]はすべて同時に、つまり「最初」タイでダメージを与えたため、全部防がれるのです！",
+        "a": "0です。3体の[[Foot Soldiers]]は同時にダメージを与えるため、いずれも同率で「各ターン最初のダメージ」に当たり、すべて軽減されます。",
         "q": "私の[[Tufted Turtles]]が（このターンまだダメージを受けていない状態で）攻撃し、[[Foot Soldiers]]3体が防御しました。[[Tufted Turtles]]が受けるダメージはいくつですか？"
       }
     },
@@ -4728,7 +4734,7 @@
         "q": "どちらの墓地からでもミニオンを召喚できますか？"
       },
       "judge|Who controls the minion after it's summoned?": {
-        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。オーナーではありません。",
+        "a": "召喚されたミニオンのコントローラーは、その召喚効果をコントロールしていたプレイヤーです。持ち主ではありません。",
         "q": "召喚されたミニオンは、誰がコントロールしますか？"
       },
       "official|The alpha foil version has 3 air threshold and the normal version has 2 air threshold. Which is correct?": {
@@ -4748,11 +4754,11 @@
     },
     "undertow": {
       "judge|If I have a large unit partially in water, partially not, then I play Undertow, can I move the large unit?": {
-        "a": "いいえ。「水域の中に（within the body of water）」いなければならないため、[[Undertow]]では動かせません。",
-        "q": "大型ユニットの一部が水の中、一部が外にあるとき、[[Undertow]]をプレイしたらその大型ユニットを動かせますか？"
+        "a": "いいえ。ユニット全体が「水域内（within the body of water）」になければならないため、[[Undertow]]では動かせません。",
+        "q": "大型ユニットの一部が水域内、残りが水域外にあるとき、[[Undertow]]をプレイしたらその大型ユニットを動かせますか？"
       },
       "official|Does Undertow let you pull a unit underwater if they have submerge?": {
-        "a": "いいえ。これは「通常のステップ」であり、領域の変更を許さないからです。",
+        "a": "いいえ。これは「通常のステップ」であり、リージョンの変更を許さないからです。",
         "q": "[[Undertow]]は、サブマージを持つユニットを水中へ引き込めますか？"
       }
     },
@@ -4770,7 +4776,7 @@
     },
     "updraft_ridge": {
       "judge|Do I still get the benefit if I leave this site without starting atop it?": {
-        "a": "はい。「[[Updraft Ridge]]の上にいるエアボーンのミニオンは、自由に（コストなしで）離れられる」として扱ってください。",
+        "a": "はい。「[[Updraft Ridge]]の上にいるエアボーン（飛行）のミニオンは、ここから離れる方向へ自由に移動できる」として扱ってください。",
         "q": "このサイトの上から出発したのでなくても、離れるときに恩恵を受けられますか？"
       }
     },
@@ -4812,7 +4818,7 @@
     },
     "vaults_of_zul": {
       "official|Does Vaults of Zul trigger once per game, or once per game per avatar?": {
-        "a": "ゲーム全体で1回だけです。宝物庫を漁るのには時間がかかったのです！（もし2体のアバターが同時に停止したなら、両者は「最初」タイとなり、両方が宝物庫を漁ります。）",
+        "a": "ゲーム全体で1回だけです。宝物庫を漁るのには時間がかかったのです！（もし2体のアバターが同時に宝物庫で停止したなら、どちらも同率で「最初」と見なされ、両方が宝物庫を漁ります。）",
         "q": "[[Vaults of Zul]]はゲーム中1回誘発しますか？ それともアバターごとに1回ですか？"
       },
       "official|If I play this under my avatar, have I stopped there?": {
@@ -4830,7 +4836,7 @@
     },
     "vesper_swarm": {
       "official|What does it mean to \"fly to\" something? Does it have to be the shortest possible path or any valid path?": {
-        "a": "この種の能力の扱いは、「Moving to a Specific Location Via a Special Ability or Magic（特殊能力やマジックで特定の場所へ移動する）」の記事を参照してください。",
+        "a": "この種の能力の扱いは、写本室（Codex）の「特殊能力や魔法による特定の場所への移動（Moving to a Specific Location Via a Special Ability or Magic）」の記事を参照してください。",
         "q": "何かのもとへ「飛んでいく（fly to）」とはどういう意味ですか？ 最短経路でなければなりませんか、それとも適正な経路なら何でもよいですか？"
       }
     },
@@ -4850,27 +4856,19 @@
         "q": "サイト自身が破壊される場合でも、この効果は解決する時間がありますか？"
       },
       "official|If my Vindictive Nation is silenced by my opponent, e.g. Smokestacks of Gnaak, will my opponent lose life?": {
-        "a": "いいえ。[[Smokestacks of Gnaak]]が先に沈黙させるからです。[[Vindictive Nation]]の能力は実質的に誘発型能力であり、煙突は継続的な効果を生む常在型能力です。継続的な効果は、誘発型能力が誘発する前に適用されます。",
+        "a": "はい！ [[Smokestacks of Gnaak]]による沈黙は常在型能力として適用されますが、沈黙させるという行為そのものが[[Vindictive Nation]]の能力を誘発します。したがって、[[Vindictive Nation]]が沈黙する際にその能力が誘発します。詳しくは写本室（Codex）の「誘発型能力（Triggered Ability）」を参照してください。",
         "q": "私の[[Vindictive Nation]]が相手によって沈黙させられた場合（例: [[Smokestacks of Gnaak]]）、相手はライフを失いますか？"
       },
+      "official|If my Vindictive Nation is affected by my opponent's Atlantean Fate, do they lose 1 or 2 life?": {
+        "a": "2ライフです。[[Vindictive Nation]]は水没し（これは修正に数えます）、その後沈黙します（これも修正に数えます）。",
+        "q": "私の[[Vindictive Nation]]が相手の[[Atlantean Fate]]の影響を受けた場合、相手は1ライフと2ライフのどちらを失いますか？"
+      },
       "official|When moving sites around, does Vindictive Nation protect the nearby sites before or after the move?": {
-        "a": "[[Vindictive Nation]]が守るのは、移動前に近隣にあったサイトです。例:\nI = [[Vindictive Nation]]、R = 瓦礫、A = 味方のサイトとします。\n相手が[[Earthquake]]を唱えて右端の2つのサイトを並べ替えました。\nサイトAが移動して[[Vindictive Nation]]の近隣に来たとしても、Aは移動前には近隣になかったので、相手はライフを失いません。\n逆に、2つ目の配置から始まって[[Earthquake]]で1つ目の配置に動かした場合、相手は[[Vindictive Nation]]の近隣にあったサイトを動かしたので、3ライフを失います（結果的にそのサイトが近隣でなくなったとしてもです）。",
+        "a": "[[Vindictive Nation]]が守るのは、移動前に近隣にあったサイトです。例:\nI = [[Vindictive Nation]]\nR = 瓦礫\nA = 味方のサイト\n相手が[[Earthquake]]を唱えて右端の2つのサイトを並べ替えました。\nサイトAが移動して[[Vindictive Nation]]の近隣に来たとしても、Aは移動前には近隣になかったので、相手はライフを失いません。\n逆に、2つ目の配置から始まって[[Earthquake]]で1つ目の配置に動かした場合、相手は[[Vindictive Nation]]の近隣にあったサイトを動かしたので、3ライフを失います（結果的にそのサイトが近隣でなくなったとしてもです）。",
         "q": "サイトを動かすとき、[[Vindictive Nation]]が守るのは移動前の近隣のサイトですか、移動後ですか？"
       }
     },
     "vivien_the_enchantress": {
-      "judge|Can Vivien the Enchantress copy the abilities of another Vivien the Enchantress?": {
-        "a": "いいえ。「ヴィヴィアンは、彼女がどこにいても、レルムにいるすべてのアバターとスペルキャスターの、他の印刷された能力を持つ」として扱ってください。",
-        "q": "[[Vivien, the Enchantress]]は、別の[[Vivien, the Enchantress]]の能力をコピーできますか？"
-      },
-      "judge|Since Avatars are Spellcasters, is Vivien a Spellcaster?": {
-        "a": "アバターは「スペルキャスター」という印刷された能力を持っているわけではないので、ヴィヴィアンがスペルキャスター能力を得るには別の手段（例: スペルキャスターが印刷されたミニオン）が必要です。",
-        "q": "アバターはスペルキャスターなので、[[Vivien, the Enchantress]]はスペルキャスターですか？"
-      },
-      "judge|What happens if Vivien uses the Druid’s ability to summon Bruin and flip?": {
-        "a": "Bruinを召喚し、その後裏返ります。裏面に何もないカードとして、ゲームテキストを持たず、以後ゲームの残りの間、事実上何もしません。もはやミニオンではなく、カードタイプも能力もありません。裏返ったカードは虚空にも存在でき、理屈のうえでは[[Pristine Paradise]]を機能停止させられますし、[[Roots of Yggdrasil]]では破壊されます。",
-        "q": "ヴィヴィアンが[[Druid]]の能力を使ってBruinを召喚して裏返ったらどうなりますか？"
-      },
       "official|Can Vivien the Enchantress copy the abilities of another Vivien the Enchantress?": {
         "a": "いいえ。",
         "q": "[[Vivien, the Enchantress]]は、別の[[Vivien, the Enchantress]]の能力をコピーできますか？"
@@ -4895,11 +4893,11 @@
       },
       "official|Does this affect subsurface units?": {
         "a": "いいえ。（彼らはサイトの上（atop）にいないからです。）",
-        "q": "これは地下・水中のユニットに影響しますか？"
+        "q": "これは下層のユニットに影響しますか？"
       },
       "official|Does this affect the corners of the border? (e.g. Airborne units moving diagonally)": {
-        "a": "いいえ。「border（接する）」とは隣接するマスのことで、斜めは含みません。",
-        "q": "これは境界の角にも影響しますか？（例: 斜めに移動するエアボーンのユニット）"
+        "a": "いいえ。「境界線（border）」があるのは隣接するマスどうしだけで、斜めは含みません。",
+        "q": "これは境界の角にも影響しますか？（例: 斜めに移動するエアボーン（飛行）のユニット）"
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
@@ -4912,8 +4910,8 @@
     },
     "wall_of_brambles": {
       "judge|What does “traverse” mean?": {
-        "a": "自発的か強制かを問わず、あらゆる形で通過することです。たとえば[[Grapple Shot]]や[[Pudge Butcher]]で動かされたユニットも、[[Wall of Brambles]]からダメージを受けます。なお、テレポートされたユニットは境界を通過しないため、影響を受けません。",
-        "q": "「通り抜ける（traverse）」とはどういう意味ですか？"
+        "a": "自発的な移動か強制移動かを問わず、何らかの方法で境界線を越えることです。たとえば、[[Grapple Shot]]や[[Pudge Butcher]]で移動させられたユニットも、[[Wall of Brambles]]からダメージを受けます。なお、テレポートされたユニットは境界線を通り抜けないため、影響を受けません。",
+        "q": "「越える（traverse）」とはどういう意味ですか？"
       }
     },
     "wall_of_fire": {
@@ -4923,22 +4921,22 @@
       },
       "official|Does this affect Airborne units?": {
         "a": "はい。（彼らはサイトの上（atop）にいるからです。）",
-        "q": "これはエアボーンのユニットに影響しますか？"
+        "q": "これはエアボーン（飛行）のユニットに影響しますか？"
       },
       "official|Does this affect subsurface units?": {
         "a": "いいえ。（彼らはサイトの上（atop）にいないからです。）",
-        "q": "これは地下・水中のユニットに影響しますか？"
+        "q": "これは下層のユニットに影響しますか？"
       },
       "official|Does this affect the corners of the border? (e.g. Airborne units moving diagonally)": {
-        "a": "いいえ。「border（接する）」とは隣接するマスのことで、斜めは含みません。",
-        "q": "これは境界の角にも影響しますか？（例: 斜めに移動するエアボーンのユニット）"
+        "a": "いいえ。「境界線（border）」があるのは隣接するマスどうしだけで、斜めは含みません。",
+        "q": "これは境界の角にも影響しますか？（例: 斜めに移動するエアボーン（飛行）のユニット）"
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
         "q": "このオーラはいくつのマスを占めますか？"
       },
       "official|What does “passes through” mean?": {
-        "a": "自発的か強制かを問わず、あらゆる形で通過することです。たとえば[[Grapple Shot]]や[[Pudge Butcher]]で動かされたユニットも、[[Wall of Fire]]からダメージを受けます。なお、テレポートされたユニットは境界を通過しないため、影響を受けません。",
+        "a": "自発的な移動か強制移動かを問わず、何らかの方法で通り抜けることです。たとえば、[[Grapple Shot]]や[[Pudge Butcher]]で移動させられたユニットも、[[Wall of Fire]]からダメージを受けます。なお、テレポートされたユニットは境界線を通り抜けないため、影響を受けません。",
         "q": "「通り抜ける（passes through）」とはどういう意味ですか？"
       },
       "official|What if this is animated by an Enchantress?": {
@@ -4980,7 +4978,7 @@
     },
     "wave_of_eviction": {
       "official|How do I properly resolve this effect?": {
-        "a": "自分の水のサイトから基本方位を1つ選びます。その水のサイトにいるすべての敵を選んだ方向へ1ステップ強制移動させ、そのサイトを水没させます。ミニオンの進入やサイトの水没に関する効果を誘発・解決します。その後、レルムの端に到達するまでこのプロセスを繰り返します。\n水没と押し出しの効果は虚空を越えても続きますが、ミニオンを領域をまたいで強制移動させることはできません。\n各サイトはミニオンの到着と同時に水没するため、押し流される潜水中のミニオンは新しいサイトでも潜水した状態になります（新しいサイトが水没しないまま押し込まれる瞬間は存在しません）。",
+        "a": "自分の水のサイトから基本方位を1つ選びます。その水のサイトにいるすべての敵を選んだ方向へ1ステップ強制移動させ、そのサイトを水没させます。ミニオンの進入やサイトの水没に関する効果を誘発・解決します。その後、レルムの端に到達するまでこのプロセスを繰り返します。\n水没と押し出しの効果は虚空を越えても続きますが、ミニオンをリージョンをまたいで強制移動させることはできません。\n各サイトはミニオンの到着と同時に水没するため、押し流される潜水中のミニオンは新しいサイトでも潜水した状態になります（新しいサイトが水没しないまま押し込まれる瞬間は存在しません）。",
         "q": "この効果はどう解決するのが正しいですか？"
       }
     },
@@ -5046,8 +5044,8 @@
     },
     "wicked_witch": {
       "judge|A Bosk Troll (3 power) takes two damage. Later that turn, it moves nearby a Wicked Witch, resulting in the Troll dying. What minion gets kill credit?": {
-        "a": "どのミニオンも撃破の手柄を得ません。常在型能力は撃破の手柄をミニオンに与えません。また、ミニオンが「ダメージを与えたことによる」撃破の手柄を得るのは、そのダメージが適用された瞬間にミニオンを殺した場合だけです。撃破の詳細はComprehensive Rulesの文書を参照してください。",
-        "q": "[[Bosk Troll]]（パワー3）が2点のダメージを受けました。同じターンの後半、[[Wicked Witch]]の近隣に移動した結果、トロールが死亡しました。撃破の手柄を得るミニオンは？"
+        "a": "どのミニオンもキル・クレジットを得ません。常在型能力はキル・クレジットをミニオンに与えません。また、ミニオンが「ダメージを与えたことによる」キル・クレジットを得るのは、そのダメージが適用された瞬間にミニオンを殺した場合だけです。撃破の詳細はComprehensive Rulesの文書を参照してください。",
+        "q": "[[Bosk Troll]]（パワー3）が2点のダメージを受けました。同じターンの後半、[[Wicked Witch]]の近隣に移動した結果、トロールが死亡しました。キル・クレジットを得るミニオンは？"
       }
     },
     "wildfire": {
@@ -5087,10 +5085,10 @@
       },
       "judge|Can two units enter Mountain pass at the same time with an effect such as that on Windblast?": {
         "a": "はい。[[Windblast]]の移動は同時であり、両者が移動しようとした時点でサイトは空だったからです。",
-        "q": "[[Windblast]]のような効果で、2体のミニオンが同時に[[Mountain Pass]]に入れますか？"
+        "q": "[[Windblast]]のような効果で、2体のユニットが同時に[[Mountain Pass]]に入れますか？"
       },
       "judge|Does Windblast push auras too?": {
-        "a": "はい。ただし、標準のステップのルールに従い、オーラのどの部分も領域を変えてはならないことを忘れないでください。したがって多くの場合、オーラの一部が地表の領域から虚空の領域へ（またはその逆に）移動してしまうため、押せません。しかし、押してもオーラのどの部分も領域が変わらないなら、しっかり押されます！",
+        "a": "はい。ただし、標準のステップのルールに従い、オーラのどの部分もリージョンを変えてはならないことを忘れないでください。したがって多くの場合、オーラの一部が地表のリージョンから虚空のリージョンへ（またはその逆に）移動してしまうため、押せません。しかし、押してもオーラのどの部分もリージョンが変わらないなら、しっかり押されます！",
         "q": "[[Windblast]]はオーラも押しますか？"
       },
       "judge|If there’s already a minion on Mountain Pass, can a different minion move onto it with simultaneous movement from Windblast?": {
@@ -5098,7 +5096,7 @@
         "q": "すでに[[Mountain Pass]]の上にミニオンがいる場合、[[Windblast]]の同時移動で別のミニオンがその上に移動できますか？"
       },
       "official|Can I push something into the void?": {
-        "a": "いいえ。これは強制移動（通常のユニット移動ではない）なので、「1ステップ」は隣接する1つの場所を意味します。（そして「隣接する場所」とは、同じ領域内の隣接するマスのことです。）",
+        "a": "いいえ。これは強制移動（通常のユニット移動ではない）なので、「1ステップ」は隣接する1つの場所を意味します。（そして「隣接する場所」とは、同じリージョン内の隣接するマスのことです。）",
         "q": "何かを虚空へ押し込めますか？"
       },
       "official|Does the movement get resolved simultaneously?": {
@@ -5106,8 +5104,8 @@
         "q": "移動は同時に解決されますか？"
       },
       "official|Per card text, artifacts that are carried get pushed as well. So, do held artifacts get blown away from the units carrying them?": {
-        "a": "すべての移動が同時なので、アーティファクトは常にユニットと場所を共有しています。つまり落とされた瞬間はなく、所持され続けます。",
-        "q": "カードのテキストによれば、所持されているアーティファクトも押されます。では、持たれているアーティファクトは、運んでいるユニットから吹き飛ばされるのですか？"
+        "a": "すべての移動が同時なので、アーティファクトは常にユニットと場所を共有しています。つまり降ろされた瞬間はなく、運ばれ続けます。",
+        "q": "カードのテキストによれば、運ばれているアーティファクトも押されます。では、それらのアーティファクトは、運んでいるユニットから吹き飛ばされるのですか？"
       }
     },
     "witherwing_hero": {
@@ -5130,18 +5128,24 @@
     },
     "wrath_of_the_sea": {
       "judge|Do I choose a specific body of water when this effect resolves?": {
-        "a": "いいえ。いずれかの水に隣接するすべてのサイトが水没します。選ぶものは何もありません。",
+        "a": "いいえ。いずれかの水域に隣接するすべてのサイトが水没します。選ぶものは何もありません。",
         "q": "この効果の解決時、特定の水域を選びますか？"
       }
     },
     "yog_sothoth": {
       "official|What does \"Occupies all locations safely\" mean?": {
-        "a": "[[Yog-Sothoth]]は、すべての領域の、すべての場所を同時に占めます。これには、すべての地表の場所、地下・水中の場所、そして虚空が含まれます。[[Yog-Sothoth]]は埋められていることや潜水していることでは死亡せず、虚空にいることで追放されることもありません。",
+        "a": "[[Yog-Sothoth]]は、すべてのリージョンの、すべての場所を同時に占めます。これには、すべての地表の場所、下層の場所、そして虚空が含まれます。[[Yog-Sothoth]]は埋められていることや潜水していることでは死亡せず、虚空にいることで追放されることもありません。",
         "q": "「すべての場所を安全に占める（Occupies all locations safely）」とはどういう意味ですか？"
       },
       "official|What happens if there's a silence or disable effect somewhere in the realm that affects minions (e.g. Root Spider, Silence aura)?": {
         "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所を占め続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所を安全に占められないからです！",
         "q": "レルムのどこかに、ミニオンに影響する沈黙や無力化の効果（例: [[Root Spider]]、[[Silence]]のオーラ）があったらどうなりますか？"
+      }
+    },
+    "young_master_damion": {
+      "official|What happens if Damion and his Ghouls are all damaged simultaneously by a Poison Nova?": {
+        "a": "[[Young Master Damion]]はリーサルのダメージで死亡しますが、彼のグールたちに死亡の印が付けられる時点ではまだレルムにいるため、その能力がグールたちを守ります。各グールにはそのターンの残りの間、1点のダメージが残ります（リーサルが関係するのはダメージが与えられている間だけであり、与えられた後のダメージが継続して持つ性質ではありません）。",
+        "q": "[[Young Master Damion]]と彼のグールたち全員が[[Poison Nova]]で同時にダメージを受けたらどうなりますか？"
       }
     },
     "zephyranne_airship": {
