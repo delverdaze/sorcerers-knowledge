@@ -152,7 +152,7 @@
     },
     "apprentice_wizard": {
       "official|There's a promotional version of this card with the name \"Apurrentice Wizard.\" Since it has a different name, does that mean I can have four copies of each in my deck?": {
-        "a": "いいえ。「Apurrentice Wizard」は、デッキ構築およびゲームプレイ上のすべての目的において「Apprentice Wizard」という名前として扱ってください。",
+        "a": "いいえ。「Apurrentice Wizard」は、デッキ構築およびゲームプレイ上のすべての目的において「[[Apprentice Wizard]]」という名前として扱ってください。",
         "q": "このカードには「Apurrentice Wizard」という名前のプロモ版があります。名前が違うので、それぞれを4枚ずつデッキに入れられますか？"
       }
     },
@@ -1124,7 +1124,7 @@
         "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
       },
       "official|How does this ability resolve, in detail?": {
-        "a": "あなたはそのミニオン呪文を唱えます。\nマナを支払い、スレッショルドを満たし、墓地からそれを追放し、召喚先を決めます。\nミニオンがレルムに入ります（これは追放されたミニオンのコピーです）。\n「レルムに入ったとき」の効果が誘発・解決します。これには以下が含まれます:\nジェネシス能力。\n[[Wayfaring Pilgrim]]・[[Giant Shark]]・[[Mariner's Curse]]・[[Bottomless Pit]]などの効果。詳しくは写本室（Codex）の「同時トリガー（Simultaneous Triggers）」を参照。\nその後、ミニオンは追放されます。\n意図としては、[[Deathspeaker]]は死者と語らい、その能力を呼び起こし、そして死後の世界（それが何であれ）へ解き放つ、というものです。\n写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」と、Tawnyとサイトのジェネシスの例も参照してください。[[Deathspeaker]]の能力も同様で、ミニオンが入るとストーリーライン上で能力が分割され、ジェネシス能力が（ミニオンがレルムに入ったことによる他の誘発型能力とともに）解決し、その後ミニオンが追放されます。",
+        "a": "あなたはそのミニオン呪文を唱えます。\nマナを支払い、スレッショルドを満たし、墓地からそれを追放し、召喚先を決めます。\nミニオンがレルムに入ります（これは追放されたミニオンのコピーです）。\n「レルムに入ったとき」の効果が誘発・解決します。これには以下が含まれます:\nジェネシス能力。\n[[Wayfaring Pilgrim]]・[[Giant Shark]]・[[Mariner's Curse]]・[[Bottomless Pit]]などの効果。詳しくは写本室（Codex）の「同時トリガー（Simultaneous Triggers）」を参照。\nその後、ミニオンは追放されます。\n意図としては、[[Deathspeaker]]は死者と語らい、その能力を呼び起こし、そして死後の世界（それが何であれ）へ解き放つ、というものです。\n写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」と、[[Tawny]]とサイトのジェネシスの例も参照してください。[[Deathspeaker]]の能力も同様で、ミニオンが入るとストーリーライン上で能力が分割され、ジェネシス能力が（ミニオンがレルムに入ったことによる他の誘発型能力とともに）解決し、その後ミニオンが追放されます。",
         "q": "この能力は、詳細にはどう解決しますか？"
       },
       "official|When using the Deathspeaker's ability, are passive abilities applied before the banishing effect? The updated text only mentions Genesis abilities.": {
@@ -1299,7 +1299,7 @@
       },
       "official|How do Drought and Flood interact?": {
         "a": "写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
-        "q": "[[Drought]]と洪水（Flood）はどう相互作用しますか？"
+        "q": "[[Drought]]と[[Flood]]はどう相互作用しますか？"
       }
     },
     "druid": {
@@ -1308,8 +1308,8 @@
         "q": "[[Druid]]が一度裏返ったあと、再び表に戻す方法はありますか？"
       },
       "judge|After the Druid has flipped, can I still summon Tawny when I play a site?": {
-        "a": "あなたのアバターはエネルギーを近隣のサイトへ注いでいるため、もうTawnyを召喚できません。",
-        "q": "[[Druid]]が裏返ったあとも、サイトをプレイしたときにTawnyを召喚できますか？"
+        "a": "あなたのアバターはエネルギーを近隣のサイトへ注いでいるため、もう[[Tawny]]を召喚できません。",
+        "q": "[[Druid]]が裏返ったあとも、サイトをプレイしたときに[[Tawny]]を召喚できますか？"
       },
       "judge|After the Druid has flipped, is the Druid or the nearby site the source of the damage?": {
         "a": "ダメージを与えるのは近隣のサイトであって、[[Druid]]ではありません。したがって[[Druid]]が[[Poisonous Dagger]]を持っていても、そのダメージは実際にはリーサルになりません（一方、[[Drums of Doom]]ならそのダメージをリーサルにします）。「敵が近隣のサイトに入るたび、そのサイトはその敵に1点のダメージを与える」として扱ってください。",
@@ -1320,12 +1320,12 @@
         "q": "ブルーインとは何ですか？"
       },
       "judge|What is Tawny?": {
-        "a": "Tawnyは、「エアボーン（飛行）、スペルキャスター、防御できない」を持つ、パワー1のユニーク・ビースト・トークンです。",
-        "q": "Tawnyとは何ですか？"
+        "a": "[[Tawny]]は、「エアボーン（飛行）、スペルキャスター、防御できない」を持つ、パワー1のユニーク・ビースト・トークンです。",
+        "q": "[[Tawny]]とは何ですか？"
       },
       "judge|When I play a site, do I summon Tawny before or after the Genesis ability?": {
-        "a": "Tawnyの召喚はサイトをプレイしたときで、ジェネシス効果の誘発もサイトをプレイしたときなので、これらは同じタイミングの枠にあります。したがって、[[Druid]]とサイトの両方をあなたがコントロールしているので、順番は好きなように選べます。",
-        "q": "サイトをプレイしたとき、Tawnyの召喚はジェネシス能力の前ですか、後ですか？"
+        "a": "[[Tawny]]の召喚はサイトをプレイしたときで、ジェネシス効果の誘発もサイトをプレイしたときなので、これらは同じタイミングの枠にあります。したがって、[[Druid]]とサイトの両方をあなたがコントロールしているので、順番は好きなように選べます。",
+        "q": "サイトをプレイしたとき、[[Tawny]]の召喚はジェネシス能力の前ですか、後ですか？"
       },
       "official|Can the Druid's flip side ability give the Druid kill credit?": {
         "a": "いいえ。キル・クレジットを得られるのはユニットだけで、ダメージの発生源はサイトです。この誘発型能力はサイトの能力であって、[[Druid]]の能力ではありません。詳しくは写本室（Codex）の「キル・クレジット（Kill Credit）」の項を参照してください。",
@@ -1340,7 +1340,7 @@
         "q": "サイトが能力を失った場合、[[Druid]]の裏面の能力は依然として適用されますか？ [[Bedrock]]には影響しますか？"
       },
       "official|What is the updated text for the front of the Druid?": {
-        "a": "タップ → サイトをプレイするか、サイトを1枚引く。これがあなたの最初のターンなら、ここにTawnyを召喚する。\nタップ → ここにBruinを召喚する。このカードを裏返す。",
+        "a": "タップ → サイトをプレイするか、サイトを1枚引く。これがあなたの最初のターンなら、ここに[[Tawny]]を召喚する。\nタップ → ここに[[Bruin]]を召喚する。このカードを裏返す。",
         "q": "[[Druid]]の表面の更新後テキストは何ですか？"
       }
     },
@@ -1394,7 +1394,7 @@
     },
     "enchantress": {
       "judge|Can I cast an artifact into the hands of an aura, newly animated by the casting of this artifact spell?": {
-        "a": "いいえ。上記のEnchantressガイドを参照してください。",
+        "a": "いいえ。上記の[[Enchantress]]ガイドを参照してください。",
         "q": "アーティファクト呪文を唱え、その詠唱によって新たにアニメイトされたオーラの手にそのアーティファクトを持たせることはできますか？"
       },
       "judge|How does the interaction between animated auras + stealth/infiltrate work?": {
@@ -1721,7 +1721,7 @@
     "flood": {
       "official|How do Drought and Flood interact?": {
         "a": "写本室（Codex）の「例 — Flood 対 Drought（Example - Flood vs. Drought）」を参照してください。",
-        "q": "[[Drought]]と洪水（Flood）はどう相互作用しますか？"
+        "q": "[[Drought]]と[[Flood]]はどう相互作用しますか？"
       }
     },
     "floodplain": {
@@ -1808,7 +1808,7 @@
         "q": "[[Mirror Realm]]（土のサイトをコピー）は[[Geomancer]]の1つ目の能力の対象になりますか？"
       },
       "official|Does Mirror Realm (copying an earth site), Valley of Delight (choosing earth), or one of the Bloom sites (i.e. Twilight Bloom) count for Geomancer's first ability?": {
-        "a": "はい。[[Mirror Realm]]はレルムに入る時点で適用されるので機能します。[[Valley of Delight]]とBloom系サイトは、サイトのジェネシス効果が[[Geomancer]]の能力の解決に割り込むため機能します。[[Geomancer]]の能力の後半が実際に解決してサイトを見る時点で、そのサイトは確かに土(E)のサイトになっています。[[Valley of Delight]]との相互作用の詳細は写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」を参照してください。Tawnyの例やドルイドの能力の分割と同様の理屈です。",
+        "a": "はい。[[Mirror Realm]]はレルムに入る時点で適用されるので機能します。[[Valley of Delight]]とBloom系サイトは、サイトのジェネシス効果が[[Geomancer]]の能力の解決に割り込むため機能します。[[Geomancer]]の能力の後半が実際に解決してサイトを見る時点で、そのサイトは確かに土(E)のサイトになっています。[[Valley of Delight]]との相互作用の詳細は写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」を参照してください。[[Tawny]]の例やドルイドの能力の分割と同様の理屈です。",
         "q": "[[Mirror Realm]]（土のサイトをコピー）、[[Valley of Delight]]（土を選択）、Bloom系サイト（例: [[Twilight Bloom]]）は、[[Geomancer]]の1つ目の能力の対象になりますか？"
       },
       "official|If Geomancer creates a Rubble adjacent to Boulevard of Bones, do they create a skeleton?": {
@@ -1956,7 +1956,7 @@
     },
     "grandmaster_wizard": {
       "official|There's a promotional version of this card with the name \"Grandmeowster Wizard.\" Since it has a different name, does that mean I can have two copies of each in my deck?": {
-        "a": "いいえ。「Grandmeowster Wizard」は、デッキ構築およびゲームプレイ上のすべての目的において「Grandmaster Wizard」という名前として扱ってください。",
+        "a": "いいえ。「Grandmeowster Wizard」は、デッキ構築およびゲームプレイ上のすべての目的において「[[Grandmaster Wizard]]」という名前として扱ってください。",
         "q": "このカードには「Grandmeowster Wizard」という名前のプロモ版があります。名前が違うので、それぞれを2枚ずつデッキに入れられますか？"
       }
     },
@@ -2312,7 +2312,7 @@
         "q": "[[Imposter]]は、ゲーム開始前やセットアップの能力を持つアバターの仮面をかぶれますか？ その場合どうなりますか？"
       },
       "official|What happens if I impersonate the Druid and then use the ability to flip?": {
-        "a": "Bruinを召喚し、裏返り、…そして即座にゲームに敗北します。場にアバターがいなくなるからです！ [[Druid]]はコレクションに入れないほうがよいのでは？",
+        "a": "[[Bruin]]を召喚し、裏返り、…そして即座にゲームに敗北します。場にアバターがいなくなるからです！ [[Druid]]はコレクションに入れないほうがよいのでは？",
         "q": "[[Druid]]になりすまして、裏返す能力を使ったらどうなりますか？"
       },
       "official|What happens if I impersonate the Realm-Eater, use the ability to destroy a site, and then take damage or otherwise lose that mask before I can digest?": {
@@ -3104,7 +3104,7 @@
     },
     "moonsong_talagelum": {
       "official|Since this \"counts as Grey Wolves\" does that mean I can include any number of it in my spellbook?": {
-        "a": "いいえ。「[[Grey Wolves]]として数える」とは、他のカードがこれを、通常の名前に加えて「Grey Wolves」という名前を持つものとして見る、という意味です。レアリティの制限には依然として従わなければなりません。",
+        "a": "いいえ。「[[Grey Wolves]]として数える」とは、他のカードがこれを、通常の名前に加えて「[[Grey Wolves]]」という名前を持つものとして見る、という意味です。レアリティの制限には依然として従わなければなりません。",
         "q": "これは「[[Grey Wolves]]として数える」ので、呪文書に何枚でも入れられるということですか？"
       }
     },
@@ -3361,7 +3361,7 @@
     "pathfinder": {
       "judge|Can Pathfinder include an unlimited number of copies of the draft sites like Valley, Spire, Wasteland, and Stream?": {
         "a": "いいえ。[[Pathfinder]]の制限は依然として適用されます。",
-        "q": "[[Pathfinder]]は、Valley・Spire・Wasteland・Streamのようなドラフト用サイトを無制限に入れられますか？"
+        "q": "[[Pathfinder]]は、[[Valley]]・[[Spire]]・[[Wasteland]]・[[Stream]]のようなドラフト用サイトを無制限に入れられますか？"
       },
       "judge|If a Pathfinder is under the effect of Quagmire, can it still activate its site placement ability?": {
         "a": "はい。ただし、サイトが場に出てもそこへは移動しません。",
@@ -4261,10 +4261,10 @@
     "spire_lich": {
       "judge|Does the draft site “Spire” satisfy the Spire Lich’s ability?": {
         "a": "はい。なにしろスパイア・リッチですから！",
-        "q": "ドラフト用サイトの「Spire」は[[Spire Lich]]の能力の条件を満たしますか？"
+        "q": "ドラフト用サイトの「[[Spire]]」は[[Spire Lich]]の能力の条件を満たしますか？"
       },
       "judge|What’s the full list of sites that satisfy the Spire Lich’s ability?": {
-        "a": "名前に「Tower」を含むすべてのサイト（[[Watchtower]]を含む）と、Spireです。",
+        "a": "名前に「Tower」を含むすべてのサイト（[[Watchtower]]を含む）と、[[Spire]]です。",
         "q": "[[Spire Lich]]の能力を満たすサイトの完全なリストは？"
       },
       "official|Does Spire satisfy the Spire Lich?": {
@@ -4882,8 +4882,8 @@
         "q": "「彼女がどこにいても（wherever she is）」とはどういう意味ですか？"
       },
       "official|What happens if Vivien uses the Druid’s ability to summon Bruin and flip?": {
-        "a": "Bruinを召喚し、その後裏返ります。裏面に何もないカードとして、ゲームテキストを持たず、以後ゲームの残りの間、事実上何もしません。もはやミニオンではなく、カードタイプも能力もありません。裏返ったカードは虚空にも存在でき、理屈のうえでは[[Pristine Paradise]]を機能停止させられますし、[[Roots of Yggdrasil]]では破壊されます。",
-        "q": "ヴィヴィアンが[[Druid]]の能力を使ってBruinを召喚して裏返ったらどうなりますか？"
+        "a": "[[Bruin]]を召喚し、その後裏返ります。裏面に何もないカードとして、ゲームテキストを持たず、以後ゲームの残りの間、事実上何もしません。もはやミニオンではなく、カードタイプも能力もありません。裏返ったカードは虚空にも存在でき、理屈のうえでは[[Pristine Paradise]]を機能停止させられますし、[[Roots of Yggdrasil]]では破壊されます。",
+        "q": "ヴィヴィアンが[[Druid]]の能力を使って[[Bruin]]を召喚して裏返ったらどうなりますか？"
       }
     },
     "wall_of_air": {
@@ -5166,5 +5166,6 @@
         "q": "ミニオンを運んでいるミニオンを、さらに別のミニオンが運ぶとどうなりますか？"
       }
     }
-  }
+  },
+  "version": "2026-08-06"
 }
