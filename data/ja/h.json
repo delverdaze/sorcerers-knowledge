@@ -38,7 +38,7 @@
   "harvest_festival": {
     "flavor": "穀物は取り入れられ、果実は搾られた——さあ、フィドルを鳴らして、心を軽くしよう！",
     "name": "収穫祭",
-    "rules": "あなたのコレクションから「エルサムの町民」と「セラヴァの町民」を、味方のサイトに召喚する。",
+    "rules": "あなたのコレクションから「Eltham Townsfolk」と「Serava Townsfolk」を、味方のサイトに召喚する。",
     "typeText": "仲間の絆を編むエクセプショナルのマジック"
   },
   "hauntless_head": {
