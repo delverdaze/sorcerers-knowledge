@@ -1,0 +1,10 @@
+{
+  "origins": [
+    "https://sorcerers-den.pages.dev"
+  ],
+  "originsRegex": [
+    "^https://[a-z0-9-]+\\.sorcerers-den\\.pages\\.dev$",
+    "^http://localhost:[0-9]+$",
+    "^http://192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3}:[0-9]+$"
+  ]
+}
