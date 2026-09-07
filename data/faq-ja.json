@@ -3223,7 +3223,7 @@
       },
       "official|Does this effect span the void?": {
         "a": "はい。",
-        "q": "この効果は虚空をまたぎますか？"
+        "q": "縦列の途中が虚空で途切れていても、その先の陸のサイトにいるユニットも滑りますか？"
       }
     },
     "occult_ritual": {
