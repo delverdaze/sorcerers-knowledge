@@ -31,6 +31,8 @@ slug（カードID）が分からないときは [data/slugs.json](data/slugs.js
     "rules": "魔法の呪文を…",        // 任意: ルール文の訳
     "typeText": "アーサー王伝説の…", // 任意: タイプ行の訳
     "flavor": "…"                    // 任意: フレーバーテキストの訳
+    // 両面カード（Druid だけ）は面ごとの訳を faces に書く。省略した面はカード本体の訳になる:
+    // "faces": { "front": { "rules": "…" }, "back": { "typeText": "…" }, "printings": { "druid-op": { "typeText": "…" } } }
   }
 }
 ```
