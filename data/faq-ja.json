@@ -3726,8 +3726,8 @@
         "q": "[[Atlantean Fate]]の影響範囲に[[Rift Valley]]をプレイできますか？"
       },
       "official|Can you “pull apart” a row with a single site?": {
-        "a": "いいえ。それは「引き裂く」の意味に合いません。",
-        "q": "サイトが1つしかない横列を「引き裂く（pull apart）」ことはできますか？"
+        "a": "いいえ。それは「引き離す」の意味に合いません。",
+        "q": "サイトが1つしかない横列を「引き離す（pull apart）」ことはできますか？"
       },
       "official|Does this move oversized units or auras that occupy more than one square?": {
         "a": "いいえ。",
@@ -3738,20 +3738,20 @@
         "q": "[[Smokestacks of Gnaak]]と[[Rift Valley]]はどう相互作用しますか？"
       },
       "official|If I have no sites but it's not the first turn (e.g. Roots of Yggdrasil destroyed everything) and I play Rift Valley, am I forced to play the site under my avatar, or could I pull apart a row of Rubble and play it there?": {
-        "a": "ゲームの最初のターンではないので、自分の足元にプレイする義務はありません。[[Rift Valley]]はサイトをプレイする代替手段を提供しているので、望むなら列を引き裂いてそこにプレイできます。",
-        "q": "最初のターンではないのにサイトが1つもない場合（例: [[Roots of Yggdrasil]]で全部破壊された）に[[Rift Valley]]をプレイすると、アバターの足元にプレイしなければなりませんか？ それとも瓦礫の列を引き裂いてそこにプレイできますか？"
+        "a": "ゲームの最初のターンではないので、自分の足元にプレイする義務はありません。[[Rift Valley]]はサイトをプレイする代替手段を提供しているので、望むなら列を引き離してそこにプレイできます。",
+        "q": "最初のターンではないのにサイトが1つもない場合（例: [[Roots of Yggdrasil]]で全部破壊された）に[[Rift Valley]]をプレイすると、アバターの足元にプレイしなければなりませんか？ それとも瓦礫の列を引き離してそこにプレイできますか？"
       },
       "official|What happens if I try to use Rift Valley's ability when it's played via Pathfinder?": {
         "a": "[[Pathfinder]]の能力を使う場合、サイトを公開してから隣接する瓦礫または虚空にプレイします（その後[[Pathfinder]]がそこへ移動します）。[[Rift Valley]]の場合、その能力で[[Pathfinder]]に隣接する虚空を作り、そこにプレイできます（その後[[Pathfinder]]がそこへ移動します）。",
         "q": "[[Pathfinder]]経由でプレイされた[[Rift Valley]]の能力を使おうとしたらどうなりますか？"
       },
       "official|What is a technical definition of what’s happening when you use this card’s ability?": {
-        "a": "隣接する2つのサイトと少なくとも1つの虚空を含む横列または縦列を選びます。次に、その隣接する2つのサイトを次のように「引き裂き」ます: 一方のサイトは現在のマスに留まり、もう一方のサイト（およびその横列/縦列で連続している他のすべてのサイト）が1マスずれます。いま生まれた虚空に[[Rift Valley]]を置きます。サイトのずれと[[Rift Valley]]の到着は同時に起こります。",
+        "a": "隣接する2つのサイトと少なくとも1つの虚空を含む横列または縦列を選びます。次に、その隣接する2つのサイトを次のように「引き離し」ます: 一方のサイトは現在のマスに留まり、もう一方のサイト（およびその横列/縦列で連続している他のすべてのサイト）が1マスずれます。いま生まれた虚空に[[Rift Valley]]を置きます。サイトのずれと[[Rift Valley]]の到着は同時に起こります。",
         "q": "このカードの能力を使うとき、厳密には何が起こっているのですか？"
       },
       "official|When pulling apart the row or column to place the site, can Rift Valley be played non-adjacent to your other sites?": {
         "a": "はい。",
-        "q": "横列や縦列を引き裂いてサイトを置くとき、[[Rift Valley]]を自分の他のサイトに隣接しない場所にプレイできますか？"
+        "q": "横列や縦列を引き離してサイトを置くとき、[[Rift Valley]]を自分の他のサイトに隣接しない場所にプレイできますか？"
       }
     },
     "ring_of_morrigan": {
