@@ -7,11 +7,30 @@
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseIssueForm, targetDate, missingLanguages, buildComment } from "./faq-proposal.mjs";
+import { parseIssueForm, targetDate, missingLanguages, buildComment, headingKey } from "./faq-proposal.mjs";
 
 /** GitHub が組む本文の形（見出し → 値）を再現する */
 function issueBody(sections) {
   return sections.map(([heading, value]) => `### ${heading}\n\n${value}\n`).join("\n");
+}
+
+/** 日英併記の見出し（フォームの label そのもの）。旧見出し（日本語だけ）の Issue も読めること */
+const EN_SIDE = new Map([
+  ["カード名", "Card"],
+  ["質問（英語）", "Question (EN)"],
+  ["回答（英語）", "Answer (EN)"],
+  ["質問（日本語）", "Question (JA)"],
+  ["回答（日本語）", "Answer (JA)"],
+  ["根拠", "Basis"],
+  ["元となった議論・投稿の日付", "Date of the original discussion"],
+  ["クレジット表記（任意）", "Credit (optional)"],
+  ["特に見てほしい点", "What to look at"],
+  ["確認", "Confirmation"],
+]);
+
+/** 旧見出しの節を、いまのフォームの日英併記の見出しに書き換える */
+function bilingual(sections) {
+  return sections.map(([heading, value]) => [`${heading} / ${EN_SIDE.get(heading) ?? heading}`, value]);
 }
 
 const FULL = [
@@ -39,6 +58,51 @@ test("フォームの見出しがすべて対応する鍵に入る", () => {
   assert.equal(fields.credit, "○○ Discord #rules-questions の議論を基に再構成");
   assert.equal(fields.focus, "「ステップ」の訳語が既訳と揃っているか");
   assert.deepEqual(fields.extra, {});
+});
+
+test("日英併記の見出し（いまのフォーム）でも、旧見出し（日本語だけ）と同じ結果になる", () => {
+  const now = parseIssueForm(issueBody(bilingual(FULL)));
+  const old = parseIssueForm(issueBody(FULL));
+  assert.deepEqual(now, old);
+  assert.equal(now.card, "Wuthering Heights (wuthering_heights)");
+  assert.deepEqual(now.extra, {}, "併記の見出しが extra に落ちてはいけない");
+});
+
+test("` / ` の後ろには何が付いていてもよい（照合は日本語側だけ）", () => {
+  const fields = parseIssueForm(issueBody([
+    ["根拠 / Basis", "値1"],
+    ["特に見てほしい点 / What to look at / 補足", "値2"],
+    ["カード名 / Card（英語名・日本語名どちらでも）", "値3"],
+    ["質問（日本語） / Question (JA)", "値4"],
+  ]));
+  assert.equal(fields.basis, "値1");
+  assert.equal(fields.focus, "値2");
+  assert.equal(fields.card, "値3");
+  assert.equal(fields.qJa, "値4");
+  assert.deepEqual(fields.extra, {});
+});
+
+test("区切りは半角スペース＋/＋半角スペースだけ（`/` だけ・全角の／は見出しの一部）", () => {
+  const fields = parseIssueForm(issueBody([
+    ["質問（英語）/Question (EN)", "空白の無いスラッシュ"],
+    ["回答（英語） ／ Answer (EN)", "全角スラッシュ"],
+  ]));
+  assert.equal(fields.qEn, "", "似た見出しを当て推量で欄に入れない");
+  assert.equal(fields.aEn, "");
+  assert.deepEqual(fields.extra, {
+    "質問（英語）/Question (EN)": "空白の無いスラッシュ",
+    "回答（英語） ／ Answer (EN)": "全角スラッシュ",
+  }, "値は捨てずに extra に残る");
+});
+
+test("見出しから鍵語を取り出す — ` / ` の前・前後の空白は落とす", () => {
+  assert.equal(headingKey("カード名 / Card"), "カード名");
+  assert.equal(headingKey("カード名"), "カード名");
+  assert.equal(headingKey("  根拠 / Basis  "), "根拠");
+  assert.equal(headingKey("確認 / Confirmation / 確認事項"), "確認");
+  assert.equal(headingKey("質問（英語）/Question (EN)"), "質問（英語）/Question (EN)");
+  assert.equal(headingKey(""), "");
+  assert.equal(headingKey(null), "");
 });
 
 test("未入力（_No response_）は空文字になる", () => {
@@ -180,10 +244,10 @@ test("起票された本文からそのまま片言語を判定できる", () =>
   assert.deepEqual(missingLanguages(parseIssueForm(issueBody(FULL))), []);
 });
 
-test("案内には印・目処の日付が2箇所・👍 と 😕 が入り、👎 は使わない", () => {
+test("案内には印・目処の日付が3箇所（日本語2・英語1）・👍 と 😕 が入り、👎 は使わない", () => {
   const comment = buildComment({ number: 42, targetDate: "2026-09-20", missing: [] });
   assert.match(comment, /^<!-- faq-proposal-notice -->/);
-  assert.equal(comment.match(/2026-09-20/g).length, 2);
+  assert.equal(comment.match(/2026-09-20/g).length, 3);
   assert.match(comment, /👍/);
   assert.match(comment, /😕/);
   assert.ok(!comment.includes("👎"), "👎 は使わない");
@@ -196,7 +260,7 @@ test("案内は「締切ではない」と非公式であることを言う", ()
   assert.match(comment, /それ以降のご意見も歓迎/);
   assert.match(comment, /収録後でも直します/);
   assert.match(comment, /非公式/);
-  assert.match(comment, /公式裁定・英語原文が優先/);
+  assert.match(comment, /後日 公式FAQ の追加や裁定の変更があればそちらが優先/);
 });
 
 test("案内はレビューの観点 3 つを挙げる", () => {
@@ -205,6 +269,29 @@ test("案内はレビューの観点 3 つを挙げる", () => {
   assert.match(comment, /2\. 文面:/);
   assert.match(comment, /3\. 和訳:/);
   assert.match(comment, /どれか一つだけでも/);
+});
+
+test("案内は日本語の後ろに英語を併記する（同じ事実だけ）", () => {
+  const comment = buildComment({ number: 42, targetDate: "2026-09-20", missing: [] });
+  const [ja, en] = comment.split("\n---\n");
+  assert.ok(en, "英語の段落が無い");
+  // 日本語（既存の定型文）は先で、一字も削っていない
+  assert.match(ja, /レビューのお願い（2026-09-20 ごろを目処に）/);
+  assert.match(ja, /賛成なら本文に 👍、気になる点があれば 😕 と理由をコメントでお願いします。/);
+  // 英語は目処の日付・締切ではないこと・👍😕・ソサデンが確かめて載せること・非公式
+  assert.match(en, /Review is requested by around 2026-09-20/);
+  assert.match(en, /not a deadline/);
+  assert.match(en, /👍/);
+  assert.match(en, /😕/);
+  assert.match(en, /Sorcerers' Den checks it against the official FAQ/);
+  assert.match(en, /unofficial/);
+});
+
+test("案内は日英どちらからも手引きへ行ける", () => {
+  const comment = buildComment({ number: 42, targetDate: "2026-09-20" });
+  const [ja, en] = comment.split("\n---\n");
+  assert.match(ja, /流れの説明: https:\/\/sorcerers-den\.pages\.dev\/\?guide=faq/);
+  assert.match(en, /Guide: https:\/\/sorcerers-den\.pages\.dev\/\?guide=faq/);
 });
 
 test("片言語のときだけ、付けたラベルの意味を添える", () => {

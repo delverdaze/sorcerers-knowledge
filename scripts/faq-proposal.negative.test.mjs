@@ -15,7 +15,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { parseIssueForm, targetDate, missingLanguages, buildComment } from "./faq-proposal.mjs";
+import { parseIssueForm, targetDate, missingLanguages, buildComment, headingKey } from "./faq-proposal.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SCRIPT = path.join(HERE, "faq-proposal.mjs");
@@ -132,6 +132,53 @@ test("案内は締切と読める語や 👎 を使わない", () => {
   for (const word of ["👎", "締切です", "期限", "却下", "承認が必要"]) {
     assert.ok(!comment.includes(word), `「${word}」は使わない: ${comment}`);
   }
+});
+
+test("英語の段落も締切と読める書き方をしない（日本語と同じ事実に留める）", () => {
+  const en = buildComment({ number: 1, targetDate: "2026-09-20", missing: ["needs-en"] }).split("\n---\n")[1];
+  assert.match(en, /not a deadline/, "「締切ではない」は英語でも必ず言う");
+  for (const phrase of ["by the deadline", "will be rejected", "you must", "approval is required", "closes on"]) {
+    assert.ok(!en.toLowerCase().includes(phrase), `英語で「${phrase}」とは言わない: ${en}`);
+  }
+});
+
+test("英語の段落は日本語の後ろ（印と日本語の定型文を押しのけない）", () => {
+  const comment = buildComment({ number: 1, targetDate: "2026-09-20" });
+  assert.ok(comment.startsWith(NOTICE_MARK));
+  assert.ok(comment.indexOf("レビューのお願い") < comment.indexOf("English"), "日本語が先");
+  assert.equal(comment.split("\n---\n").length, 2, "日英の区切りは1つだけ");
+});
+
+/* ---- 見出しの照合（日英併記の label ⇔ 旧見出し） ---- */
+
+test("併記の見出しでも旧見出しでも同じ結果（値が別の欄へ移らない）", () => {
+  const now = parseIssueForm("### 根拠 / Basis\n\n値\n\n### 確認 / Confirmation\n\n- [x] 済");
+  const old = parseIssueForm("### 根拠\n\n値\n\n### 確認\n\n- [x] 済");
+  assert.deepEqual(now, old);
+  assert.equal(now.basis, "値");
+  assert.deepEqual(now.confirm, [{ checked: true, label: "済" }]);
+});
+
+test("` / ` が日本語側に無い見出し（`/` だけ・全角の／）は欄に入れず extra に残す", () => {
+  for (const heading of ["根拠/Basis", "根拠 ／ Basis", "根拠／Basis", "根拠　/　Basis"]) {
+    const fields = parseIssueForm(`### ${heading}\n\n値`);
+    assert.equal(fields.basis, "", `「${heading}」を根拠として読んではいけない`);
+    assert.deepEqual(fields.extra, { [heading]: "値" }, `「${heading}」の値は extra に残る`);
+  }
+});
+
+test("英語側だけの見出し（日本語が無い）は欄に入らない", () => {
+  const fields = parseIssueForm("### Basis / 根拠\n\n値");
+  assert.equal(fields.basis, "", "照合するのは ` / ` の前だけ — 後ろに日本語があっても拾わない");
+  assert.deepEqual(fields.extra, { "Basis / 根拠": "値" });
+});
+
+test("headingKey は文字列以外・空でも落ちない", () => {
+  assert.equal(headingKey(undefined), "");
+  assert.equal(headingKey(null), "");
+  assert.equal(headingKey(0), "0");
+  assert.equal(headingKey(" / Card"), "/ Card", "先に前後の空白を落とすので ` / ` は残らない（対応表に無い＝extra 行き）");
+  assert.equal(headingKey("カード名 / Card / 別名"), "カード名", "最初の ` / ` で切る");
 });
 
 /* ---- 3. 目処の日付の境界 ---- */

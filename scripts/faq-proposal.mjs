@@ -4,8 +4,9 @@
  *
  * **契約はフォームの label** — 起票された本文は欄ごとに `### <label>` の見出しと値で
  * 組まれる（未入力は `_No response_`、checkboxes は `- [x] …` / `- [ ] …`、
- * `type: markdown` の文は本文に残らない）。フォームの label を変えたら
- * FIELD_BY_HEADING も直す。同じ規則の構文解析を sorcerers-den 側（/admin/ の
+ * `type: markdown` の文は本文に残らない）。label は「日本語 / English」の形で、
+ * 照合は ` / ` より前の日本語側（下の headingKey）。フォームの label の**日本語側**を
+ * 変えたら FIELD_BY_HEADING も直す。同じ規則の構文解析を sorcerers-den 側（/admin/ の
  * 「Issue から読み込む」）も持つ — リポジトリをまたいだ import はしない。
  *
  * 案内の文面の正本: sorcerers-den リポジトリ
@@ -21,7 +22,7 @@
 import { readFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 
-/** フォームの label → 鍵（sorcerers-den 側の取り込みと同じ対応表） */
+/** フォームの label の**日本語側** → 鍵（sorcerers-den 側の取り込みと同じ対応表） */
 const FIELD_BY_HEADING = new Map([
   ["カード名", "card"],
   ["質問（英語）", "qEn"],
@@ -41,6 +42,8 @@ const REVIEW_LABEL = "needs-review";
 /** 案内を出した印。本文に埋め、次の起動で二重投稿しないための目印にする */
 const NOTICE_MARK = "<!-- faq-proposal-notice -->";
 const REVIEW_DAYS = 7; // 目処（締切ではない）
+/** 手引き（サイト内の説明の頁）。案内コメントから参照する */
+const GUIDE_URL = "https://sorcerers-den.pages.dev/?guide=faq";
 const JST_OFFSET_MS = 9 * 60 * 60 * 1000;
 
 /** ラベルの台帳（無ければこの色と説明で作る）。正本は提案書の「ラベル」表 */
@@ -53,6 +56,21 @@ const LABELS = {
 };
 
 /* ───────────────────────── 純粋関数（scripts/faq-proposal.test.mjs で検証） ───────────────────────── */
+
+/**
+ * 見出しから、対応表に引く鍵語（日本語側）を取り出す。
+ * フォームの label は「日本語 / English」なので ` / ` より前を使い、` / ` が無ければ全体
+ * （＝日本語だけだった頃に起票された Issue もそのまま読める）。前後の空白は落とす。
+ *
+ * 区切りとみなすのは**半角スペース＋ / ＋半角スペース**だけ。`質問（英語）/Question` のように
+ * 空白の無い `/` や全角の ／ は見出しの一部として扱う（対応表に無ければ extra に残る）——
+ * 似た見出しを当て推量で別の欄に入れて、値を黙って取り違えないため。
+ */
+export function headingKey(heading) {
+  const text = String(heading ?? "").trim();
+  const at = text.indexOf(" / ");
+  return (at === -1 ? text : text.slice(0, at)).trim();
+}
 
 /**
  * `### 見出し` ごとに本文を区切る。コードフェンス（``` / ~~~）の中の `###` は
@@ -110,7 +128,7 @@ export function parseIssueForm(body) {
     confirm: [], extra: {},
   };
   for (const { heading, lines } of splitSections(body)) {
-    const key = FIELD_BY_HEADING.get(heading);
+    const key = FIELD_BY_HEADING.get(headingKey(heading));
     if (key === "confirm") fields.confirm = parseCheckboxes(lines);
     else if (key) fields[key] = sectionText(lines);
     else fields.extra[heading] = sectionText(lines);
@@ -141,12 +159,15 @@ function languageNote(missing) {
   const NAME = { "needs-en": "英語", "needs-ja": "日本語" };
   const langs = missing.map((name) => NAME[name] ?? name).join("・");
   const labels = missing.map((name) => `\`${name}\``).join(" ");
-  return `${langs}の質問・回答が揃っていないようなので ${labels} を付けました。訳を書いていただける方も歓迎です（無ければ管理人が訳します）。\n`;
+  return `${langs}の質問・回答が揃っていないようなので ${labels} を付けました。訳を書いていただける方も歓迎です（無ければソサデンが訳します）。\n`;
 }
 
 /**
  * 起票直後に貼るレビュー案内。文面の正本は community-faq-admin.md の定型文で、
  * 目処の日付を2箇所に埋める。冒頭に印（NOTICE_MARK）を置いて二重投稿を防ぐ。
+ *
+ * 日本語の後ろに、同じ事実だけを短くまとめた英語を足す（英語で起票する人にも流れが伝わるように）。
+ * 英語側も「目処であって締切ではない」「非公式」を崩さないこと。
  */
 export function buildComment({ number, targetDate: due, missing = [] } = {}) {
   return [
@@ -156,12 +177,20 @@ export function buildComment({ number, targetDate: due, missing = [] } = {}) {
     "この収録案を見ていただける方は、次のどれか一つだけでも構いません。",
     "1. 裁定: 公式FAQ・Judge FAQ・Codex と食い違わないか",
     "2. 文面: 誤解を生まないか、再構成として過不足がないか",
-    "3. 和訳: 用語がサイトの既訳（カード頁の訳）と揃っているか",
+    "3. 和訳: 用語がサイトの既訳（カードページの訳）と揃っているか",
     "",
     "賛成なら本文に 👍、気になる点があれば 😕 と理由をコメントでお願いします。",
-    `${due} ごろを目処に、異論が無ければ管理人がサイトへ収録します。締切ではありません。それ以降のご意見も歓迎で、収録後でも直します（収録後も非公式で、公式裁定・英語原文が優先です）。`,
+    `${due} ごろを目処に、異論が無ければソーサラーズ・デン（ソサデン）がサイトに載せます。締切ではありません。それ以降のご意見も歓迎で、収録後でも直します（収録後も非公式で、後日 公式FAQ の追加や裁定の変更があればそちらが優先です）。`,
     "",
-    `${languageNote(missing)}収録したときは、カード頁の出典に \`Reviewed in sorcerers-knowledge #${number}\` としてこの Issue へのリンクが残ります。`,
+    `${languageNote(missing)}収録したときは、カードページの出典に \`Reviewed in sorcerers-knowledge #${number}\` としてこの Issue へのリンクが残ります。`,
+    `流れの説明: ${GUIDE_URL}`,
+    "",
+    "---",
+    "",
+    `**English** — Review is requested by around ${due}. That date is a rough target, not a deadline; comments after it are welcome too.`,
+    "👍 on the issue body = fine to record, 😕 = something to check (please comment why).",
+    "Sorcerers' Den checks it against the official FAQ / Judge FAQ / Codex and, if there are no objections, records it on the card page as a community FAQ — unofficial; it is a community-made supplement, and if the official FAQ is updated or a ruling changes later, the official one takes precedence. It can still be fixed after it is recorded.",
+    `Guide: ${GUIDE_URL}`,
   ].join("\n");
 }
 

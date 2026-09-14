@@ -1,0 +1,53 @@
+# レビュー中の収録案（open かつラベル faq-proposal の Issue）の一覧を
+# data/faq-proposals.json に集計し、変化があればコミットする（scripts/faq-proposals.mjs 参照）。
+# サイト（sorcerers-den）の「コミュニティFAQの手引き」とカード頁がこのファイルを
+# raw.githubusercontent.com 経由で読む。Issue の出入り + 毎日1回の取りこぼし保険。
+# シークレット不要（標準の GITHUB_TOKEN で自リポジトリの Issue を読める）。
+#
+# issues のイベントは絞り込まない — 一覧は毎回 API から作り直すので、
+# どの Issue の出来事でも結果は同じ（ラベルを外した・付けた回も正しく反映される）。
+name: FAQ proposals feed
+
+on:
+  issues:
+    types: [opened, closed, reopened, labeled, unlabeled, edited]
+  schedule:
+    - cron: "47 3 * * *" # 毎日1回の保険（イベント取りこぼし・API障害からの回復）。qa-activity と時刻をずらす
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+# Issue の出来事が続いたとき、集計とコミットが並走して push が競合しないよう直列化する
+concurrency:
+  group: faq-proposals
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # ref: main — イベント発火時点の SHA ではなく実行時点の main 先端を使う
+      # （qa-activity.yml と同じ理由: 古い SHA の上で生成ファイルをコミットすると rebase が衝突する）
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node scripts/faq-proposals.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: 変化があればコミット
+        run: |
+          if [ -z "$(git status --porcelain -- data/faq-proposals.json)" ]; then
+            echo "変更なし — コミットしない"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/faq-proposals.json
+          git commit -m "chore: レビュー中の収録案を更新"
+          git pull --rebase origin main
+          git push
