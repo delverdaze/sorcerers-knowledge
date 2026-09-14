@@ -70,8 +70,11 @@ body:
   - type: input
     id: credit
     attributes:
-      label: クレジット表記（任意） / Credit (optional)
-      description: サーバー単位で（例「○○ Discord #rules-questions の議論を基に再構成」）。個人名は本人が希望した場合のみ / Name the server, not the person (for example "Reconstructed from a discussion in ○○ Discord #rules-questions"). An individual's name only if they ask for it
+      label: クレジット表記（任意） / Attribution (optional)
+      description: >-
+        サーバー単位で（例「○○ Discord #rules-questions の議論を基に再構成」）。個人名は本人が希望した場合のみ /
+        Name the server, not the person (for example "Reconstructed from a discussion in ○○ Discord #rules-questions").
+        An individual's name only if they ask for it
   - type: textarea
     id: focus
     attributes:
