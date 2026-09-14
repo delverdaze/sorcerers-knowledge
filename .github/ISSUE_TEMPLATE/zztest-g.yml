@@ -1,9 +1,0 @@
-name: ZZTEST-G-minimal-card
-description: minimal
-body:
-  - type: input
-    id: card
-    attributes:
-      label: カード名 / Card
-    validations:
-      required: true

@@ -1,9 +1,0 @@
-name: ZZTEST-H-minimal-ja
-description: minimal
-body:
-  - type: input
-    id: card
-    attributes:
-      label: カード名
-    validations:
-      required: true

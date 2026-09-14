@@ -1,5 +1,9 @@
 # コミュニティFAQの収録案フォーム。
 #
+# 上段の description は短く保つ（GitHub は長い説明のフォームを黙って無視し、テンプレート選択画面に出さず
+# ?template= 指定でも空の Issue に落とす。237 文字で不可・約 90 文字で可を 2026-09-14 に実測）。
+# input / textarea の label には password・credit など GitHub の禁止語を英語側にも入れない。
+#
 # **`label:` は 2 つの構文解析との契約** — 起票された本文は `### <label>` の見出しと値で組まれ、
 # sorcerers-knowledge の scripts/faq-proposal.mjs と sorcerers-den の
 # functions/admin/api/issue.js が同じ対応表でこれを読む。
@@ -9,7 +13,7 @@
 # 上の 2 つの対応表も同時に直すこと**（知らない見出しは捨てずに extra に残るので、
 # 直し忘れても値そのものは失われない）。
 name: コミュニティFAQの収録案 / Community FAQ proposal
-description: カード別FAQに「コミュニティ」として収録したい Q&A の案。7日ほどを目処にレビューを募り、異論がなければソーサラーズ・デン（ソサデン）がサイトに載せます / A Q&A you would like recorded as a community FAQ on a card page. Review is requested for about 7 days; if there are no objections Sorcerers' Den records it
+description: カード別FAQに「コミュニティ」として載せたい Q&A の案（7日ほどを目処にレビュー） / A Q&A to record as a community FAQ (reviewed for about 7 days)
 title: "[FAQ案] "
 labels: [faq-proposal, needs-review]
 body:
