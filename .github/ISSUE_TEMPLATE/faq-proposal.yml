@@ -20,7 +20,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ありがとうございます！ 収録案は次の流れで進みます。
+        コミュニティFAQの収録案をありがとうございます。この案は次の流れで進みます。
         - 起票から **7日ほどを目処**に、異論が無ければ [Sorcerers' Den（ソサデン）](https://sorcerers-den.pages.dev/) がカードページに載せます。締切ではありません。それ以降のご意見も歓迎で、収録後でも直します
         - 本文への 👍 は「収録に賛成」、😕 は「気になる点がある」（理由をコメントで）
         - 元の投稿を**そのまま貼らず、再構成した文**で書いてください。Discord 等の投稿者名・スクリーンショットも不可（本人が希望した場合だけクレジット）
@@ -28,7 +28,7 @@ body:
         - 英語・日本語はどちらか一方でも構いません（片方はソサデンが訳します）
         - はじめての方へ: [コミュニティFAQの手引き](https://sorcerers-den.pages.dev/?guide=faq)（バッジの意味・出したあとに起きること）
 
-        Thank you. A proposal goes through the following steps.
+        Thank you for proposing a community FAQ. Your proposal goes through the following steps.
         - Review is requested for about **7 days** after the issue is opened. If there are no objections, [Sorcerers' Den](https://sorcerers-den.pages.dev/) records it on a card page. That date is a rough target, not a deadline — later comments are welcome, and it can still be fixed after it is recorded
         - 👍 on the issue body = fine to record, 😕 = something to check (please comment why)
         - Write the Q&A **in your own words** instead of pasting the original posts. No names or screenshots of the people who posted (credit only if they ask for it)
