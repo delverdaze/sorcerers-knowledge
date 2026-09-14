@@ -1,0 +1,82 @@
+name: ZZTEST-F-no-leading-comments
+description: カード別FAQに「コミュニティ」として収録したい Q&A の案。7日ほどを目処にレビューを募り、異論がなければソーサラーズ・デン（ソサデン）がサイトに載せます / A Q&A you would like recorded as a community FAQ on a card page. Review is requested for about 7 days; if there are no objections Sorcerers' Den records it
+title: "[FAQ案] "
+labels: [faq-proposal, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます！ 収録案は次の流れで進みます。
+        - 起票から **7日ほどを目処**に、異論が無ければ [Sorcerers' Den（ソサデン）](https://sorcerers-den.pages.dev/) がカードページに載せます。締切ではありません。それ以降のご意見も歓迎で、収録後でも直します
+        - 本文への 👍 は「収録に賛成」、😕 は「気になる点がある」（理由をコメントで）
+        - 元の投稿を**そのまま貼らず、再構成した文**で書いてください。Discord 等の投稿者名・スクリーンショットも不可（本人が希望した場合だけクレジット）
+        - 収録されても**非公式**です。あくまでルールや FAQ の補足としてコミュニティで作ったもので、後日 公式FAQ の追加や裁定の変更があればそちらを優先してください
+        - 英語・日本語はどちらか一方でも構いません（片方はソサデンが訳します）
+        - はじめての方へ: [コミュニティFAQの手引き](https://sorcerers-den.pages.dev/?guide=faq)（バッジの意味・出したあとに起きること）
+
+        Thank you. A proposal goes through the following steps.
+        - Review is requested for about **7 days** after the issue is opened. If there are no objections, [Sorcerers' Den](https://sorcerers-den.pages.dev/) records it on a card page. That date is a rough target, not a deadline — later comments are welcome, and it can still be fixed after it is recorded
+        - 👍 on the issue body = fine to record, 😕 = something to check (please comment why)
+        - Write the Q&A **in your own words** instead of pasting the original posts. No names or screenshots of the people who posted (credit only if they ask for it)
+        - Even once recorded it is **unofficial** — a community-made supplement to the rules and the FAQ. If the official FAQ is updated or a ruling changes later, the official one takes precedence
+        - Either English or Japanese alone is fine (Sorcerers' Den translates the other)
+        - New here? [Guide to the community FAQ](https://sorcerers-den.pages.dev/?guide=faq) (what the badge means, and what happens after you open an issue)
+  - type: input
+    id: card
+    attributes:
+      label: カード名 / Card
+      description: 英語名・日本語名どちらでも / English or Japanese name
+      placeholder: "Wuthering Heights / 嵐が丘"
+    validations:
+      required: true
+  - type: textarea
+    id: q-en
+    attributes:
+      label: 質問（英語） / Question (EN)
+  - type: textarea
+    id: a-en
+    attributes:
+      label: 回答（英語） / Answer (EN)
+  - type: textarea
+    id: q-ja
+    attributes:
+      label: 質問（日本語） / Question (JA)
+  - type: textarea
+    id: a-ja
+    attributes:
+      label: 回答（日本語） / Answer (JA)
+  - type: textarea
+    id: basis
+    attributes:
+      label: 根拠 / Basis
+      description: 公式FAQ・Judge FAQ・Codex の該当箇所、または議論のリンク（掲示板のスレッド・X など） / The relevant part of the official FAQ, Judge FAQ or Codex, or a link to the discussion (a board thread, X, and so on)
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 元となった議論・投稿の日付 / Date of the original discussion
+      placeholder: "2026-09-13"
+  - type: input
+    id: credit
+    attributes:
+      label: クレジット表記（任意） / Attribution (optional)
+      description: >-
+        サーバー単位で（例「○○ Discord #rules-questions の議論を基に再構成」）。個人名は本人が希望した場合のみ /
+        Name the server, not the person (for example "Reconstructed from a discussion in ○○ Discord #rules-questions").
+        An individual's name only if they ask for it
+  - type: textarea
+    id: focus
+    attributes:
+      label: 特に見てほしい点 / What to look at
+      description: 迷っている箇所・自信のない訳語など。レビューする人はここから読みます / Where you are unsure — wording, a translation you are not confident about. Reviewers start here
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 元の投稿を引用せず再構成した／投稿者の名前を出していない / I wrote it in my own words and did not name the people who posted
+          required: true
+        - label: 公式FAQ・Judge FAQ と矛盾しないことを確認した / I checked that it does not contradict the official FAQ or the Judge FAQ
