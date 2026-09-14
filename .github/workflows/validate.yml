@@ -14,3 +14,5 @@ jobs:
         with:
           node-version: 24
       - run: node scripts/validate.mjs
+      # scripts/ の純粋関数（Issue Form の構文解析・目処の日付など）の単体テスト
+      - run: node --test scripts/*.test.mjs

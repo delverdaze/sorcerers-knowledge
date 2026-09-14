@@ -1,0 +1,37 @@
+# コミュニティFAQの収録案（Issue Form: faq-proposal.yml）の起票にレビュー案内を
+# コメントし、状態のラベル（needs-review / 片言語なら needs-ja・needs-en）を付ける。
+# 文面と判定は scripts/faq-proposal.mjs、設計は sorcerers-den リポジトリの
+# aidlc-docs/inception/community-faq-review-proposal.md（構造的決定 19）。
+# シークレット不要（標準の github.token で自リポジトリの Issue に書ける）。
+name: FAQ proposal notice
+
+on:
+  issues:
+    types: [opened, labeled]
+
+# Issue へのコメントとラベルだけ。checkout は公開リポジトリなので contents なしで通る
+# （qa-notify.yml が permissions: {} で同じ形）
+permissions:
+  issues: write
+
+# 起票直後に手でラベルを足す等で opened と labeled が続けて発火しても、
+# 「印を確かめてから投稿する」が並走して案内が二重に出ないよう直列化する
+concurrency:
+  group: faq-proposal-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  notice:
+    # 起票時はフォームが付けたラベルで、後から付けたときはそのラベルで判定する
+    if: >-
+      (github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'faq-proposal'))
+      || (github.event.action == 'labeled' && github.event.label.name == 'faq-proposal')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node scripts/faq-proposal.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
