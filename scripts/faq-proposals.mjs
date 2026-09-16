@@ -7,15 +7,20 @@
  * 取れなければサイトは何も出さない（数えていないものを 0 と言わないため）。
  *
  * 出力仕様（サイト側との契約）:
- *   { generated: ISO8601, items: [{ n, url, slug, created, due }] }
+ *   { generated: ISO8601, items: [{ n, url, slug, created, due, q? }] }
  *   - n: Issue 番号 ／ url: Issue の URL
  *   - slug: 「カード名」欄から引ける札（`Name (slug)` の slug が data/slugs.json に実在すれば それ、
  *     無ければ欄を ` / ` 等で切った各片を英語名として照合し、ちょうど1枚に当たればその slug）。
  *     決められなければ null — 当て推量で別の札にしない
  *   - created: 起票日（JSTのYYYY-MM-DD） ／ due: 目処（起票 +7日・JST。**締切ではない**）
+ *   - q: 質問文 { ja?, en? }（「質問（日本語）/（英語）」欄・2026-09-16〜）。載せられる言語だけ鍵を置き、
+ *     どちらも無ければ q ごと省く。規則は cleanQuestion（空白を畳む・URL を含めば載せない・200 字で「…」）。
+ *     管理人のラベルを待たず起票と同時に出す — 荒らしは GitHub の Block user で止める
+ *     （sorcerers-den の aidlc-docs/operations/community-faq-admin.md「荒らしへの対処」）。
+ *     サイト側（js/guide-faq.js）も同じ規則で受け取り、描くときは必ずエスケープしリンクにしない
  *   - created の新しい順・最大100件
- *   - **題名・本文・投稿者名は入れない** — モデレーション前のテキストをサイトに載せないため
- *     （qa-activity.json と同じ考え。カード名はサイト側が slug から自分のデータで引く）
+ *   - **回答・根拠・題名・投稿者名は入れない** — 出すのは質問文だけ
+ *     （qa-activity.json と同じく、カード名はサイト側が slug から自分のデータで引く）
  *
  * GitHub Actions（.github/workflows/faq-proposals.yml）から issues のイベントと
  * 毎日のcronで実行される。
@@ -100,6 +105,38 @@ export function slugOfCard(card, slugs) {
   return hits.size === 1 ? [...hits][0] : null;
 }
 
+/** 配信データに載せる質問文の上限（カード頁の 1 行に収まる長さ） */
+const MAX_QUESTION = 200;
+/** URL らしきもの（http(s)://・その他のスキーム・www.）。荒らしの定型は URL や画像で、ルールの質問に URL は要らない
+    （根拠のリンクは「根拠」欄にある）。含んでいれば質問文を載せない */
+const URL_RE = /https?:\/\/|:\/\/|www\./i;
+
+/**
+ * 質問文を配信データに載せる形にならす。載せられなければ null。
+ *   - 文字列でない・空 → null
+ *   - 空白（改行を含む）は 1 つの空白に畳む（頁の 1 行に出すため）
+ *   - URL を含む → null（サイトは文なしの札に落ちる。sorcerers-den の js/guide-faq.js も同じ規則で受け取る）
+ *   - 200 字を超えたら 199 字＋「…」（コードポイント単位・絵文字を割らない）
+ */
+export function cleanQuestion(text) {
+  if (typeof text !== "string") return null;
+  const flat = text.replace(/\s+/g, " ").trim();
+  if (!flat || URL_RE.test(flat)) return null;
+  const chars = [...flat];
+  return chars.length > MAX_QUESTION ? `${chars.slice(0, MAX_QUESTION - 1).join("")}…` : flat;
+}
+
+/** 質問文（日本語・英語）。載せられる言語だけ鍵を置き、どちらも無ければ null（配信データでは q ごと省く） */
+export function questionOf(fields) {
+  const ja = cleanQuestion(fields?.qJa);
+  const en = cleanQuestion(fields?.qEn);
+  if (!ja && !en) return null;
+  const q = {};
+  if (ja) q.ja = ja;
+  if (en) q.en = en;
+  return q;
+}
+
 /**
  * GitHub の Issue 一覧（REST の応答そのまま）を配信データに畳む。
  * pull request は除く（Issues API は PR も返す）。日付が読めない件は落とす。
@@ -115,7 +152,11 @@ export function buildFeed(issues, slugs, { generated = new Date().toISOString(),
     const url = typeof issue.html_url === "string" && issue.html_url.startsWith("https://")
       ? issue.html_url
       : `https://github.com/${repo}/issues/${n}`;
-    items.push({ n, url, slug: slugOfCard(parseIssueForm(issue.body).card, slugs), created, due });
+    const fields = parseIssueForm(issue.body);
+    const item = { n, url, slug: slugOfCard(fields.card, slugs), created, due };
+    const q = questionOf(fields);
+    if (q) item.q = q; // 質問文は載せられるときだけ鍵を置く（サイトは無ければ文なしの札を出す）
+    items.push(item);
   }
   // 新しい順。同じ日の起票は番号の大きい方（後から出た方）を先に
   items.sort((a, b) => (a.created === b.created ? b.n - a.n : b.created.localeCompare(a.created)));

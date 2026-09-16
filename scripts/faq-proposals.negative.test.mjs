@@ -309,3 +309,38 @@ test("トークンは出力にも例外にも書かない（ログに残らな�
     assert.ok(!r.out.includes("tok_SECRET_VALUE"), `トークンが出力に漏れた:\n${r.out}`);
   });
 });
+
+/* ---- 5. 質問文 q（2026-09-16〜） ---- */
+
+test("敵性の質問文は文字列のまま載る（描くのはサイトの仕事＝必ずエスケープ）。回答・根拠・題名・投稿者名は載らない", () => {
+  const feed = buildFeed([issue({
+    title: "<script>alert(1)</script>",
+    user: { login: "attacker" },
+    body: "### カード名 / Card\n\nMerlin (merlin)\n\n### 質問（日本語） / Question (JA)\n\n<img src=x onerror=alert(1)> は？\n\n### 回答（日本語） / Answer (JA)\n\n回答の本文\n\n### 根拠 / Basis\n\nhttps://evil.example\n",
+  })], SLUGS);
+  assert.equal(feed.items[0].q.ja, "<img src=x onerror=alert(1)> は？", "文字列として運ぶ（ここでは変えない）");
+  const text = JSON.stringify(feed);
+  for (const leak of ["attacker", "evil.example", "回答の本文", "alert(1)</script>"]) assert.ok(!text.includes(leak), `${leak} が漏れた`);
+});
+
+test("URL を含む質問文は載らない（画像の markdown・短縮 URL・スキームつき・www.）", () => {
+  for (const q of ["![x](https://evil.example/a.png)", "see http://bit.ly/x", "javascript://alert", "www.evil.example を見て", "data://x"]) {
+    const feed = buildFeed([issue({ body: `### カード名 / Card\n\nMerlin (merlin)\n\n### 質問（日本語） / Question (JA)\n\n${q}\n` })], SLUGS);
+    assert.ok(!("q" in feed.items[0]), q);
+    assert.ok(!JSON.stringify(feed).includes("evil"), q);
+  }
+});
+
+test("巨大な質問文でも配信データは 200 字ぶんだけ", () => {
+  const body = `### カード名 / Card\n\nMerlin (merlin)\n\n### 質問（日本語） / Question (JA)\n\n${"荒".repeat(300_000)}\n`;
+  const feed = buildFeed([issue({ body })], SLUGS);
+  assert.equal([...feed.items[0].q.ja].length, 200);
+  assert.ok(JSON.stringify(feed).length < 1200);
+});
+
+test("質問文の欄が壊れた形でも落ちない（空・空白だけ・_No response_）", () => {
+  for (const v of ["", "   ", "\n\n", "_No response_"]) {
+    const feed = buildFeed([issue({ body: `### カード名 / Card\n\nMerlin (merlin)\n\n### 質問（日本語） / Question (JA)\n\n${v}\n` })], SLUGS);
+    assert.ok(!("q" in feed.items[0]), JSON.stringify(v));
+  }
+});

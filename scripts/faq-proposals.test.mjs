@@ -2,7 +2,7 @@
  * scripts/faq-proposals.mjs の単体テスト（`node --test scripts/*.test.mjs`）。
  *
  * 見張るのは配信データの契約（サイト側 sorcerers-den が読む形）:
- *   { generated, items: [{ n, url, slug, created, due }] } — 題名・本文・投稿者名は入れない
+ *   { generated, items: [{ n, url, slug, created, due, q? }] } — 質問文 q だけ載せ、回答・根拠・題名・投稿者名は入れない
  * と、「中身が同じなら書かない」（cron のたびに generated だけのコミットを積まない）こと。
  * GitHub とのやりとりは fetch を差し替えた子プロセスで確かめる（本物の API は叩かない）。
  */
@@ -14,7 +14,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { jstDay, dueDay, slugOfCard, buildFeed, sameFeed, normalizeName } from "./faq-proposals.mjs";
+import { jstDay, dueDay, slugOfCard, buildFeed, sameFeed, normalizeName, cleanQuestion, questionOf } from "./faq-proposals.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SCRIPT = path.join(HERE, "faq-proposals.mjs");
@@ -340,4 +340,64 @@ test("一覧でない応答（オブジェクト）も失敗として止まる",
     assert.match(r.out, /一覧ではありません|集計に失敗/);
     assert.ok(!existsSync(out));
   });
+});
+
+/* ---- 質問文 q（2026-09-16〜: 管理人のラベルを待たず、起票と同時にカード頁へ出す） ---- */
+
+const QA_BODY = [
+  "### カード名 / Card", "", "Pith Imp (pith_imp)", "",
+  "### 質問（英語） / Question (EN)", "", "What happens to the cards in Imp’s hand if it is transformed?", "",
+  "### 回答（英語） / Answer (EN)", "", "The cards remain with it.", "",
+  "### 質問（日本語） / Question (JA)", "", "Imp が変身させられた場合、手札はどうなりますか？", "",
+  "### 回答（日本語） / Answer (JA)", "", "そのまま保持されます。", "",
+  "### 根拠 / Basis", "", "https://sorcerers-den.pages.dev/?codex=transform", "",
+  "### クレジット表記（任意） / Attribution (optional)", "", "someone_server", "",
+].join("\n");
+
+test("質問文は日英とも配信データに載る（回答・根拠・クレジットは載らない）", () => {
+  const feed = buildFeed([issue({ number: 17, body: QA_BODY })], SLUGS);
+  assert.deepEqual(feed.items[0].q, {
+    ja: "Imp が変身させられた場合、手札はどうなりますか？",
+    en: "What happens to the cards in Imp’s hand if it is transformed?",
+  });
+  assert.deepEqual(Object.keys(feed.items[0]).sort(), ["created", "due", "n", "q", "slug", "url"]);
+  const text = JSON.stringify(feed);
+  for (const leak of ["remain", "保持", "codex=transform", "someone_server"]) assert.ok(!text.includes(leak), `${leak} が漏れた`);
+});
+
+test("片言語なら、ある方だけ鍵を置く。どちらも無ければ q ごと無い（_No response_ も無い扱い）", () => {
+  const ja = buildFeed([issue({
+    body: "### カード名 / Card\n\nMerlin (merlin)\n\n### 質問（英語） / Question (EN)\n\n_No response_\n\n### 質問（日本語） / Question (JA)\n\n質問です\n",
+  })], SLUGS);
+  assert.deepEqual(ja.items[0].q, { ja: "質問です" });
+  const none = buildFeed([issue()], SLUGS);
+  assert.ok(!("q" in none.items[0]), "質問文が無ければ鍵ごと省く（配信データを大きくしない）");
+});
+
+test("cleanQuestion — 空白を畳む・URL を含めば載せない・200 字で「…」", () => {
+  assert.equal(cleanQuestion("  改行\nと  空白\t を 畳む "), "改行 と 空白 を 畳む");
+  assert.equal(cleanQuestion("https://evil.example を見て"), null, "URL を含む質問文は載せない（サイトは文なしの札に落ちる）");
+  assert.equal(cleanQuestion("see www.example.com now"), null);
+  assert.equal(cleanQuestion("ftp://x"), null);
+  for (const bad of ["", "   ", null, undefined, 42, {}, []]) assert.equal(cleanQuestion(bad), null, JSON.stringify(bad));
+  const long = "あ".repeat(250);
+  assert.equal([...cleanQuestion(long)].length, 200);
+  assert.ok(cleanQuestion(long).endsWith("…"));
+  assert.equal(cleanQuestion("あ".repeat(200)), "あ".repeat(200), "ちょうど 200 字は切らない");
+  assert.equal([...cleanQuestion("😀".repeat(300))].length, 200, "絵文字を割らない（コードポイント単位）");
+  assert.equal(cleanQuestion("Pith Imp の話 (pith_imp)"), "Pith Imp の話 (pith_imp)", "URL でなければそのまま");
+});
+
+test("questionOf — 欄の値から q を組む", () => {
+  assert.deepEqual(questionOf({ qJa: "あ", qEn: "a" }), { ja: "あ", en: "a" });
+  assert.deepEqual(questionOf({ qJa: "", qEn: "a" }), { en: "a" });
+  assert.equal(questionOf({ qJa: "", qEn: "" }), null);
+  assert.equal(questionOf({}), null);
+  assert.equal(questionOf(null), null);
+});
+
+test("質問文が変われば「違う」（本文の編集が次の実行で反映される）", () => {
+  const a = buildFeed([issue({ number: 17, body: QA_BODY })], SLUGS);
+  const b = buildFeed([issue({ number: 17, body: QA_BODY.replace("手札はどうなりますか", "手札は残りますか") })], SLUGS);
+  assert.ok(!sameFeed(a, b));
 });

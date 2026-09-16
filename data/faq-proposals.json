@@ -1,12 +1,16 @@
 {
-  "generated": "2026-09-14T14:27:11.485Z",
+  "generated": "2026-09-16T14:32:23.998Z",
   "items": [
     {
       "n": 17,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/17",
       "slug": "pith_imp",
       "created": "2026-09-14",
-      "due": "2026-09-21"
+      "due": "2026-09-21",
+      "q": {
+        "ja": "Imp が《Pollimorph》などで変身させられた場合、手札はどうなりますか？",
+        "en": "What happens to the cards in Imp’s hand if it is transformed by《Pollimorph》or a similar effect?"
+      }
     }
   ]
 }
