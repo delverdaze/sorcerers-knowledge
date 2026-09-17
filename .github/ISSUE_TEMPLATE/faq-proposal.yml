@@ -79,6 +79,24 @@ body:
         サーバー単位で（例「○○ Discord #rules-questions の議論を基に再構成」）。個人名は本人が希望した場合のみ /
         Name the server, not the person (for example "Reconstructed from a discussion in ○○ Discord #rules-questions").
         An individual's name only if they ask for it
+  # 収録後に FAQ の隅へ載せる GitHub のアイコン（名前は出ない）。既定で「出す」— checkboxes は既定で印を付けられないので
+  # dropdown の default を使う。「出さない」を選べば載せない（本人の希望が先。理由は問わない）。
+  # 読み取りは日本語側の見出し「アイコンの表示」（knowledge の scripts/faq-proposal.mjs と Den の functions/admin/api/issue.js）
+  - type: dropdown
+    id: avatar
+    attributes:
+      label: アイコンの表示 / Show your avatar
+      description: >-
+        収録されると、その FAQ の隅にあなたの GitHub のアイコンが載ります（名前は出ません。押すと GitHub のあなたのページへ）。
+        コミュニティで作った FAQ だと伝わるように、出すのを既定にしています。もし裁定に間違いがあっても、ソサデンはそれを責めません。
+        みんなで正しい裁定にたどり着けたことに感謝するだけです。それでも出したくないときは「出さない」を選んでください /
+        Once recorded, your GitHub avatar appears in the corner of that FAQ (no name; it links to your GitHub page).
+        It is on by default so the entry reads as community-made. If a ruling turns out to be wrong, Sorcerers' Den will not blame you.
+        We are simply grateful that the right ruling was reached together. Choose "Don't show" if you would rather not
+      options:
+        - 出す / Show
+        - 出さない / Don't show
+      default: 0
   - type: textarea
     id: focus
     attributes:

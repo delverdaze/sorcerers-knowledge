@@ -308,3 +308,25 @@ test("片言語のときだけ、付けたラベルの意味を添える", () =>
   assert.match(both, /英語・日本語の質問・回答が揃っていない/);
   assert.match(both, /`needs-en` `needs-ja`/);
 });
+
+/* ---- アイコンの表示（2026-09-17〜） ---- */
+
+test("「アイコンの表示」の欄を avatar として読む（選択式の値は「出す / Show」か「出さない / Don't show」）", () => {
+  const body = "### カード名 / Card\n\nMerlin (merlin)\n\n### アイコンの表示 / Show your avatar\n\n出す / Show\n";
+  assert.equal(parseIssueForm(body).avatar, "出す / Show");
+  assert.equal(parseIssueForm(body.replace("出す / Show", "出さない / Don't show")).avatar, "出さない / Don't show");
+  assert.equal(parseIssueForm(body.replace("出す / Show", "_No response_")).avatar, "", "未入力は空文字");
+  assert.equal(parseIssueForm("### カード名 / Card\n\nMerlin\n").avatar, "", "欄の無い古い Issue も読める");
+  assert.deepEqual(parseIssueForm(body).extra, {}, "見出しは extra に落ちない");
+});
+
+test("案内は意見をくれた人のアイコンのことを日英で言い、出したくない人の逃げ道を示す", () => {
+  const comment = buildComment({ number: 42, targetDate: "2026-09-20" });
+  const [ja, en] = comment.split("\n---\n");
+  assert.match(ja, /コメントや 👍・😕 をくれた方の GitHub のアイコンも、収録時に名前なしで FAQ の隅に並びます/);
+  assert.match(ja, /出したくない方は、この Issue にひとことコメントしてください/);
+  assert.match(en, /avatars of those who comment or react/);
+  assert.match(en, /without names/);
+  assert.match(en, /if you would rather not/);
+  assert.equal(comment.match(/2026-09-20/g).length, 3, "目処の日付の数は変わらない");
+});

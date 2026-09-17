@@ -32,6 +32,7 @@ const FIELD_BY_HEADING = new Map([
   ["根拠", "basis"],
   ["元となった議論・投稿の日付", "date"],
   ["クレジット表記（任意）", "credit"],
+  ["アイコンの表示", "avatar"], // 収録後の FAQ に GitHub のアイコンを出すか（「出す / Show」「出さない / Don't show」・2026-09-17）
   ["特に見てほしい点", "focus"],
   ["確認", "confirm"],
 ]);
@@ -124,7 +125,7 @@ function parseCheckboxes(lines) {
 export function parseIssueForm(body) {
   const fields = {
     card: "", qEn: "", aEn: "", qJa: "", aJa: "",
-    basis: "", date: "", credit: "", focus: "",
+    basis: "", date: "", credit: "", avatar: "", focus: "",
     confirm: [], extra: {},
   };
   for (const { heading, lines } of splitSections(body)) {
@@ -183,6 +184,8 @@ export function buildComment({ number, targetDate: due, missing = [] } = {}) {
     `${due} ごろを目処に、異論が無ければソーサラーズ・デン（ソサデン）がサイトに載せます。締切ではありません。それ以降のご意見も歓迎で、収録後でも直します（収録後も非公式で、後日 公式FAQ の追加や裁定の変更があればそちらが優先です）。`,
     "",
     `${languageNote(missing)}収録したときは、カードページの出典に \`Reviewed in sorcerers-knowledge #${number}\` としてこの Issue へのリンクが残ります。`,
+    /* 意見をくれた人のアイコン: Form では同意を取れないので、参加する前に読むこの案内で知らせる（出したくなければひとこと） */
+    "コメントや 👍・😕 をくれた方の GitHub のアイコンも、収録時に名前なしで FAQ の隅に並びます（提案者のアイコンが先頭）。出したくない方は、この Issue にひとことコメントしてください。",
     `流れの説明: ${GUIDE_URL}`,
     "",
     "---",
@@ -190,6 +193,7 @@ export function buildComment({ number, targetDate: due, missing = [] } = {}) {
     `**English** — Review is requested by around ${due}. That date is a rough target, not a deadline; comments after it are welcome too.`,
     "👍 on the issue body = fine to record, 😕 = something to check (please comment why).",
     "Sorcerers' Den checks it against the official FAQ / Judge FAQ / Codex and, if there are no objections, records it on the card page as a community FAQ — unofficial; it is a community-made supplement, and if the official FAQ is updated or a ruling changes later, the official one takes precedence. It can still be fixed after it is recorded.",
+    "The GitHub avatars of those who comment or react (👍/😕) also appear, without names, in the corner of the recorded FAQ, after the proposer's. Leave a short comment on this issue if you would rather not.",
     `Guide: ${GUIDE_URL}`,
   ].join("\n");
 }
