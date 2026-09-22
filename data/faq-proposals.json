@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-22T05:26:29.741Z",
+  "generated": "2026-09-22T05:35:25.056Z",
   "items": [
+    {
+      "n": 21,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/21",
+      "slug": "raze",
+      "created": "2026-09-22",
+      "due": "2026-09-29",
+      "q": {
+        "ja": "Disabled のミニオンが Raze することはできますか？",
+        "en": "Can a Disabled minion Raze?"
+      }
+    },
     {
       "n": 20,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/20",
