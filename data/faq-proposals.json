@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-22T04:13:53.449Z",
+  "generated": "2026-09-22T04:20:06.884Z",
   "items": [
+    {
+      "n": 19,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/19",
+      "slug": "book_of_the_dead",
+      "created": "2026-09-22",
+      "due": "2026-09-29",
+      "q": {
+        "ja": "《Book of the Dead》で唱えたミニオンは、元々の Beast などのサブタイプも残りますか？",
+        "en": "Do minions cast with《Book of the Dead》retain their original subtypes, such as Beast?"
+      }
+    },
     {
       "n": 18,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/18",
