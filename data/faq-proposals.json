@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-22T04:20:06.884Z",
+  "generated": "2026-09-22T05:26:29.741Z",
   "items": [
+    {
+      "n": 20,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/20",
+      "slug": "raze",
+      "created": "2026-09-22",
+      "due": "2026-09-29",
+      "q": {
+        "ja": "Stealth を持つ味方が Raze した場合、Stealth は失われますか？",
+        "en": "If an ally with Stealth Razes, does it lose Stealth?"
+      }
+    },
     {
       "n": 19,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/19",
