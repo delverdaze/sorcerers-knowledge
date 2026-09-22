@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-16T14:32:23.998Z",
+  "generated": "2026-09-22T04:13:53.449Z",
   "items": [
+    {
+      "n": 18,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/18",
+      "slug": "book_of_the_dead",
+      "created": "2026-09-22",
+      "due": "2026-09-29",
+      "q": {
+        "ja": "対戦相手の墓地にあるカードも唱えられますか？",
+        "en": "Can cards in your opponent’s cemetery also be cast?"
+      }
+    },
     {
       "n": 17,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/17",
