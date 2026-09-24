@@ -81,7 +81,10 @@ body:
         An individual's name only if they ask for it
   # 収録後に FAQ の隅へ載せる GitHub のアイコン（名前は出ない）。既定で「出す」— checkboxes は既定で印を付けられないので
   # dropdown の default を使う。「出さない」を選べば載せない（本人の希望が先。理由は問わない）。
-  # 読み取りは日本語側の見出し「アイコンの表示」（knowledge の scripts/faq-proposal.mjs と Den の functions/admin/api/issue.js）
+  # 読み取りは日本語側の見出し「アイコンの表示」（knowledge の scripts/faq-proposal.mjs と Den の functions/admin/api/issue.js）。
+  # **options の 1 つ目「出す / Show」は Den の js/guide-faq.js の FAQ_AVATAR_DEFAULT と一字一句同じ（契約）** — GitHub は題名や
+  # カード名をクエリで埋めて開くと default を無視して None にするので、サイトのリンクは `avatar=出す / Show` もクエリで渡す
+  # （2026-09-24）。文言を変えるときは両方を同時に
   - type: dropdown
     id: avatar
     attributes:
