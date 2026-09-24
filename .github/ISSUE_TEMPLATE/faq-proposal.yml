@@ -44,14 +44,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: q-en
-    attributes:
-      label: 質問（英語） / Question (EN)
-  - type: textarea
-    id: a-en
-    attributes:
-      label: 回答（英語） / Answer (EN)
-  - type: textarea
     id: q-ja
     attributes:
       label: 質問（日本語） / Question (JA)
@@ -60,10 +52,25 @@ body:
     attributes:
       label: 回答（日本語） / Answer (JA)
   - type: textarea
+    id: q-en
+    attributes:
+      label: 質問（英語） / Question (EN)
+  - type: textarea
+    id: a-en
+    attributes:
+      label: 回答（英語） / Answer (EN)
+  - type: textarea
     id: basis
     attributes:
       label: 根拠 / Basis
       description: 公式FAQ・Judge FAQ・Codex の該当箇所、または議論のリンク（掲示板のスレッド・X など） / The relevant part of the official FAQ, Judge FAQ or Codex, or a link to the discussion (a board thread, X, and so on)
+    validations:
+      required: true
+  - type: textarea
+    id: focus
+    attributes:
+      label: 特に見てほしい点 / What to look at
+      description: 迷っている箇所・自信のない訳語など。レビューする人はここから読みます / Where you are unsure — wording, a translation you are not confident about. Reviewers start here
     validations:
       required: true
   - type: input
@@ -99,13 +106,6 @@ body:
         We are simply grateful that the right ruling was reached together. Tick the box only if you would rather not
       options:
         - label: アイコンを出さない / Don't show my avatar
-  - type: textarea
-    id: focus
-    attributes:
-      label: 特に見てほしい点 / What to look at
-      description: 迷っている箇所・自信のない訳語など。レビューする人はここから読みます / Where you are unsure — wording, a translation you are not confident about. Reviewers start here
-    validations:
-      required: true
   - type: checkboxes
     id: confirm
     attributes:
