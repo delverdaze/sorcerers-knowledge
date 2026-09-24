@@ -3,7 +3,8 @@
 # 上段の description は短く保つ（GitHub は長い説明のフォームを黙って無視する — faq-proposal.yml の注記と同じ）。
 # input / textarea の label には password・credit など GitHub の禁止語を英語側にも入れない（クレジット表記は Attribution）。
 #
-# 写真が記録の全部なので **写真を必須・言葉での説明は任意**（絵の知識が無くても、写真さえあれば出せる）。
+# 写真が記録の全部なので **写真を必須・言葉での説明は任意**（絵の知識が無くても、写真さえあれば出せる）。求めるのはカードの表面 1 枚
+# （2026-09-25 ユーザー判断: 載せるのは 1 枚。違いが分かりにくければ確認の段階で寄りを頼む）。
 # 確認の 2 つ（自分で撮った・載せてよい）も必須 — 載せられない写真では記録にならない（「載せないでほしい」の選択肢は置かない）。
 # dropdown に default を置かない（サイトのリンクが card をクエリで埋めて開くと default が無視される GitHub の癖）。
 # 見出しの構文解析はまだ無い（人が読む）。自動化するときは faq-proposal.yml と同じ「日本語 / English」の規則で読める。
@@ -17,12 +18,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        報告ありがとうございます。**写真がすべて**です — 表面と、気になる所の寄りを、下の「写真」の欄にドラッグ＆ドロップで貼ってください（カード名が読めなくても構いません）。
+        報告ありがとうございます。**写真がすべて**です — カードの表面を撮った写真を、下の「写真」の欄にドラッグ＆ドロップで貼ってください（カード名が読めなくても構いません）。
         - 載せるのは、撮影者の許諾がある写真だけです。[Sorcerers' Den（ソサデン）](https://sorcerers-den.pages.dev/) にはクレジットと元投稿のリンクつきで載り、削除はいつでも頼めます
         - 公式は Curio の存在を公表していません。サイトでは「〜と言われている」という伝聞の形で書きます
         - GitHub の Issue は誰でも見られ、あとから消しても履歴に残ります。住所や名前など、写したくないものが写り込んでいないか確かめてください
 
-        Thank you for reporting. **The photos are everything** — drag and drop the front of the card and a close-up of what looks different into the “Photos” field below (it is fine if you cannot read the card name).
+        Thank you for reporting. **The photo is everything** — drag and drop a photo of the front of the card into the “Photo” field below (it is fine if you cannot read the card name).
         - Only photos with the photographer’s permission are published. On [Sorcerers' Den](https://sorcerers-den.pages.dev/) they appear with attribution and a link to the original post, and can be removed at any time on request
         - The publisher has never acknowledged that Curios exist; the site writes about them as hearsay (“is said to…”)
         - GitHub issues are public and their history stays even after edits — check that nothing you would rather not show (an address, a name) is in the frame
@@ -37,9 +38,9 @@ body:
   - type: textarea
     id: photos
     attributes:
-      label: 写真 / Photos
-      description: ここに画像をドラッグ＆ドロップ（表面・気になる所の寄り） / Drag and drop images here (the front, and a close-up of what looks different)
-      placeholder: "（画像を貼ると ![image](…) の形で入ります / Dropped images appear here as ![image](…)）"
+      label: 写真 / Photo
+      description: カードの表面を撮った写真をここにドラッグ＆ドロップ / Drag and drop a photo of the front of the card here
+      placeholder: "（画像を貼ると ![image](…) の形で入ります / A dropped image appears here as ![image](…)）"
     validations:
       required: true
   - type: dropdown
