@@ -311,11 +311,12 @@ test("片言語のときだけ、付けたラベルの意味を添える", () =>
 
 /* ---- アイコンの表示（2026-09-17〜） ---- */
 
-test("「アイコンの表示」の欄を avatar として読む（選択式の値は「出す / Show」か「出さない / Don't show」）", () => {
-  const body = "### カード名 / Card\n\nMerlin (merlin)\n\n### アイコンの表示 / Show your avatar\n\n出す / Show\n";
-  assert.equal(parseIssueForm(body).avatar, "出す / Show");
-  assert.equal(parseIssueForm(body.replace("出す / Show", "出さない / Don't show")).avatar, "出さない / Don't show");
-  assert.equal(parseIssueForm(body.replace("出す / Show", "_No response_")).avatar, "", "未入力は空文字");
+test("「アイコンの表示」の欄を avatar として読む（チェックボックス「出さない」— 印なしが既定＝出す。旧・選択式の値も文字のまま残る）", () => {
+  const body = "### カード名 / Card\n\nMerlin (merlin)\n\n### アイコンの表示 / Show your avatar\n\n- [ ] アイコンを出さない / Don't show my avatar\n";
+  assert.equal(parseIssueForm(body).avatar, "- [ ] アイコンを出さない / Don't show my avatar", "checkboxes は文字のまま（判定は Den の avatarChoice）");
+  assert.equal(parseIssueForm(body.replace("- [ ]", "- [x]")).avatar, "- [x] アイコンを出さない / Don't show my avatar");
+  assert.equal(parseIssueForm(body.replace("- [ ] アイコンを出さない / Don't show my avatar", "出す / Show")).avatar, "出す / Show", "旧・選択式で起票された Issue も読める");
+  assert.equal(parseIssueForm(body.replace("- [ ] アイコンを出さない / Don't show my avatar", "_No response_")).avatar, "", "未入力は空文字");
   assert.equal(parseIssueForm("### カード名 / Card\n\nMerlin\n").avatar, "", "欄の無い古い Issue も読める");
   assert.deepEqual(parseIssueForm(body).extra, {}, "見出しは extra に落ちない");
 });
