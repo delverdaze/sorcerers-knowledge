@@ -1,0 +1,82 @@
+# Curio の報告フォーム（Sorcerers' Den の「Curio 見聞録」の受付）。
+#
+# 上段の description は短く保つ（GitHub は長い説明のフォームを黙って無視する — faq-proposal.yml の注記と同じ）。
+# input / textarea の label には password・credit など GitHub の禁止語を英語側にも入れない（クレジット表記は Attribution）。
+#
+# 写真が記録の全部なので **写真を必須・言葉での説明は任意**（絵の知識が無くても、写真さえあれば出せる）。
+# 確認の 2 つ（自分で撮った・載せてよい）も必須 — 載せられない写真では記録にならない（「載せないでほしい」の選択肢は置かない）。
+# dropdown に default を置かない（サイトのリンクが card をクエリで埋めて開くと default が無視される GitHub の癖）。
+# 見出しの構文解析はまだ無い（人が読む）。自動化するときは faq-proposal.yml と同じ「日本語 / English」の規則で読める。
+# サイト側の入口: js/app.js の curioReportIssueUrl（カードの頁・記録頁・検索欄の該当なし・白紙の頁）。
+# 設計: sorcerers-den の aidlc-docs/inception/curio-unlisted-proposal.md（2026-09-24）。
+name: Curio の報告 / Report a Curio
+description: 通常と違うカード（Curio）を引いたら、写真を添えて / Pulled a Curio? Report it with photos
+title: "[Curio] "
+labels: [curio-sighting]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます。**写真がすべて**です — 表面と、気になる所の寄りを、下の「写真」の欄にドラッグ＆ドロップで貼ってください（カード名が読めなくても構いません）。
+        - 載せるのは、撮影者の許諾がある写真だけです。[Sorcerers' Den（ソサデン）](https://sorcerers-den.pages.dev/) にはクレジットと元投稿のリンクつきで載り、削除はいつでも頼めます
+        - 公式は Curio の存在を公表していません。サイトでは「〜と言われている」という伝聞の形で書きます
+        - GitHub の Issue は誰でも見られ、あとから消しても履歴に残ります。住所や名前など、写したくないものが写り込んでいないか確かめてください
+
+        Thank you for reporting. **The photos are everything** — drag and drop the front of the card and a close-up of what looks different into the “Photos” field below (it is fine if you cannot read the card name).
+        - Only photos with the photographer’s permission are published. On [Sorcerers' Den](https://sorcerers-den.pages.dev/) they appear with attribution and a link to the original post, and can be removed at any time on request
+        - The publisher has never acknowledged that Curios exist; the site writes about them as hearsay (“is said to…”)
+        - GitHub issues are public and their history stays even after edits — check that nothing you would rather not show (an address, a name) is in the frame
+  - type: input
+    id: card
+    attributes:
+      label: カード名 / Card
+      description: サイトから開いた場合は入力済み。読めなければ「不明」で構いません / Already filled in when opened from the site. Write “unknown” if you cannot read it
+      placeholder: "Water Castle"
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: 写真 / Photos
+      description: ここに画像をドラッグ＆ドロップ（表面・気になる所の寄り） / Drag and drop images here (the front, and a close-up of what looks different)
+      placeholder: "（画像を貼ると ![image](…) の形で入ります / Dropped images appear here as ![image](…)）"
+    validations:
+      required: true
+  - type: dropdown
+    id: product
+    attributes:
+      label: 剥いた製品 / Product it came from
+      options:
+        - Alpha
+        - Beta
+        - Arthurian Legends
+        - Gothic
+        - Dragonlord
+        - 分からない・その他 / Unknown or other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: どこが通常と違うか（任意） / What is different (optional)
+      description: 分かる範囲で。向き・レアリティの文字・絵・本文など。書けなくても出せます / As far as you can tell — orientation, rarity text, art, rules text. You can leave this empty
+  - type: input
+    id: source
+    attributes:
+      label: 元の投稿（任意） / Original post (optional)
+      description: X や Discord に先に投稿していれば、その URL / If you posted it on X or Discord first, the URL
+      placeholder: "https://x.com/…/status/…"
+  - type: input
+    id: attribution
+    attributes:
+      label: クレジット表記（任意） / Attribution (optional)
+      description: 空なら GitHub のアカウント名で載ります / Leave empty to be credited by your GitHub account name
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 自分で撮った写真です（他の人の写真や投稿を無断で貼っていません） / I took these photos myself (no one else’s photos or posts without permission)
+          required: true
+        - label: Sorcerers' Den にクレジットつきで載せてよいです。削除はいつでも頼めると理解しました / Sorcerers' Den may publish them with attribution, and I understand I can ask for removal at any time
+          required: true
