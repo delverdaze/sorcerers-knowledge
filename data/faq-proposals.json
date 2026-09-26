@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T05:35:25.056Z",
+  "generated": "2026-09-26T14:13:28.045Z",
   "items": [
     {
       "n": 21,
@@ -43,17 +43,6 @@
       "q": {
         "ja": "対戦相手の墓地にあるカードも唱えられますか？",
         "en": "Can cards in your opponent’s cemetery also be cast?"
-      }
-    },
-    {
-      "n": 17,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/17",
-      "slug": "pith_imp",
-      "created": "2026-09-14",
-      "due": "2026-09-21",
-      "q": {
-        "ja": "Imp が《Pollimorph》などで変身させられた場合、手札はどうなりますか？",
-        "en": "What happens to the cards in Imp’s hand if it is transformed by《Pollimorph》or a similar effect?"
       }
     }
   ]
