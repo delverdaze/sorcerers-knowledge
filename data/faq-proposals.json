@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-26T14:13:28.045Z",
+  "generated": "2026-09-26T14:46:57.147Z",
   "items": [
+    {
+      "n": 22,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/22",
+      "slug": "haast_eagle",
+      "created": "2026-09-26",
+      "due": "2026-10-03",
+      "q": {
+        "ja": "運ばれているユニットが Airborne を得るということは、斜めにも移動できますか？",
+        "en": "If a carried unit gains Airborne, does that mean it can also move diagonally?"
+      }
+    },
     {
       "n": 21,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/21",
