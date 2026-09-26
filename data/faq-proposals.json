@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-26T15:35:26.390Z",
+  "generated": "2026-09-26T15:38:36.850Z",
   "items": [
+    {
+      "n": 26,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/26",
+      "slug": "kingswood_poachers",
+      "created": "2026-09-27",
+      "due": "2026-10-04",
+      "q": {
+        "ja": "相手の呪文書からも探せますか？",
+        "en": "Can I search an opponent's spellbook?"
+      }
+    },
     {
       "n": 25,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/25",
