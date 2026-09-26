@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-26T14:57:35.937Z",
+  "generated": "2026-09-26T15:35:26.390Z",
   "items": [
+    {
+      "n": 25,
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/25",
+      "slug": "diluvian_kraken",
+      "created": "2026-09-27",
+      "due": "2026-10-04",
+      "q": {
+        "ja": "能力を起動して浮上した時、《Sisters of Silence》や《Sister Stefánia》がいる場合、Strike は起こりますか？",
+        "en": "If Diluvian Kraken activates its ability and surfaces while 《Sisters of Silence》 or 《Sister Stefánia》 is in play, does the Strike still happen?"
+      }
+    },
     {
       "n": 24,
       "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/24",
