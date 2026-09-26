@@ -238,7 +238,7 @@
   },
   "consecrated_ground": {
     "name": "聖別された地",
-    "rules": "邪悪（Evil）はここでは力を持たない。",
+    "rules": "邪悪（Evil）はここではパワーを持たない。",
     "typeText": "神の恵みを映すエクセプショナルのサイト"
   },
   "coral_reef_kelpie": {
