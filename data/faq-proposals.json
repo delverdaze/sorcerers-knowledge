@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T16:39:45.052Z",
+  "generated": "2026-10-12T16:39:59.099Z",
   "items": [
     {
       "n": 29,
@@ -87,17 +87,6 @@
       "q": {
         "ja": "運ばれているユニットが Airborne を得るということは、斜めにも移動できますか？",
         "en": "If a carried unit gains Airborne, does that mean it can also move diagonally?"
-      }
-    },
-    {
-      "n": 21,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/21",
-      "slug": "raze",
-      "created": "2026-09-22",
-      "due": "2026-09-29",
-      "q": {
-        "ja": "Disabled のミニオンが Raze することはできますか？",
-        "en": "Can a Disabled minion Raze?"
       }
     }
   ]
