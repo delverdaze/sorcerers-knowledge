@@ -283,7 +283,7 @@
     "awakened_mummies": {
       "official|Am I required to summon these units burrowed?": {
         "a": "はい。可能であり、かつ必須です。",
-        "q": "このユニットは必ず地中に召喚しなければなりませんか？"
+        "q": "このユニットは必ず埋まった状態で召喚しなければなりませんか？"
       },
       "official|Do they tap when they unburrow?": {
         "a": "いいえ。",
@@ -5159,10 +5159,10 @@
     "yog_sothoth": {
       "official|What does \"Occupies all locations safely\" mean?": {
         "a": "[[Yog-Sothoth]]は、すべてのリージョンの、すべての場所に同時にまたがります。これには、すべての地表の場所、下層の場所、そして虚空が含まれます。[[Yog-Sothoth]]は埋められていることや潜水していることでは死亡せず、虚空にいることで追放されることもありません。",
-        "q": "「すべての場所に安全にまたがる（Occupies all locations safely）」とはどういう意味ですか？"
+        "q": "「すべての場所に無事にまたがる（Occupies all locations safely）」とはどういう意味ですか？"
       },
       "official|What happens if there's a silence or disable effect somewhere in the realm that affects minions (e.g. Root Spider, Silence aura)?": {
-        "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所にまたがり続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所に安全にいられないからです！",
+        "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所にまたがり続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所に無事ではいられないからです！",
         "q": "レルムのどこかに、ミニオンに影響する沈黙や無力化の効果（例: [[Root Spider]]、[[Silence]]のオーラ）があったらどうなりますか？"
       },
       "official|How does “ignores the abilities of sites” work?": {
