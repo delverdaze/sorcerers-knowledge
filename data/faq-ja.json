@@ -247,7 +247,7 @@
       },
       "official|If one of the sites it occupies is an Ordinary water site, are minions and artifacts there still submerged?": {
         "a": "はい。そのサイトもオーラの影響範囲に含まれます。オーディナリーのサイトにはジェネシス能力以外の効果は適用されませんが、そのジェネシス能力によって、そこにいるミニオンとアーティファクトは潜水します。",
-        "q": "占有するサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
+        "q": "またがるサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
       },
       "official|If my Vindictive Nation, or an allied site near it, is affected by my opponent's Atlantean Fate, how much life do they lose?": {
         "a": "1ライフです。[[Atlantean Fate]]は[[Vindictive Nation]]を水没させて沈黙させ、さらに水以外のスレッショルドを提供できなくします。これらはすべてサイトへの修正ですが、いずれもストーリーライン上の1つの効果から生じています。1つの効果から生じているので、[[Vindictive Nation]]はこれを1回の修正とみなします。",
@@ -257,10 +257,10 @@
     "atlas_wanderers": {
       "official|Does this carry along oversized units or auras that occupy more than one square?": {
         "a": "いいえ。",
-        "q": "複数のマスを占める特大ユニットやオーラも一緒に運びますか？"
+        "q": "複数のマスにまたがる特大ユニットやオーラも一緒に運びますか？"
       },
       "official|What does \"normal size\" mean?": {
-        "a": "ちょうど1つの場所を占めるもののことです。",
+        "a": "ちょうど1つの場所だけにあるもののことです。",
         "q": "「通常サイズ（normal size）」とはどういう意味ですか？"
       }
     },
@@ -306,7 +306,7 @@
         "q": "[[Backstab]]で対戦相手のミニオンを対象にできますか？"
       },
       "official|If a minion has voidwalk and is in the void, could Backstab move it to an adjacent site to strike a tapped minion there?": {
-        "a": "いいえ。あなたのスペルキャスターは（異なるリージョンにいる）両方のミニオンを対象にしなければなりませんが、呪文を唱える際にはスペルキャスターが占める1つの場所を選ぶため、それは不可能です。対象にできるのは、呪文が唱えられているリージョンのミニオンだけです。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
+        "a": "いいえ。あなたのスペルキャスターは（異なるリージョンにいる）両方のミニオンを対象にしなければなりませんが、呪文を唱える際にはスペルキャスターがいる1つの場所を選ぶため、それは不可能です。対象にできるのは、呪文が唱えられているリージョンのミニオンだけです。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
         "q": "ヴォイドウォークを持つミニオンが虚空にいる場合、[[Backstab]]でそれを隣接するサイトへ移動させ、そこのタップ状態のミニオンにストライクさせられますか？"
       }
     },
@@ -418,7 +418,7 @@
     },
     "black_obelisk": {
       "judge|Does it matter who controls the Black Obelisk?": {
-        "a": "いいえ。関係するのは、[[Black Obelisk]]が占めるサイトを誰がコントロールしているかだけです。",
+        "a": "いいえ。関係するのは、[[Black Obelisk]]があるサイトを誰がコントロールしているかだけです。",
         "q": "[[Black Obelisk]]を誰がコントロールしているかは関係ありますか？"
       },
       "judge|What happens if Black Obelisk is on Rubble?": {
@@ -434,7 +434,7 @@
     },
     "bladedancer": {
       "official|How do I resolve this ability?": {
-        "a": "まず最初の攻撃を、デスライトまで含めて完全に解決します。その後、[[Bladedancer]]が新しいユニットを攻撃するには、別の場所へ1ステップ移動しなければなりません（対象が複数の場所を占める特大ユニットなら、同じユニットでも構いません）。このステップは迎撃できませんが、攻撃は通常の攻撃手順に従う、正真正銘の2回目の攻撃です。",
+        "a": "まず最初の攻撃を、デスライトまで含めて完全に解決します。その後、[[Bladedancer]]が新しいユニットを攻撃するには、別の場所へ1ステップ移動しなければなりません（対象が複数の場所にまたがる特大ユニットなら、同じユニットでも構いません）。このステップは迎撃できませんが、攻撃は通常の攻撃手順に従う、正真正銘の2回目の攻撃です。",
         "q": "この能力はどう解決しますか？"
       }
     },
@@ -468,7 +468,7 @@
     },
     "blaze": {
       "official|If a Blazing Megamoeba moves, does Blaze do damage?": {
-        "a": "いいえ。[[Megamoeba]]は依然としてそれらのサイトを占めているため、場所を「離れた」ことにならないからです。",
+        "a": "いいえ。[[Megamoeba]]は依然としてそれらのサイトにまたがっているため、場所を「離れた」ことにならないからです。",
         "q": "[[Blaze]]を受けた[[Megamoeba]]が移動した場合、[[Blaze]]はダメージを与えますか？"
       },
       "official|If the Blazing unit dies, does it deal damage where it died?": {
@@ -519,7 +519,7 @@
       },
       "judge|If a large minion occupying squares 1-2-6-7 uses Blink, choosing square 3 as the \"nearby location\" for the destination, can it end up at 3-4-8-9, effectively feeling like it just teleported 2?": {
         "a": "はい。大型ミニオンがテレポートする（または「隣接しているかのように」移動する）場合、その移動効果のコントローラーが、目的地を含む2x2の範囲にそれを配置します。",
-        "q": "マス1-2-6-7を占める大型ミニオンが[[Blink]]を使い、行き先の「近隣の場所」としてマス3を選んだ場合、3-4-8-9に配置される、つまり実質2マス分テレポートしたようなことになりますか？"
+        "q": "マス1-2-6-7にまたがる大型ミニオンが[[Blink]]を使い、行き先の「近隣の場所」としてマス3を選んだ場合、3-4-8-9に配置される、つまり実質2マス分テレポートしたようなことになりますか？"
       },
       "official|Can a disabled unit Blink?": {
         "a": "はい。これは強制移動であり、ユニットが自らステップするわけではないからです。",
@@ -692,7 +692,7 @@
     },
     "cast_into_exile": {
       "judge|I cast Cast into Exile targeting my opponent's transformed Island Leviathan, which is an atlas card. What happens?": {
-        "a": "[[Island Leviathan]]はアトラスのカードなので、相手のアトラスに切り混ぜます。「味方のサイトを占める対象のミニオン1体を、持ち主のデッキに切り混ぜる」として扱ってください。",
+        "a": "[[Island Leviathan]]はアトラスのカードなので、相手のアトラスに切り混ぜます。「味方のサイトにいる対象のミニオン1体を、持ち主のデッキに切り混ぜる」として扱ってください。",
         "q": "相手の変身した[[Island Leviathan]]（アトラスのカード）を対象に[[Cast into Exile]]を唱えました。どうなりますか？"
       }
     },
@@ -729,10 +729,10 @@
       },
       "official|If your avatar occupies a site you don't control, can you summon Cerberus there?": {
         "a": "いいえ。1文目は召喚に対する追加の制限です。",
-        "q": "アバターが自分のコントロールしていないサイトを占めている場合、そこに[[Cerberus in Chains]]を召喚できますか？"
+        "q": "アバターが自分のコントロールしていないサイトにいる場合、そこに[[Cerberus in Chains]]を召喚できますか？"
       },
       "official|What does \"your location\" mean?": {
-        "a": "この場合の「あなたの場所」は、「あなたのアバターが占める場所」を意味します。",
+        "a": "この場合の「あなたの場所」は、「あなたのアバターがいる場所」を意味します。",
         "q": "「あなたの場所（your location）」とはどういう意味ですか？"
       },
       "official|What does “can’t move itself away” mean?": {
@@ -782,11 +782,11 @@
         "q": "別のミニオンやアーティファクトを運んでいるミニオンを対象にした場合、運ばれているものも一緒に移動しますか？"
       },
       "judge|If I use Chaos Twister on a large minion, what happens?": {
-        "a": "カードを吹き飛ばし、着地した場所に基づいて、[[Chaos Twister]]のコントローラーが、目的地の場所を含み、そのミニオンが占められる2x2の範囲を選びます。グリッドの外は選べませんが、このテレポート効果は虚空の場所を含むため、虚空のマスは選べます。適正な2x2の範囲がない場合（例: [[Gnome Hollows]]）、移動効果は不発となり、ダメージも与えません。大型ミニオンが虚空を占めたことで追放されなければ（追放される場合はダメージなし）、[[Chaos Twister]]は、ミニオンが着地したサイト（2x2の範囲）にいるすべてのユニットにダメージを与えます。そのミニオン自身も（1回だけ）含みます。カードのテキストにあるとおり、[[Chaos Twister]]は虚空にいるユニットにはダメージを与えないことに注意してください。大型ミニオンが1x1になる瞬間はありません。[[Chaos Twister]]で1つのマスを決めはしますが、大型ユニットは全体として移動します。",
+        "a": "カードを吹き飛ばし、着地した場所に基づいて、[[Chaos Twister]]のコントローラーが、目的地の場所を含み、そのミニオンがまたがることのできる2x2の範囲を選びます。グリッドの外は選べませんが、このテレポート効果は虚空の場所を含むため、虚空のマスは選べます。適正な2x2の範囲がない場合（例: [[Gnome Hollows]]）、移動効果は不発となり、ダメージも与えません。大型ミニオンが虚空にいることで追放されなければ（追放される場合はダメージなし）、[[Chaos Twister]]は、ミニオンが着地したサイト（2x2の範囲）にいるすべてのユニットにダメージを与えます。そのミニオン自身も（1回だけ）含みます。カードのテキストにあるとおり、[[Chaos Twister]]は虚空にいるユニットにはダメージを与えないことに注意してください。大型ミニオンが1x1になる瞬間はありません。[[Chaos Twister]]で1つのマスを決めはしますが、大型ユニットは全体として移動します。",
         "q": "大型ミニオンに[[Chaos Twister]]を使ったらどうなりますか？"
       },
       "judge|What does “the site it lands on” really mean?": {
-        "a": "サイトは物理的なカードで表されますが、サイトがプレイ面上で占めるのは、カード1枚より大きい正方形の区画です。2人用のSorceryプレイマットにはこのマスが示されており、マスとマスの間に隙間はありません。",
+        "a": "サイトは物理的なカードで表されますが、プレイ面上ではカード1枚より大きい正方形の区画にまたがります。2人用のSorceryプレイマットにはこのマスが示されており、マスとマスの間に隙間はありません。",
         "q": "「着地したサイト（the site it lands on）」とは、実際には何を指しますか？"
       },
       "judge|What happens if something triggers when the minion lands on the new site?": {
@@ -886,16 +886,16 @@
     },
     "cloud_city": {
       "official|Does this carry along oversized minions or auras that occupy more than one square?": {
-        "a": "いいえ。特大ミニオンが虚空を占めることになった場合、それは追放されます。（[[Megamoeba]]は例外的に[[Cloud City]]と一緒に移動します。）",
-        "q": "複数のマスを占める特大ミニオンやオーラも一緒に運びますか？"
+        "a": "いいえ。特大ミニオンが虚空にいることになった場合、それは追放されます。（[[Megamoeba]]は例外的に[[Cloud City]]と一緒に移動します。）",
+        "q": "複数のマスにまたがる特大ミニオンやオーラも一緒に運びますか？"
       },
       "official|Does this carry along oversized units or auras that occupy more than one square?": {
         "a": "いいえ。",
-        "q": "複数のマスを占める特大ユニットやオーラも一緒に運びますか？"
+        "q": "複数のマスにまたがる特大ユニットやオーラも一緒に運びますか？"
       },
       "official|What happens if an oversized avatar is occupying a site, and then some effect moves that site?": {
-        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
-        "q": "特大のアバターがサイトを占めているときに、何らかの効果でそのサイトが移動したらどうなりますか？"
+        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表にいることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスにいることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは新たにいることになった場所に「入った」ことにはならない点に注意してください。",
+        "q": "特大のアバターがサイトにいるときに、何らかの効果でそのサイトが移動したらどうなりますか？"
       },
       "official|Can Cloud City move onto The Void (the site) ?": {
         "a": "いいえ。",
@@ -914,7 +914,7 @@
         "q": "（図で）空のマスはすべて虚空、文字はサイトです。呪文がXの地表から唱えられた場合、Zは影響を受けますか？"
       },
       "official|Does Cone of Flame extend across multiple regions?": {
-        "a": "いいえ。影響を受けるすべての場所は、唱え手と同じリージョンになければなりません。基本的に、ダメージのグリッドは唱え手のリージョンに限定されます。唱え手が複数のリージョンを占めている場合（例: 特大ユニット）、呪文を唱えるリージョンを1つ選びます。",
+        "a": "いいえ。影響を受けるすべての場所は、唱え手と同じリージョンになければなりません。基本的に、ダメージのグリッドは唱え手のリージョンに限定されます。唱え手が複数のリージョンにまたがっている場合（例: 特大ユニット）、呪文を唱えるリージョンを1つ選びます。",
         "q": "[[Cone of Flame]]は複数のリージョンにまたがりますか？"
       }
     },
@@ -1094,7 +1094,7 @@
         "q": "これは虚空や下層など、複数のリージョンに影響しますか？"
       },
       "official|How do I properly resolve the banish and damage effects?": {
-        "a": "まず邪悪なミニオンを追放し、その追放の結果として生じる効果（あれば）を解決します。その後、その6マスを占めるすべてのユニットにダメージを与えます。",
+        "a": "まず邪悪なミニオンを追放し、その追放の結果として生じる効果（あれば）を解決します。その後、その6マスにいるすべてのユニットにダメージを与えます。",
         "q": "追放とダメージの効果はどう解決するのが正しいですか？"
       },
       "official|Must the cross be entirely within the realm?": {
@@ -1225,7 +1225,7 @@
     "dome_of_osiros": {
       "judge|If a large minion occupies Dome of Osiros, does the Dome prevent that minion from being attacked at other locations it occupies?": {
         "a": "そのミニオンは他の場所では依然として攻撃され得ます。[[Dome of Osiros]]は「このサイトは攻撃されず、ここではミニオンは攻撃されない」として扱ってください。",
-        "q": "大型ミニオンが[[Dome of Osiros]]を占めている場合、ドームはそのミニオンが他の場所で攻撃されるのも防ぎますか？"
+        "q": "大型ミニオンが[[Dome of Osiros]]にいる場合、ドームはそのミニオンが他の場所で攻撃されるのも防ぎますか？"
       },
       "official|Does this site protect minions from cards with the word \"attack\" in their name, like Leap Attack or Spin Attack?": {
         "a": "いいえ。[[Dome of Osiros]]が防ぐのは、基本能力「移動と攻撃」による「攻撃」、またはテキストに「攻撃（attack）」という語を使う他のカード（例: [[Crave Golem]]）だけです。",
@@ -1238,7 +1238,7 @@
     },
     "dormant_monstrosity": {
       "official|When counting \"each unit,\" do I include all adjacent squares?": {
-        "a": "はい！ 召喚マスに隣接するあらゆるマス（召喚マス自体を含む）のユニットを数えます。各ユニットは、いくつの隣接マスを占めているかにかかわらず1回だけ数えます。",
+        "a": "はい！ 召喚マスに隣接するあらゆるマス（召喚マス自体を含む）のユニットを数えます。各ユニットは、いくつの隣接マスにまたがっているかにかかわらず1回だけ数えます。",
         "q": "「各ユニット」を数えるとき、隣接するすべてのマスを含めますか？"
       }
     },
@@ -1369,14 +1369,14 @@
     "earthquake": {
       "official|Does this carry along oversized units or auras that occupy more than one square?": {
         "a": "いいえ。",
-        "q": "複数のマスを占める特大ユニットやオーラも一緒に運びますか？"
+        "q": "複数のマスにまたがる特大ユニットやオーラも一緒に運びますか？"
       },
       "official|If the 2x2 area includes some sites and some void, can you rearrange the sites into the void squares?": {
         "a": "いいえ。サイト同士は好きなように並べ替えられますが、虚空のマスはそのままでなければなりません。",
         "q": "2x2の範囲にサイトと虚空が混ざっている場合、サイトを虚空のマスへ並べ替えられますか？"
       },
       "official|What does \"normal size\" mean?": {
-        "a": "ちょうど1つの場所を占めるもののことです。",
+        "a": "ちょうど1つの場所だけにあるもののことです。",
         "q": "「通常サイズ（normal size）」とはどういう意味ですか？"
       }
     },
@@ -1434,7 +1434,7 @@
         "q": "アニメイトされたオーラはサイズが変わりますか？"
       },
       "official|If Magellan Globe is in play and an Oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所を占められます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
+        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所にまたがることができます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
         "q": "[[Magellan Globe]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|If Magellan Globe leaves play when a card is spanning the edge of the realm, what happens?": {
@@ -1442,11 +1442,11 @@
         "q": "カードがレルムの端をまたいでいる状態で[[Magellan Globe]]が場を離れたらどうなりますか？"
       },
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままの占有は許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|Turning auras into minions!? Is this real?": {
-        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメイトしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲を占めるので、特大ユニットについても学んでおくとよいでしょう。",
+        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメイトしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲にまたがるので、特大ユニットについても学んでおくとよいでしょう。",
         "q": "オーラをミニオンに変える！？ 本当ですか？"
       },
       "official|What is the proper timing of resolution for this effect?": {
@@ -1532,7 +1532,7 @@
         "q": "他のユニットへのストライクはすべて同時ですか？"
       },
       "official|How does this resolve if I summon an oversized minion?": {
-        "a": "召喚先に選ぶサイトのうち、少なくとも1つが影響を受けたサイトでなければなりません。「着地した場所で他の各ユニットにストライクする」効果は、召喚したミニオンが占める影響を受けたサイトのうち、あなたが選んだ1つで発生します。",
+        "a": "召喚先に選ぶサイトのうち、少なくとも1つが影響を受けたサイトでなければなりません。「着地した場所で他の各ユニットにストライクする」効果は、召喚したミニオンがまたがる影響を受けたサイトのうち、あなたが選んだ1つで発生します。",
         "q": "特大ミニオンを召喚する場合、これはどう解決しますか？"
       },
       "official|If my summoned minion has a genesis effect, does the genesis resolve before the strike?": {
@@ -1614,7 +1614,7 @@
         "q": "カードを引くためだけに、対象なしでこの呪文を唱えられますか？"
       },
       "official|Does the target need to be in the same region as the caster?": {
-        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、唱え手はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。唱え手に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それは唱え手の場所へ引き寄せられます。",
+        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、唱え手はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。唱え手に隣接する水のサイトがあり、その水のサイトにミニオンがいるかぎり、それは唱え手の場所へ引き寄せられます。",
         "q": "対象は唱え手と同じリージョンにいなければなりませんか？"
       },
       "official|Does the “adjacent Water site” need to be in the same region as the caster?": {
@@ -1677,7 +1677,7 @@
     "flaming_sword": {
       "judge|1) Identify the unit(s) you are striking. These units are safe from the special flames, even if you did 0 damage in your strike to them. 2) Identify the locations those struck units occupy. All non-struck enemies at those locations take the special flame damage, equal to your strike’s damage. (Remember, struck enemies are safe from the special flames.) If I strike a large minion while carrying a Flaming Sword, does the special splash damage hurt all enemies at the large minion's locations?": {
         "a": "はい！ [[Flaming Sword]]の魔法の炎は、他のユニットへと飛び散ります。",
-        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットが占める場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を運んでいる状態で大型ミニオンにストライクした場合、飛び散るダメージは大型ミニオンが占めるすべての場所の敵に及びますか？"
+        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットがいる場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を運んでいる状態で大型ミニオンにストライクした場合、飛び散るダメージは大型ミニオンがまたがるすべての場所の敵に及びますか？"
       },
       "judge|How does Flaming Sword really work?": {
         "a": "特別な炎を宿しているのです！ 飛び散るダメージを正しく適用するには、次の手順に従ってください:",
@@ -1767,14 +1767,14 @@
       },
       "official|If an oversized unit occupies Free City while it attacks a different site, can Free City defend against that attack?": {
         "a": "いいえ。その攻撃は[[Free City]]の上で起きているわけではないからです。",
-        "q": "特大ユニットが[[Free City]]を占めつつ別のサイトを攻撃した場合、[[Free City]]はその攻撃に対して防御できますか？"
+        "q": "特大ユニットが[[Free City]]にいながら別のサイトを攻撃した場合、[[Free City]]はその攻撃に対して防御できますか？"
       },
       "official|What can it attack?": {
         "a": "鍵となる語は「ここ（here）」です。穴を掘っているユニットは明らかに「ここ」にいます。エアボーンやステルスのユニットも「ここ」にいます。しかし、エアボーンやステルスを攻撃するには、ユニットに何らかの特殊能力（例: エアボーン、レンジドなど）が必要です。[[Free City]]はそれらの能力を持たないため、実際にはエアボーンやステルスのユニットを攻撃の対象にできません。",
         "q": "何を攻撃できますか？"
       },
       "official|When can it attack?": {
-        "a": "[[Free City]]の能力は常在型能力で、（実際にはサイトのままでありながら）パワー3のユニットであるかのように、1ターンに1回「通常どおり」攻撃・防御する選択肢を与えます。したがって、攻撃できるのはあなたのターンだけで、防御できるのは（おそらく相手のターンに）[[Free City]]を占める敵ユニットが、ユニットまたは[[Free City]]自体を攻撃したときです。仮にあなたのターンに攻撃と防御の両方の機会があったとしても、どちらか一方しかできません。",
+        "a": "[[Free City]]の能力は常在型能力で、（実際にはサイトのままでありながら）パワー3のユニットであるかのように、1ターンに1回「通常どおり」攻撃・防御する選択肢を与えます。したがって、攻撃できるのはあなたのターンだけで、防御できるのは（おそらく相手のターンに）[[Free City]]にいる敵ユニットが、ユニットまたは[[Free City]]自体を攻撃したときです。仮にあなたのターンに攻撃と防御の両方の機会があったとしても、どちらか一方しかできません。",
         "q": "いつ攻撃できますか？"
       }
     },
@@ -2080,8 +2080,8 @@
         "q": "別のリージョンにいるユニットを対象にできますか？"
       },
       "official|Consider the group of sites below. An oversized minion occupies 1-2-4-5. Guile Sirens is #5. Can the oversized minion be pulled in any way?": {
-        "a": "はい。特大ユニットを引き寄せたり押したりするときは、その特大ユニットが占める場所のうち（効果の条件を満たす）1つを選び、そこから押し引きします。したがって、サイト2を選ぶと特大ミニオンは南へ引かれ、4-5-7-8に落ち着きます。あるいはサイト4を選ぶと東へ引かれ、2-3-5-6に落ち着きます。あるいはサイト5を選ぶと、まったく引き寄せられません。",
-        "q": "下記のサイト群を考えます。特大ミニオンが1-2-4-5を占め、[[Guile Sirens]]が5番にいます。この特大ミニオンを何らかの形で引き寄せられますか？"
+        "a": "はい。特大ユニットを引き寄せたり押したりするときは、その特大ユニットがまたがる場所のうち（効果の条件を満たす）1つを選び、そこから押し引きします。したがって、サイト2を選ぶと特大ミニオンは南へ引かれ、4-5-7-8に落ち着きます。あるいはサイト4を選ぶと東へ引かれ、2-3-5-6に落ち着きます。あるいはサイト5を選ぶと、まったく引き寄せられません。",
+        "q": "下記のサイト群を考えます。特大ミニオンが1-2-4-5にまたがり、[[Guile Sirens]]が5番にいます。この特大ミニオンを何らかの形で引き寄せられますか？"
       },
       "official|Does it tap the target minion? Can this movement be intercepted?": {
         "a": "どちらもいいえ。これはタップが必要で迎撃され得る、基本能力の「移動と攻撃」ではありません。",
@@ -2679,7 +2679,7 @@
       },
       "official|What happens if I have a minion that occupies more than one site (e.g. Mountain Giant) and also carries Land Deed?": {
         "a": "[[Land Deed]]がコントロールを与えるのは、[[Land Deed]]がある1つのサイトだけです。",
-        "q": "複数のサイトを占めるミニオン（例: [[Mountain Giant]]）が[[Land Deed]]を運んでいる場合はどうなりますか？"
+        "q": "複数のサイトにまたがるミニオン（例: [[Mountain Giant]]）が[[Land Deed]]を運んでいる場合はどうなりますか？"
       }
     },
     "lava_salamander": {
@@ -2760,7 +2760,7 @@
     },
     "lure": {
       "official|Can my allied minion tempt an enemy in a different region to take a step closer?": {
-        "a": "はい。敵が近隣のサイトを占めているかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れないリージョンへ踏み込ませることはできません（例: バロウ（穴掘り）を持たない敵を地下へ1ステップ移動させることはできません）。",
+        "a": "はい。敵が近隣のサイトにいるかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れないリージョンへ踏み込ませることはできません（例: バロウ（穴掘り）を持たない敵を地下へ1ステップ移動させることはできません）。",
         "q": "味方のミニオンは、別のリージョンにいる敵を誘って1ステップ近づかせられますか？"
       },
       "official|If the tempted enemy has multiple equally closer steps, who chooses the specific step taken?": {
@@ -2792,8 +2792,8 @@
         "q": "[[Maelström]]が誘発する前に[[Floodplain]]を使えますか？"
       },
       "official|Consider the group of sites below. An oversized minion occupies 1-2-4-5. Maelström is #5. Can the oversized minion be pulled in any way?": {
-        "a": "はい。特大ユニットを引き寄せたり押したりするときは、その特大ユニットが占める場所のうち（効果の条件を満たす）1つを選び、そこから押し引きします。サイト2と4も水のサイトである前提で、サイト2を選ぶと特大ミニオンは南へ引かれ4-5-7-8に落ち着きます。あるいはサイト4を選ぶと東へ引かれ2-3-5-6に落ち着きます。あるいはサイト5を選ぶと、まったく引き寄せられません。",
-        "q": "下記のサイト群を考えます。特大ミニオンが1-2-4-5を占め、[[Maelström]]が5番にあります。この特大ミニオンを何らかの形で引き寄せられますか？"
+        "a": "はい。特大ユニットを引き寄せたり押したりするときは、その特大ユニットがまたがる場所のうち（効果の条件を満たす）1つを選び、そこから押し引きします。サイト2と4も水のサイトである前提で、サイト2を選ぶと特大ミニオンは南へ引かれ4-5-7-8に落ち着きます。あるいはサイト4を選ぶと東へ引かれ2-3-5-6に落ち着きます。あるいはサイト5を選ぶと、まったく引き寄せられません。",
+        "q": "下記のサイト群を考えます。特大ミニオンが1-2-4-5にまたがり、[[Maelström]]が5番にあります。この特大ミニオンを何らかの形で引き寄せられますか？"
       },
       "official|Does the movement get resolved simultaneously?": {
         "a": "はい。すべてのステップが同時に解決されます（その結果、さまざまな誘発が起こり得ます）。",
@@ -2826,11 +2826,11 @@
         "q": "投射物はレルムの端を回り込めますか？"
       },
       "official|If Magellan Globe is in play and an Oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所を占められます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
+        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所にまたがることができます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
         "q": "[[Magellan Globe]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|If Magellan Globe is in play, can an aura or an oversized unit be cast on the edge of the realm, spanning the realm?": {
-        "a": "はい。オーラがどのサイトを占めているか全プレイヤーがわかるよう、必要ならメモを使って、ゲームの状態を明確に保ってください。",
+        "a": "はい。オーラがどのサイトにまたがっているか全プレイヤーがわかるよう、必要ならメモを使って、ゲームの状態を明確に保ってください。",
         "q": "[[Magellan Globe]]が場にあるとき、オーラや特大ユニットを、レルムの端をまたぐ形で唱えられますか？"
       },
       "official|If Magellan Globe leaves play when a card is spanning the edge of the realm, what happens?": {
@@ -2887,7 +2887,7 @@
       },
       "official|An oversized unit occupies a specific site and then moves. After the move, it still occupies that site. Did it enter the site?": {
         "a": "いいえ。すでにそこにいて、そこに居続けたのです（移動によって別のサイトには入ったかもしれませんが）。",
-        "q": "特大ユニットがあるサイトを占めた状態で移動し、移動後もそのサイトを占めています。そのサイトに「入った」ことになりますか？"
+        "q": "特大ユニットがあるサイトにまたがった状態で移動し、移動後もそのサイトにまたがっています。そのサイトに「入った」ことになりますか？"
       },
       "official|If I Grapple Shot a minion with Submerge through an area affected by Mariner's Curse, what happens?": {
         "a": "[[Grapple Shot]]の投射物がユニットに命中すると、ゲームは味方のための具体的な移動ステップをストーリーラインに加えます: A（地表）→B（地表）、B（地表）→C（地表）。その後、これらのステップの解決を始めます。サイトBに[[Mariner's Curse]]があるなら、引きずられているユニットはサイトBに到達した時点で潜水し、生き延びます。次にゲームはB（地表）→C（地表）の移動を解決しようとしますが、ユニットはもうサイトBの地表にいないため失敗します。その結果、命中したユニットの場所に到達していないので、[[Grapple Shot]]によるストライクは発生しません。",
@@ -2937,11 +2937,11 @@
     "megamoeba": {
       "official|Can Megamoeba declare a movement to a location it already occupies? (e.g. if it wanted to move an artifact it was carrying)": {
         "a": "はい。[[Megamoeba]]は奇妙な生き物なのです。",
-        "q": "[[Megamoeba]]は、すでに占めている場所への移動を宣言できますか？（例: 運んでいるアーティファクトを動かしたい場合）"
+        "q": "[[Megamoeba]]は、すでにまたがっている場所への移動を宣言できますか？（例: 運んでいるアーティファクトを動かしたい場合）"
       },
       "official|If I play Dodge Roll on my Megamoeba, does the attack still go through because the Megamoeba is still occupying the original location?": {
-        "a": "はい。対象は依然として適正です。ただし[[Megamoeba]]は、[[Dodge Roll]]のおかげで追加の場所を占めることになり、+1のパワーを得ています。",
-        "q": "[[Megamoeba]]に[[Dodge Roll]]をプレイした場合、[[Megamoeba]]は元の場所を占め続けているので攻撃は通ってしまうのですか？"
+        "a": "はい。対象は依然として適正です。ただし[[Megamoeba]]は、[[Dodge Roll]]のおかげで追加の場所にまたがることになり、+1のパワーを得ています。",
+        "q": "[[Megamoeba]]に[[Dodge Roll]]をプレイした場合、[[Megamoeba]]は元の場所にまたがり続けているので攻撃は通ってしまうのですか？"
       },
       "official|If Megamoeba starts at 2 power, can it move into Gnome Hollows (thus getting to 3 power)?": {
         "a": "はい。まず[[Megamoeba]]が入り、入った直後にパワーが増えます。",
@@ -2960,15 +2960,15 @@
         "q": "[[Megamoeba]]が敵とサイトを共有している場合、基本能力「移動と攻撃」でまず移動し、それから元の敵を攻撃して、先にパワーを増やせますか？"
       },
       "official|What happens if Megamoeba gains burrow or submerge?": {
-        "a": "1つのサイトの地表と下層の両方の場所を占められ、カードのテキストどおり、占めた各場所が+1のパワーを与えます。パワー40の[[Megamoeba]]も夢ではありません！",
+        "a": "1つのサイトの地表と下層の両方の場所にまたがることができ、カードのテキストどおり、またがる各場所が+1のパワーを与えます。パワー40の[[Megamoeba]]も夢ではありません！",
         "q": "[[Megamoeba]]がバロウやサブマージを得たらどうなりますか？"
       },
       "official|What happens if Megamoeba is forcefully burrowed or submerged without the burrow or submerge ability?": {
-        "a": "ユニットの一部でも生存できない場所を占めたら、そのユニットは死亡します。したがってこの場合、[[Megamoeba]]は死亡します。",
+        "a": "ユニットの一部でも生存できない場所にあるなら、そのユニットは死亡します。したがってこの場合、[[Megamoeba]]は死亡します。",
         "q": "バロウやサブマージの能力なしに、[[Megamoeba]]が強制的に埋められたり潜水させられたりしたらどうなりますか？"
       },
       "official|What happens if Megamoeba is in a Silence aura?": {
-        "a": "沈黙のオーラに入った時点で能力を失いますが、サイズは特性と見なされるため持続します。したがって、すべての場所を占め続けますが、場所ごとの+1のパワーは得られません。（形は妙かもしれませんが）他の特大ユニットと同じように移動します。",
+        "a": "沈黙のオーラに入った時点で能力を失いますが、サイズは特性と見なされるため持続します。したがって、すべての場所にまたがり続けますが、場所ごとの+1のパワーは得られません。（形は妙かもしれませんが）他の特大ユニットと同じように移動します。",
         "q": "[[Megamoeba]]が沈黙のオーラの中にいるとどうなりますか？"
       },
       "official|What happens if Megamoeba is the target of Whirling Blades?": {
@@ -2976,11 +2976,11 @@
         "q": "[[Megamoeba]]が[[Whirling Blades]]の対象になったらどうなりますか？"
       },
       "official|What happens when Megamoeba gets pulled / pushed?": {
-        "a": "占めている場所のうち特定の1つを選び、そこから1本の仮足を引き寄せ/押し出しします。",
+        "a": "またがっている場所のうち特定の1つを選び、そこから1本の仮足を引き寄せ/押し出しします。",
         "q": "[[Megamoeba]]が引き寄せ/押し出しされたらどうなりますか？"
       },
       "official|What happens when the Megamoeba gets carried?": {
-        "a": "運ばれて通ったすべての場所を占めたことになります。",
+        "a": "運ばれて通ったすべての場所にまたがったことになります。",
         "q": "[[Megamoeba]]が運ばれたらどうなりますか？"
       },
       "official|When the Megamoeba is teleported, does its passive ability still apply?": {
@@ -3172,7 +3172,7 @@
     },
     "mountain_giant": {
       "official|If Magellan Globe is in play and an Oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所を占められます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
+        "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所にまたがることができます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
         "q": "[[Magellan Globe]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|If Magellan Globe leaves play when a card is spanning the edge of the realm, what happens?": {
@@ -3180,12 +3180,12 @@
         "q": "カードがレルムの端をまたいでいる状態で[[Magellan Globe]]が場を離れたらどうなりますか？"
       },
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままの占有は許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|What happens if a Mountain Giant occupies a Silence aura?": {
         "a": "カードのサイズは通常レルムに入るときに決まり、能力ではなく特性の1つと見なされます。サイズは変わりません。",
-        "q": "[[Mountain Giant]]が沈黙のオーラの中を占めたらどうなりますか？"
+        "q": "[[Mountain Giant]]が沈黙のオーラの中にいたらどうなりますか？"
       }
     },
     "mountain_pass": {
@@ -3312,7 +3312,7 @@
     },
     "ormund_harpooneers": {
       "official|Does the target need to be in the same region as the Harpooneers?": {
-        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、[[Ormund Harpooneers]]はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。ハープーン兵に隣接する水のサイトがあり、その水のサイトを占めるミニオンがいるかぎり、それはハープーン兵の場所へ引き寄せられます。",
+        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、[[Ormund Harpooneers]]はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。ハープーン兵に隣接する水のサイトがあり、その水のサイトにミニオンがいるかぎり、それはハープーン兵の場所へ引き寄せられます。",
         "q": "対象は[[Ormund Harpooneers]]と同じリージョンにいなければなりませんか？"
       },
       "official|Does the “adjacent Water site” need to be in the same region as the Harpooneers?": {
@@ -3570,18 +3570,18 @@
     },
     "polar_explorers": {
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままの占有は許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       }
     },
     "pollimorph": {
       "official|Does a pollimorphed animated aura (e.g. Enchantress) return to an aura form later?": {
-        "a": "いいえ。恒久的にカエルのトークンとなり、1つの場所を占めます。",
+        "a": "いいえ。恒久的にカエルのトークンとなり、1つの場所だけにいます。",
         "q": "[[Pollimorph]]されたアニメイト中のオーラ（例: [[Enchantress]]）は、あとでオーラの姿に戻りますか？"
       },
       "official|If the original minion occupied more than one location, what happens?": {
-        "a": "変身効果のコントローラーが、カエルのトークンが占める場所を選びます。",
-        "q": "元のミニオンが複数の場所を占めていた場合はどうなりますか？"
+        "a": "変身効果のコントローラーが、カエルのトークンがいる場所を選びます。",
+        "q": "元のミニオンが複数の場所にまたがっていた場合はどうなりますか？"
       }
     },
     "postern_gate": {
@@ -3735,7 +3735,7 @@
       },
       "official|Does this move oversized units or auras that occupy more than one square?": {
         "a": "いいえ。",
-        "q": "これは複数のマスを占める特大ユニットやオーラも動かしますか？"
+        "q": "これは複数のマスにまたがる特大ユニットやオーラも動かしますか？"
       },
       "official|How do Smokestacks of Gnaak and Rift Valley interact?": {
         "a": "[[Rift Valley]]は自身の能力を使ってレルムに入り、能力を失うのはレルムに入ってからです（その時点ではもうほとんど関係ありません）。",
@@ -3770,8 +3770,8 @@
         "q": "[[Riptide]]は虚空にいるヴォイドウォークのミニオンを引き寄せられますか？"
       },
       "official|What are the details of pulling an oversized minion that occupies the water site and other locations?": {
-        "a": "特大ユニットを引き寄せたり押したりするときは、その特大ユニットが占める場所のうち（効果の条件 — たとえば隣接 — を満たす）1つを選び、そこから押し引きします。",
-        "q": "水のサイトと他の場所を占める特大ミニオンを引き寄せる場合の詳細は？"
+        "a": "特大ユニットを引き寄せたり押したりするときは、その特大ユニットがまたがる場所のうち（効果の条件 — たとえば隣接 — を満たす）1つを選び、そこから押し引きします。",
+        "q": "水のサイトと他の場所にまたがる特大ミニオンを引き寄せる場合の詳細は？"
       }
     },
     "river_of_blood": {
@@ -3850,7 +3850,7 @@
     },
     "ruler_of_thul": {
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままの占有は許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       }
     },
@@ -3990,7 +3990,7 @@
         "q": "ジェネシス能力もコピーしますか？"
       },
       "official|If it tries to become a basic copy of an aura animated by Enchantress, what happens?": {
-        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメイトされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて本来のサイズに広がり、詠唱時に指定した場所を占め続けなければなりません。",
+        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメイトされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて本来のサイズに広がり、詠唱時に指定した場所にあり続けなければなりません。",
         "q": "[[Enchantress]]にアニメイトされたオーラの基本コピーになろうとしたらどうなりますか？"
       },
       "official|What if it loses its abilities (e.g. Silence aura)?": {
@@ -4035,7 +4035,7 @@
     "silence": {
       "official|What happens if a Mountain Giant occupies a Silence aura?": {
         "a": "カードのサイズは通常レルムに入るときに決まり、能力ではなく特性の1つと見なされます。サイズは変わりません。",
-        "q": "[[Mountain Giant]]が[[Silence]]のオーラを占めたらどうなりますか？"
+        "q": "[[Mountain Giant]]が[[Silence]]のオーラの中にいたらどうなりますか？"
       },
       "official|What happens if a Silence aura is animated by Enchantress?": {
         "a": "他のミニオンを沈黙させ続けますが、自分自身も沈黙させます。",
@@ -4250,8 +4250,8 @@
     },
     "spear_of_destiny": {
       "official|What if the minion being killed occupies more than one location?": {
-        "a": "槍がテレポートする先はあなたが選びます。そのミニオンが占めている場所のうちの1つです。",
-        "q": "殺されるミニオンが複数の場所を占めていたら？"
+        "a": "槍がテレポートする先はあなたが選びます。そのミニオンがまたがっている場所のうちの1つです。",
+        "q": "殺されるミニオンが複数の場所にまたがっていたら？"
       }
     },
     "spearmarshal": {
@@ -4262,14 +4262,14 @@
     },
     "sphere_of_animosity": {
       "official|What does \"Avatars here can't leave\" mean?": {
-        "a": "現在[[Sphere of Animosity]]の下にいるアバターは、球体が占めていない場所に入れません。つまり、そこへ移動することも、強制的に移動させられることもできません。\nなお、サイトが移動するときは通常サイズのカードを一緒に運び、それらのカードは新しい場所に「入った」ことにはなりません。つまり、移動するサイトはアバターを球体の外へ運び出せます。",
+        "a": "現在[[Sphere of Animosity]]の下にいるアバターは、球体のない場所には入れません。つまり、そこへ移動することも、強制的に移動させられることもできません。\nなお、サイトが移動するときは通常サイズのカードを一緒に運び、それらのカードは新しい場所に「入った」ことにはなりません。つまり、移動するサイトはアバターを球体の外へ運び出せます。",
         "q": "「ここにいるアバターは離れられない（Avatars here can't leave）」とはどういう意味ですか？"
       }
     },
     "spin_attack": {
       "judge|What happens if a large minion uses Spin Attack? Do I pick a single location, or does it strike at every location it occupies?": {
-        "a": "占めるすべての場所でストライクします。一般原則として、カードのテキストがミニオンは1つの場所やサイトしか占めない前提で書かれている場合、大型ミニオンについては「場所」を「各場所」（「サイト」を「各サイト」）に読み替えます。",
-        "q": "大型ミニオンが[[Spin Attack]]を使ったらどうなりますか？ 1つの場所を選ぶのですか、それとも占めるすべての場所でストライクしますか？"
+        "a": "またがるすべての場所でストライクします。一般原則として、カードのテキストがミニオンは1つの場所やサイトだけにいる前提で書かれている場合、大型ミニオンについては「場所」を「各場所」（「サイト」を「各サイト」）に読み替えます。",
+        "q": "大型ミニオンが[[Spin Attack]]を使ったらどうなりますか？ 1つの場所を選ぶのですか、それともまたがるすべての場所でストライクしますか？"
       },
       "official|Does this card count as an \"attack\" since it has the word \"attack\" in its name?": {
         "a": "紛らわしくてすみませんが、いいえ、これは実際には攻撃ではありません！ 「攻撃」になるのは基本能力「移動と攻撃」か、テキストで明確に「攻撃（attack）」という語を使うカード（例: [[Crave Golem]]）だけです。このカードのテキストは「ストライク」であり、ユニットが自分のパワーと同量のダメージを与えるだけです（相手に防御の機会はなく、ステルスやエアボーンのユニットにもストライクできます）。",
@@ -4404,7 +4404,7 @@
         "q": "一方の対象がミニオンなら、もう一方の対象はアーティファクトでもよいですか？ 逆も？"
       },
       "official|What if an oversized unit is involved?": {
-        "a": "特大ユニットが占める場所のうち1つを、もう一方のカードの行き先として選びます。詳しくは写本室（Codex）の「特大ユニットのテレポート（Teleporting Oversized Units）」を参照してください。",
+        "a": "特大ユニットがまたがる場所のうち1つを、もう一方のカードの行き先として選びます。詳しくは写本室（Codex）の「特大ユニットのテレポート（Teleporting Oversized Units）」を参照してください。",
         "q": "特大ユニットが関わる場合は？"
       },
       "official|What if one or both of the swapped cards were being carried?": {
@@ -4430,7 +4430,7 @@
     },
     "teleport": {
       "judge|How does a large minion use Teleport?": {
-        "a": "目的地の場所を含み、その大型ユニットが占められる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだ場所へテレポートします。",
+        "a": "目的地の場所を含み、その大型ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだ場所へテレポートします。",
         "q": "大型ミニオンは[[Teleport]]をどう使いますか？"
       }
     },
@@ -4516,7 +4516,7 @@
     },
     "the_hexham_haunts": {
       "official|How does summoning burrowed interact with Evil Presence?": {
-        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は穴掘り状態でなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]が占めるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
+        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は穴掘り状態でなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]があるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
         "q": "穴掘り状態での召喚は、[[Evil Presence]]とどう相互作用しますか？"
       }
     },
@@ -4592,8 +4592,8 @@
         "q": "アバターを引き伸ばす？ からかってますよね（pulling my leg）！ これで私のアバターは特大ユニットになるんですか？"
       },
       "official|What happens if an oversized avatar is occupying a site, and then some effect moves that site?": {
-        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
-        "q": "特大のアバターがサイトを占めているときに、何らかの効果でそのサイトが移動したらどうなりますか？"
+        "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表にいることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスにいることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは新たにいることになった場所に「入った」ことにはならない点に注意してください。",
+        "q": "特大のアバターがサイトにいるときに、何らかの効果でそのサイトが移動したらどうなりますか？"
       },
       "official|When an avatar is stretched by this effect, does it count as entering the new location?": {
         "a": "はい！ この効果が機能するには、アバターがその場所に入れる必要があり、入ったことによる効果も誘発します。ただし、移動として数えられることはありません。",
@@ -4629,7 +4629,7 @@
       },
       "official|While my Avatar occupies the surface + void location of The Void site, can I target something occupying the underground + void location of The Void site?": {
         "a": "はい！ 対象はスペルキャスターと同じリージョン（虚空）にいるので、対象にできます！",
-        "q": "私のアバターが[[The Void]]の「地表+虚空」の場所を占めている間、[[The Void]]の「地下+虚空」の場所を占める何かを対象にできますか？"
+        "q": "私のアバターが[[The Void]]の「地表+虚空」の場所にいる間、[[The Void]]の「地下+虚空」の場所にある何かを対象にできますか？"
       }
     },
     "thin_ice": {
@@ -4695,7 +4695,7 @@
     "tringh_constrictor": {
       "judge|If the constricted minion was forcefully moved and no longer occupies the same location, is the minion constricted?": {
         "a": "[[Tringh Constrictor]]は締めつけたミニオンを「運んで」いるので、ミニオン/アーティファクトを運ぶ通常のルールにすべて従います。運ばれているミニオンが[[Tringh Constrictor]]と場所を共有しなくなったら、もう運ばれておらず、締めつけも解けています。",
-        "q": "締めつけられたミニオンが強制移動させられ、同じ場所を占めなくなった場合、そのミニオンはまだ締めつけられていますか？"
+        "q": "締めつけられたミニオンが強制移動させられ、同じ場所にいなくなった場合、そのミニオンはまだ締めつけられていますか？"
       },
       "official|The alpha and beta text is different, which should I use?": {
         "a": "ベータ版のテキストが正しいです。",
@@ -4709,14 +4709,14 @@
       },
       "judge|If a single unit enters while there are other units already occupying Troll Bridge, will it trigger?": {
         "a": "はい。そのターン初めてであれば、です。",
-        "q": "すでに他のユニットが[[Troll Bridge]]を占めている状態で、1体のユニットが入ってきたら誘発しますか？"
+        "q": "すでに他のユニットが[[Troll Bridge]]にいる状態で、1体のユニットが入ってきたら誘発しますか？"
       },
       "judge|If two units enter the Troll Bridge at the same time (e.g. riding a horse, Windblast, etc.), does it trigger Troll Bridge?": {
         "a": "いいえ。",
         "q": "2体のユニットが同時に[[Troll Bridge]]に入った場合（例: 馬に乗って、[[Windblast]]など）、[[Troll Bridge]]は誘発しますか？"
       },
       "official|What is a \"lone enemy\"?": {
-        "a": "「単独の敵」とは、他の敵ユニットと同時に入ってきていない敵ユニットのことです。すでに[[Troll Bridge]]の上に留まっているユニットは無視します。\n例:\n敵の[[War Horse]]がアバターを乗せてあなたの[[Troll Bridge]]へ移動してきた場合、2体の敵が同時に入ってくるため誘発しません。\nあなたの[[Bodach Bogeyman]]が敵ミニオン2体を運んで[[Troll Bridge]]へ移動した場合も誘発しません。ただし、ボギーマンが運んでいる敵が1体だけなら、橋は誘発します。\nすでに敵が[[Troll Bridge]]を占めている状態で別の敵ユニットが入ってきた場合、その入ってきた敵に対して誘発します。",
+        "a": "「単独の敵」とは、他の敵ユニットと同時に入ってきていない敵ユニットのことです。すでに[[Troll Bridge]]の上に留まっているユニットは無視します。\n例:\n敵の[[War Horse]]がアバターを乗せてあなたの[[Troll Bridge]]へ移動してきた場合、2体の敵が同時に入ってくるため誘発しません。\nあなたの[[Bodach Bogeyman]]が敵ミニオン2体を運んで[[Troll Bridge]]へ移動した場合も誘発しません。ただし、ボギーマンが運んでいる敵が1体だけなら、橋は誘発します。\nすでに敵が[[Troll Bridge]]にいる状態で別の敵ユニットが入ってきた場合、その入ってきた敵に対して誘発します。",
         "q": "「単独の敵（lone enemy）」とは何ですか？"
       }
     },
@@ -4788,8 +4788,8 @@
     },
     "unland_angler": {
       "official|What are the details of pulling an oversized minion that occupies the water site and other locations?": {
-        "a": "特大ユニットを引き寄せたり押したりするときは、その特大ユニットが占める場所のうち（効果の条件 — たとえば隣接 — を満たす）1つを選び、そこから押し引きします。",
-        "q": "水のサイトと他の場所を占める特大ミニオンを引き寄せる場合の詳細は？"
+        "a": "特大ユニットを引き寄せたり押したりするときは、その特大ユニットがまたがる場所のうち（効果の条件 — たとえば隣接 — を満たす）1つを選び、そこから押し引きします。",
+        "q": "水のサイトと他の場所にまたがる特大ミニオンを引き寄せる場合の詳細は？"
       }
     },
     "unland_eel": {
@@ -4925,10 +4925,10 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスを占めますか？"
+        "q": "このオーラはいくつのマスにまたがりますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身が占める2マスの間に適用されます。",
+        "a": "アニメイトされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身がまたがる2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -4957,14 +4957,14 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスを占めますか？"
+        "q": "このオーラはいくつのマスにまたがりますか？"
       },
       "official|What does “passes through” mean?": {
         "a": "自発的な移動か強制移動かを問わず、何らかの方法で通り抜けることです。たとえば、[[Grapple Shot]]や[[Pudge Butcher]]で移動させられたユニットも、[[Wall of Fire]]からダメージを受けます。なお、テレポートされたユニットは境界線を通り抜けないため、影響を受けません。",
         "q": "「通り抜ける（passes through）」とはどういう意味ですか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "移動はできますが、その移動によってユニットが[[Wall of Fire]]を通り抜けたことにはなりません。移動後、その効果は自身が占める2マスの間に適用されます。",
+        "a": "移動はできますが、その移動によってユニットが[[Wall of Fire]]を通り抜けたことにはなりません。移動後、その効果は自身がまたがる2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -4975,10 +4975,10 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスを占めますか？"
+        "q": "このオーラはいくつのマスにまたがりますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身が占める2マスの間に適用されます。",
+        "a": "アニメイトされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身がまたがる2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -5030,7 +5030,7 @@
         "q": "[[Dalcean Phalanx]]は[[Waypoint Portal]]を「隣接しているかのように」通れますか？"
       },
       "judge|How does a large minion move through the Waypoint Portal?": {
-        "a": "設定: レルム全体が瓦礫で埋まっており、[[Waypoint Portal]]がマス3と13をつないでいます。[[Mountain Giant]]（などの大型ミニオン）が2-3-7-8を占めています。[[Mountain Giant]]のFAQ（[[Enchantress]]にも記載）のとおり:\n目的地の場所を含み、大型ユニットが占められる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだマスへ移動します。したがって[[Mountain Giant]]は[[Waypoint Portal]]を通って、7-8-12-13、8-9-13-14、12-13-17-18、13-14-18-19のいずれかに移動できます。",
+        "a": "設定: レルム全体が瓦礫で埋まっており、[[Waypoint Portal]]がマス3と13をつないでいます。[[Mountain Giant]]（などの大型ミニオン）が2-3-7-8にまたがっています。[[Mountain Giant]]のFAQ（[[Enchantress]]にも記載）のとおり:\n目的地の場所を含み、大型ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだマスへ移動します。したがって[[Mountain Giant]]は[[Waypoint Portal]]を通って、7-8-12-13、8-9-13-14、12-13-17-18、13-14-18-19のいずれかに移動できます。",
         "q": "大型ミニオンは[[Waypoint Portal]]をどう通りますか？"
       }
     },
@@ -5088,8 +5088,8 @@
         "q": "[[Wills-o'-the-Wisp]]が攻撃され、能力を使って攻撃を回避したらどうなりますか？"
       },
       "official|If Wills-o’-the-Wisps are attacked by a oversized minion, and then Wills-o’-the-Wisps teleport to a nearby location that the oversized minion still occupies, does the attack continue?": {
-        "a": "はい。実際に攻撃を回避するには、攻撃側が占めていない場所へテレポートしなければなりません。",
-        "q": "[[Wills-o'-the-Wisp]]が特大ミニオンに攻撃され、その特大ミニオンが依然として占めている近隣の場所へテレポートした場合、攻撃は続きますか？"
+        "a": "はい。実際に攻撃を回避するには、攻撃側がいない場所へテレポートしなければなりません。",
+        "q": "[[Wills-o'-the-Wisp]]が特大ミニオンに攻撃され、その特大ミニオンが依然としてまたがっている近隣の場所へテレポートした場合、攻撃は続きますか？"
       }
     },
     "wind_sylph": {
@@ -5158,11 +5158,11 @@
     },
     "yog_sothoth": {
       "official|What does \"Occupies all locations safely\" mean?": {
-        "a": "[[Yog-Sothoth]]は、すべてのリージョンの、すべての場所を同時に占めます。これには、すべての地表の場所、下層の場所、そして虚空が含まれます。[[Yog-Sothoth]]は埋められていることや潜水していることでは死亡せず、虚空にいることで追放されることもありません。",
-        "q": "「すべての場所を安全に占める（Occupies all locations safely）」とはどういう意味ですか？"
+        "a": "[[Yog-Sothoth]]は、すべてのリージョンの、すべての場所に同時にまたがります。これには、すべての地表の場所、下層の場所、そして虚空が含まれます。[[Yog-Sothoth]]は埋められていることや潜水していることでは死亡せず、虚空にいることで追放されることもありません。",
+        "q": "「すべての場所に安全にまたがる（Occupies all locations safely）」とはどういう意味ですか？"
       },
       "official|What happens if there's a silence or disable effect somewhere in the realm that affects minions (e.g. Root Spider, Silence aura)?": {
-        "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所を占め続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所を安全に占められないからです！",
+        "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所にまたがり続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所に安全にいられないからです！",
         "q": "レルムのどこかに、ミニオンに影響する沈黙や無力化の効果（例: [[Root Spider]]、[[Silence]]のオーラ）があったらどうなりますか？"
       },
       "official|How does “ignores the abilities of sites” work?": {
