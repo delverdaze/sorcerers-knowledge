@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T16:13:55.319Z",
+  "generated": "2026-10-13T16:20:18.709Z",
   "items": [
     {
       "n": 29,
@@ -21,17 +21,6 @@
       "q": {
         "ja": "地中や水中にあるオブジェクトを押せますか？",
         "en": "Can Scatter push objects that are Underground or Underwater?"
-      }
-    },
-    {
-      "n": 27,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/27",
-      "slug": "scatter",
-      "created": "2026-09-27",
-      "due": "2026-10-04",
-      "q": {
-        "ja": "押し出すミニオンが Airborne を持っている場合、斜めに動かせますか？",
-        "en": "If the minion being pushed has Airborne, can it move diagonally?"
       }
     }
   ]
