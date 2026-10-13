@@ -283,7 +283,7 @@
     "awakened_mummies": {
       "official|Am I required to summon these units burrowed?": {
         "a": "はい。可能であり、かつ必須です。",
-        "q": "このユニットは必ず穴掘り状態で召喚しなければなりませんか？"
+        "q": "このユニットは必ず地中に召喚しなければなりませんか？"
       },
       "official|Do they tap when they unburrow?": {
         "a": "いいえ。",
@@ -1770,7 +1770,7 @@
         "q": "特大ユニットが[[Free City]]にいながら別のサイトを攻撃した場合、[[Free City]]はその攻撃に対して防御できますか？"
       },
       "official|What can it attack?": {
-        "a": "鍵となる語は「ここ（here）」です。穴を掘っているユニットは明らかに「ここ」にいます。エアボーンやステルスのユニットも「ここ」にいます。しかし、エアボーンやステルスを攻撃するには、ユニットに何らかの特殊能力（例: エアボーン、レンジドなど）が必要です。[[Free City]]はそれらの能力を持たないため、実際にはエアボーンやステルスのユニットを攻撃の対象にできません。",
+        "a": "鍵となる語は「ここ（here）」です。地中にいるユニットは明らかに「ここ」にいます。エアボーンやステルスのユニットも「ここ」にいます。しかし、エアボーンやステルスを攻撃するには、ユニットに何らかの特殊能力（例: エアボーン、レンジドなど）が必要です。[[Free City]]はそれらの能力を持たないため、実際にはエアボーンやステルスのユニットを攻撃の対象にできません。",
         "q": "何を攻撃できますか？"
       },
       "official|When can it attack?": {
@@ -2206,7 +2206,7 @@
         "q": "「前方（in front）」とはどういう意味ですか？"
       },
       "judge|What is the order of events when a Basilisk gets buried without Burrowing, and enters a location with a unit that has Burrowing?": {
-        "a": "[[Hillock Basilisk]]の常在型能力が、その穴掘り状態のユニットに適用されて無力化します。そのユニットは埋める効果より前から静止していたからです。常在型の無力化が適用されると、バジリスクと、いま無力化されたミニオンの両方が、どちらもバロウを持たないため死亡が確定し、その後墓地に置かれます。",
+        "a": "[[Hillock Basilisk]]の常在型能力が、その地中にいるユニットに適用されて無力化します。そのユニットは埋める効果より前から静止していたからです。常在型の無力化が適用されると、バジリスクと、いま無力化されたミニオンの両方が、どちらもバロウを持たないため死亡が確定し、その後墓地に置かれます。",
         "q": "バロウを持たないバジリスクが強制的に埋められ、バロウを持つユニットのいる場所に入った場合、事象の順序はどうなりますか？"
       },
       "official|If I summon a minion to a location affected by Hillock Basilisk, will my minion's Genesis ability resolve?": {
@@ -2382,8 +2382,8 @@
     },
     "iron_shackles": {
       "official|Can I target a burrowed minion or a voidwalk minion?": {
-        "a": "穴掘り状態のスペルキャスターや虚空にいるスペルキャスターがいないかぎり、できません。この効果は「対象（target）」という語を使っているため、スペルキャスターは対象と同じリージョンにいなければなりません。（リージョンは4つ: 地表・地下・水中・虚空です。）",
-        "q": "穴掘り状態のミニオンやヴォイドウォークのミニオンを対象にできますか？"
+        "a": "地中にいるスペルキャスターや虚空にいるスペルキャスターがいないかぎり、できません。この効果は「対象（target）」という語を使っているため、スペルキャスターは対象と同じリージョンにいなければなりません。（リージョンは4つ: 地表・地下・水中・虚空です。）",
+        "q": "地中にいるミニオンやヴォイドウォークのミニオンを対象にできますか？"
       },
       "official|What happens if I target a minion with a Ward when conjuring this?": {
         "a": "解決時、ワードが対象のミニオンを守ります。ゴールデンルールにより、ワードは破れ、[[Iron Shackles]]はどのユニットにも運ばれていない状態で同じ場所に置かれます。",
@@ -2546,7 +2546,7 @@
     },
     "key_to_the_city": {
       "official|How does this ability interact with Flooded sites?": {
-        "a": "水没（Flooded）の能力はサイトに最低1つの水のスレッショルドを与え、水のサイトにします。[[Key to the City]]の所持者であっても、その水のスレッショルドを認識し、水のサイトとして扱います。たとえば、サブマージ（潜水）を持たなければ下層で死亡しますし、強制的にバロウ（穴掘り）させられることはありません。",
+        "a": "水没（Flooded）の能力はサイトに最低1つの水のスレッショルドを与え、水のサイトにします。[[Key to the City]]の所持者であっても、その水のスレッショルドを認識し、水のサイトとして扱います。たとえば、サブマージ（潜水）を持たなければ下層で死亡しますし、強制的に埋められることはありません。",
         "q": "この能力は水没したサイトとはどう相互作用しますか？"
       },
       "official|How does this ability work?": {
@@ -2760,7 +2760,7 @@
     },
     "lure": {
       "official|Can my allied minion tempt an enemy in a different region to take a step closer?": {
-        "a": "はい。敵が近隣のサイトにいるかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れないリージョンへ踏み込ませることはできません（例: バロウ（穴掘り）を持たない敵を地下へ1ステップ移動させることはできません）。",
+        "a": "はい。敵が近隣のサイトにいるかぎり、そのサイトの上でも下でもかまいません。ただし、通常入れないリージョンへ踏み込ませることはできません（例: バロウ（地中）を持たない敵を地下へ1ステップ移動させることはできません）。",
         "q": "味方のミニオンは、別のリージョンにいる敵を誘って1ステップ近づかせられますか？"
       },
       "official|If the tempted enemy has multiple equally closer steps, who chooses the specific step taken?": {
@@ -3827,7 +3827,7 @@
     "root_spider": {
       "judge|If an Avatar attacks a site with a burrowed Root Spider under it, can a minion successfully Defend that attack?": {
         "a": "いいえ。ミニオンは地表に到着しますが、即座に無力化されるため、無力化されている状態ではリダイレクト効果が解決できません。",
-        "q": "穴掘り状態の[[Root Spider]]が地下にいるサイトをアバターが攻撃した場合、ミニオンはその攻撃をうまく防御できますか？"
+        "q": "[[Root Spider]]が地中にいるサイトをアバターが攻撃した場合、ミニオンはその攻撃をうまく防御できますか？"
       }
     },
     "roots_of_yggdrasil": {
@@ -4342,7 +4342,7 @@
         "q": "「静止（at rest）」は実際にはどう機能しますか？ ミニオンは静止する前にジェネシスを誘発・解決しますか？"
       },
       "judge|What is the order of events when Gorgons get buried without Burrowing, and enters a location with a unit that has Burrowing?": {
-        "a": "[[Stone-gaze Gorgons]]の常在型能力が、その穴掘り状態のユニットに適用されて無力化します。そのユニットは埋める効果より前から静止していたからです。常在型の無力化が適用されると、ゴルゴンと、いま無力化されたミニオンの両方が、どちらもバロウを持たないため死亡が確定し、その後墓地に置かれます。",
+        "a": "[[Stone-gaze Gorgons]]の常在型能力が、その地中にいるユニットに適用されて無力化します。そのユニットは埋める効果より前から静止していたからです。常在型の無力化が適用されると、ゴルゴンと、いま無力化されたミニオンの両方が、どちらもバロウを持たないため死亡が確定し、その後墓地に置かれます。",
         "q": "バロウを持たないゴルゴンが強制的に埋められ、バロウを持つユニットのいる場所に入った場合、事象の順序はどうなりますか？"
       }
     },
@@ -4377,7 +4377,7 @@
     "summoning_sphere": {
       "official|Does this allow me to summon my units burrowed even without burrowing?": {
         "a": "いいえ。この効果が破れるのは「あなたのサイトを選ぶ」という制限だけで、「サイトの上に召喚する」というルールは破れません。",
-        "q": "これはバロウを持たないユニットを、穴掘り状態で召喚することを許しますか？"
+        "q": "これはバロウを持たないユニットを、地中に召喚することを許しますか？"
       },
       "official|The term \"summon\" means \"enter the realm.\" So, does that mean I can play minions here for free?": {
         "a": "いいえ。この効果は、ミニオンを召喚できる場所を追加で提供するだけです。",
@@ -4516,8 +4516,8 @@
     },
     "the_hexham_haunts": {
       "official|How does summoning burrowed interact with Evil Presence?": {
-        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は穴掘り状態でなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]が影響を与えるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
-        "q": "穴掘り状態での召喚は、[[Evil Presence]]とどう相互作用しますか？"
+        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は地中に召喚しなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]が影響を与えるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
+        "q": "地中への召喚は、[[Evil Presence]]とどう相互作用しますか？"
       }
     },
     "the_immortal_throne": {
