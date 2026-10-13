@@ -20,7 +20,7 @@
         "q": "[[Abundance]]の効果範囲にオーディナリーの塔（例: [[Lone Tower]]）をプレイすると、マナはいくつ生み出されますか？"
       },
       "official|When do I get this extra mana?": {
-        "a": "マナがプレイヤーのマナプールに加えられるのは、そのプレイヤーの開始フェイズ中、またはサイトがそのプレイヤーのコントロール下でレルムに入ったときです。したがって、すでに場に出ているサイトからは、あなたの次のターンの開始まで追加マナは得られません。一方、[[Abundance]]をプレイしたあとに、その影響範囲内へサイトをプレイした場合、その新しいサイトは即座に追加マナを生み出します。また、ターン開始時にサイトが[[Abundance]]の範囲内にあり、その後メインフェイズ中に範囲外になった場合（[[Cloud City]]が移動した、[[Scorched Earth]]を受けたなど）でも、開始フェイズに得たマナを失うことはありません。",
+        "a": "追加のマナは、サイトがこのオーラの影響を受けた時点で直ちに提供されます。オーラがそのサイトに影響しなくなれば、その追加のマナも直ちに失われます。",
         "q": "この追加マナはいつ得られますか？"
       }
     },
@@ -249,9 +249,9 @@
         "a": "はい。そのサイトもオーラの影響範囲に含まれます。オーディナリーのサイトにはジェネシス能力以外の効果は適用されませんが、そのジェネシス能力によって、そこにいるミニオンとアーティファクトは潜水します。",
         "q": "占有するサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
       },
-      "official|If my Vindictive Nation is affected by my opponent's Atlantean Fate, do they lose 1 or 2 life?": {
-        "q": "私の[[Vindictive Nation]]が相手の[[Atlantean Fate]]の影響を受けた場合、相手は1ライフと2ライフのどちらを失いますか？",
-        "a": "2ライフです。[[Vindictive Nation]]は水没し（これは修正に数えます）、その後沈黙します（これも修正に数えます）。"
+      "official|If my Vindictive Nation, or an allied site near it, is affected by my opponent's Atlantean Fate, how much life do they lose?": {
+        "a": "1ライフです。[[Atlantean Fate]]は[[Vindictive Nation]]を水没させて沈黙させ、さらに水以外のスレッショルドを提供できなくします。これらはすべてサイトへの修正ですが、いずれもストーリーライン上の1つの効果から生じています。1つの効果から生じているので、[[Vindictive Nation]]はこれを1回の修正とみなします。",
+        "q": "自分の[[Vindictive Nation]]、またはその近隣にある味方のサイトが、相手の[[Atlantean Fate]]の影響を受けた場合、相手は何ライフを失いますか？"
       }
     },
     "atlas_wanderers": {
@@ -896,6 +896,10 @@
       "official|What happens if an oversized avatar is occupying a site, and then some effect moves that site?": {
         "a": "サイトが移動するとき、一緒に移動するのは「通常」サイズのものだけです。特大になったアバターは移動しません。\nサイトが移動する場合の多くは、元の場所に別のサイトが残ります（例: [[Rift Valley]]）。その場合、アバターは新しいサイトの地表を占めることになります。[[Cloud City]]のように虚空の場所を残して去る場合、アバターはその虚空のマスを占めることになります。アバターが虚空にいる場合の扱いは写本室（Codex）の「強制アクション（Mandatory Actions）」を参照してください。\nどちらの場合も、アバターは占めることになった新しい場所に「入った」ことにはならない点に注意してください。",
         "q": "特大のアバターがサイトを占めているときに、何らかの効果でそのサイトが移動したらどうなりますか？"
+      },
+      "official|Can Cloud City move onto The Void (the site) ?": {
+        "a": "いいえ。",
+        "q": "[[Cloud City]]は[[The Void]]（サイト）の上へ移動できますか？"
       }
     },
     "common_cottagers": {
@@ -1282,7 +1286,7 @@
         "q": "アバターはスペルキャスターなので、これをアバターに唱えられますか？"
       },
       "official|Using Dream-Quest, can I put to sleep one of my non-minion Spellcasters (e.g. Omphalos, River of Flame) or a spellcaster with restrictions (e.g. Earl of the Ivory Towers, Wind Sylph)?": {
-        "a": "はい！\nオムパロスは無力化されるのでそのターンは呪文を引きませんが、アニメイトされていないかぎり傷つくことはありません。傷ついていなければ、あなたの次のターンの開始時に目覚めさせられます。\nサイト（例: [[River of Flame]]）の場合、無力化されている間はスレッショルドを提供しませんが、開始フェイズの解決順のおかげで、次のターンにマナを生み出すのには間に合うように目覚めます。",
+        "a": "はい！\nオムパロスは無力化されるのでそのターンは呪文を引きませんが、アニメイトされていないかぎり傷つくことはありません。傷ついていなければ、あなたの次のターンの開始時に目覚めさせられます。\nサイト（例: [[River of Flame]]）の場合、無力化されている間はスレッショルドもマナも提供しません。",
         "q": "[[Dream-quest]]で、ミニオンでないスペルキャスター（例: オムパロス、[[River of Flame]]）や、制限つきのスペルキャスター（例: [[Earl of the Ivory Towers]]、[[Wind Sylph]]）を眠らせることはできますか？"
       }
     },
@@ -2502,7 +2506,7 @@
         "q": "「レルムの状態を記録する」とき、プレイヤーのライフ合計も含まれますか？"
       },
       "official|When a card is \"returned to its recorded state,\" does it enter the realm?": {
-        "a": "いいえ。レルムに入るのではありません。ジェネシス・ステルス・ランスなどは誘発せず、サイトはマナを生み出しません。",
+        "a": "いいえ。レルムに入るのではありません。ジェネシス・ステルス・ランスなどは誘発しません。",
         "q": "カードが「記録された状態に戻る」とき、レルムに入ったことになりますか？"
       },
       "official|When a card is \"returned to its recorded state,\" does it move or enter the location?": {
@@ -2546,7 +2550,7 @@
         "q": "この能力は水没したサイトとはどう相互作用しますか？"
       },
       "official|How does this ability work?": {
-        "a": "サイトの能力は、[[Key to the City]]の所持者を、対象にできず、ダメージを与えられず、破壊できず、追放できず、修正できず、移動させられず、移動や攻撃を妨げられません。さらに、サイトの能力は所持者にライフを失わせたり得させたりできず、所持者が受ける回復にも影響できません。例:\n[[Gnome Hollows]]は、パワー3以上の鍵の所持者の進入を止められません。鍵の所持者は、地表づたいに[[Perilous Bridge]]を越えられます。\n[[Remote Desert]]は鍵の所持者にダメージを与えられません。\n[[Poisoned Well]]は所持者にライフを失わせられません。\n鍵を所持するアバターは[[Holy Ground]]でライフを得ず、[[Poisoned Well]]でライフを失いません。\n鍵を所持するアバターの回復は[[River of Blood]]で半減しません。（[[River of Blood]]の回復半減を無視するには、アバター自身が鍵を持たなければなりません。）\n[[Fields of Camlann]]は、選ばれたミニオンでなくても、鍵の所持者を破壊しません。\n[[River Rapids]]は鍵の所持者を動かせません。\n「修正されない」の一部として、多くのサイト効果が適用されません:\n[[Gilman House]]は鍵の所持者を変身させられません\n[[Babbling Brook]]は鍵の所持者を無力化できません\n[[Bog]]は鍵の所持者を移動不能にできません\n[[Silent Hills]]は鍵の所持者を沈黙させられません\n[[Road to Perdition]]は鍵の所持者のパワーを増減できません\n[[Accursed Desert]]は鍵の所持者のワードを打ち破れません\n一方、機能し続けるサイト能力もあります:\n[[Wizard's Den]]は、鍵を所持するアバターにも呪文を引かせます（呪文を引くのはユニットではなくプレイヤーだからです）。\n[[Garden of Eden]]は、鍵を所持するアバターの追加の呪文ドローも止めます（同上）。\n[[Beacon]]は敵の鍵の所持者も数えます。\n鍵を持った[[Asmodeus]]でも[[Bedrock]]は破壊できません。\n鍵を所持するアバターも[[Bureau of Occult Control]]の追加の(2)は支払わなければなりません（マナの獲得と支払いはプレイヤーが行うためです）。\n鍵を所持するアバターは[[The Empyrean]]のサイト能力が提供するスレッショルドを引き続き使えます（スレッショルドの管理はプレイヤーが行うためです）。\n[[The Void]]というサイトは、ヴォイドウォークを持たない鍵の所持者ミニオンを依然として追放します。ミニオンを追放しているのはゲームそのものだからです。",
+        "a": "所持者はサイトから保護されています。写本室（Codex）の「((Xからの保護))」を参照してください。",
         "q": "この能力はどう機能しますか？"
       },
       "official|When does this artifact provide mana?": {
@@ -2666,7 +2670,7 @@
     },
     "land_deed": {
       "official|If I gain control of a site in the middle of my turn, does it produce mana immediately?": {
-        "a": "いいえ。サイトがマナを生み出すのは、あなたのターンの開始時と、レルムに入ったときです。[[Land Deed]]のあるサイトはすでにレルムにあったので、コントロールを得ただけではマナを生み出しません。",
+        "a": "はい。自分のターン中にサイトのコントロールを得たなら、そのサイトが提供するマナを直ちに使えます。",
         "q": "自分のターンの途中でサイトのコントロールを得た場合、そのサイトは即座にマナを生み出しますか？"
       },
       "official|What happens if I have a Land Deed on Rubble?": {
@@ -2720,7 +2724,7 @@
     },
     "lord_of_fear": {
       "official|What does \"defend alone\" mean?": {
-        "a": "防御のウィンドウが閉じたとき（詳しくは写本室（Codex）の「攻撃（Attack）」参照）、防御（Defend）能力を使った敵ユニットが1体だけなら、その防御側は戦闘から取り除かれ、元の攻撃対象が復元されます。防御側は通常どおり1体ずつ到着しますが、1体しかいなければ、その防御は事実上打ち消されます（ただし、その防御側はタップして攻撃の場所へ移動したままです）。",
+        "a": "防御のウィンドウが閉じたとき（詳しくは写本室（Codex）の「((攻撃))」を参照）、戦闘には少なくとも2体のユニットがいなければなりません。いなければ、防御（Defend）能力を使ったユニットはすべて戦闘から取り除かれ、元の攻撃対象が復元されます。防御側は通常どおり1体ずつ到着しますが、防御のウィンドウのあとに少なくとも2体のユニットがいなければ、その防御は事実上打ち消されます（ただし、その防御側はタップして攻撃の場所へ移動したままです）。",
         "q": "「単独で防御する（defend alone）」とはどういう意味ですか？"
       }
     },
@@ -3380,7 +3384,7 @@
         "q": "アトラスの一番上が[[Rift Valley]]であることを期待して、サイトに囲まれている状態でもこの能力を使えますか？"
       },
       "official|Does Pristine Paradise provide mana the turn the Pathfinder plays it from the atlas? That is, does the site have enough time to make mana before the Pathfinder moves onto it?": {
-        "a": "はい。サイトは場に出た瞬間にマナを生み出します。",
+        "a": "[[Pathfinder]]はサイトをプレイしてすぐにその上へ移動するので、そのターンに[[Pristine Paradise]]が提供するマナを活かす機会はありません。ただし、[[Pathfinder]]がそのサイトから離れる手段を持っているなら別です。",
         "q": "[[Pathfinder]]がアトラスから[[Pristine Paradise]]をプレイしたターン、それはマナを生み出しますか？ つまり、[[Pathfinder]]が乗る前にサイトがマナを生む時間はありますか？"
       },
       "official|If I have no sites but it's not the first turn (e.g. Roots of Yggdrasil destroyed everything) and I use the Pathfinder's ability, am I forced to play the site under the Pathfinder's current location, or could I play the site adjacent?": {
@@ -3596,7 +3600,7 @@
         "q": "[[Pristine Paradise]]は、その上にオーラがあると機能しなくなりますか？"
       },
       "official|Does Pristine Paradise provide mana the turn the Pathfinder plays it from the atlas? That is, does the site have enough time to make mana before the Pathfinder moves onto it?": {
-        "a": "はい。サイトは場に出た瞬間にマナを生み出します。",
+        "a": "[[Pathfinder]]はサイトをプレイしてすぐにその上へ移動するので、そのターンに[[Pristine Paradise]]が提供するマナを活かす機会はありません。ただし、[[Pathfinder]]がそのサイトから離れる手段を持っているなら別です。",
         "q": "[[Pathfinder]]がアトラスから[[Pristine Paradise]]をプレイしたターン、それはマナを生み出しますか？ つまり、[[Pathfinder]]が乗る前にサイトがマナを生む時間はありますか？"
       }
     },
@@ -3866,6 +3870,10 @@
       "official|If Persecutor brands a minion, are they still considered evil by that player's cards while the Saint of Redemption is in play?": {
         "a": "いいえ。聖者はすべてのミニオンを贖い、[[Persecutor]]の烙印でさえ、贖われた魂を断罪することはできません！",
         "q": "[[Persecutor]]がミニオンに烙印を押した場合、[[Saint of Redemption]]が場にいる間も、そのプレイヤーのカードはそれを邪悪として扱いますか？"
+      },
+      "official|Does Saint of Redemption himself enter tapped?": {
+        "a": "はい！ これは「レルムに入る」ときの効果なので、彼自身がレルムに入るときにも適用されます。とても敬虔なのです！",
+        "q": "[[Saint of Redemption]]自身もタップ状態でレルムに入りますか？"
       }
     },
     "salmon_of_knowledge": {
@@ -4070,6 +4078,12 @@
         "q": "[[Sir Gareth]]の能力を使ったとき、彼は手札に残りますか？"
       }
     },
+    "sir_gawain": {
+      "official|If Sir Gawain dies for multiple reasons (e.g. Poison Nova that kills him normally, and also kills him from redirected damage), do I get to draw a card?": {
+        "a": "はい。いくらかのダメージを代わりに受けていて、そのダメージが与えられた時点で彼が直ちに死亡するなら引けます。そのターンのそれより前に受けたダメージでは足りません。彼が死亡するその瞬間に、代わりに受けたダメージでなければなりません。",
+        "q": "[[Sir Gawain]]が複数の理由で死亡する場合（例: [[Poison Nova]]が通常のダメージで彼を倒し、同時に代わりに受けたダメージでも彼を倒す場合）、カードを1枚引けますか？"
+      }
+    },
     "sir_kay": {
       "judge|Could Sir Kay untap if I cast a spell like Joust! or Shatter Strike with him as the ally?": {
         "a": "はい。より弱いミニオンが対象であるかぎり可能です。それらのカードでは、対象を取るのはスペルキャスターではなく、その味方だと指定されているからです。",
@@ -4178,6 +4192,10 @@
       "official|What happens if there are two Smokestacks of Gnaak nearby each other?": {
         "a": "写本室（Codex）の「例 — 2つの Smokestacks of Gnaak（Example - Two Smokestacks of Gnaak）」を参照してください！",
         "q": "[[Smokestacks of Gnaak]]が2つ、互いの近隣にあったらどうなりますか？"
+      },
+      "official|Is this a “silence” effect?": {
+        "a": "はい。「近隣の他のサイトは沈黙する」として扱います。",
+        "q": "これは「沈黙」の効果ですか？"
       }
     },
     "snowball": {
@@ -4430,13 +4448,13 @@
     },
     "the_apex_of_babel": {
       "official|What does it mean to \"build The Tower of Babel\" and \"play ... atop this\" ?": {
-        "a": "[[The Apex of Babel]]を[[The Base of Babel]]と同じマスにプレイできます！（[[The Base of Babel]]がレルムに複数あるなら1つを選びます。）そうしたなら、両者は「The Tower of Babel（バベルの塔）」という1つのサイトに合体します。頂を積んで塔を築いたとき、[[The Apex of Babel]]の効果を解決します。\nバベルの塔は、(2)のマナと(A)(E)を提供する1つのサイトと見なされ、ユニークかつエクセプショナルです。（プレイしたターンは、基部がすでに場にあったぶんマナを(1)多く得ます。）破壊されたら、[[The Apex of Babel]]と[[The Base of Babel]]の両方があなたの墓地へ行きます。コピーされた場合（例: [[Mirror Realm]]）、コピーは(2)のマナなどを提供しますが、建設ボーナスを再び得ることはありません。\nあらゆる目的において、バベルの塔は1つのサイトと見なされます。",
+        "a": "[[The Apex of Babel]]を[[The Base of Babel]]と同じマスにプレイできます！（[[The Base of Babel]]がレルムに複数あるなら1つを選びます。）そうしたなら、両者は「The Tower of Babel（バベルの塔）」という1つのサイトに合体します。頂を積んで塔を築いたとき、[[The Apex of Babel]]の効果を解決します。\nバベルの塔は、(2)のマナと(A)(E)を提供する1つのサイトと見なされ、ユニークかつエクセプショナルです。破壊されたら、[[The Apex of Babel]]と[[The Base of Babel]]の両方があなたの墓地へ行きます。コピーされた場合（例: [[Mirror Realm]]）、コピーは(2)のマナなどを提供しますが、建設ボーナスを再び得ることはありません。\nあらゆる目的において、バベルの塔は1つのサイトと見なされます。",
         "q": "「バベルの塔を築く（build The Tower of Babel）」「これの上にプレイする（play ... atop this）」とはどういう意味ですか？"
       }
     },
     "the_base_of_babel": {
       "official|What does it mean to \"build The Tower of Babel\" and \"play ... atop this\" ?": {
-        "a": "[[The Apex of Babel]]を[[The Base of Babel]]と同じマスにプレイできます！（[[The Base of Babel]]がレルムに複数あるなら1つを選びます。）そうしたなら、両者は「The Tower of Babel（バベルの塔）」という1つのサイトに合体します。頂を積んで塔を築いたとき、[[The Apex of Babel]]の効果を解決します。\nバベルの塔は、(2)のマナと(A)(E)を提供する1つのサイトと見なされ、ユニークかつエクセプショナルです。（プレイしたターンは、基部がすでに場にあったぶんマナを(1)多く得ます。）破壊されたら、[[The Apex of Babel]]と[[The Base of Babel]]の両方があなたの墓地へ行きます。コピーされた場合（例: [[Mirror Realm]]）、コピーは(2)のマナなどを提供しますが、建設ボーナスを再び得ることはありません。\nあらゆる目的において、バベルの塔は1つのサイトと見なされます。",
+        "a": "[[The Apex of Babel]]を[[The Base of Babel]]と同じマスにプレイできます！（[[The Base of Babel]]がレルムに複数あるなら1つを選びます。）そうしたなら、両者は「The Tower of Babel（バベルの塔）」という1つのサイトに合体します。頂を積んで塔を築いたとき、[[The Apex of Babel]]の効果を解決します。\nバベルの塔は、(2)のマナと(A)(E)を提供する1つのサイトと見なされ、ユニークかつエクセプショナルです。破壊されたら、[[The Apex of Babel]]と[[The Base of Babel]]の両方があなたの墓地へ行きます。コピーされた場合（例: [[Mirror Realm]]）、コピーは(2)のマナなどを提供しますが、建設ボーナスを再び得ることはありません。\nあらゆる目的において、バベルの塔は1つのサイトと見なされます。",
         "q": "「バベルの塔を築く（build The Tower of Babel）」「これの上にプレイする（play ... atop this）」とはどういう意味ですか？"
       }
     },
@@ -4612,6 +4630,12 @@
       "official|While my Avatar occupies the surface + void location of The Void site, can I target something occupying the underground + void location of The Void site?": {
         "a": "はい！ 対象はスペルキャスターと同じリージョン（虚空）にいるので、対象にできます！",
         "q": "私のアバターが[[The Void]]の「地表+虚空」の場所を占めている間、[[The Void]]の「地下+虚空」の場所を占める何かを対象にできますか？"
+      }
+    },
+    "thin_ice": {
+      "official|How does the resolution of this ability interact with other “end of turn” triggers?": {
+        "a": "この能力は、ターンの終了時に誘発する他のすべての能力とともにストーリーラインに置かれます。そして解決するとき、このサイトの地表にいるミニオンのパワーの合計が5以上なら、それらを潜水させます。\nたとえば、自分の[[Thin Ice]]の上に[[Questing Beast]]をコントロールしているなら、ターンの終了時の誘発の順番を決めて、先に[[Questing Beast]]が[[Thin Ice]]から離れる1ステップを行うようにできます。そうすれば、[[Thin Ice]]の上にいる他のミニオンを潜水させるのは、それらのパワーの合計が（[[Questing Beast]]を数えずに）なお5以上の場合だけです。",
+        "q": "この能力の解決は、他の「ターンの終了時」の誘発とどのように関わりますか？"
       }
     },
     "thing_in_the_ice": {
@@ -4859,9 +4883,9 @@
         "a": "はい！ [[Smokestacks of Gnaak]]による沈黙は常在型能力として適用されますが、沈黙させるという行為そのものが[[Vindictive Nation]]の能力を誘発します。したがって、[[Vindictive Nation]]が沈黙する際にその能力が誘発します。詳しくは写本室（Codex）の「誘発型能力（Triggered Ability）」を参照してください。",
         "q": "私の[[Vindictive Nation]]が相手によって沈黙させられた場合（例: [[Smokestacks of Gnaak]]）、相手はライフを失いますか？"
       },
-      "official|If my Vindictive Nation is affected by my opponent's Atlantean Fate, do they lose 1 or 2 life?": {
-        "a": "2ライフです。[[Vindictive Nation]]は水没し（これは修正に数えます）、その後沈黙します（これも修正に数えます）。",
-        "q": "私の[[Vindictive Nation]]が相手の[[Atlantean Fate]]の影響を受けた場合、相手は1ライフと2ライフのどちらを失いますか？"
+      "official|If my Vindictive Nation, or an allied site near it, is affected by my opponent's Atlantean Fate, how much life do they lose?": {
+        "a": "1ライフです。[[Atlantean Fate]]は[[Vindictive Nation]]を水没させて沈黙させ、さらに水以外のスレッショルドを提供できなくします。これらはすべてサイトへの修正ですが、いずれもストーリーライン上の1つの効果から生じています。1つの効果から生じているので、[[Vindictive Nation]]はこれを1回の修正とみなします。",
+        "q": "自分の[[Vindictive Nation]]、またはその近隣にある味方のサイトが、相手の[[Atlantean Fate]]の影響を受けた場合、相手は何ライフを失いますか？"
       },
       "official|When moving sites around, does Vindictive Nation protect the nearby sites before or after the move?": {
         "a": "[[Vindictive Nation]]が守るのは、移動前に近隣にあったサイトです。例:\nI = [[Vindictive Nation]]\nR = 瓦礫\nA = 味方のサイト\n相手が[[Earthquake]]を唱えて右端の2つのサイトを並べ替えました。\nサイトAが移動して[[Vindictive Nation]]の近隣に来たとしても、Aは移動前には近隣になかったので、相手はライフを失いません。\n逆に、2つ目の配置から始まって[[Earthquake]]で1つ目の配置に動かした場合、相手は[[Vindictive Nation]]の近隣にあったサイトを動かしたので、3ライフを失います（結果的にそのサイトが近隣でなくなったとしてもです）。",
@@ -5140,6 +5164,10 @@
       "official|What happens if there's a silence or disable effect somewhere in the realm that affects minions (e.g. Root Spider, Silence aura)?": {
         "a": "[[Yog-Sothoth]]はその効果によって無力化または沈黙させられますが、サイズは特性なので、すべての場所を占め続けます。これは通常、[[Yog-Sothoth]]の追放を意味します。もはや虚空の場所を安全に占められないからです！",
         "q": "レルムのどこかに、ミニオンに影響する沈黙や無力化の効果（例: [[Root Spider]]、[[Silence]]のオーラ）があったらどうなりますか？"
+      },
+      "official|How does “ignores the abilities of sites” work?": {
+        "a": "[[Yog-Sothoth]]はサイトから保護されています。写本室（Codex）の「((Xからの保護))」を参照してください。",
+        "q": "「サイトの能力を無視する」はどのように働きますか？"
       }
     },
     "young_master_damion": {
@@ -5167,5 +5195,5 @@
       }
     }
   },
-  "version": "2026-08-06"
+  "version": "2026-10-13"
 }
