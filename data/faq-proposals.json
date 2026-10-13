@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T16:09:15.769Z",
+  "generated": "2026-10-13T16:12:21.740Z",
   "items": [
     {
       "n": 29,
@@ -43,17 +43,6 @@
       "q": {
         "ja": "相手の呪文書からも探せますか？",
         "en": "Can I search an opponent's spellbook?"
-      }
-    },
-    {
-      "n": 25,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/25",
-      "slug": "diluvian_kraken",
-      "created": "2026-09-27",
-      "due": "2026-10-04",
-      "q": {
-        "ja": "能力を起動して浮上した時、《Sisters of Silence》や《Sister Stefánia》がいる場合、Strike は起こりますか？",
-        "en": "If Diluvian Kraken activates its ability and surfaces while 《Sisters of Silence》 or 《Sister Stefánia》 is in play, does the Strike still happen?"
       }
     }
   ]
