@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T16:20:18.709Z",
+  "generated": "2026-10-13T16:21:25.032Z",
   "items": [
     {
       "n": 29,
@@ -10,17 +10,6 @@
       "q": {
         "ja": "ドロップできなくても、ドロップ以外の方法ならアーティファクトを手放せますか？",
         "en": "Even if you can’t drop an artifact, can you still let go of it in other ways?"
-      }
-    },
-    {
-      "n": 28,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/28",
-      "slug": "scatter",
-      "created": "2026-09-27",
-      "due": "2026-10-04",
-      "q": {
-        "ja": "地中や水中にあるオブジェクトを押せますか？",
-        "en": "Can Scatter push objects that are Underground or Underwater?"
       }
     }
   ]
