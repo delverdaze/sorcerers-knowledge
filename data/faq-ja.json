@@ -247,7 +247,7 @@
       },
       "official|If one of the sites it occupies is an Ordinary water site, are minions and artifacts there still submerged?": {
         "a": "はい。そのサイトもオーラの影響範囲に含まれます。オーディナリーのサイトにはジェネシス能力以外の効果は適用されませんが、そのジェネシス能力によって、そこにいるミニオンとアーティファクトは潜水します。",
-        "q": "またがるサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
+        "q": "影響下のサイトの1つがオーディナリーの水のサイトである場合、そこにいるミニオンやアーティファクトは、それでも潜水している状態ですか？"
       },
       "official|If my Vindictive Nation, or an allied site near it, is affected by my opponent's Atlantean Fate, how much life do they lose?": {
         "a": "1ライフです。[[Atlantean Fate]]は[[Vindictive Nation]]を水没させて沈黙させ、さらに水以外のスレッショルドを提供できなくします。これらはすべてサイトへの修正ですが、いずれもストーリーライン上の1つの効果から生じています。1つの効果から生じているので、[[Vindictive Nation]]はこれを1回の修正とみなします。",
@@ -1446,7 +1446,7 @@
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|Turning auras into minions!? Is this real?": {
-        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメイトしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲にまたがるので、特大ユニットについても学んでおくとよいでしょう。",
+        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメイトしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲に影響を及ぼすので、特大ユニットについても学んでおくとよいでしょう。",
         "q": "オーラをミニオンに変える！？ 本当ですか？"
       },
       "official|What is the proper timing of resolution for this effect?": {
@@ -2830,7 +2830,7 @@
         "q": "[[Magellan Globe]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|If Magellan Globe is in play, can an aura or an oversized unit be cast on the edge of the realm, spanning the realm?": {
-        "a": "はい。オーラがどのサイトにまたがっているか全プレイヤーがわかるよう、必要ならメモを使って、ゲームの状態を明確に保ってください。",
+        "a": "はい。オーラの影響下にあるサイトが全プレイヤーにわかるよう、必要ならメモを使って、ゲームの状態を明確に保ってください。",
         "q": "[[Magellan Globe]]が場にあるとき、オーラや特大ユニットを、レルムの端をまたぐ形で唱えられますか？"
       },
       "official|If Magellan Globe leaves play when a card is spanning the edge of the realm, what happens?": {
@@ -3990,7 +3990,7 @@
         "q": "ジェネシス能力もコピーしますか？"
       },
       "official|If it tries to become a basic copy of an aura animated by Enchantress, what happens?": {
-        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメイトされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて本来のサイズに広がり、詠唱時に指定した場所にあり続けなければなりません。",
+        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメイトされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて、詠唱時に指定した場所を含む形で本来のサイズに広がります。",
         "q": "[[Enchantress]]にアニメイトされたオーラの基本コピーになろうとしたらどうなりますか？"
       },
       "official|What if it loses its abilities (e.g. Silence aura)?": {
@@ -4262,7 +4262,7 @@
     },
     "sphere_of_animosity": {
       "official|What does \"Avatars here can't leave\" mean?": {
-        "a": "現在[[Sphere of Animosity]]の下にいるアバターは、球体のない場所には入れません。つまり、そこへ移動することも、強制的に移動させられることもできません。\nなお、サイトが移動するときは通常サイズのカードを一緒に運び、それらのカードは新しい場所に「入った」ことにはなりません。つまり、移動するサイトはアバターを球体の外へ運び出せます。",
+        "a": "現在[[Sphere of Animosity]]の下にいるアバターは、その影響下の外へは出られません。つまり、外の場所へ移動することも、強制的に移動させられることもありません。\nなお、サイトが移動するときは通常サイズのカードを一緒に運び、それらのカードは新しい場所に「入った」ことにはなりません。つまり、移動するサイトはアバターを球体の外へ運び出せます。",
         "q": "「ここにいるアバターは離れられない（Avatars here can't leave）」とはどういう意味ですか？"
       }
     },
@@ -4516,7 +4516,7 @@
     },
     "the_hexham_haunts": {
       "official|How does summoning burrowed interact with Evil Presence?": {
-        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は穴掘り状態でなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]があるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
+        "a": "[[The Hexham Haunts]]を影響下のサイトに召喚することはでき、その場合は穴掘り状態でなければなりません。ただし、ホーントはチャージを得ず、[[Evil Presence]]もレルムに残ります。[[Evil Presence]]が影響を与えるのは地表（および場合により虚空）であって地下ではないため、[[Evil Presence]]から見て「ここ」に召喚されたことにならないからです。",
         "q": "穴掘り状態での召喚は、[[Evil Presence]]とどう相互作用しますか？"
       }
     },
@@ -4925,10 +4925,10 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスにまたがりますか？"
+        "q": "このオーラはいくつのマスに影響を及ぼしますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身がまたがる2マスの間に適用されます。",
+        "a": "アニメイトされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身の影響下にある2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -4957,14 +4957,14 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスにまたがりますか？"
+        "q": "このオーラはいくつのマスに影響を及ぼしますか？"
       },
       "official|What does “passes through” mean?": {
         "a": "自発的な移動か強制移動かを問わず、何らかの方法で通り抜けることです。たとえば、[[Grapple Shot]]や[[Pudge Butcher]]で移動させられたユニットも、[[Wall of Fire]]からダメージを受けます。なお、テレポートされたユニットは境界線を通り抜けないため、影響を受けません。",
         "q": "「通り抜ける（passes through）」とはどういう意味ですか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "移動はできますが、その移動によってユニットが[[Wall of Fire]]を通り抜けたことにはなりません。移動後、その効果は自身がまたがる2マスの間に適用されます。",
+        "a": "移動はできますが、その移動によってユニットが[[Wall of Fire]]を通り抜けたことにはなりません。移動後、その効果は自身の影響下にある2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
@@ -4975,10 +4975,10 @@
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
-        "q": "このオーラはいくつのマスにまたがりますか？"
+        "q": "このオーラはいくつのマスに影響を及ぼしますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身がまたがる2マスの間に適用されます。",
+        "a": "アニメイトされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身の影響下にある2マスの間に適用されます。",
         "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
       }
     },
