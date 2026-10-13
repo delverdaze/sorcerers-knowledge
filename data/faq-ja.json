@@ -3590,8 +3590,8 @@
         "q": "[[Postern Gate]]をプレイしたとき、マナは得られますか？"
       },
       "judge|Do I play this adjacent to my sites, or my opponent’s sites?": {
-        "a": "自分のサイトに隣接してプレイします。",
-        "q": "これは自分のサイトに隣接してプレイしますか？ それとも相手のサイトですか？"
+        "a": "あなたのサイトに隣接してプレイします。",
+        "q": "これはあなたのサイトに隣接してプレイしますか？ それとも相手のサイトですか？"
       }
     },
     "pristine_paradise": {
@@ -4376,7 +4376,7 @@
     },
     "summoning_sphere": {
       "official|Does this allow me to summon my units burrowed even without burrowing?": {
-        "a": "いいえ。この効果が破れるのは「自分のサイトを選ぶ」という制限だけで、「サイトの上に召喚する」というルールは破れません。",
+        "a": "いいえ。この効果が破れるのは「あなたのサイトを選ぶ」という制限だけで、「サイトの上に召喚する」というルールは破れません。",
         "q": "これはバロウを持たないユニットを、穴掘り状態で召喚することを許しますか？"
       },
       "official|The term \"summon\" means \"enter the realm.\" So, does that mean I can play minions here for free?": {
