@@ -1,16 +1,4 @@
 {
-  "generated": "2026-10-13T16:21:25.032Z",
-  "items": [
-    {
-      "n": 29,
-      "url": "https://github.com/delverdaze/sorcerers-knowledge/issues/29",
-      "slug": "lord_of_greed",
-      "created": "2026-09-27",
-      "due": "2026-10-04",
-      "q": {
-        "ja": "ドロップできなくても、ドロップ以外の方法ならアーティファクトを手放せますか？",
-        "en": "Even if you can’t drop an artifact, can you still let go of it in other ways?"
-      }
-    }
-  ]
+  "generated": "2026-10-13T16:24:29.279Z",
+  "items": []
 }
