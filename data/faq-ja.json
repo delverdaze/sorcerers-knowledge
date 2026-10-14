@@ -518,8 +518,8 @@
         "q": "味方が自分でテレポートするのですか、それともテレポートさせられるのですか？"
       },
       "judge|If a large minion occupying squares 1-2-6-7 uses Blink, choosing square 3 as the \"nearby location\" for the destination, can it end up at 3-4-8-9, effectively feeling like it just teleported 2?": {
-        "a": "はい。大型ミニオンがテレポートする（または「隣接しているかのように」移動する）場合、その移動効果のコントローラーが、目的地を含む2x2の範囲にそれを配置します。",
-        "q": "マス1-2-6-7にまたがる大型ミニオンが[[Blink]]を使い、行き先の「近隣の場所」としてマス3を選んだ場合、3-4-8-9に配置される、つまり実質2マス分テレポートしたようなことになりますか？"
+        "a": "はい。特大ミニオンがテレポートする（または「隣接しているかのように」移動する）場合、その移動効果のコントローラーが、目的地を含む2x2の範囲にそれを配置します。",
+        "q": "マス1-2-6-7にまたがる特大ミニオンが[[Blink]]を使い、行き先の「近隣の場所」としてマス3を選んだ場合、3-4-8-9に配置される、つまり実質2マス分テレポートしたようなことになりますか？"
       },
       "official|Can a disabled unit Blink?": {
         "a": "はい。これは強制移動であり、ユニットが自らステップするわけではないからです。",
@@ -782,8 +782,8 @@
         "q": "別のミニオンやアーティファクトを運んでいるミニオンを対象にした場合、運ばれているものも一緒に移動しますか？"
       },
       "judge|If I use Chaos Twister on a large minion, what happens?": {
-        "a": "カードを吹き飛ばし、着地した場所に基づいて、[[Chaos Twister]]のコントローラーが、目的地の場所を含み、そのミニオンがまたがることのできる2x2の範囲を選びます。グリッドの外は選べませんが、このテレポート効果は虚空の場所を含むため、虚空のマスは選べます。適正な2x2の範囲がない場合（例: [[Gnome Hollows]]）、移動効果は不発となり、ダメージも与えません。大型ミニオンが虚空にいることで追放されなければ（追放される場合はダメージなし）、[[Chaos Twister]]は、ミニオンが着地したサイト（2x2の範囲）にいるすべてのユニットにダメージを与えます。そのミニオン自身も（1回だけ）含みます。カードのテキストにあるとおり、[[Chaos Twister]]は虚空にいるユニットにはダメージを与えないことに注意してください。大型ミニオンが1x1になる瞬間はありません。[[Chaos Twister]]で1つのマスを決めはしますが、大型ユニットは全体として移動します。",
-        "q": "大型ミニオンに[[Chaos Twister]]を使ったらどうなりますか？"
+        "a": "カードを吹き飛ばし、着地した場所に基づいて、[[Chaos Twister]]のコントローラーが、目的地の場所を含み、そのミニオンがまたがることのできる2x2の範囲を選びます。グリッドの外は選べませんが、このテレポート効果は虚空の場所を含むため、虚空のマスは選べます。適正な2x2の範囲がない場合（例: [[Gnome Hollows]]）、移動効果は不発となり、ダメージも与えません。特大ミニオンが虚空にいることで追放されなければ（追放される場合はダメージなし）、[[Chaos Twister]]は、ミニオンが着地したサイト（2x2の範囲）にいるすべてのユニットにダメージを与えます。そのミニオン自身も（1回だけ）含みます。カードのテキストにあるとおり、[[Chaos Twister]]は虚空にいるユニットにはダメージを与えないことに注意してください。特大ミニオンが1x1になる瞬間はありません。[[Chaos Twister]]で1つのマスを決めはしますが、特大ユニットは全体として移動します。",
+        "q": "特大ミニオンに[[Chaos Twister]]を使ったらどうなりますか？"
       },
       "judge|What does “the site it lands on” really mean?": {
         "a": "サイトは物理的なカードで表されますが、プレイ面上ではカード1枚より大きい正方形の区画にまたがります。2人用のSorceryプレイマットにはこのマスが示されており、マスとマスの間に隙間はありません。",
@@ -1225,7 +1225,7 @@
     "dome_of_osiros": {
       "judge|If a large minion occupies Dome of Osiros, does the Dome prevent that minion from being attacked at other locations it occupies?": {
         "a": "そのミニオンは他の場所では依然として攻撃され得ます。[[Dome of Osiros]]は「このサイトは攻撃されず、ここではミニオンは攻撃されない」として扱ってください。",
-        "q": "大型ミニオンが[[Dome of Osiros]]にいる場合、ドームはそのミニオンが他の場所で攻撃されるのも防ぎますか？"
+        "q": "特大ミニオンが[[Dome of Osiros]]にいる場合、ドームはそのミニオンが他の場所で攻撃されるのも防ぎますか？"
       },
       "official|Does this site protect minions from cards with the word \"attack\" in their name, like Leap Attack or Spin Attack?": {
         "a": "いいえ。[[Dome of Osiros]]が防ぐのは、基本能力「移動と攻撃」による「攻撃」、またはテキストに「攻撃（attack）」という語を使う他のカード（例: [[Crave Golem]]）だけです。",
@@ -1677,7 +1677,7 @@
     "flaming_sword": {
       "judge|1) Identify the unit(s) you are striking. These units are safe from the special flames, even if you did 0 damage in your strike to them. 2) Identify the locations those struck units occupy. All non-struck enemies at those locations take the special flame damage, equal to your strike’s damage. (Remember, struck enemies are safe from the special flames.) If I strike a large minion while carrying a Flaming Sword, does the special splash damage hurt all enemies at the large minion's locations?": {
         "a": "はい！ [[Flaming Sword]]の魔法の炎は、他のユニットへと飛び散ります。",
-        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットがいる場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を運んでいる状態で大型ミニオンにストライクした場合、飛び散るダメージは大型ミニオンがまたがるすべての場所の敵に及びますか？"
+        "q": "1) ストライクする相手のユニットを特定します。これらのユニットは、あなたのストライクのダメージが0でも、特別な炎からは安全です。2) ストライクされたユニットがいる場所を特定します。それらの場所にいる、ストライクされていないすべての敵が、あなたのストライクのダメージと同量の特別な炎のダメージを受けます。（ストライクされた敵は炎から安全であることをお忘れなく。）[[Flaming Sword]]を運んでいる状態で特大ミニオンにストライクした場合、飛び散るダメージは特大ミニオンがまたがるすべての場所の敵に及びますか？"
       },
       "judge|How does Flaming Sword really work?": {
         "a": "特別な炎を宿しているのです！ 飛び散るダメージを正しく適用するには、次の手順に従ってください:",
@@ -2162,7 +2162,7 @@
     },
     "heat_ray": {
       "judge|How does Heat Ray function?": {
-        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Heat Ray]]のテキストは「貫通する投射物を発射する。命中した各ユニットに2点のダメージを与える」として扱ってください。",
+        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが特大でも）2回以上命中することはありません。[[Heat Ray]]のテキストは「貫通する投射物を発射する。命中した各ユニットに2点のダメージを与える」として扱ってください。",
         "q": "[[Heat Ray]]はどう機能しますか？"
       }
     },
@@ -3698,7 +3698,7 @@
     },
     "rhongomyniad": {
       "judge|How does the throw effect function?": {
-        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが大型でも）2回以上命中することはありません。[[Rhongomyniad]]のテキストは次のように扱ってください:\n所持者は先制でストライクし、「タップ → [[Rhongomyniad]]を貫通する投射物として投げる。命中した各ユニットに3点のダメージを与える」を持つ。\n投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも運ばれていません。",
+        "a": "貫通する投射物は、デフォルトでは各場所で1体のユニットにしか命中しません（起点の場所の味方は無視します）。貫通する投射物であっても、リージョンの境界は越えられず、同じユニットに（それが特大でも）2回以上命中することはありません。[[Rhongomyniad]]のテキストは次のように扱ってください:\n所持者は先制でストライクし、「タップ → [[Rhongomyniad]]を貫通する投射物として投げる。命中した各ユニットに3点のダメージを与える」を持つ。\n投擲のあと、[[Rhongomyniad]]は経路の最後の場所にあり、どのユニットにも運ばれていません。",
         "q": "投擲の効果はどう機能しますか？"
       },
       "judge|If I choose a direction to throw it that would immediately change regions (e.g. toward the void) and thus it won’t leave my location, can I still hit an enemy at my location?": {
@@ -4268,8 +4268,8 @@
     },
     "spin_attack": {
       "judge|What happens if a large minion uses Spin Attack? Do I pick a single location, or does it strike at every location it occupies?": {
-        "a": "またがるすべての場所でストライクします。一般原則として、カードのテキストがミニオンは1つの場所やサイトだけにいる前提で書かれている場合、大型ミニオンについては「場所」を「各場所」（「サイト」を「各サイト」）に読み替えます。",
-        "q": "大型ミニオンが[[Spin Attack]]を使ったらどうなりますか？ 1つの場所を選ぶのですか、それともまたがるすべての場所でストライクしますか？"
+        "a": "またがるすべての場所でストライクします。一般原則として、カードのテキストがミニオンは1つの場所やサイトだけにいる前提で書かれている場合、特大ミニオンについては「場所」を「各場所」（「サイト」を「各サイト」）に読み替えます。",
+        "q": "特大ミニオンが[[Spin Attack]]を使ったらどうなりますか？ 1つの場所を選ぶのですか、それともまたがるすべての場所でストライクしますか？"
       },
       "official|Does this card count as an \"attack\" since it has the word \"attack\" in its name?": {
         "a": "紛らわしくてすみませんが、いいえ、これは実際には攻撃ではありません！ 「攻撃」になるのは基本能力「移動と攻撃」か、テキストで明確に「攻撃（attack）」という語を使うカード（例: [[Crave Golem]]）だけです。このカードのテキストは「ストライク」であり、ユニットが自分のパワーと同量のダメージを与えるだけです（相手に防御の機会はなく、ステルスやエアボーンのユニットにもストライクできます）。",
@@ -4430,8 +4430,8 @@
     },
     "teleport": {
       "judge|How does a large minion use Teleport?": {
-        "a": "目的地の場所を含み、その大型ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだ場所へテレポートします。",
-        "q": "大型ミニオンは[[Teleport]]をどう使いますか？"
+        "a": "目的地の場所を含み、その特大ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだ場所へテレポートします。",
+        "q": "特大ミニオンは[[Teleport]]をどう使いますか？"
       }
     },
     "templar": {
@@ -4779,7 +4779,7 @@
     "undertow": {
       "judge|If I have a large unit partially in water, partially not, then I play Undertow, can I move the large unit?": {
         "a": "いいえ。ユニット全体が「水域内（within the body of water）」になければならないため、[[Undertow]]では動かせません。",
-        "q": "大型ユニットの一部が水域内、残りが水域外にあるとき、[[Undertow]]をプレイしたらその大型ユニットを動かせますか？"
+        "q": "特大ユニットの一部が水域内、残りが水域外にあるとき、[[Undertow]]をプレイしたらその特大ユニットを動かせますか？"
       },
       "official|Does Undertow let you pull a unit underwater if they have submerge?": {
         "a": "いいえ。これは「通常のステップ」であり、リージョンの変更を許さないからです。",
@@ -5030,8 +5030,8 @@
         "q": "[[Dalcean Phalanx]]は[[Waypoint Portal]]を「隣接しているかのように」通れますか？"
       },
       "judge|How does a large minion move through the Waypoint Portal?": {
-        "a": "設定: レルム全体が瓦礫で埋まっており、[[Waypoint Portal]]がマス3と13をつないでいます。[[Mountain Giant]]（などの大型ミニオン）が2-3-7-8にまたがっています。[[Mountain Giant]]のFAQ（[[Enchantress]]にも記載）のとおり:\n目的地の場所を含み、大型ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだマスへ移動します。したがって[[Mountain Giant]]は[[Waypoint Portal]]を通って、7-8-12-13、8-9-13-14、12-13-17-18、13-14-18-19のいずれかに移動できます。",
-        "q": "大型ミニオンは[[Waypoint Portal]]をどう通りますか？"
+        "a": "設定: レルム全体が瓦礫で埋まっており、[[Waypoint Portal]]がマス3と13をつないでいます。[[Mountain Giant]]（などの特大ミニオン）が2-3-7-8にまたがっています。[[Mountain Giant]]のFAQ（[[Enchantress]]にも記載）のとおり:\n目的地の場所を含み、特大ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだマスへ移動します。したがって[[Mountain Giant]]は[[Waypoint Portal]]を通って、7-8-12-13、8-9-13-14、12-13-17-18、13-14-18-19のいずれかに移動できます。",
+        "q": "特大ミニオンは[[Waypoint Portal]]をどう通りますか？"
       }
     },
     "whirling_blades": {
