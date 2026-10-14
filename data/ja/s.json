@@ -552,7 +552,7 @@
   },
   "smokestacks_of_gnaak": {
     "name": "ナークの煙突",
-    "rules": "近隣の他のサイトは能力を失う。",
+    "rules": "【更新】近隣の他のサイトは沈黙する。",
     "typeText": "工業化された悪のユニークのサイト"
   },
   "snallygaster": {
