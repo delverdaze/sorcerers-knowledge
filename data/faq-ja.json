@@ -123,7 +123,7 @@
       },
       "official|If Selfsame Simulacrum is summoned as a basic copy of an animated magic, what happens?": {
         "a": "「基本コピー」はカードの印刷された特性を指すため、[[Selfsame Simulacrum]]はマジックになろうとします。しかしマジックはレルムに存在できないので、[[Selfsame Simulacrum]]は即座に墓地へ行き、マジックの効果も発生しません。残念！",
-        "q": "アニメイトされたマジックの基本コピー（basic copy）として[[Selfsame Simulacrum]]を召喚したらどうなりますか？"
+        "q": "アニメートされたマジックの基本コピー（basic copy）として[[Selfsame Simulacrum]]を召喚したらどうなりますか？"
       }
     },
     "annual_fair": {
@@ -1286,7 +1286,7 @@
         "q": "アバターはスペルキャスターなので、これをアバターに唱えられますか？"
       },
       "official|Using Dream-Quest, can I put to sleep one of my non-minion Spellcasters (e.g. Omphalos, River of Flame) or a spellcaster with restrictions (e.g. Earl of the Ivory Towers, Wind Sylph)?": {
-        "a": "はい！\nオムパロスは無力化されるのでそのターンは呪文を引きませんが、アニメイトされていないかぎり傷つくことはありません。傷ついていなければ、あなたの次のターンの開始時に目覚めさせられます。\nサイト（例: [[River of Flame]]）の場合、無力化されている間はスレッショルドもマナも提供しません。",
+        "a": "はい！\nオムパロスは無力化されるのでそのターンは呪文を引きませんが、アニメートされていないかぎり傷つくことはありません。傷ついていなければ、あなたの次のターンの開始時に目覚めさせられます。\nサイト（例: [[River of Flame]]）の場合、無力化されている間はスレッショルドもマナも提供しません。",
         "q": "[[Dream-quest]]で、ミニオンでないスペルキャスター（例: オムパロス、[[River of Flame]]）や、制限つきのスペルキャスター（例: [[Earl of the Ivory Towers]]、[[Wind Sylph]]）を眠らせることはできますか？"
       }
     },
@@ -1399,19 +1399,19 @@
     "enchantress": {
       "judge|Can I cast an artifact into the hands of an aura, newly animated by the casting of this artifact spell?": {
         "a": "いいえ。上記の[[Enchantress]]ガイドを参照してください。",
-        "q": "アーティファクト呪文を唱え、その詠唱によって新たにアニメイトされたオーラの手にそのアーティファクトを持たせることはできますか？"
+        "q": "アーティファクト呪文を唱え、その詠唱によって新たにアニメートされたオーラの手にそのアーティファクトを持たせることはできますか？"
       },
       "judge|How does the interaction between animated auras + stealth/infiltrate work?": {
-        "a": "アニメイトされたオーラがアニメイト中にステルスを得て、その後オーラに戻った場合、ステルスを自動的に失うことはありません（そしてステルスを持っている間、[[Infiltrate]]の効果は持続します）。ただし、オーラである間はステルスの恩恵を受けません。一方で通常の方法（例: ダメージを与える）でステルスを失うことはあります。再びミニオンにアニメイトされ、まだステルスを持っていれば、そのとき恩恵を受けます。",
-        "q": "アニメイトされたオーラとステルス/[[Infiltrate]]の相互作用はどうなりますか？"
+        "a": "アニメートされたオーラがアニメート中にステルスを得て、その後オーラに戻った場合、ステルスを自動的に失うことはありません（そしてステルスを持っている間、[[Infiltrate]]の効果は持続します）。ただし、オーラである間はステルスの恩恵を受けません。一方で通常の方法（例: ダメージを与える）でステルスを失うことはあります。再びミニオンにアニメートされ、まだステルスを持っていれば、そのとき恩恵を受けます。",
+        "q": "アニメートされたオーラとステルス/[[Infiltrate]]の相互作用はどうなりますか？"
       },
       "judge|If I animate an aura that covers both a void location and a Planar Gate, is the aura banished?": {
         "a": "はい。[[Planar Gate]]でヴォイドウォークを得るには、ミニオンが[[Planar Gate]]から移動する必要があるからです。",
-        "q": "虚空の場所と[[Planar Gate]]の両方にまたがるオーラをアニメイトした場合、そのオーラは追放されますか？"
+        "q": "虚空の場所と[[Planar Gate]]の両方にまたがるオーラをアニメートした場合、そのオーラは追放されますか？"
       },
       "judge|If my opponent disables my animated aura on their turn (e.g. Sleep, Frost Nova, Psionic Blast), then it stops being a minion at the start of my turn, then I animate it again, will it still be disabled?": {
         "a": "はい、無力化されたままです。無力化の状態はミニオンにしか影響しませんが、通常の方法で失われるまで残り続けます（例: [[Sleep]]ならダメージを受けたとき、[[Frost Nova]]や[[Psionic Blast]]なら次のターン）。これらの条件が満たされる時点でオーラがミニオンである必要はなく、しかるべきタイミングで無力化は失われます。",
-        "q": "相手が相手のターンに私のアニメイトされたオーラを無力化し（例: [[Sleep]]、[[Frost Nova]]、[[Psionic Blast]]）、私のターンの開始時にそれがミニオンでなくなり、その後再びアニメイトした場合、まだ無力化されていますか？"
+        "q": "相手が相手のターンに私のアニメートされたオーラを無力化し（例: [[Sleep]]、[[Frost Nova]]、[[Psionic Blast]]）、私のターンの開始時にそれがミニオンでなくなり、その後再びアニメートした場合、まだ無力化されていますか？"
       },
       "judge|Must the Enchantress be the spellcaster to use its ability?": {
         "a": "はい（[[Sparkmage]]のFAQと同様です）。",
@@ -1427,11 +1427,11 @@
       },
       "official|Can you animate your opponent’s auras?": {
         "a": "はい。対象にできるかぎり（つまり[[Enchantress]]と同じリージョンにあるかぎり）可能です。そのオーラのミニオンは、引き続き相手がコントロールします。",
-        "q": "相手のオーラをアニメイトできますか？"
+        "q": "相手のオーラをアニメートできますか？"
       },
       "official|Do animated aura change size?": {
         "a": "いいえ。",
-        "q": "アニメイトされたオーラはサイズが変わりますか？"
+        "q": "アニメートされたオーラはサイズが変わりますか？"
       },
       "official|If Magellan Globe is in play and an Oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
         "a": "[[Magellan Globe]]は上端と下端をつなぐ継続的な効果なので、特大ユニットは最上段の2つの場所と最下段の2つの場所にまたがることができます。必要ならメモを使って、ゲームの状態を明確に保ってください。",
@@ -1446,7 +1446,7 @@
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|Turning auras into minions!? Is this real?": {
-        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメイトしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲に影響を及ぼすので、特大ユニットについても学んでおくとよいでしょう。",
+        "a": "ええ、本当です。[[Enchantress]]はとても多芸なアバターで、ルールをねじ曲げて実に面白いゲームを生み出します。アニメートしようとしているオーラのFAQと、このFAQをよく確認してください。多くのオーラはレルムで2x2の範囲に影響を及ぼすので、特大ユニットについても学んでおくとよいでしょう。",
         "q": "オーラをミニオンに変える！？ 本当ですか？"
       },
       "official|What is the proper timing of resolution for this effect?": {
@@ -2052,12 +2052,12 @@
     },
     "grosse_poltergeist": {
       "official|If a unit is carrying the animated artifact, who retains control?": {
-        "a": "アーティファクトがアニメイトされるとミニオンになるため、運ばれた状態ではいられません。[[Grösse Poltergeist]]のコントローラーがコントロールを得ます。",
-        "q": "アニメイトされたアーティファクトを誰かのユニットが運んでいた場合、コントロールは誰が保持しますか？"
+        "a": "アーティファクトがアニメートされるとミニオンになるため、運ばれた状態ではいられません。[[Grösse Poltergeist]]のコントローラーがコントロールを得ます。",
+        "q": "アニメートされたアーティファクトを誰かのユニットが運んでいた場合、コントロールは誰が保持しますか？"
       },
       "official|If the unit carrying the animated artifact can also carry minions, who retains control?": {
         "a": "[[Grösse Poltergeist]]は「あなたがコントロールを得る」と言い、ゲームのルールは「アーティファクトを運んでいる者がコントロールを得る」と言っています。ゴールデンルールにより[[Grösse Poltergeist]]が優先され、[[Grösse Poltergeist]]のコントローラーがコントロールを得ます。",
-        "q": "アニメイトされたアーティファクトを運んでいるユニットがミニオンも運べる場合、コントロールは誰が保持しますか？"
+        "q": "アニメートされたアーティファクトを運んでいるユニットがミニオンも運べる場合、コントロールは誰が保持しますか？"
       }
     },
     "guardian_angel": {
@@ -2575,7 +2575,7 @@
       },
       "judge|Can I still animate an opponent’s artifact with Grösse Poltergeist?": {
         "a": "はい。ただし、あなたはそれをコントロールしません。",
-        "q": "[[Grösse Poltergeist]]で相手のアーティファクトをアニメイトすることはできますか？"
+        "q": "[[Grösse Poltergeist]]で相手のアーティファクトをアニメートすることはできますか？"
       },
       "judge|How does King Arthur interact with Courtesan Thaïs’ effect?": {
         "a": "テイスの効果は通常どおり機能します。あなたがコントロールしているのはプレイヤーの行動であって、カード自体のコントロールを変えているわけではないからです。",
@@ -2590,7 +2590,7 @@
         "q": "[[Philosopher's Stone]]は[[King Arthur]]や[[Queen Guinevere]]のような複数エレメントのカードとどう相互作用しますか？ 4マナ必要なアーサーをストーンで唱える場合、コストは3マナですか、それとも0マナですか？"
       },
       "official|What happens if King Arthur is in the realm and my opponent would control a card I own?": {
-        "a": "[[King Arthur]]がレルムを統べる間、あなたが持ち主のカードを相手がコントロールすることになる場合、代わりにあなたがコントロールします（両プレイヤーに等しく適用されます）。例:\n相手が[[Lilith]]をプレイして私のデッキからミニオンを召喚。通常は召喚した相手がコントロールしますが、[[King Arthur]]がレルムにいる間は私がコントロールします。\n私が[[Heirloom Lost]]・[[Postern Gate]]・[[Desecrate]]（[[Desecrated Ground]]の獲得）などをプレイ。通常は相手が私のサイトをコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がレリック（例: [[Ring of Morrigan]]）をプレイし、相手が何らかの方法（例: [[Swap]]）で奪取。通常なら、そのレリックを運んでいる間は相手がコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がコントロールしていても、相手のユニットが依然として所持者であり、所持者向けの能力の恩恵は受けられます。\n私がコントロールしているので、「味方」「敵」といった用語は私（コントローラー）の視点で適用されます。\n落とされたら、通常どおり誰のコントロールでもなくなります。\n私が[[Enchantress]]でオーラをアニメイトし、あなたがそれに[[Mesmerism]]をプレイ。通常のオーラに戻ったあとも本来はあなたがコントロールするはずですが、[[King Arthur]]がいる間は私がコントロールします。",
+        "a": "[[King Arthur]]がレルムを統べる間、あなたが持ち主のカードを相手がコントロールすることになる場合、代わりにあなたがコントロールします（両プレイヤーに等しく適用されます）。例:\n相手が[[Lilith]]をプレイして私のデッキからミニオンを召喚。通常は召喚した相手がコントロールしますが、[[King Arthur]]がレルムにいる間は私がコントロールします。\n私が[[Heirloom Lost]]・[[Postern Gate]]・[[Desecrate]]（[[Desecrated Ground]]の獲得）などをプレイ。通常は相手が私のサイトをコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がレリック（例: [[Ring of Morrigan]]）をプレイし、相手が何らかの方法（例: [[Swap]]）で奪取。通常なら、そのレリックを運んでいる間は相手がコントロールしますが、[[King Arthur]]がいる間は私がコントロールします。\n私がコントロールしていても、相手のユニットが依然として所持者であり、所持者向けの能力の恩恵は受けられます。\n私がコントロールしているので、「味方」「敵」といった用語は私（コントローラー）の視点で適用されます。\n落とされたら、通常どおり誰のコントロールでもなくなります。\n私が[[Enchantress]]でオーラをアニメートし、あなたがそれに[[Mesmerism]]をプレイ。通常のオーラに戻ったあとも本来はあなたがコントロールするはずですが、[[King Arthur]]がいる間は私がコントロールします。",
         "q": "[[King Arthur]]がレルムにいるとき、私が持ち主のカードを相手がコントロールすることになったらどうなりますか？"
       }
     },
@@ -2894,8 +2894,8 @@
         "q": "サブマージ（潜水）を持つミニオンを、[[Mariner's Curse]]の影響範囲を通るように[[Grapple Shot]]した場合、どうなりますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Mariner's Curse]]が移動して水のサイトに入ると、（可能なら）自分自身を潜水させ、（サブマージ（潜水）を持たない前提で）死亡します。死亡しなかった場合は、その後自分自身を持ち主の手札に戻します。移動は攻撃より先に起こるため、効果が解決する前に攻撃する機会はありません。",
-        "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
+        "a": "アニメートされた[[Mariner's Curse]]が移動して水のサイトに入ると、（可能なら）自分自身を潜水させ、（サブマージ（潜水）を持たない前提で）死亡します。死亡しなかった場合は、その後自分自身を持ち主の手札に戻します。移動は攻撃より先に起こるため、効果が解決する前に攻撃する機会はありません。",
+        "q": "これが[[Enchantress]]にアニメートされたらどうなりますか？"
       }
     },
     "mask_of_mayhem": {
@@ -3559,7 +3559,7 @@
       },
       "judge|If I animate an aura that covers both a void location and a Planar Gate, is the aura banished?": {
         "a": "はい。[[Planar Gate]]でヴォイドウォークを得るには、ミニオンが[[Planar Gate]]から移動する必要があるからです。",
-        "q": "虚空の場所と[[Planar Gate]]の両方にまたがるオーラをアニメイトした場合、そのオーラは追放されますか？"
+        "q": "虚空の場所と[[Planar Gate]]の両方にまたがるオーラをアニメートした場合、そのオーラは追放されますか？"
       }
     },
     "poisoned_well": {
@@ -3577,7 +3577,7 @@
     "pollimorph": {
       "official|Does a pollimorphed animated aura (e.g. Enchantress) return to an aura form later?": {
         "a": "いいえ。恒久的にカエルのトークンとなり、1つの場所だけにいます。",
-        "q": "[[Pollimorph]]されたアニメイト中のオーラ（例: [[Enchantress]]）は、あとでオーラの姿に戻りますか？"
+        "q": "[[Pollimorph]]されたアニメート中のオーラ（例: [[Enchantress]]）は、あとでオーラの姿に戻りますか？"
       },
       "official|If the original minion occupied more than one location, what happens?": {
         "a": "変身効果のコントローラーが、カエルのトークンがいる場所を選びます。",
@@ -3978,8 +3978,8 @@
     },
     "selfsame_simulacrum": {
       "judge|If Enchantress casts Selfsame Simulacrum minion spell then animates an aura, can Selfsame Simulacrum come into play as a copy of that just-animated aura?": {
-        "a": "はい（オーラとして）。[[Selfsame Simulacrum]]は詠唱時に対象を宣言しないからです。\nたとえば、アニメイトされていない[[Wildfire]]がレルムにあるとします。[[Enchantress]]が[[Selfsame Simulacrum]]を唱え、[[Wildfire]]の近隣に召喚場所を指定します。ミニオン呪文が解決する前に、[[Enchantress]]の詠唱誘発が解決して[[Wildfire]]をアニメイトします。その後、[[Selfsame Simulacrum]]が実際にレルムに入り、いまやアニメイトされている[[Wildfire]]の基本コピーになることを選べます。結果として[[Selfsame Simulacrum]]はアニメイトされていない[[Wildfire]]のオーラになります（あとで[[Enchantress]]がアニメイトすることもできます）。詳しくは[[Enchantress]]のFAQを参照してください。",
-        "q": "[[Enchantress]]が[[Selfsame Simulacrum]]のミニオン呪文を唱えてからオーラをアニメイトした場合、[[Selfsame Simulacrum]]はそのアニメイトされたばかりのオーラのコピーとして場に出られますか？"
+        "a": "はい（オーラとして）。[[Selfsame Simulacrum]]は詠唱時に対象を宣言しないからです。\nたとえば、アニメートされていない[[Wildfire]]がレルムにあるとします。[[Enchantress]]が[[Selfsame Simulacrum]]を唱え、[[Wildfire]]の近隣に召喚場所を指定します。ミニオン呪文が解決する前に、[[Enchantress]]の詠唱誘発が解決して[[Wildfire]]をアニメートします。その後、[[Selfsame Simulacrum]]が実際にレルムに入り、いまやアニメートされている[[Wildfire]]の基本コピーになることを選べます。結果として[[Selfsame Simulacrum]]はアニメートされていない[[Wildfire]]のオーラになります（あとで[[Enchantress]]がアニメートすることもできます）。詳しくは[[Enchantress]]のFAQを参照してください。",
+        "q": "[[Enchantress]]が[[Selfsame Simulacrum]]のミニオン呪文を唱えてからオーラをアニメートした場合、[[Selfsame Simulacrum]]はそのアニメートされたばかりのオーラのコピーとして場に出られますか？"
       },
       "official|Can it enter the realm Submerged if it copies a Submerged minion (or Voidwalk, or Burrowing)?": {
         "a": "いいえ。ミニオン呪文を唱えるとき、ミニオンがレルムに入る場所は詠唱時に指定します。ミニオンが実際にレルムに入る（召喚される）ときが、[[Selfsame Simulacrum]]のコピー能力が適用される瞬間です。詠唱時点でサブマージ/バロウ/ヴォイドウォークを持っていない以上、それらの能力で召喚場所を変えることはできません。",
@@ -3990,8 +3990,8 @@
         "q": "ジェネシス能力もコピーしますか？"
       },
       "official|If it tries to become a basic copy of an aura animated by Enchantress, what happens?": {
-        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメイトされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて、詠唱時に指定した場所を含む形で本来のサイズに広がります。",
-        "q": "[[Enchantress]]にアニメイトされたオーラの基本コピーになろうとしたらどうなりますか？"
+        "a": "[[Selfsame Simulacrum]]は（ミニオンではなく）オーラになります。アニメートされたオーラに実際に書かれているテキストがそれだからです。オーラになった瞬間、カードのテキスト（およびオーラの基本ルール）に基づいて、詠唱時に指定した場所を含む形で本来のサイズに広がります。",
+        "q": "[[Enchantress]]にアニメートされたオーラの基本コピーになろうとしたらどうなりますか？"
       },
       "official|What if it loses its abilities (e.g. Silence aura)?": {
         "a": "[[Selfsame Simulacrum]]はコピーのままですが、コピー元に印刷されていた能力はすべて無視されます。",
@@ -4005,7 +4005,7 @@
       },
       "official|What happens if the Trap is animated?": {
         "a": "向きは通常どおり管理され、トラップの移動や行動の影響を受けません。",
-        "q": "トラップがアニメイトされたらどうなりますか？"
+        "q": "トラップがアニメートされたらどうなりますか？"
       }
     },
     "shackled_demon": {
@@ -4039,7 +4039,7 @@
       },
       "official|What happens if a Silence aura is animated by Enchantress?": {
         "a": "他のミニオンを沈黙させ続けますが、自分自身も沈黙させます。",
-        "q": "[[Silence]]のオーラが[[Enchantress]]にアニメイトされたらどうなりますか？"
+        "q": "[[Silence]]のオーラが[[Enchantress]]にアニメートされたらどうなりますか？"
       }
     },
     "silver_bullet": {
@@ -4414,7 +4414,7 @@
     },
     "symmetric_suffering": {
       "official|How do I resolve this effect if I sacrifice a card that has multiple types (e.g. Automaton) ?": {
-        "a": "複数のタイプを持つカードを生け贄に捧げるときは、相手が合わせるべきタイプをあなたが指定できます。たとえばオートマトン（ミニオンかつアーティファクト）を1つ生け贄にしたなら、相手にミニオンかアーティファクトのどちらか（あなたが選択。両方ではありません）を生け贄にさせられます。同様に、[[Enchantress]]でアニメイトされたオーラ（ミニオンかつオーラ）を生け贄にしたなら、相手にミニオンかオーラのどちらか（あなたが選択）を生け贄にさせられます。",
+        "a": "複数のタイプを持つカードを生け贄に捧げるときは、相手が合わせるべきタイプをあなたが指定できます。たとえばオートマトン（ミニオンかつアーティファクト）を1つ生け贄にしたなら、相手にミニオンかアーティファクトのどちらか（あなたが選択。両方ではありません）を生け贄にさせられます。同様に、[[Enchantress]]でアニメートされたオーラ（ミニオンかつオーラ）を生け贄にしたなら、相手にミニオンかオーラのどちらか（あなたが選択）を生け贄にさせられます。",
         "q": "複数のタイプを持つカード（例: オートマトン）を生け贄に捧げた場合、この効果はどう解決しますか？"
       }
     },
@@ -4646,8 +4646,8 @@
     },
     "thunderstorm": {
       "judge|If Thunderstorm is animated by Enchantress, does its “move one step (aka square)” ability allow it to “step” into the void, causing it to be banished?": {
-        "a": "はい！ オーラ（およびオーラのミニオン）にとって「1ステップ移動」は「1マス移動」を意味するので、望むならアニメイトされた[[Thunderstorm]]は虚空へ「踏み込む」ことができます。",
-        "q": "[[Thunderstorm]]が[[Enchantress]]にアニメイトされている場合、「1ステップ（=1マス）移動」の能力で虚空に「踏み込み」、追放されることはありますか？"
+        "a": "はい！ オーラ（およびオーラのミニオン）にとって「1ステップ移動」は「1マス移動」を意味するので、望むならアニメートされた[[Thunderstorm]]は虚空へ「踏み込む」ことができます。",
+        "q": "[[Thunderstorm]]が[[Enchantress]]にアニメートされている場合、「1ステップ（=1マス）移動」の能力で虚空に「踏み込み」、追放されることはありますか？"
       },
       "judge|What does “lasts 3 of your turns” really mean?": {
         "a": "[[Entangle Terrain]]の公式FAQと同じ答えです。あなたの各ターンの終了時にカウンターを1個置き、3個になったら解呪します。",
@@ -4913,7 +4913,7 @@
     "wall_of_air": {
       "judge|In the official FAQ related to an animated Wall of Air, what does “can’t move” really mean?": {
         "a": "マス8と13にいるなら、上下には移動できません。自分自身の壁を横切ることになるからです。しかし横方向、7-12や9-14へは移動できます。",
-        "q": "アニメイトされた[[Wall of Air]]に関する公式FAQの「移動できない」とは、実際には何を意味しますか？"
+        "q": "アニメートされた[[Wall of Air]]に関する公式FAQの「移動できない」とは、実際には何を意味しますか？"
       },
       "official|Does this affect subsurface units?": {
         "a": "いいえ。（彼らはサイトの上（atop）にいないからです。）",
@@ -4928,8 +4928,8 @@
         "q": "このオーラはいくつのマスに影響を及ぼしますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身の影響下にある2マスの間に適用されます。",
-        "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
+        "a": "アニメートされた[[Wall of Air]]は（パワーを得ないかぎり）移動できません。自分の真ん中に風の壁があるからです！ パワーを得る（あるいはテレポートする）などして移動できた場合、風の壁は自身の影響下にある2マスの間に適用されます。",
+        "q": "これが[[Enchantress]]にアニメートされたらどうなりますか？"
       }
     },
     "wall_of_brambles": {
@@ -4965,21 +4965,21 @@
       },
       "official|What if this is animated by an Enchantress?": {
         "a": "移動はできますが、その移動によってユニットが[[Wall of Fire]]を通り抜けたことにはなりません。移動後、その効果は自身の影響下にある2マスの間に適用されます。",
-        "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
+        "q": "これが[[Enchantress]]にアニメートされたらどうなりますか？"
       }
     },
     "wall_of_ice": {
       "judge|In the official FAQ related to an animated Wall of Ice, what does “can’t move” really mean?": {
         "a": "マス8と13にいるなら、上下には移動できません。自分自身の壁を横切ることになるからです。しかし横方向、7-12や9-14へは移動できます。",
-        "q": "アニメイトされた[[Wall of Ice]]に関する公式FAQの「移動できない」とは、実際には何を意味しますか？"
+        "q": "アニメートされた[[Wall of Ice]]に関する公式FAQの「移動できない」とは、実際には何を意味しますか？"
       },
       "official|How many squares does this aura occupy?": {
         "a": "2つです。",
         "q": "このオーラはいくつのマスに影響を及ぼしますか？"
       },
       "official|What if this is animated by an Enchantress?": {
-        "a": "アニメイトされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身の影響下にある2マスの間に適用されます。",
-        "q": "これが[[Enchantress]]にアニメイトされたらどうなりますか？"
+        "a": "アニメートされた[[Wall of Ice]]は通常の方法では移動できません。自分の真ん中に氷の壁があるからです！ エアボーンを得る（あるいはテレポートする）などして移動できた場合、氷の壁は自身の影響下にある2マスの間に適用されます。",
+        "q": "これが[[Enchantress]]にアニメートされたらどうなりますか？"
       }
     },
     "warp_spasm": {
