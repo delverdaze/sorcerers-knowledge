@@ -1,6 +1,13 @@
 {
-  "generated": "2026-08-01T13:14:36.208Z",
+  "generated": "2026-10-17T08:17:17.651Z",
   "threads": [
+    {
+      "slug": "the_malleus_maleficarum",
+      "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/31",
+      "n": 1,
+      "last": "2026-10-17T08:17:06Z",
+      "answered": false
+    },
     {
       "slug": "imposter",
       "url": "https://github.com/delverdaze/sorcerers-knowledge/discussions/5",
