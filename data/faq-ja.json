@@ -4045,7 +4045,7 @@
     "silver_bullet": {
       "official|Can the bearer cast the spell, even if they're not a spellcaster?": {
         "a": "はい！",
-        "q": "所持者はスペルキャスターでなくても、この呪文を唱えられますか？"
+        "q": "所持者はスペルキャスターでなくても、この能力で呪文を唱えられますか？"
       }
     },
     "sinister_pond": {
@@ -4563,7 +4563,7 @@
     "the_malleus_maleficarum": {
       "official|Can the bearer cast the spell, even if they're not a spellcaster?": {
         "a": "はい！",
-        "q": "所持者はスペルキャスターでなくても、この呪文を唱えられますか？"
+        "q": "所持者はスペルキャスターでなくても、この能力で呪文を唱えられますか？"
       }
     },
     "the_manor_at_daperyll_hill": {
@@ -4671,7 +4671,7 @@
     "toolbox": {
       "official|Can the bearer cast the spell, even if they're not a spellcaster?": {
         "a": "はい！",
-        "q": "所持者はスペルキャスターでなくても、この呪文を唱えられますか？"
+        "q": "所持者はスペルキャスターでなくても、この能力で呪文を唱えられますか？"
       }
     },
     "torrid_omphalos": {
