@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
 
+# GITHUB_TOKEN の権限を最小化（検証とテストだけで書き込み不要）
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
