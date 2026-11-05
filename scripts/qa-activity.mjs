@@ -14,6 +14,7 @@
  * 出力仕様（サイト側 app.js の renderQaActivity と対）:
  *   { generated: ISO8601, threads: [{ slug, url, n, last, answered }] }
  *   - カードスレッド（title = "card:<slug>"）のみ。要望・雑談スレッドは含めない
+ *   - slug は英小文字・数字・_ だけ（SLUG_RE）。それ以外の題名は誰かが手で立てたものとして除外
  *   - n: 人間の投稿数（giscus botが作るスレッド本文は数えない。返信も含む）
  *   - last: 最新の人間の投稿日時（この降順でソート済み）
  *   - answered: Q&Aカテゴリの「回答済みマーク」が付いているか
@@ -32,6 +33,10 @@ if (!token) {
 
 const [owner, name] = (process.env.GITHUB_REPOSITORY ?? "delverdaze/sorcerers-knowledge").split("/");
 const MAX_THREADS = 200; // JSONの肥大化防止。TOPページの新着リスト用途にはこれで十分
+/** slug の形（data/slugs.json の全件がこの形）。Discussion の題名は誰でも付けられるため、
+    この形でない `card:<…>` は配信データに入れない（サイトの TOP ページに任意の文字列を流さない）。
+    slugs.json への実在までは求めない — サイトに新カードが先に出たとき、その議論を落とさないため */
+const SLUG_RE = /^[a-z0-9_]{1,64}$/;
 
 // comments は last:100（新しい側）— last の算出が最新投稿を取りこぼさないようにする。
 // 100件超の巨大スレッドでは n が古い側の返信分だけ少なめに出るが、件数表示の用途では許容
@@ -75,6 +80,10 @@ do {
   for (const d of page.nodes) {
     const m = /^card:(.+)$/.exec(d.title.trim());
     if (!m) continue;
+    if (!SLUG_RE.test(m[1])) {
+      console.log(`slug の形でない題名のため除外: ${JSON.stringify(d.title).slice(0, 100)} (${d.url})`);
+      continue;
+    }
     // giscus はスレッド本文をbot名義で作る（人間の発言は常にコメント側）。
     // GitHub上で直接スレッドを立てた場合だけ本文も1投稿と数える
     let n = d.author?.__typename === "Bot" ? 0 : 1;

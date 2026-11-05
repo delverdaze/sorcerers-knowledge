@@ -100,7 +100,9 @@ const content = [
   `💬 [スレッドを開く](<${encodeForLink(threadUrl)}>)`,
 ].join("\n");
 
-const payload = { content };
+// allowed_mentions: 本文・題名は誰でも書けるため、@everyone / @here / ロール・ユーザーへの
+// メンションを Discord に解釈させない（書き込み 1 つでサーバー全員に通知が飛ぶのを防ぐ）
+const payload = { content, allowed_mentions: { parse: [] } };
 
 const webhook = process.env.DISCORD_WEBHOOK_URL;
 if (!webhook) {
