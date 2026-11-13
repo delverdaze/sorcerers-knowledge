@@ -94,7 +94,7 @@
         "q": "味方にユニットを対象にさせるマジック呪文（例: [[Shatter Strike]]）は、[[Amulet of Niniane]]の所持者を対象として選べますか？"
       },
       "official|What does \"can't be targeted or damaged by magic\" mean?": {
-        "a": "マジックはこのカードを対象にできず、このカードは（対象を取らない場合でも）マジックからダメージを受けません。マジック以外の効果の対象には引き続きなります。",
+        "a": "マジックは所持者を対象にできず、所持者は（対象を取らない場合でも）マジックからダメージを受けません。マジック以外の効果の対象には引き続きなります。",
         "q": "「マジックの対象にならず、マジックからダメージを受けない」とはどういう意味ですか？"
       }
     },
@@ -170,7 +170,7 @@
     },
     "arcade_of_bones": {
       "official|What does \"can't be targeted or damaged by magic\" mean?": {
-        "a": "マジックはこのカードを対象にできず、このカードは（対象を取らない場合でも）マジックからダメージを受けません。マジック以外の効果の対象には引き続きなります。",
+        "a": "マジックはそのアンデッドを対象にできず、そのアンデッドは（対象を取らない場合でも）マジックからダメージを受けません。マジック以外の効果の対象には引き続きなります。",
         "q": "「マジックの対象にならず、マジックからダメージを受けない」とはどういう意味ですか？"
       }
     },
@@ -397,7 +397,7 @@
     "bitter_departed": {
       "official|What if there was more than one killer last turn?": {
         "a": "[[Bitter Departed]]は、そのうちいずれか1体のもとへテレポートし、そのユニットにストライクできます。",
-        "q": "前のターンにミニオンを倒したユニットが複数いた場合はどうなりますか？"
+        "q": "前のターンに味方を倒した者が複数いた場合はどうなりますか？"
       }
     },
     "black_cat": {
@@ -659,7 +659,7 @@
     "caelestis": {
       "official|Do I still need to meet threshold and summoning requirements when I cast the spell?": {
         "a": "はい。たとえば、依然としてあなたのサイトに向けて唱えなければなりません。",
-        "q": "この呪文を唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
+        "q": "この能力でコストが(0)になったドラゴンを唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
       }
     },
     "cage_of_sidrak": {
@@ -802,7 +802,7 @@
         "q": "ミニオンは着地した場所にテレポートするのですか？"
       },
       "official|How should I resolve this card in a tournament setting?": {
-        "a": "このカードは、書かれているとおりのままで、Sorceryのデザイン哲学の一部を体現しています。「バースデーキャンドル・ルール」を適用してください。すなわち、カードは一息で手のひらから吹き飛ばさなければならず、できなければ効果は不発です。吹き始める前にカードが落ちたら、手に戻してください。吹き始めたあと、吹く以外の原因（例: 手の動き）でカードが落ちたら、効果は不発です。不安があればこのカードの解決前にジャッジを呼んでください。ただし、どうか粋に、ゴールデンルールの精神でお願いします！",
+        "a": "このカードは、書かれているとおりのままで、Sorceryのデザイン哲学の一部を体現しています。「バースデーキャンドル・ルール」を適用してください。すなわち、カードは一息で手の甲から吹き飛ばさなければならず、できなければ効果は不発です。吹き始める前にカードが落ちたら、手の甲に戻してください。吹き始めたあと、吹く以外の原因（例: 手の動き）でカードが落ちたら、効果は不発です。不安があればこのカードの解決前にジャッジを呼んでください。ただし、どうか粋に、ゴールデンルールの精神でお願いします！",
         "q": "大会ではこのカードをどう解決すべきですか？"
       },
       "official|What if I'm using Chaos Twister on a token? Or a really expensive card with triple sleeves?": {
@@ -983,7 +983,7 @@
     "cradle_of_etherrum": {
       "official|Do I still need to meet threshold and summoning requirements when I cast the spell?": {
         "a": "はい。あなたのメインフェイズ中に、あなたのサイトへ唱えるなど、通常の条件を満たす必要があります。手札ではなく呪文書の一番上から唱えることと、コストが(1)少ないことを除けば、通常どおりミニオン呪文を唱えます。",
-        "q": "この呪文を唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
+        "q": "呪文書の一番上からドラゴンを唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
       },
       "official|Is the ability to look at my top spell a passive abililty?": {
         "a": "はい。開始フェイズや終了フェイズを含め、自分のターン中ならいつでも見ることができます。",
@@ -1260,7 +1260,7 @@
         "q": "[[Dragonlord]]がヴォイドウォーク・バロウ・サブマージを得た場合、他のリージョンに入れますか？"
       },
       "official|When do I choose my set aside Dragon? Can it change during a tournament?": {
-        "a": "脇に置くドラゴンは「セットアップの前」、つまりデッキ構築の時点で選ばなければなりません。大会中の変更はできません。[[Dragonlord]]はおのれの代理人に忠実であり、そんな気まぐれは起こさないのです！",
+        "a": "脇に置くドラゴンは「セットアップの前」、つまりデッキ構築の時点で選ばなければなりません。大会中の変更はできません。[[Dragonlord]]はおのれが選んだドラゴンに忠実であり、そんな気まぐれは起こさないのです！",
         "q": "脇に置くドラゴンはいつ選びますか？ 大会中に変更できますか？"
       },
       "official|When the Dragonlord gains the abilities of the set aside Dragon, does the Dragonlord gain its power as well?": {
@@ -1423,7 +1423,7 @@
       },
       "official|Can any of my spellcasters cast a spell and still benefit from my avatar's ability?": {
         "a": "はい！ あなたがそのスペルキャスターをコントロールしているかぎり、ゲームはそれを「あなた」（プレイヤー）が唱えた呪文と見なします。",
-        "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
+        "q": "自分のどのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
       },
       "official|Can you animate your opponent’s auras?": {
         "a": "はい。対象にできるかぎり（つまり[[Enchantress]]と同じリージョンにあるかぎり）可能です。そのオーラのミニオンは、引き続き相手がコントロールします。",
@@ -1442,7 +1442,7 @@
         "q": "カードがレルムの端をまたいでいる状態で[[Magellan Globe]]が場を離れたらどうなりますか？"
       },
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "[[Polar Explorers]]や[[Ruler of Thul]]の能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|Turning auras into minions!? Is this real?": {
@@ -1641,7 +1641,7 @@
       },
       "official|If damage is prevented, do I still heal?": {
         "a": "いいえ。あなたが回復するには、[[Flagellant]]が実際に1点以上のダメージを受けなければなりません。",
-        "q": "ダメージが軽減された場合でも回復しますか？"
+        "q": "ダメージが防がれた場合でも回復しますか？"
       }
     },
     "flame_of_the_first_ones": {
@@ -1696,7 +1696,7 @@
         "q": "ユニットが[[Flaming Sword]]を2本持っている場合、それぞれがダメージを飛び散らせますか？"
       },
       "official|If the Battlemage with a Flaming Sword attacks one enemy, and then another enemy dies as a result of the Flaming Sword, does the Battlemage get to draw a card?": {
-        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力は誘発します。",
+        "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、[[Battlemage]]の能力は誘発します。",
         "q": "[[Flaming Sword]]を持った[[Battlemage]]が敵1体を攻撃し、[[Flaming Sword]]の効果で別の敵が死亡した場合、[[Battlemage]]はカードを引けますか？"
       },
       "official|If the attack damage was increased or decreased, does the splash damage include the change?": {
@@ -1809,11 +1809,11 @@
     "geomancer": {
       "judge|Does Mirror Realm (copying an earth site) count for Geomancer's first ability?": {
         "a": "はい。",
-        "q": "[[Mirror Realm]]（土のサイトをコピー）は[[Geomancer]]の1つ目の能力の対象になりますか？"
+        "q": "[[Mirror Realm]]（土のサイトをコピー）は[[Geomancer]]の1つ目の能力の「土のサイトをプレイしたなら」の条件を満たしますか？"
       },
       "official|Does Mirror Realm (copying an earth site), Valley of Delight (choosing earth), or one of the Bloom sites (i.e. Twilight Bloom) count for Geomancer's first ability?": {
         "a": "はい。[[Mirror Realm]]はレルムに入る時点で適用されるので機能します。[[Valley of Delight]]とBloom系サイトは、サイトのジェネシス効果が[[Geomancer]]の能力の解決に割り込むため機能します。[[Geomancer]]の能力の後半が実際に解決してサイトを見る時点で、そのサイトは確かに土(E)のサイトになっています。[[Valley of Delight]]との相互作用の詳細は写本室（Codex）の「ストーリーライン上でのイベントの分割（Splitting Events on the Storyline）」を参照してください。[[Tawny]]の例やドルイドの能力の分割と同様の理屈です。",
-        "q": "[[Mirror Realm]]（土のサイトをコピー）、[[Valley of Delight]]（土を選択）、Bloom系サイト（例: [[Twilight Bloom]]）は、[[Geomancer]]の1つ目の能力の対象になりますか？"
+        "q": "[[Mirror Realm]]（土のサイトをコピー）、[[Valley of Delight]]（土を選択）、Bloom系サイト（例: [[Twilight Bloom]]）は、[[Geomancer]]の1つ目の能力の「土のサイトをプレイしたなら」の条件を満たしますか？"
       },
       "official|If Geomancer creates a Rubble adjacent to Boulevard of Bones, do they create a skeleton?": {
         "a": "いいえ。瓦礫はその場で生成されるのであって、プレイされるわけではありません。",
@@ -1937,7 +1937,7 @@
       },
       "official|If the most direct path is blocked (Gnome Hollows, Wall of Ice) will the grappling unit move around those obstacles to reach its target?": {
         "a": "いいえ。「引きずられる（Dragged）」は「引き寄せ（Pull）」と同等で、「Pull」では入る各場所が目的地に近づいていなければなりません。迂回はアバターに近づくことにならないため、その経路は取れません。",
-        "q": "最短経路が塞がれている場合（[[Gnome Hollows]]、[[Wall of Ice]]）、グラップルされたユニットは障害物を迂回して対象に到達しますか？"
+        "q": "最短経路が塞がれている場合（[[Gnome Hollows]]、[[Wall of Ice]]）、引き寄せられる味方は障害物を迂回して対象に到達しますか？"
       }
     },
     "golden_dawn": {
@@ -1983,7 +1983,7 @@
       },
       "official|If the most direct path is blocked (Gnome Hollows, Wall of Ice) will the grappling unit move around those obstacles to reach its target?": {
         "a": "いいえ。「引きずられる（Dragged）」は「引き寄せ（Pull）」と同等で、「Pull」では入る各場所が目的地に近づいていなければなりません。迂回はアバターに近づくことにならないため、その経路は取れません。",
-        "q": "最短経路が塞がれている場合（[[Gnome Hollows]]、[[Wall of Ice]]）、グラップルされたユニットは障害物を迂回して対象に到達しますか？"
+        "q": "最短経路が塞がれている場合（[[Gnome Hollows]]、[[Wall of Ice]]）、引き寄せられる味方は障害物を迂回して対象に到達しますか？"
       },
       "official|The alpha and beta text is different, which should I use?": {
         "a": "ベータ版のテキストが正しいです。",
@@ -2043,7 +2043,7 @@
     "grim_reaper": {
       "judge|When the Grim Reaper kills a minion, does its deathrite still trigger?": {
         "a": "いいえ。そのミニオンは殺される代わりに追放され、デスライトはミニオンが殺された場合にのみ誘発するからです。",
-        "q": "[[Grim Reaper]]がミニオンを殺したとき、そのデスライトは誘発しますか？"
+        "q": "[[Grim Reaper]]がミニオンを殺したとき、殺されたミニオンのデスライトは誘発しますか？"
       },
       "official|How does this ability work?": {
         "a": "[[Grim Reaper]]がミニオンを殺すと、そのミニオンは死亡する代わりに追放されます。加えて、場にあるそのミニオンのコピーも（誰がコントロールしていようと）すべて追放されます。最後に、殺されたミニオンの持ち主の呪文書を探します（そのプレイヤーの呪文書だけです）。",
@@ -2334,7 +2334,7 @@
         "q": "[[Infiltrate]]を唱えられたミニオンが、ステルスを失う前に何らかの効果で無力化されたらどうなりますか？"
       },
       "judge|What happens if I cast Grapple Shot on an infiltrated unit and it loses Stealth before resolving the strike effect?": {
-        "a": "ステルスを失った時点で、[[Infiltrate]]していたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、唱え手が選べばストライクは依然として発生し得ます。",
+        "a": "ステルスを失った時点で、[[Infiltrate]]されていたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、唱え手が選べばストライクは依然として発生し得ます。",
         "q": "[[Infiltrate]]されたユニットに[[Grapple Shot]]を唱え、ストライク効果の解決前にそれがステルスを失ったらどうなりますか？"
       },
       "judge|What if there is a passive control effect (e.g. King of the Realm), then I target a different Mortal with Infiltrate?": {
@@ -2343,7 +2343,7 @@
       },
       "official|If my Infiltrated unit attacks my opponent's undefended site, do I retain control of it?": {
         "a": "いいえ。[[Infiltrate]]されたミニオンがステルスを失った時点で、そのコントロールは失われます。",
-        "q": "[[Infiltrate]]したユニットが相手の防御されていないサイトを攻撃した場合、コントロールは保持されますか？"
+        "q": "[[Infiltrate]]で奪ったユニットが相手の防御されていないサイトを攻撃した場合、コントロールは保持されますか？"
       }
     },
     "interrogator": {
@@ -3180,7 +3180,7 @@
         "q": "カードがレルムの端をまたいでいる状態で[[Magellan Globe]]が場を離れたらどうなりますか？"
       },
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
-        "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
+        "a": "[[Polar Explorers]]や[[Ruler of Thul]]の能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
       },
       "official|What happens if a Mountain Giant occupies a Silence aura?": {
@@ -4220,7 +4220,7 @@
         "q": "経路上のミニオンは、ステルスを持っていても影響を受けますか？"
       },
       "official|Does the snowball’s path include both the starting and ending locations?": {
-        "a": "はい！ 投射物の経路が、雪玉の残りの部分に影響される場所を決め、道中のすべてを巻き込んでいきます。土曜朝のアニメを見て学んだとおりの、巨大雪玉の物理法則です。",
+        "a": "はい！ 投射物の経路が、[[Snowball]]の残りの効果が及ぶ場所を決め、道中のすべてを巻き込んでいきます。土曜朝のアニメを見て学んだとおりの、巨大雪玉の物理法則です。",
         "q": "雪玉の経路には、出発地点と終着地点の両方が含まれますか？"
       }
     },
@@ -5002,7 +5002,7 @@
     },
     "wave_of_eviction": {
       "official|How do I properly resolve this effect?": {
-        "a": "自分の水のサイトから基本方位を1つ選びます。その水のサイトにいるすべての敵を選んだ方向へ1ステップ強制移動させ、そのサイトを水没させます。ミニオンの進入やサイトの水没に関する効果を誘発・解決します。その後、レルムの端に到達するまでこのプロセスを繰り返します。\n水没と押し出しの効果は虚空を越えても続きますが、ミニオンをリージョンをまたいで強制移動させることはできません。\n各サイトはミニオンの到着と同時に水没するため、押し流される潜水中のミニオンは新しいサイトでも潜水した状態になります（新しいサイトが水没しないまま押し込まれる瞬間は存在しません）。",
+        "a": "自分の水のサイトから基本方位を1つ選びます。その水のサイトにいるすべての敵を選んだ方向へ1ステップ強制移動させ、移動先のサイトを水没させます。ミニオンの進入やサイトの水没に関する効果を誘発・解決します。その後、レルムの端に到達するまでこのプロセスを繰り返します。\n水没と押し出しの効果は虚空を越えても続きますが、ミニオンをリージョンをまたいで強制移動させることはできません。\n各サイトはミニオンの到着と同時に水没するため、押し流される潜水中のミニオンは新しいサイトでも潜水した状態になります（新しいサイトが水没しないまま押し込まれる瞬間は存在しません）。",
         "q": "この効果はどう解決するのが正しいですか？"
       }
     },
