@@ -98,6 +98,16 @@
         "q": "「マジックの対象にならず、マジックからダメージを受けない」とはどういう意味ですか？"
       }
     },
+    "ancient_thaw": {
+      "official|If I cast an alpha Polar Bears via Ancient Thaw, do I use the actual alpha printing?": {
+        "a": "はい。[[Ancient Thaw]]で唱えるときの特別なゴールデンルールとして、アルファ版の[[Polar Bears]]（コスト2・パワー2）を使います。ゲームの状態がすべてのプレイヤーに明らかになるようにしてください。\n本来のルールでは、カードに実際に何が印刷されていても常に最新のテキストを使いますが、これはアルファの[[Polar Bears]]と[[Ancient Thaw]]の組み合わせに限った特別なゴールデンルールです。楽しんでください！",
+        "q": "[[Ancient Thaw]]でアルファの[[Polar Bears]]を唱えた場合、実際のアルファの印刷どおりに扱いますか？"
+      },
+      "official|What is an “alpha” Beast?": {
+        "a": "そのカードに、アルファのセットシンボルが印刷されていなければなりません。",
+        "q": "「アルファ」のビーストとは何ですか？"
+      }
+    },
     "angel_ascendant": {
       "official|If a warded Angel Ascendant fights another minion, the ward will break when the strike happens. So does Angel Ascendant strike for 2 or 3?": {
         "a": "3でストライクします（ワードによる+1のパワーを含みます）。もし相手のミニオンが何らかの方法で先にストライクした場合（たとえばランスによって）、実際に先にワードが破れ、[[Angel Ascendant]]の反撃のストライクは2になります。",
@@ -214,6 +224,12 @@
         "q": "この能力を使うとき、[[Archimago]]自身が唱え手でなければなりませんか？"
       }
     },
+    "aria_wraith": {
+      "official|Must the destroyed artifacts be nearby Aria Wraith as well?": {
+        "a": "はい。",
+        "q": "破壊されるアーティファクトも、[[Aria Wraith]]の近隣になければなりませんか？"
+      }
+    },
     "army_of_the_dead": {
       "official|Are the skeletons spawned by this ability summoned? Do they enter the location?": {
         "a": "はい！ それらは召喚され、出現した場所に入ります。",
@@ -252,6 +268,10 @@
       "official|If my Vindictive Nation, or an allied site near it, is affected by my opponent's Atlantean Fate, how much life do they lose?": {
         "a": "1ライフです。[[Atlantean Fate]]は[[Vindictive Nation]]を水没させて沈黙させ、さらに水以外のスレッショルドを提供できなくします。これらはすべてサイトへの修正ですが、いずれもストーリーライン上の1つの効果から生じています。1つの効果から生じているので、[[Vindictive Nation]]はこれを1回の修正とみなします。",
         "q": "自分の[[Vindictive Nation]]、またはその近隣にある味方のサイトが、相手の[[Atlantean Fate]]の影響を受けた場合、相手は何ライフを失いますか？"
+      },
+      "official|Is this a “silence” effect?": {
+        "a": "はい。「他のすべての能力を失う」は「それ以外の点では沈黙する」として扱います。",
+        "q": "これは「沈黙」の効果ですか？"
       }
     },
     "atlas_wanderers": {
@@ -262,6 +282,16 @@
       "official|What does \"normal size\" mean?": {
         "a": "ちょうど1つの場所だけにあるもののことです。",
         "q": "「通常サイズ（normal size）」とはどういう意味ですか？"
+      }
+    },
+    "avalanche": {
+      "official|Are minions disabled if they do not move?": {
+        "a": "はい。その場合も無力化されます。",
+        "q": "移動しなかったミニオンも無力化されますか？"
+      },
+      "official|Are the minions disabled before being moved, or after?": {
+        "a": "トラップが発動した時点で、移動の開始と同時に、つまり元の場所にいるうちに無力化されます。",
+        "q": "ミニオンが無力化されるのは、移動させられる前ですか、後ですか？"
       }
     },
     "avatar_of_air": {
@@ -498,7 +528,7 @@
         "q": "戦闘で受けたダメージが致死量に満たなかった場合でも、その味方は死亡しますか？"
       },
       "official|How do I resolve this effect if control of the minion changes between fights (e.g. it had Infiltrate cast on it earlier)?": {
-        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。そのユニコーンの近隣には、あなたがコントロールする[[Lugbog Cat]]とスケルトン、私がコントロールする[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが破れ、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
+        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。そのユニコーンの近隣には、あなたがコントロールする[[Lugbog Cat]]とスケルトン、私がコントロールする[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが解け、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
         "q": "戦闘の合間にミニオンのコントロールが変わった場合（例: 事前に[[Infiltrate]]を唱えられていた場合）、この効果はどう解決しますか？"
       },
       "official|What is the proper way to resolve the timing for this spell?": {
@@ -584,6 +614,16 @@
       "judge|When an ally of Boudicca attacks Free City and the site defends, is Boudicca’s power bonus applied?": {
         "a": "厳密には、はい、パワー修正は適用されます。その攻撃でライフの喪失が発生しないとしても、[[Free City]]は攻撃されているサイトであることに変わりないからです。もっとも、防御側プレイヤーが別のユニットでも防御しないかぎり、このパワー修正が意味を持つことはまずないでしょう。",
         "q": "[[Boudicca]]の味方が[[Free City]]を攻撃してそのサイトが防御した場合、[[Boudicca]]のパワー修正は適用されますか？"
+      }
+    },
+    "bouldermaw": {
+      "official|Can I roll it from the underground location?": {
+        "a": "はい！",
+        "q": "地下の場所から転がせますか？"
+      },
+      "official|Do I have to pay to cast the Rolling Boulder?": {
+        "a": "いいえ。6マナで、それを設置して転がすコストがまかなわれています。",
+        "q": "[[Rolling Boulder]]を唱えるためのコストを支払わなければなりませんか？"
       }
     },
     "boulevard_of_bones": {
@@ -806,7 +846,7 @@
         "q": "大会ではこのカードをどう解決すべきですか？"
       },
       "official|What if I'm using Chaos Twister on a token? Or a really expensive card with triple sleeves?": {
-        "a": "代用カードをご自由にお使いください。",
+        "a": "代用カードをご自由にお使いください。ただし、スリーブに入れず、状態がよく、通常サイズのカードにしてください。",
         "q": "トークンに[[Chaos Twister]]を使う場合は？ 三重スリーブの超高額カードの場合は？"
       },
       "official|What if the minion doesn't land in the grid at all?": {
@@ -1339,9 +1379,9 @@
         "a": "いいえ。能力を得てダメージを与えているのはサイト自身です。",
         "q": "[[Druid]]の裏面の能力は[[Poisonous Dagger]]と一緒に機能しますか？"
       },
-      "official|If a site loses its abilities, does the Druid's flip side ability still apply? Can this affect Bedrock?": {
-        "a": "いいえ。[[Druid]]はサイトに能力を与えます。サイトが沈黙させられている（あるいは[[Bedrock]]のように修正を受けない）なら、その能力は失われ、ダメージを与えません。",
-        "q": "サイトが能力を失った場合、[[Druid]]の裏面の能力は依然として適用されますか？ [[Bedrock]]には影響しますか？"
+      "official|If the site is silenced, does the Druid’s flip side ability still apply?": {
+        "a": "はい。沈黙で失われるのは印刷された能力だけです。\n（サイトが変更できない場合、たとえば[[Bedrock]]では、裏面の能力は適用されません。）",
+        "q": "サイトが沈黙している場合でも、[[Druid]]の裏面の能力は適用されますか？"
       },
       "official|What is the updated text for the front of the Druid?": {
         "a": "タップ → サイトをプレイするか、サイトを1枚引く。これがあなたの最初のターンなら、ここに[[Tawny]]を召喚する。\nタップ → ここに[[Bruin]]を召喚する。このカードを裏返す。",
@@ -1582,7 +1622,7 @@
     },
     "fenvale_muse": {
       "official|What happens if I use this to trigger the Genesis ability of a site my opponent controls?": {
-        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、相手は自分自身の次の呪文を見て、それを自分の呪文書の一番下に置くかどうかを選びます。",
+        "a": "相手のサイトであっても、その能力をコントロールするのはあなたです。",
         "q": "これを使って、相手がコントロールするサイトのジェネシス能力を誘発させたらどうなりますか？"
       }
     },
@@ -1620,6 +1660,12 @@
       "official|Does the “adjacent Water site” need to be in the same region as the caster?": {
         "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトは唱え手と同じリージョンにある必要はありません。",
         "q": "「隣接する水のサイト」は、唱え手と同じリージョンになければなりませんか？"
+      }
+    },
+    "fireball": {
+      "official|The text on the Frost Mage vs. Lavamancer printing differs from previous printings. Is the newest printing correct?": {
+        "a": "はい。常に最新の印刷のテキストを使ってください。古い実物のカードでプレイする場合は、ゲームの状態が明らかになるようにしてください。",
+        "q": "Frost Mage vs. Lavamancer の印刷では、テキストが以前の印刷と異なります。最新の印刷が正しいのですか？"
       }
     },
     "firebolts": {
@@ -1784,10 +1830,34 @@
         "q": "[[Frontier Settlers]]は、自分の他のサイトに隣接しないサイトをプレイできますか？"
       }
     },
+    "frost_elemental": {
+      "official|Can this ability disable an avatar? It says \"unit.\"": {
+        "a": "このジェネシス能力でアバターを対象にすることはできますが、アバターは無力化されないため、効果はありません。",
+        "q": "この能力でアバターを無力化できますか？ 「ユニット」と書かれています。"
+      }
+    },
+    "frost_mage": {
+      "official|If this ability is used on a minion that can’t be disabled, is it still immune to damage?": {
+        "a": "はい。その場合もダメージを受けません。",
+        "q": "無力化されないミニオンにこの能力を使った場合でも、そのミニオンはダメージを受けなくなりますか？"
+      }
+    },
+    "frostbolt": {
+      "official|How do I properly resolve the damage and disable effect?": {
+        "a": "ダメージと無力化の効果は同時に起こります。[[Shield Maidens]]・[[Sir Priamus]]・[[Royal Bodyguard]]のような継続的な能力はダメージに対して引き続き適用されますが、デスライトは適用されません。",
+        "q": "ダメージと無力化の効果は、どう解決するのが正しいですか？"
+      }
+    },
     "frozen_horror": {
       "official|If I activate this ability and then move a minion nearby the Horror, does the minion become disabled?": {
         "a": "いいえ。この能力が無力化するのは、能力の起動時点で[[Frozen Horror]]の近隣にいるミニオンです。その後に近隣へ移動してきたミニオンは無力化されません。",
         "q": "この能力を起動したあとに、ミニオンを[[Frozen Horror]]の近隣へ移動させた場合、そのミニオンは無力化されますか？"
+      }
+    },
+    "full_tilt_goliaths": {
+      "official|What exactly does this ability silence?": {
+        "a": "ジェネシスが解決した時点で近隣にあるサイトだけです。（ユニット・アーティファクト・オーラは影響を受けません。）",
+        "q": "この能力は、正確には何を沈黙させますか？"
       }
     },
     "garden_of_eden": {
@@ -2060,6 +2130,12 @@
         "q": "アニメートされたアーティファクトを運んでいるユニットがミニオンも運べる場合、コントロールは誰が保持しますか？"
       }
     },
+    "ground_slam": {
+      "official|If I choose a disabled ally, will Ground Slam still damage other units?": {
+        "a": "いいえ。これは「味方1体が、自身がいるサイトをストライクする。そうしたなら、近隣のサイトにいる他のユニットそれぞれに2ダメージを与える。」として扱います。",
+        "q": "無力化されている味方を選んだ場合でも、[[Ground Slam]]は他のユニットにダメージを与えますか？"
+      }
+    },
     "guardian_angel": {
       "official|Can you \"fly to\" a minion already sharing your location?": {
         "a": "いいえ。それは「飛んでいく」ことになりません。[[Guardian Angel]]は別の場所に召喚しましょう！",
@@ -2108,6 +2184,12 @@
       "judge|When this picks up another minion, is that a basic ability?": {
         "a": "はい。",
         "q": "これが他のミニオンを拾い上げるとき、それは基本能力ですか？"
+      }
+    },
+    "hailstriker": {
+      "official|How do I properly resolve the damage and disable effect?": {
+        "a": "ダメージと無力化の効果は同時に起こります。[[Shield Maidens]]・[[Sir Priamus]]・[[Royal Bodyguard]]のような継続的な能力はダメージに対して引き続き適用されますが、デスライトは適用されません。",
+        "q": "ダメージと無力化の効果は、どう解決するのが正しいですか？"
       }
     },
     "harassing_ruffians": {
@@ -2264,6 +2346,12 @@
       "official|How do I resolve this effect?": {
         "a": "1枚ずつ表向きに配ります。その後、ヴォイドウォークを持つミニオンとモンスターを引き、残りを追放します。この効果でミニオンが実際にレルムに「入る」ことはありません。",
         "q": "この効果はどう解決しますか？"
+      }
+    },
+    "humming_hummocks": {
+      "official|Does this affect allies who are nearby at the moment the genesis triggers, or is it an ongoing effect centered on the Hummocks?": {
+        "a": "[[Humming Hummocks]]を中心とした継続的な効果です。",
+        "q": "これは、ジェネシスが誘発した時点で近隣にいる味方に影響するのですか？ それとも[[Humming Hummocks]]を中心とした継続的な効果ですか？"
       }
     },
     "hyperparasite": {
@@ -2560,7 +2648,7 @@
     },
     "khamaseen_mummy": {
       "official|What happens if I use this to trigger the Genesis ability of a site my opponent controls?": {
-        "a": "ジェネシス能力を解決するのは、そのサイトのコントローラーです。砂漠（Desert）の場合、ダメージを与える近隣のサイトは相手が選びます。川（River）の場合、相手は自分自身の次の呪文を見て、それを自分の呪文書の一番下に置くかどうかを選びます。",
+        "a": "相手のサイトであっても、その能力をコントロールするのはあなたです。",
         "q": "これを使って、相手がコントロールするサイトのジェネシス能力を誘発させたらどうなりますか？"
       }
     },
@@ -3230,6 +3318,16 @@
         "q": "縦列の途中が虚空で途切れていても、その先の陸のサイトにいるユニットも滑りますか？"
       }
     },
+    "none_survive_the_sun": {
+      "official|Does this damage minions that are in the void?": {
+        "a": "いいえ。カードのテキストのとおり、「地表にいるミニオンは焼かれる」だけです。",
+        "q": "これは虚空にいるミニオンにもダメージを与えますか？"
+      },
+      "official|If Magellan Globe is in the realm, this aura can stick around forever, right?": {
+        "a": "はい。太陽とはそういうものです。",
+        "q": "[[Magellan Globe]]がレルムにあれば、このオーラはいつまでも残り続けられますよね？"
+      }
+    },
     "occult_ritual": {
       "official|The alpha, alternate art version of this card from the pledge pack has the text \"Spellcaster nearby,\" while the regular foil and non-foil versions have the text \"Spellcaster here.\" which is correct?": {
         "a": "通常版が正しいです。テキストは「Spellcaster here」であるべきです。別アート版は大会での使用は認められません。",
@@ -3362,6 +3460,16 @@
         "q": "これによって、パワー0のユニットはストライク時に2点のダメージを与えるようになりますか？"
       }
     },
+    "pass_plug_serpent": {
+      "official|Can the Serpent Intercept the enemy that moved into the allied site, assuming that enemy ended its movement there without attacking?": {
+        "a": "はい。もちろん[[Pass-plug Serpent]]がアンタップ状態であればです。通常の迎撃のルールどおり、敵が[[Pass-plug Serpent]]を通り過ぎるだけでは迎撃はできません。",
+        "q": "味方のサイトに移動してきた敵が、攻撃せずにそこで移動を終えたとすると、[[Pass-plug Serpent]]はその敵を迎撃できますか？"
+      },
+      "official|How exactly does this ability work?": {
+        "a": "近隣の味方の陸のサイトの地表の場所に敵が入ったとき、[[Pass-plug Serpent]]は地下を通ってそのサイトへ移動し、そのサイトで地上に出て、敵が入った地表の場所に到着してもかまいません。詳しくは写本室（Codex）の小見出し「((特殊能力や魔法による特定の場所への移動))」を参照してください。ただし、[[Pass-plug Serpent]]の能力は「そこで地上に出る」と指定しているので、そのサイトで地下から地表へ移動しなければならない、という条件が加わります。",
+        "q": "この能力は正確にはどう機能しますか？"
+      }
+    },
     "pathfinder": {
       "judge|Can Pathfinder include an unlimited number of copies of the draft sites like Valley, Spire, Wasteland, and Stream?": {
         "a": "いいえ。[[Pathfinder]]の制限は依然として適用されます。",
@@ -3454,6 +3562,12 @@
       "official|Can a unit be moved through the top border of this site by force?": {
         "a": "いいえ。エアボーン（飛行）を持たないユニットは通過できません。引きずる・押す・引き寄せる効果であっても、ユニットが地表づたいに移動するかぎり、このサイトの上辺の境界は通過できません。たとえば、エアボーンを持たないミニオンは、[[Grapple Shot]]の効果でこの境界を通り抜けられません。また、[[Pudge Butcher]]も、エアボーンを持たないユニットをこの境界の反対側から引き寄せることはできません。\n一方、テレポート効果は境界を通り抜けず、地表づたいの移動ともみなされません。そのため、ユニットを境界の反対側にある場所へ「移動」させることができます。",
         "q": "ユニットは、強制移動によってこのサイトの上辺の境界を通過できますか？"
+      }
+    },
+    "permafrost": {
+      "official|How does this effect work?": {
+        "a": "[[Permafrost]]は、無力化の効果の通常の終了条件を「それが離れるまで」に置き換えます。たとえば[[Permafrost]]に[[Slumbering Giantess]]を召喚した場合、そのジェネシス能力は通常ならダメージを受けるまで彼女を無力化しますが、代わりに彼女はそのサイトを離れるまで無力化されます。ダメージを受けても目覚めず、離れればダメージを受けていなくても目覚めます。",
+        "q": "この効果はどう機能しますか？"
       }
     },
     "persecutor": {
@@ -3568,10 +3682,26 @@
         "q": "[[Poisoned Well]]が確認するのは、自分の近隣の敵のサイトですか、それとも敵のアバターの近隣ですか？"
       }
     },
+    "polar_bears": {
+      "official|The power and cost on the Frost Mage vs. Lavamancer printing differs from previous printings. Is the newest printing correct?": {
+        "a": "はい。常に最新の印刷のテキストを使ってください。古い実物のカードでプレイする場合は、ゲームの状態が明らかになるようにしてください。[[Polar Bears]]がコスト3・パワー3であることを、すべてのプレイヤーが知っておくべきです。（油性ペンならお貸ししますよ。）",
+        "q": "Frost Mage vs. Lavamancer の印刷では、パワーとコストが以前の印刷と異なります。最新の印刷が正しいのですか？"
+      }
+    },
     "polar_explorers": {
       "official|If Polar Explorers or Ruler of Thul are in play and an oversized unit on the top row moves “up” one row to wrap around to the bottom, what happens?": {
         "a": "この能力が許すのは境界をまたぐ移動だけで、境界をまたいだままでいることは許しません。ユニットはレルムの端でバランスを取り続けることはできず、そこに行き着いた特大ユニットはどちらか一方の側へ落ちます。コントローラーが最も近い適正な位置に配置します（同距離ならコントローラーの選択）。",
         "q": "[[Polar Explorers]]や[[Ruler of Thul]]が場にあり、最上段の横列にいる特大ユニットが「上」に1列移動して下端へ回り込むとどうなりますか？"
+      }
+    },
+    "polar_shift": {
+      "official|What happens if you play this while Bedrock is in play?": {
+        "a": "動かせるだけ動かしますが、[[Bedrock]]は動きません。[[Bedrock]]の後ろにあるサイトはつかえて動きません。",
+        "q": "[[Bedrock]]が場にあるときにこれをプレイしたらどうなりますか？"
+      },
+      "official|How do you shift the realm?": {
+        "a": "サイトと、そこにある通常サイズのカードを動かします。虚空にあるカードは動きません。",
+        "q": "レルムはどうずらすのですか？"
       }
     },
     "pollimorph": {
@@ -3838,7 +3968,7 @@
     },
     "rowdy_boys": {
       "official|When exactly is \"after striking\" ?": {
-        "a": "ストライクと同時の効果（例: [[Daperyll Vampire]]によるライフ獲得）のあとで、かつデスライト能力の解決の前です。ストライクによってステルスが破れるのと同じ瞬間です。",
+        "a": "ストライクと同時の効果（例: [[Daperyll Vampire]]によるライフ獲得）のあとで、かつデスライト能力の解決の前です。ストライクによってステルスが解けるのと同じ瞬間です。",
         "q": "「ストライクのあと（after striking）」とは正確にはいつですか？"
       }
     },
@@ -4014,6 +4144,12 @@
         "q": "デーモンを解放するためにタップするスペルキャスターは、ユニットでなければなりませんか？"
       }
     },
+    "shatter": {
+      "official|Does the disabled minion have to be near the caster?": {
+        "a": "はい。",
+        "q": "無力化されているミニオンは、唱え手の近くにいなければなりませんか？"
+      }
+    },
     "shield_maidens": {
       "official|My Shield Maidens attack, and then 3 Foot Soldiers defend. How much damage do my Shield Maidens take?": {
         "a": "0です。各ダメージ源が1ずつ軽減されるからです！",
@@ -4021,8 +4157,8 @@
       }
     },
     "shrike_orchard": {
-      "official|Can this target sub-surface minions?": {
-        "a": "はい。ミニオンはこのサイトの近隣にいればよく、つまりサイトのいずれかの場所の近隣にいればよいのです。したがって地下（あるいは[[Shrike Orchard]]が水没していれば水中）のミニオンも、この効果の対象にできます。",
+      "official|Can this target subsurface minions?": {
+        "a": "はい。[[Shrike Orchard]]は、自身の地下の場所の近隣にいるミニオンも、地表の場所の近隣にいるミニオンも対象にできます。（[[Shrike Orchard]]が水のサイトであれば、水中の場所の近隣にいるミニオンを対象にできます。）",
         "q": "これは下層のミニオンを対象にできますか？"
       }
     },
@@ -4160,6 +4296,18 @@
         "q": "この能力はどう機能しますか？"
       }
     },
+    "slag_slug": {
+      "official|Does the Slug damage itself with its ability?": {
+        "a": "この能力は[[Slag Slug]]が新しい場所に入るまで誘発しないので、[[Slag Slug]]はダメージを受けません。",
+        "q": "[[Slag Slug]]は、自身の能力で自身にダメージを与えますか？"
+      }
+    },
+    "slide": {
+      "official|Can this push a minion into the void?": {
+        "a": "いいえ。滑らせるのは強制移動の一種であり、ミニオンのリージョンを変えることはできません。",
+        "q": "これでミニオンを虚空へ押し出せますか？"
+      }
+    },
     "slimy_mutants": {
       "official|Is this an activated ability that I use while Slimy Mutants are in my hand?": {
         "a": "はい！ [[Slimy Mutants]]が手札にある間、(3)を支払ってこの効果を解決できます。",
@@ -4198,6 +4346,16 @@
         "q": "これは「沈黙」の効果ですか？"
       }
     },
+    "smoldering_hollow": {
+      "official|If you attack with a zero power Frog, does it deal 0 or 1 damage?": {
+        "a": "1点のダメージを与えます。詳しくは写本室（Codex）の「((ダメージ))」の項と、その小見出し「ダメージの修整」を参照してください。",
+        "q": "パワー0の[[Frog]]で攻撃した場合、与えるダメージは0点ですか、1点ですか？"
+      },
+      "official|If the damage gets redirected so it's no longer nearby, does the extra damage still apply?": {
+        "a": "はい。ダメージの修整は、ダメージがリダイレクトされる前に適用されるからです。詳しくは写本室（Codex）の「((ダメージ))」の項を参照してください。",
+        "q": "ダメージがリダイレクトされて近隣でなくなった場合でも、追加のダメージは適用されますか？"
+      }
+    },
     "snowball": {
       "judge|Do I resolve one step at a time for the Snowball projectile?": {
         "a": "はい。投射物を1ステップずつ動かし、そのたびにユニットを一緒に運びます。[[Sisters of Silence]]を雪玉で送り込めば、[[Sir Morien]]にも命中します！",
@@ -4220,8 +4378,14 @@
         "q": "経路上のミニオンは、ステルスを持っていても影響を受けますか？"
       },
       "official|Does the snowball’s path include both the starting and ending locations?": {
-        "a": "はい！ 投射物の経路が、[[Snowball]]の残りの効果が及ぶ場所を決め、道中のすべてを巻き込んでいきます。土曜朝のアニメを見て学んだとおりの、巨大雪玉の物理法則です。",
+        "a": "はい！ 投射物の経路が、[[Snowball]]の効果が及ぶ場所を決め、道中のすべてを巻き込んでいきます。土曜朝のアニメを見て学んだとおりの、巨大雪玉の物理法則です。",
         "q": "雪玉の経路には、出発地点と終着地点の両方が含まれますか？"
+      }
+    },
+    "southpaw_dyrodor": {
+      "official|Can I mirror this grid pattern, flipping left and right?": {
+        "a": "いいえ。カードのテキストによるものです。「左から右へ」は、コントロールしているプレイヤーから見た向きです。",
+        "q": "このグリッドの形を、左右を反転させて使えますか？"
       }
     },
     "sow_the_earth": {
@@ -4336,6 +4500,16 @@
         "q": "この能力はどう機能しますか？"
       }
     },
+    "stomping_mammoth": {
+      "official|if you attack a unit while at your own site, do you deal excess damage to your own site?": {
+        "a": "はい。こうしてあなた自身がライフを失うこともあります。象が戦えば、苦しむのは草なのです！",
+        "q": "あなたのサイトにいるときにユニットを攻撃した場合、超過ダメージはあなたのサイトに与えられますか？"
+      },
+      "official|How does this ability work when there are two (or more) defending minions?": {
+        "a": "[[Stomping Mammoth]]のダメージを、防御している各ミニオンに、それらが死亡するだけの量まで割り振らなければなりません。その後、残りのダメージは[[Stomping Mammoth]]がいるサイトに与えられます。",
+        "q": "防御しているミニオンが2体（以上）いる場合、この能力はどう機能しますか？"
+      }
+    },
     "stone_gaze_gorgons": {
       "judge|How does “at rest” really work? Do minions trigger and resolve their Genesis before being at rest?": {
         "a": "はい。ミニオンはジェネシス能力が解決したあとになるまで、静止と見なされません。Comprehensive Rulebookの「At Rest」の定義を参照してください。",
@@ -4438,6 +4612,12 @@
       "official|Can any of my spellcasters cast a spell and still benefit from my avatar's ability?": {
         "a": "はい！ あなたがそのスペルキャスターをコントロールしているかぎり、ゲームはそれを「あなた」（プレイヤー）が唱えた呪文と見なします。",
         "q": "どのスペルキャスターが呪文を唱えても、アバターの能力の恩恵を受けられますか？"
+      }
+    },
+    "terraform": {
+      "official|How do I resolve this effect with Trap sites?": {
+        "a": "プレイヤーのアトラスの一番上のカードがトラップ・サイトなら、そのプレイヤーは既存のサイトを置き換え、そのトラップを対戦相手に見せずに裏向きでプレイします。",
+        "q": "トラップ・サイトがあるとき、この効果はどう解決しますか？"
       }
     },
     "thankless_squire": {
@@ -4692,6 +4872,12 @@
         "q": "交換するアーティファクトは公開しなければなりませんか？"
       }
     },
+    "trappers_rest": {
+      "official|What does \"reactivate\" mean?": {
+        "a": "表向きのトラップ・サイトのトラップ能力を誘発させる、という意味です。相手のサイトであっても、その能力をコントロールするのはあなたです。",
+        "q": "「再起動する（reactivate）」とはどういう意味ですか？"
+      }
+    },
     "tringh_constrictor": {
       "judge|If the constricted minion was forcefully moved and no longer occupies the same location, is the minion constricted?": {
         "a": "[[Tringh Constrictor]]は締めつけたミニオンを「運んで」いるので、ミニオン/アーティファクトを運ぶ通常のルールにすべて従います。運ばれているミニオンが[[Tringh Constrictor]]と場所を共有しなくなったら、もう運ばれておらず、締めつけも解けています。",
@@ -4736,6 +4922,16 @@
       "official|My Tufted Turtles attack (having taken no damage so far this turn), and then 3 Foot Soldiers defend. How much damage do my Tufted Turtles take?": {
         "a": "0です。3体の[[Foot Soldiers]]は同時にダメージを与えるため、いずれも同率で「各ターン最初のダメージ」に当たり、すべて軽減されます。",
         "q": "私の[[Tufted Turtles]]が（このターンまだダメージを受けていない状態で）攻撃し、[[Foot Soldiers]]3体が防御しました。[[Tufted Turtles]]が受けるダメージはいくつですか？"
+      }
+    },
+    "tusslin_trolls": {
+      "official|If there are no other adjacent minions, are they required to strike themselves?": {
+        "a": "はい！",
+        "q": "他に隣接するミニオンがいない場合、[[Tusslin' Trolls]]は自身をストライクしなければなりませんか？"
+      },
+      "official|Do I roll the d6 before or after choosing the target?": {
+        "a": "能力がストーリーラインに置かれるときに、先に対象を選びます。D6は能力が解決するときに振ります。",
+        "q": "D6を振るのは、対象を選ぶ前ですか、後ですか？"
       }
     },
     "twist_of_fate": {
@@ -4910,6 +5106,12 @@
         "q": "ヴィヴィアンが[[Druid]]の能力を使って[[Bruin]]を召喚して裏返ったらどうなりますか？"
       }
     },
+    "volcanic_eruption": {
+      "official|Can these projectiles fire underground and/or on the surface?": {
+        "a": "はい。3つが異なる縦横の方向であるかぎり放てます。",
+        "q": "これらの投射物は、地下でも地表でも（あるいは両方で）放てますか？"
+      }
+    },
     "wall_of_air": {
       "judge|In the official FAQ related to an animated Wall of Air, what does “can’t move” really mean?": {
         "a": "マス8と13にいるなら、上下には移動できません。自分自身の壁を横切ることになるからです。しかし横方向、7-12や9-14へは移動できます。",
@@ -5032,6 +5234,24 @@
       "judge|How does a large minion move through the Waypoint Portal?": {
         "a": "設定: レルム全体が瓦礫で埋まっており、[[Waypoint Portal]]がマス3と13をつないでいます。[[Mountain Giant]]（などの特大ミニオン）が2-3-7-8にまたがっています。[[Mountain Giant]]のFAQ（[[Enchantress]]にも記載）のとおり:\n目的地の場所を含み、特大ユニットがまたがることのできる連続したマスのまとまり（例: [[Mountain Giant]]なら2x2）を選び、現在の場所から選んだマスへ移動します。したがって[[Mountain Giant]]は[[Waypoint Portal]]を通って、7-8-12-13、8-9-13-14、12-13-17-18、13-14-18-19のいずれかに移動できます。",
         "q": "特大ミニオンは[[Waypoint Portal]]をどう通りますか？"
+      }
+    },
+    "when_the_peaks_fell": {
+      "official|If the snow doesn't move at all (e.g. it starts from the farthest site in the column), does it still \"stop\" ?": {
+        "a": "いいえ。その雪はユニットにダメージを与えず、無力化もしません。ただし、他の雪が最も遠いサイトにいるユニットのところへ動いてくれば、その雪がそれらのユニットに影響することはあります。",
+        "q": "雪がまったく動かない場合（例: 縦列の最も遠いサイトから始まる）でも、雪は「止まった」ことになりますか？"
+      },
+      "official|If a unit doesn’t end up where the snow stops, (e.g. can’t be moved by force, can’t move over a Perilous Bridge or into a Gnome Hollows), are they still affected?": {
+        "a": "いいえ。",
+        "q": "ユニットが雪の止まった場所に行き着かない場合（例: 強制移動されない、[[Perilous Bridge]]を越えられない、[[Gnome Hollows]]に入れない）でも、そのユニットは影響を受けますか？"
+      },
+      "official|If there are multiple sites in the column and a unit is hit by snow multiple times, does it take damage more than once?": {
+        "a": "いいえ。ダメージは、すべての雪が止まったあとに同時に、1回だけ与えられます。",
+        "q": "縦列に複数のサイトがあり、あるユニットに雪が複数回当たった場合、そのユニットはダメージを2回以上受けますか？"
+      },
+      "official|How do I properly resolve the damage and disable effect?": {
+        "a": "ダメージと無力化の効果は同時に起こります。[[Shield Maidens]]・[[Sir Priamus]]・[[Royal Bodyguard]]のような継続的な能力はダメージに対して引き続き適用されますが、デスライトは適用されません。",
+        "q": "ダメージと無力化の効果は、どう解決するのが正しいですか？"
       }
     },
     "whirling_blades": {
