@@ -23,7 +23,12 @@
     "flavor": "「兄弟たちよ、かくもたやすく馬から落ちるとは恥を知れ！　馬上にあらずして、何が騎士か？」",
     "name": "軍馬",
     "rules": "チャージ。味方1体を運べる。",
-    "typeText": "エクセプショナルのサラブレッドのビースト"
+    "typeText": "エクセプショナルのサラブレッドのビースト",
+    "variants": {
+      "flavor": {
+        "Then Sir Gawain spurs Gringolet and follows the path; pushes in by a hollow beside a thicket; rides through the rough slope right to the dale; and then he looked about him, and wild it seemed to him. — The Tale of the Green Knight": "やがてガウェイン卿はグリンゴレットに拍車をくれ、道をたどる。茂みのかたわらの窪地へ分け入り、荒れた斜面を抜けて谷底まで駆け下りる。そうしてあたりを見回すと、そこはいかにも荒涼として見えた。——『緑の騎士の物語』"
+      }
+    }
   },
   "warp_spasm": {
     "name": "ねじれ発作",
@@ -54,7 +59,12 @@
   "waveshaper": {
     "name": "ウェイブシェイパー",
     "rules": "タップ → サイトを1枚プレイするか、サイトを1枚引く。\n\nタップ → あなたの水域の近くにあるサイト1つを、次にこの能力を使うまで水没させる。そこにいるサブマージを持たないミニオンをタップする。それらは次にアンタップする場合、アンタップしない。",
-    "typeText": "流れを味方につける、あなたのアバター"
+    "typeText": "流れを味方につける、あなたのアバター",
+    "variants": {
+      "typeText": {
+        "Your Avatar turned the tide in its favor": "流れを味方につけた、あなたのアバター"
+      }
+    }
   },
   "wayfaring_pilgrim": {
     "name": "行脚の巡礼者",
@@ -81,6 +91,11 @@
     "name": "身の軽い従士",
     "rules": "エアボーン（飛行）、ランス",
     "typeText": "妖精の楽天に担がれたオーディナリーの人間"
+  },
+  "when_the_peaks_fell": {
+    "name": "峰々が崩れた日",
+    "rules": "味方のサイトを任意の数選ぶ。雪がそれらから前方へ転がり、進路上の地表にいるユニットを拾い上げ、可能な限り遠くまで運ぶ。雪が止まったとき、それらのユニットは3点のダメージを受け、あなたの次のターンまで無力化される。",
+    "typeText": "山を轟き下るユニークのマジック"
   },
   "whirling_blades": {
     "name": "旋回する刃",
@@ -181,7 +196,13 @@
   "witch": {
     "name": "魔女",
     "rules": "タップ → サイトを1枚プレイするか、サイトを1枚引く。\n\nタップ → 対象のアバター1体に呪いをかけ、1つ選ぶ：「そのプレイヤーの呪文は次のターン、唱えるためのコストが(1)増える」「そのプレイヤーは2ライフを失う」「それはあなたの次のターンまで-3のパワーを持つ」。",
-    "typeText": "逃れられぬ呪いを操る、あなたのアバター"
+    "typeText": "逃れられぬ呪いを操る、あなたのアバター",
+    "variants": {
+      "typeText": {
+        "Your Avatar renders her foes powerless": "敵の力を奪い去る、あなたのアバター",
+        "Your Avatar’s curses were inescapable": "逃れられぬ呪いを操った、あなたのアバター"
+      }
+    }
   },
   "witching_hour": {
     "flavor": "真夜中の鐘は鳴る——だが汝のためにあらず！",
@@ -192,7 +213,12 @@
   "witherwing_hero": {
     "name": "枯れ翼の英雄",
     "rules": "エアボーン（飛行）\n\nここにいる自身より弱い味方ミニオンが攻撃されるたび、それを持ち主の手札に戻してもよい。",
-    "typeText": "不屈で果敢なユニークの天使"
+    "typeText": "不屈で果敢なユニークの天使",
+    "variants": {
+      "typeText": {
+        "A Unique Angel protects your assets": "あなたの資産を守るユニークの天使"
+      }
+    }
   },
   "wizards_den": {
     "name": "魔法使いの書斎",

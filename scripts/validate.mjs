@@ -6,6 +6,9 @@
  *   各エントリは name（必須・非空文字列）と rules / typeText / flavor（任意・文字列）のみを持つ。
  *   両面カード（Druid）は faces を持てる: { front / back: { rules / typeText / flavor }, printings: { <刷りid>: { typeText } } }
  *   （面ごとの訳。省略した面はカード本体の訳にフォールバックする。刷りの id は Sorcerers' Den の artVariants と同じ）
+ *   刷りで英文の違うタイプ行・フレーバーは variants に「英文 → 和訳」で持てる: { typeText: { <英文>: <和訳> }, flavor: { … } }
+ *   （鍵は印刷の英文そのもの。Sorcerers' Den が刷りの英文と字形を均して照らし、当たる刷りにだけその訳を出す。
+ *    どの刷りにも当たらない鍵は Den の取り込みが止まる。typeText / flavor はカードとしての値＝既定の刷りの英文の訳のまま）
  * - data/faq-ja.json: slug が実在し、キーは "official|質問原文" または "judge|質問原文"、
  *   値は q / a（必須・非空文字列）のみを持つ
  */
@@ -27,7 +30,27 @@ function load(path) {
 
 const slugs = load("data/slugs.json");
 
-const CARD_FIELDS = new Set(["name", "rules", "typeText", "flavor", "faces"]);
+const CARD_FIELDS = new Set(["name", "rules", "typeText", "flavor", "faces", "variants"]);
+const VARIANT_FIELDS = new Set(["typeText", "flavor"]);
+
+/* 刷りごとの別版: variants.typeText / variants.flavor は「英文 → 和訳」。鍵（英文）も値（和訳）も空でない文字列 */
+function validateVariants(path, slug, variants) {
+  if (typeof variants !== "object" || variants === null || Array.isArray(variants)) {
+    errors.push(`${path}: "${slug}" の variants がオブジェクトではありません`);
+    return;
+  }
+  for (const [field, map] of Object.entries(variants)) {
+    if (!VARIANT_FIELDS.has(field)) { errors.push(`${path}: "${slug}" の variants に未知のフィールド "${field}"（使えるのは typeText/flavor）`); continue; }
+    if (typeof map !== "object" || map === null || Array.isArray(map) || !Object.keys(map).length) {
+      errors.push(`${path}: "${slug}" の variants.${field} は「英文 → 和訳」のオブジェクト（1件以上）にしてください`);
+      continue;
+    }
+    for (const [en, ja] of Object.entries(map)) {
+      if (!en.trim()) errors.push(`${path}: "${slug}" の variants.${field} に空の英文の鍵があります`);
+      if (typeof ja !== "string" || !ja.trim()) errors.push(`${path}: "${slug}" の variants.${field}「${en.slice(0, 40)}…」の和訳が空か文字列ではありません`);
+    }
+  }
+}
 const FACE_FIELDS = new Set(["rules", "typeText", "flavor"]);
 
 /* 両面カードの faces: 面（front / back）ごとの訳と、刷りごとのタイプ行の印字。文字列以外・未知の鍵は誤り */
@@ -77,9 +100,11 @@ for (const file of readdirSync(join(root, "data/ja")).sort()) {
     }
     for (const [key, value] of Object.entries(entry)) {
       if (!CARD_FIELDS.has(key)) {
-        errors.push(`${path}: "${slug}" に未知のフィールド "${key}"（使えるのは name/rules/typeText/flavor/faces）`);
+        errors.push(`${path}: "${slug}" に未知のフィールド "${key}"（使えるのは name/rules/typeText/flavor/faces/variants）`);
       } else if (key === "faces") {
         validateFaces(path, slug, value);
+      } else if (key === "variants") {
+        validateVariants(path, slug, value);
       } else if (typeof value !== "string") {
         errors.push(`${path}: "${slug}" の ${key} が文字列ではありません`);
       }

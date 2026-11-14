@@ -33,6 +33,9 @@ slug（カードID）が分からないときは [data/slugs.json](data/slugs.js
     "flavor": "…"                    // 任意: フレーバーテキストの訳
     // 両面カード（Druid だけ）は面ごとの訳を faces に書く。省略した面はカード本体の訳になる:
     // "faces": { "front": { "rules": "…" }, "back": { "typeText": "…" }, "printings": { "druid-op": { "typeText": "…" } } }
+    // 刷り（プロモなど）で英文の違うタイプ行・フレーバーは variants に「英文 → 和訳」で書く。鍵は印刷の英文をそのまま写す
+    // （引用符の字形や末尾の句点の違いは同じ文とみなされる）。typeText / flavor は既定の刷りの英文の訳のまま:
+    // "variants": { "typeText": { "Your Avatar left the contest victorious": "…" }, "flavor": { "The illusion is broken, its beauty undone.": "…" } }
   }
 }
 ```

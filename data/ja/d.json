@@ -28,7 +28,12 @@
   "dark_tower": {
     "name": "暗黒の塔",
     "rules": "ジェネシス → これがあなたのコントロールする唯一の「暗黒の塔」なら、このターン(1)を得る。",
-    "typeText": "瞑想のオーディナリーのサイト"
+    "typeText": "瞑想のオーディナリーのサイト",
+    "variants": {
+      "typeText": {
+        "An Ordinary Site of ancient power and wisdom": "古の力と叡智のオーディナリーのサイト"
+      }
+    }
   },
   "darkest_dungeon": {
     "name": "最暗黒の地下牢",
@@ -38,7 +43,12 @@
   "day_of_judgment": {
     "name": "審判の日",
     "rules": "十字をレルムの任意の位置に置く。影響下のマスにいる邪悪（Evil）を追放し、そこにいるユニットにダメージを与える。",
-    "typeText": "報いを受くべき悪魔を裁くユニークのマジック"
+    "typeText": "報いを受くべき悪魔を裁くユニークのマジック",
+    "variants": {
+      "typeText": {
+        "A Unique Magic administers the final verdict": "最後の審判を下すユニークのマジック"
+      }
+    }
   },
   "de_vermis_mysteriis": {
     "flavor": "名づけられざる大いなるものよ、黒き星々の印と蟇蛙形のツァトゥグァの印章を汝に。（Tibi, magnum Innominandum...）",
@@ -56,7 +66,12 @@
     "flavor": "闇の旅人は躊躇なき手で、先に居た者すべてを薙ぎ払った。巨匠は死の肖像を描く。",
     "name": "死を配る者",
     "rules": "ジェネシス → 他のすべてのミニオンを倒す。",
-    "typeText": "彼岸の芸術家、ユニークの人間"
+    "typeText": "彼岸の芸術家、ユニークの人間",
+    "variants": {
+      "flavor": {
+        "With frank hand the dark traveler laid waste to all who came before him.": "闇の旅人は躊躇なき手で、先に居た者すべてを薙ぎ払った。"
+      }
+    }
   },
   "death_knight": {
     "flavor": "腐った吐息とともに、その者がしわがれた鬨の声を上げると、周りの死体たちがずるずると応えた。",
@@ -67,7 +82,12 @@
   "deathspeaker": {
     "name": "デススピーカー",
     "rules": "【更新】タップ → サイトを1枚プレイするか、サイトを1枚引く。\n\n各ターンに1回、死亡しているミニオン1体を追放して、そのコピーを唱えてもよい。あなたが死の淵（デスズ・ドア）にいるならコストは(0)になる。コピーはレルムに登場し、そのジェネシスを使用した後、追放される。",
-    "typeText": "死を支配へと変える、あなたのアバター"
+    "typeText": "死を支配へと変える、あなたのアバター",
+    "variants": {
+      "typeText": {
+        "Your Avatar turned death into its dominion": "死を支配へと変えた、あなたのアバター"
+      }
+    }
   },
   "deathwish": {
     "flavor": "終わりを渇望することも、渇望には変わりない。",
@@ -85,6 +105,11 @@
     "name": "深海のマーメイド",
     "rules": "サブマージ（潜水）\n\nジェネシス → あなたの一番下の呪文を引く。",
     "typeText": "神秘の深みのオーディナリーのマーフォーク"
+  },
+  "deep_snow": {
+    "name": "深雪",
+    "rules": "トラップ(1) → 隣接する対象のサイト1つにいるミニオンをタップする。それらは次にアンタップする場合、アンタップしない。",
+    "typeText": "行く手を阻む粉雪のオーディナリーのサイト"
   },
   "defiler_spire": {
     "name": "冒涜者の尖塔",
@@ -180,7 +205,15 @@
     "flavor": "驕りは滅びに先立ち……",
     "name": "解呪",
     "rules": "最大2ステップ先までの対象の場所にあるすべてのオーラとアーティファクトを破壊する。",
-    "typeText": "打ち砕かれた虚栄のオーディナリーのマジック"
+    "typeText": "打ち砕かれた虚栄のオーディナリーのマジック",
+    "variants": {
+      "typeText": {
+        "Ordinary Magic to corner the competition": "競争相手を追い詰めるオーディナリーのマジック"
+      },
+      "flavor": {
+        "The illusion is broken, its beauty undone.": "幻は破れ、その美しさも解けて消えた。"
+      }
+    }
   },
   "displace": {
     "name": "転位",
@@ -263,7 +296,12 @@
   "dragonlord": {
     "name": "ドラゴンロード",
     "rules": "タップ → サイトを1枚プレイするか、サイトを1枚引く。\n\nセットアップの前に、ユニークのドラゴン1体を脇に置く。あなたのターンに1回、そのスレッショルドを満たしているなら、(3)を支払って、このターンその能力を得てもよい。",
-    "typeText": "敬意と畏怖を集める、あなたのアバター"
+    "typeText": "敬意と畏怖を集める、あなたのアバター",
+    "variants": {
+      "typeText": {
+        "Your Avatar commanded respect and fear": "敬意と畏怖を集めた、あなたのアバター"
+      }
+    }
   },
   "dragonlords_lair": {
     "name": "ドラゴンロードの巣",
@@ -347,6 +385,11 @@
     "name": "デュプリケーター",
     "rules": "あなたの呪文書とアトラスにはユニークの揃いの2枚組しか入れられず、手札に呪文2枚とサイト2枚のみでゲームを開始する。\n\nタップ → サイトを1枚プレイするか、サイトを1枚引く。",
     "typeText": "二倍で勝ちを取る、あなたのアバター"
+  },
+  "dust_devil": {
+    "name": "ダストデビル",
+    "rules": "移動+1\n\n攻撃している間、ダメージを受けない。",
+    "typeText": "目をくらます怒りのエクセプショナルのデーモン"
   },
   "dwarven_digging_team": {
     "name": "ドワーフの掘削隊",
