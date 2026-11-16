@@ -239,7 +239,7 @@
   },
   "shallow_grave": {
     "name": "浅い墓",
-    "rules": "ジェネシス → あなたの呪文書の上から2枚を捨てる。",
+    "rules": "ジェネシス → あなたのスペルブックの上から2枚を捨てる。",
     "typeText": "剥き出しの亡骸のエクセプショナルのサイト"
   },
   "shameless_squire": {
@@ -493,7 +493,12 @@
     "flavor": "煤色の眼で、じっと待ち、見つめている。",
     "name": "シロッコの蠍",
     "rules": "リーサル（致死）",
-    "typeText": "死の毒針のオーディナリーのビーストたち"
+    "typeText": "死の毒針のオーディナリーのビーストたち",
+    "variants": {
+      "flavor": {
+        "Tread light! And hasten thee away from skittering cinders, sun-scorched obsidian shards asway.": "足取りは軽く！ 急ぎ立ち去れ、這い回る燃え殻から、日に灼かれ揺れる黒曜石のかけらから。"
+      }
+    }
   },
   "sissi_marksmen": {
     "name": "シッシの射手隊",
@@ -741,7 +746,7 @@
   },
   "spring_river": {
     "name": "春の川",
-    "rules": "ジェネシス → あなたの次の呪文を見る。それを呪文書の一番下に置いてもよい。",
+    "rules": "ジェネシス → あなたの次の呪文を見る。それをスペルブックの一番下に置いてもよい。",
     "typeText": "若返りのオーディナリーのサイト"
   },
   "springstem_meadow": {
@@ -859,7 +864,7 @@
   },
   "summer_river": {
     "name": "夏の川",
-    "rules": "ジェネシス → あなたの次の呪文を見る。それを呪文書の一番下に置いてもよい。",
+    "rules": "ジェネシス → あなたの次の呪文を見る。それをスペルブックの一番下に置いてもよい。",
     "typeText": "新生のオーディナリーのサイト"
   },
   "summoning_sphere": {

@@ -60,10 +60,14 @@
     "typeText": "熔けた敵意のエクセプショナルのマジック"
   },
   "lava_salamander": {
-    "flavor": "ネオテニーのラヴァロートルに変態を促す試みは、不幸なことに、成功してしまった。",
     "name": "溶岩サラマンダー",
     "rules": "火のスペルキャスター\n\n火の呪文からダメージを受けない。",
-    "typeText": "烈火の気性のエクセプショナルのビースト"
+    "typeText": "烈火の気性のエクセプショナルのビースト",
+    "variants": {
+      "flavor": {
+        "Attempts to induce metamorphosis in neotinic lavalotls were, unfortunately, successful.": "ネオテニーのラヴァロートルに変態を促す試みは、不幸なことに、成功してしまった。"
+      }
+    }
   },
   "lavamancer": {
     "name": "ラヴァマンサー",
@@ -180,10 +184,14 @@
     "typeText": "言葉にできぬ空虚を纏うユニークのスピリット"
   },
   "lord_of_unland": {
-    "flavor": "たわめ、縛る海の霧――北東へ、南西へ、うねる潮流を。",
     "name": "アンランドの王",
     "rules": "サブマージ（潜水）\n\nアンランドの王と同じ水域にいる他の味方は+1のパワーを持つ。",
-    "typeText": "水の武勇のユニークのマーフォーク"
+    "typeText": "水の武勇のユニークのマーフォーク",
+    "variants": {
+      "flavor": {
+        "The Ocean-Mist that bends, that binds, nor' east sou' west the rolling tides.": "たわめ、縛る海の霧――北東へ、南西へ、うねる潮流を。"
+      }
+    }
   },
   "love_potion": {
     "name": "惚れ薬",

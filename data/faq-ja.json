@@ -48,7 +48,7 @@
     },
     "adept_illusionist": {
       "official|What does “shuffle if needed” mean?": {
-        "a": "呪文書から探したなら、呪文書を切り直します。結果的に手札や墓地から追加の幻術師を召喚することになっても、望んだなら呪文書を探していてかまいません。",
+        "a": "スペルブックから探したなら、スペルブックを切り直します。結果的に手札や墓地から追加の幻術師を召喚することになっても、望んだならスペルブックを探していてかまいません。",
         "q": "「必要ならデッキを切り直す（shuffle if needed）」とはどういう意味ですか？"
       }
     },
@@ -221,7 +221,7 @@
       },
       "official|When using this ability, must the Archimago be the caster?": {
         "a": "いいえ。あなたのスペルキャスターなら誰でも、そのコピーされた呪文を唱えられます。",
-        "q": "この能力を使うとき、[[Archimago]]自身が唱え手でなければなりませんか？"
+        "q": "この能力を使うとき、[[Archimago]]自身がスペルキャスターでなければなりませんか？"
       }
     },
     "aria_wraith": {
@@ -252,7 +252,7 @@
     },
     "assorted_animals": {
       "official|For purposes of cards that care about the mana cost of spells, what is the mana cost of a spell with X?": {
-        "a": "その呪文を唱えるなら、マナコストはXの値です。たとえば2マナで唱えたなら、[[The Immortal Throne]]はそれをコスト2の呪文として見ます。一方、唱えているのではなく単に手札や呪文書などにある場合、実際に唱えるまでXは0です。",
+        "a": "その呪文を唱えるなら、マナコストはXの値です。たとえば2マナで唱えたなら、[[The Immortal Throne]]はそれをコスト2の呪文として見ます。一方、唱えているのではなく単に手札やスペルブックなどにある場合、実際に唱えるまでXは0です。",
         "q": "呪文のマナコストを参照するカードにとって、コストがXの呪文のマナコストはいくつですか？"
       }
     },
@@ -352,8 +352,8 @@
         "q": "ユニットに当たって跳ね返った直後、同じ出発地点にいるそのユニットに再び命中しますか？"
       },
       "official|Can I hit the caster or other allies with this?": {
-        "a": "投射物の経路の最初の場所では、たとえそこで先に敵に命中しても、味方や唱え手には命中しません。[[Ball Lightning]]が最初の場所を離れたあとであれば、跳ね返って経路の後半で味方や唱え手に命中する可能性があります。",
-        "q": "これで唱え手や他の味方に命中させられますか？"
+        "a": "投射物の経路の最初の場所では、たとえそこで先に敵に命中しても、味方やスペルキャスターには命中しません。[[Ball Lightning]]が最初の場所を離れたあとであれば、跳ね返って経路の後半で味方やスペルキャスターに命中する可能性があります。",
+        "q": "これでスペルキャスターや他の味方に命中させられますか？"
       },
       "official|Is the damage resolved one at a time, after each hit?": {
         "a": "はい！ 最初の命中のダメージ（およびデスライト）を解決し、その後跳ね返って2回目の命中のダメージを解決し、さらに跳ね返って3回目の命中を解決します。",
@@ -443,7 +443,7 @@
       },
       "official|What order are the cards put on the bottom of my spellbook?": {
         "a": "カードの順番はあなたが選びます。",
-        "q": "呪文書の一番下に置くカードの順番はどうなりますか？"
+        "q": "スペルブックの一番下に置くカードの順番はどうなりますか？"
       }
     },
     "black_obelisk": {
@@ -528,7 +528,7 @@
         "q": "戦闘で受けたダメージが致死量に満たなかった場合でも、その味方は死亡しますか？"
       },
       "official|How do I resolve this effect if control of the minion changes between fights (e.g. it had Infiltrate cast on it earlier)?": {
-        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]の唱え手です。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。そのユニコーンの近隣には、あなたがコントロールする[[Lugbog Cat]]とスケルトン、私がコントロールする[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが解け、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
+        "a": "この効果の解決の途中で味方のコントロールが変わった場合、そのユニットが「敵」と見なす相手も変わります。戦闘の順番を選ぶのは、引き続き[[Blaze of Glory]]を唱えたスペルキャスターです。なお、戦闘は任意ではありません。\nたとえば、私があなたの[[Autumn Unicorn]]に[[Infiltrate]]をかけているとします。そのユニコーンの近隣には、あなたがコントロールする[[Lugbog Cat]]とスケルトン、私がコントロールする[[Bosk Troll]]がいます。私が[[Autumn Unicorn]]に[[Blaze of Glory]]を唱えます。まずあなたのスケルトンと戦闘させることを選ぶと、ステルスが解け、ユニコーンのコントロールはあなたに戻ります。スケルトンはレルムから取り除かれます。ユニコーンにはまだ「敵」が見えているので、戦闘は終わりません — そう、[[Bosk Troll]]です！ そこでユニコーンは[[Bosk Troll]]と戦闘します。[[Bosk Troll]]は死亡して墓地へ。その後ユニコーンも死亡して墓地へ置かれます。\nつまり、各戦闘のあとに周囲を見回して「まだ戦闘していない近隣の敵はいるか？」と確認し、いれば戦闘する。近隣に未戦闘の敵がいなくなるまで繰り返す、ということです。",
         "q": "戦闘の合間にミニオンのコントロールが変わった場合（例: 事前に[[Infiltrate]]を唱えられていた場合）、この効果はどう解決しますか？"
       },
       "official|What is the proper way to resolve the timing for this spell?": {
@@ -682,7 +682,7 @@
         "q": "[[Bureau of Occult Control]]は[[Wormelow Tump]]とどう相互作用しますか？"
       },
       "official|How does this effect resolve?": {
-        "a": "「アクセス」が発生するのは、カードがコレクションまたは墓地のゾーンを離れる場合です。別のゾーン（つまりレルム）へ移動する場合も、追放される場合も含みます。自分のコレクションや墓地を自由に見ることや、そこへカードを加えることは引き続き可能です。\n(2)の支払いが必要になるのは、カードに「アクセス」する能力がストーリーラインに置かれる時点で、これにより効果全体がアクセスを許可されます。[[Bureau of Occult Control]]は詠唱コストを増やすものではなく、これは別個のコストです。詠唱コストを減らす効果（例: [[Mix Aer]]）でも減りません。詠唱コストではありませんし、何も唱えずにアクセスする効果も多いからです（例: [[Adept Illusionist]]、[[Imposter]]など）。\nたとえば[[Archimago]]は、追放されるのは3枚でも、能力の起動に(2)を支払わなければなりません。同様に[[Deathspeaker]]も、死の淵にいたとしても能力の使用に(2)を支払わなければなりません。これは能力のコストの増加ではなく、事前に支払うべき別個のコストだからです。\n(2)を支払わないことを選び、コレクションや墓地のカードにアクセスできないまま、効果の残りを解決することもできます。たとえば[[Feast for Crows]]は他のゾーンを探し、墓地からは呪文を取り除かない、という処理ができます。[[Adept Illusionist]]は呪文書と手札から自身のコピーを探し、墓地は探さない、という処理ができます。",
+        "a": "「アクセス」が発生するのは、カードがコレクションまたは墓地のゾーンを離れる場合です。別のゾーン（つまりレルム）へ移動する場合も、追放される場合も含みます。自分のコレクションや墓地を自由に見ることや、そこへカードを加えることは引き続き可能です。\n(2)の支払いが必要になるのは、カードに「アクセス」する能力がストーリーラインに置かれる時点で、これにより効果全体がアクセスを許可されます。[[Bureau of Occult Control]]は詠唱コストを増やすものではなく、これは別個のコストです。詠唱コストを減らす効果（例: [[Mix Aer]]）でも減りません。詠唱コストではありませんし、何も唱えずにアクセスする効果も多いからです（例: [[Adept Illusionist]]、[[Imposter]]など）。\nたとえば[[Archimago]]は、追放されるのは3枚でも、能力の起動に(2)を支払わなければなりません。同様に[[Deathspeaker]]も、死の淵にいたとしても能力の使用に(2)を支払わなければなりません。これは能力のコストの増加ではなく、事前に支払うべき別個のコストだからです。\n(2)を支払わないことを選び、コレクションや墓地のカードにアクセスできないまま、効果の残りを解決することもできます。たとえば[[Feast for Crows]]は他のゾーンを探し、墓地からは呪文を取り除かない、という処理ができます。[[Adept Illusionist]]はスペルブックと手札から自身のコピーを探し、墓地は探さない、という処理ができます。",
         "q": "この効果はどう解決しますか？"
       },
       "official|When casting a spell from my cemetery that would banish itself after casting (e.g. Ghostfire), can I choose not to pay the extra cost to keep it from banishing itself?": {
@@ -786,7 +786,7 @@
         "q": "稲妻を対象Aから対象Bへ、そしてまた対象Aへ連鎖させられますか？"
       },
       "official|Can additional targets be in different regions (as long as they’re nearby the previous target)?": {
-        "a": "いいえ。直前の対象の近隣にいることは追加の対象制限であって、対象ルールの緩和ではありません。したがって、すべての対象は唱え手と同じリージョンにいなければなりません。",
+        "a": "いいえ。直前の対象の近隣にいることは追加の対象制限であって、対象ルールの緩和ではありません。したがって、すべての対象はスペルキャスターと同じリージョンにいなければなりません。",
         "q": "追加の対象は（直前の対象の近隣にいるかぎり）別のリージョンにいてもよいですか？"
       },
       "official|Do I pay all the costs and choose all the targets when the spell is cast?": {
@@ -954,7 +954,7 @@
         "q": "（図で）空のマスはすべて虚空、文字はサイトです。呪文がXの地表から唱えられた場合、Zは影響を受けますか？"
       },
       "official|Does Cone of Flame extend across multiple regions?": {
-        "a": "いいえ。影響を受けるすべての場所は、唱え手と同じリージョンになければなりません。基本的に、ダメージのグリッドは唱え手のリージョンに限定されます。唱え手が複数のリージョンにまたがっている場合（例: 特大ユニット）、呪文を唱えるリージョンを1つ選びます。",
+        "a": "いいえ。影響を受けるすべての場所は、スペルキャスターと同じリージョンになければなりません。基本的に、ダメージのグリッドはスペルキャスターのリージョンに限定されます。スペルキャスターが複数のリージョンにまたがっている場合（例: 特大ユニット）、呪文を唱えるリージョンを1つ選びます。",
         "q": "[[Cone of Flame]]は複数のリージョンにまたがりますか？"
       }
     },
@@ -1022,8 +1022,8 @@
     },
     "cradle_of_etherrum": {
       "official|Do I still need to meet threshold and summoning requirements when I cast the spell?": {
-        "a": "はい。あなたのメインフェイズ中に、あなたのサイトへ唱えるなど、通常の条件を満たす必要があります。手札ではなく呪文書の一番上から唱えることと、コストが(1)少ないことを除けば、通常どおりミニオン呪文を唱えます。",
-        "q": "呪文書の一番上からドラゴンを唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
+        "a": "はい。あなたのメインフェイズ中に、あなたのサイトへ唱えるなど、通常の条件を満たす必要があります。手札ではなくスペルブックの一番上から唱えることと、コストが(1)少ないことを除けば、通常どおりミニオン呪文を唱えます。",
+        "q": "スペルブックの一番上からドラゴンを唱えるとき、スレッショルドや召喚の条件は依然として満たす必要がありますか？"
       },
       "official|Is the ability to look at my top spell a passive abililty?": {
         "a": "はい。開始フェイズや終了フェイズを含め、自分のターン中ならいつでも見ることができます。",
@@ -1285,7 +1285,7 @@
     "dragonlord": {
       "official|Can my spellbook include a copy of my set aside Unique Dragon?": {
         "a": "はい！ 脇に置いたドラゴンは、両プレイヤーのためのルール参照用という意図です。必要であれば、脇に置くドラゴンには適切な代用カードを使ってかまいません。",
-        "q": "脇に置いたユニークのドラゴンのコピーを、呪文書に入れてもよいですか？"
+        "q": "脇に置いたユニークのドラゴンのコピーを、スペルブックに入れてもよいですか？"
       },
       "official|Can the Dragonlord gain Stealth?": {
         "a": "いいえ。アバターはステルスを得られません。",
@@ -1455,7 +1455,7 @@
       },
       "judge|Must the Enchantress be the spellcaster to use its ability?": {
         "a": "はい（[[Sparkmage]]のFAQと同様です）。",
-        "q": "この能力を使うには、[[Enchantress]]自身が唱え手でなければなりませんか？"
+        "q": "この能力を使うには、[[Enchantress]]自身がスペルキャスターでなければなりませんか？"
       },
       "judge|Where can I learn more about Enchantress?": {
         "a": "解説記事「Enchantress: Understanding Her Rules」を参照してください。",
@@ -1654,12 +1654,12 @@
         "q": "カードを引くためだけに、対象なしでこの呪文を唱えられますか？"
       },
       "official|Does the target need to be in the same region as the caster?": {
-        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、唱え手はどのリージョン（地表・地下・水中・虚空）にいてもかまいません。唱え手に隣接する水のサイトがあり、その水のサイトにミニオンがいるかぎり、それは唱え手の場所へ引き寄せられます。",
-        "q": "対象は唱え手と同じリージョンにいなければなりませんか？"
+        "a": "いいえ。通常なら答えはイエスですが、カードのテキストの「上または下の（above or below）」により、通常の対象制限は無視され、スペルキャスターはどのリージョン（地表・地下・水中・虚空）にいてもかまいません。スペルキャスターに隣接する水のサイトがあり、その水のサイトにミニオンがいるかぎり、それはスペルキャスターの場所へ引き寄せられます。",
+        "q": "対象はスペルキャスターと同じリージョンにいなければなりませんか？"
       },
       "official|Does the “adjacent Water site” need to be in the same region as the caster?": {
-        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトは唱え手と同じリージョンにある必要はありません。",
-        "q": "「隣接する水のサイト」は、唱え手と同じリージョンになければなりませんか？"
+        "a": "いいえ。水のサイトは対象になっておらず、カードのテキストが「場所（location）」ではなく「サイト（site）」を使っているため、そのサイトはスペルキャスターと同じリージョンにある必要はありません。",
+        "q": "「隣接する水のサイト」は、スペルキャスターと同じリージョンになければなりませんか？"
       }
     },
     "fireball": {
@@ -2036,7 +2036,7 @@
     },
     "grapple_shot": {
       "judge|What happens if I cast Grapple Shot on an infiltrated unit and it loses Stealth before resolving the strike effect?": {
-        "a": "ステルスを失った時点で、[[Infiltrate]]していたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、唱え手が選べばストライクは依然として発生し得ます。",
+        "a": "ステルスを失った時点で、[[Infiltrate]]していたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、スペルキャスターが選べばストライクは依然として発生し得ます。",
         "q": "[[Infiltrate]]されたユニットに[[Grapple Shot]]を唱え、ストライク効果の解決前にそれがステルスを失ったらどうなりますか？"
       },
       "official|Can a disabled unit Grapple Shot?": {
@@ -2062,8 +2062,8 @@
     },
     "grasping_ground": {
       "official|Are the minions and artifacts targeted by the allies which drag them down, or by the caster of Grasping Ground?": {
-        "a": "[[Grasping Ground]]の唱え手が、味方によって引きずり込まれることになるミニオンやアーティファクトを対象にできなければなりません。",
-        "q": "ミニオンやアーティファクトを対象にするのは、引きずり込む味方ですか、それとも[[Grasping Ground]]の唱え手ですか？"
+        "a": "[[Grasping Ground]]を唱えたスペルキャスターが、味方によって引きずり込まれることになるミニオンやアーティファクトを対象にできなければなりません。",
+        "q": "ミニオンやアーティファクトを対象にするのは、引きずり込む味方ですか、それとも[[Grasping Ground]]を唱えたスペルキャスターですか？"
       }
     },
     "great_old_one": {
@@ -2096,7 +2096,7 @@
     },
     "grievous_insult": {
       "judge|Can my underwater ally target another underwater minion, even though my Avatar is not underwater?": {
-        "a": "はい。この呪文の唱え手は、その水中の味方だからです！",
+        "a": "はい。この呪文を唱えたスペルキャスターは、その水中の味方だからです！",
         "q": "アバターが水中にいなくても、水中の味方は別の水中のミニオンを対象にできますか？"
       }
     },
@@ -2116,7 +2116,7 @@
         "q": "[[Grim Reaper]]がミニオンを殺したとき、殺されたミニオンのデスライトは誘発しますか？"
       },
       "official|How does this ability work?": {
-        "a": "[[Grim Reaper]]がミニオンを殺すと、そのミニオンは死亡する代わりに追放されます。加えて、場にあるそのミニオンのコピーも（誰がコントロールしていようと）すべて追放されます。最後に、殺されたミニオンの持ち主の呪文書を探します（そのプレイヤーの呪文書だけです）。",
+        "a": "[[Grim Reaper]]がミニオンを殺すと、そのミニオンは死亡する代わりに追放されます。加えて、場にあるそのミニオンのコピーも（誰がコントロールしていようと）すべて追放されます。最後に、殺されたミニオンの持ち主のスペルブックを探します（そのプレイヤーのスペルブックだけです）。",
         "q": "この能力はどう機能しますか？"
       }
     },
@@ -2270,7 +2270,7 @@
     },
     "highland_falconer": {
       "official|What does “shuffle if needed” mean?": {
-        "a": "呪文書を探したなら、呪文書を切り直します。結果的に手札からビーストを召喚することになっても、望んだなら呪文書を探していてかまいません。",
+        "a": "スペルブックを探したなら、スペルブックを切り直します。結果的に手札からビーストを召喚することになっても、望んだならスペルブックを探していてかまいません。",
         "q": "「必要ならデッキを切り直す（shuffle if needed）」とはどういう意味ですか？"
       }
     },
@@ -2422,7 +2422,7 @@
         "q": "[[Infiltrate]]を唱えられたミニオンが、ステルスを失う前に何らかの効果で無力化されたらどうなりますか？"
       },
       "judge|What happens if I cast Grapple Shot on an infiltrated unit and it loses Stealth before resolving the strike effect?": {
-        "a": "ステルスを失った時点で、[[Infiltrate]]されていたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、唱え手が選べばストライクは依然として発生し得ます。",
+        "a": "ステルスを失った時点で、[[Infiltrate]]されていたユニットのコントロールは失われます。ただし[[Grapple Shot]]は味方ユニットへのストライクも許可しているため、スペルキャスターが選べばストライクは依然として発生し得ます。",
         "q": "[[Infiltrate]]されたユニットに[[Grapple Shot]]を唱え、ストライク効果の解決前にそれがステルスを失ったらどうなりますか？"
       },
       "judge|What if there is a passive control effect (e.g. King of the Realm), then I target a different Mortal with Infiltrate?": {
@@ -2655,7 +2655,7 @@
     "king_arthur": {
       "judge|Can I cast spells discarded from my opponent's spellbook via Sea Raider or Captain Baldassare while they control King Arthur?": {
         "a": "はい。ただし、あなたが唱えたミニオン・アーティファクト・オーラは、相手のコントロール下でレルムに入ります。ジェネシス能力がある場合、その能力も相手がコントロールします。あとで[[King Arthur]]が死亡したら、それらはあなたのコントロールに戻ります。マジック呪文は通常どおり解決します。",
-        "q": "相手が[[King Arthur]]をコントロールしている間、[[Sea Raider]]や[[Captain Baldassare]]で相手の呪文書から捨てられた呪文を唱えられますか？"
+        "q": "相手が[[King Arthur]]をコントロールしている間、[[Sea Raider]]や[[Captain Baldassare]]で相手のスペルブックから捨てられた呪文を唱えられますか？"
       },
       "judge|Can I sacrifice an artifact (e.g. Mix Ignis) if I don’t control it?": {
         "a": "いいえ。生け贄に捧げられるのは、自分がコントロールしているものだけです。",
@@ -2852,7 +2852,7 @@
         "q": "味方のミニオンは、別のリージョンにいる敵を誘って1ステップ近づかせられますか？"
       },
       "official|If the tempted enemy has multiple equally closer steps, who chooses the specific step taken?": {
-        "a": "等しく近づく選択肢の中から、この呪文の唱え手が決めます。",
+        "a": "等しく近づく選択肢の中から、この呪文を唱えたスペルキャスターが決めます。",
         "q": "誘われた敵に、等しく近づくステップが複数ある場合、実際のステップは誰が選びますか？"
       }
     },
@@ -2936,7 +2936,7 @@
     },
     "magician": {
       "official|Am I required to sleeve my cards, and if so, how should I do it?": {
-        "a": "スリーブは必須で、すべて同じものでなければなりません。呪文書とコレクションのカードは、サイトか呪文かが見分けられない状態であるべきです。",
+        "a": "スリーブは必須で、すべて同じものでなければなりません。スペルブックとコレクションのカードは、サイトか呪文かが見分けられない状態であるべきです。",
         "q": "カードにスリーブをつける義務はありますか？ ある場合、どうすればよいですか？"
       },
       "official|What if an effect directs me to draw a site?": {
@@ -2944,12 +2944,12 @@
         "q": "効果でサイトを引くよう指示されたら？"
       },
       "official|What if an effect directs me to draw a spell, but it turns out there's a site on top of my spellbook?": {
-        "a": "呪文書の中にあるカードはすべて、呪文書にある間は呪文と見なされるので、通常どおり引けます。",
-        "q": "効果で呪文を引くよう指示されたのに、呪文書の一番上がサイトだったら？"
+        "a": "スペルブックの中にあるカードはすべて、スペルブックにある間は呪文と見なされるので、通常どおり引けます。",
+        "q": "効果で呪文を引くよう指示されたのに、スペルブックの一番上がサイトだったら？"
       },
       "official|What if an effect specifies a spell or site from a zone other than my spellbook?": {
-        "a": "カードが呪文書の外にあるときに呪文かサイトかを参照する効果がある場合、その効果が解決される時点で正しく従わなければなりません。\nいくつか例を挙げます:\n[[Stone Rain]]を解決するなら、その時点で手札に何枚サイトがあるかを正直に申告しなければなりません。\nカードをスリーブから少し出して裏面を見せることで、正確な枚数を相手に示せます。フォイルカードがある場合は大会ならジャッジを呼んでください（またはフォイル対策として、内側の色が異なるスリーブで二重スリーブにしてください）。\n相手が[[Pith Imp]]をプレイしたなら、手札の呪文を正直に特定し、その中からだけランダムに選びます。\n相手が初めてあなたの[[Wizard's Den]]を攻撃したとき、手札に呪文がなければ、手札がサイトだけであることを正直に示さなければなりません。\n[[Sisters of Avalon]]をプレイして手札に呪文がなければ、呪文がないことを正直に示さなければなりません。\n手札の呪文とサイトの枚数を公開する必要のある効果が解決したあとは、手札を混ぜ直して、どれが呪文でどれがサイトか相手にわからなくしてかまいません。",
-        "q": "呪文書以外のゾーンで、呪文かサイトかを指定する効果があったら？"
+        "a": "カードがスペルブックの外にあるときに呪文かサイトかを参照する効果がある場合、その効果が解決される時点で正しく従わなければなりません。\nいくつか例を挙げます:\n[[Stone Rain]]を解決するなら、その時点で手札に何枚サイトがあるかを正直に申告しなければなりません。\nカードをスリーブから少し出して裏面を見せることで、正確な枚数を相手に示せます。フォイルカードがある場合は大会ならジャッジを呼んでください（またはフォイル対策として、内側の色が異なるスリーブで二重スリーブにしてください）。\n相手が[[Pith Imp]]をプレイしたなら、手札の呪文を正直に特定し、その中からだけランダムに選びます。\n相手が初めてあなたの[[Wizard's Den]]を攻撃したとき、手札に呪文がなければ、手札がサイトだけであることを正直に示さなければなりません。\n[[Sisters of Avalon]]をプレイして手札に呪文がなければ、呪文がないことを正直に示さなければなりません。\n手札の呪文とサイトの枚数を公開する必要のある効果が解決したあとは、手札を混ぜ直して、どれが呪文でどれがサイトか相手にわからなくしてかまいません。",
+        "q": "スペルブック以外のゾーンで、呪文かサイトかを指定する効果があったら？"
       }
     },
     "magnetic_muzzle": {
@@ -3197,7 +3197,7 @@
     "moonsong_talagelum": {
       "official|Since this \"counts as Grey Wolves\" does that mean I can include any number of it in my spellbook?": {
         "a": "いいえ。「[[Grey Wolves]]として数える」とは、他のカードがこれを、通常の名前に加えて「[[Grey Wolves]]」という名前を持つものとして見る、という意味です。レアリティの制限には依然として従わなければなりません。",
-        "q": "これは「[[Grey Wolves]]として数える」ので、呪文書に何枚でも入れられるということですか？"
+        "q": "これは「[[Grey Wolves]]として数える」ので、スペルブックに何枚でも入れられるということですか？"
       }
     },
     "morgana_le_fay": {
@@ -3366,7 +3366,7 @@
     },
     "orb_of_baal_berith": {
       "judge|If I cast a spell with Orb, does that count toward Sparkmage’s ability?": {
-        "a": "いいえ。[[Sparkmage]]の公式FAQにあるとおり、その能力に数えるには[[Sparkmage]]自身が呪文の唱え手でなければなりません。",
+        "a": "いいえ。[[Sparkmage]]の公式FAQにあるとおり、その能力に数えるには[[Sparkmage]]自身がその呪文を唱えたスペルキャスターでなければなりません。",
         "q": "オーブで呪文を唱えた場合、それは[[Sparkmage]]の能力に数えられますか？"
       },
       "judge|If I cast a spell with X in the cost, while near Orb of Ba'al Berith, does the copy have the same value of X or is it 0?": {
@@ -3387,10 +3387,10 @@
       },
       "official|Is the Orb the spellcaster for the copied spell?": {
         "a": "はい。",
-        "q": "コピーされた呪文のスペルキャスター（唱え手）は[[Orb of Ba'al Berith]]ですか？"
+        "q": "コピーされた呪文のスペルキャスターは[[Orb of Ba'al Berith]]ですか？"
       },
       "official|Who controls the copied Magic?": {
-        "a": "そのマジックの元の唱え手が、オーブの作ったコピーをコントロールします。",
+        "a": "そのマジックを元々唱えたスペルキャスターが、オーブの作ったコピーをコントロールします。",
         "q": "コピーされたマジックは誰がコントロールしますか？"
       }
     },
@@ -3522,7 +3522,7 @@
     },
     "payload_trebuchet": {
       "judge|When a card with X in the cost is discarded for Payload Trebuchet's effect, what happens?": {
-        "a": "呪文を唱えているのではなく、単に手札や呪文書などにある場合、実際に唱えるまでXは0です。",
+        "a": "呪文を唱えているのではなく、単に手札やスペルブックなどにある場合、実際に唱えるまでXは0です。",
         "q": "コストにXを含むカードが[[Payload Trebuchet]]の効果で捨てられた場合、どうなりますか？"
       },
       "official|Do both units need to have been in play for a turn or have charge?": {
@@ -3551,7 +3551,7 @@
       },
       "judge|Can this shuffle itself into my spellbook?": {
         "a": "いいえ。マジック呪文は、完全に解決し終わるまで墓地に置かれません。",
-        "q": "これは自分自身を呪文書に切り混ぜられますか？"
+        "q": "これは自分自身をスペルブックに切り混ぜられますか？"
       },
       "judge|If I shuffle 0 Unique cards into my decks, may I shuffle? Must I shuffle?": {
         "a": "デッキに切り混ぜる枚数として0を選んだ場合、そのデッキは切り直しません。",
@@ -3818,7 +3818,7 @@
     },
     "replication": {
       "judge|How does Replication work, exactly?": {
-        "a": "「唱え手が運んでいるアーティファクトのトークン・コピー1つを、任意の場所に設置する」として扱ってください。\n新しいアーティファクトは設置時点ではどのユニットにも運ばれていませんが、通常どおり拾い上げ（Pick Up）能力を使えます。",
+        "a": "「スペルキャスターが運んでいるアーティファクトのトークン・コピー1つを、任意の場所に設置する」として扱ってください。\n新しいアーティファクトは設置時点ではどのユニットにも運ばれていませんが、通常どおり拾い上げ（Pick Up）能力を使えます。",
         "q": "[[Replication]]は正確にはどう機能しますか？"
       },
       "official|Where can I conjure the copy?": {
@@ -3912,7 +3912,7 @@
     },
     "river_of_flame": {
       "official|If River of Flame casts a spell, choosing the surface, but there are Maddening Bells underground, is the River of Flame affected?": {
-        "a": "はい！ あの鐘はそれほどうるさいのです（そして依然として唱え手の近隣にあります）。",
+        "a": "はい！ あの鐘はそれほどうるさいのです（そして依然としてスペルキャスターの近隣にあります）。",
         "q": "[[River of Flame]]が地表を選んで呪文を唱えたとき、地下に[[Maddening Bells]]があったら、[[River of Flame]]は影響を受けますか？"
       },
       "official|If River of Flame casts a spell, must you pick a region that it's casting from?": {
@@ -4069,7 +4069,7 @@
     "sea_raider": {
       "judge|When you attack with Sea Raider and it is Defended by two minions, both of which die as a result of the attack, does your opponent discard one or two cards from their spellbook?": {
         "a": "1枚だけです。[[Battlemage]]のFAQと同様です。",
-        "q": "[[Sea Raider]]で攻撃して2体のミニオンが防御し、その両方が攻撃の結果死亡した場合、相手が呪文書から捨てるのは1枚ですか、2枚ですか？"
+        "q": "[[Sea Raider]]で攻撃して2体のミニオンが防御し、その両方が攻撃の結果死亡した場合、相手がスペルブックから捨てるのは1枚ですか、2枚ですか？"
       },
       "official|If I declare an attack against one target, but then a different enemy defends, does that satisfy this ability?": {
         "a": "はい。攻撃が行われ、その後ミニオンが倒されました。攻撃したユニットが「移動と攻撃」能力を使い、そのユニットがキル・クレジットを得たのであれば、この能力の条件は満たされます。",
@@ -4147,7 +4147,7 @@
     "shatter": {
       "official|Does the disabled minion have to be near the caster?": {
         "a": "はい。",
-        "q": "無力化されているミニオンは、唱え手の近くにいなければなりませんか？"
+        "q": "無力化されているミニオンは、スペルキャスターの近くにいなければなりませんか？"
       }
     },
     "shield_maidens": {
@@ -4466,7 +4466,7 @@
     },
     "squeakers": {
       "judge|What happens if I can't legally summon Pigs of the Sounder to the site (e.g. Gnome Hollows)?": {
-        "a": "[[Pigs of the Sounder]]は召喚されず、他の公開したカードと一緒に、ランダムな順で呪文書の一番下に置かれます。",
+        "a": "[[Pigs of the Sounder]]は召喚されず、他の公開したカードと一緒に、ランダムな順でスペルブックの一番下に置かれます。",
         "q": "そのサイトに[[Pigs of the Sounder]]を適正に召喚できない場合（例: [[Gnome Hollows]]）はどうなりますか？"
       }
     },
@@ -4532,11 +4532,11 @@
     },
     "sturmgeist": {
       "official|If the spellcaster dies before the spell they cast resolves, will their spell still resolve?": {
-        "a": "いいえ！ 呪文の解決前に唱え手が死んでいるなら、呪文はまったく解決されません。詳しくは写本室（Codex）の「発生源がレルムに存在しない（Source is No Longer in the Realm）」を参照してください。",
-        "q": "唱え手が、唱えた呪文の解決前に死亡した場合、その呪文は解決されますか？"
+        "a": "いいえ！ 呪文の解決前にスペルキャスターが死んでいるなら、呪文はまったく解決されません。詳しくは写本室（Codex）の「発生源がレルムに存在しない（Source is No Longer in the Realm）」を参照してください。",
+        "q": "スペルキャスターが、唱えた呪文の解決前に死亡した場合、その呪文は解決されますか？"
       },
       "official|What does \"closer\" mean?": {
-        "a": "まず、[[Sturmgeist]]が通常の移動で1ステップ移動できる場所を確認します。その中で、この能力を誘発させた唱え手までのステップ数が最も少なくなる場所を特定します。\nたとえば、[[Sturmgeist]]が場所Sにいて、スペルキャスターが場所Cにいるとします。\n[[Sturmgeist]]はエアボーン（飛行）を持つため、SからCへ1ステップで移動できます。そのため、Cへ移動しなければなりません。移動後は唱え手と同じ場所にいるので、唱え手までの距離は0ステップになります。AやBでは唱え手までの距離が1ステップのままなので、この能力の移動先には選べません。",
+        "a": "まず、[[Sturmgeist]]が通常の移動で1ステップ移動できる場所を確認します。その中で、この能力を誘発させたスペルキャスターまでのステップ数が最も少なくなる場所を特定します。\nたとえば、[[Sturmgeist]]が場所Sにいて、スペルキャスターが場所Cにいるとします。\n[[Sturmgeist]]はエアボーン（飛行）を持つため、SからCへ1ステップで移動できます。そのため、Cへ移動しなければなりません。移動後はスペルキャスターと同じ場所にいるので、スペルキャスターまでの距離は0ステップになります。AやBではスペルキャスターまでの距離が1ステップのままなので、この能力の移動先には選べません。",
         "q": "「近づく（closer）」とは、どのように判定しますか？"
       },
       "official|What if the Magic is cast by something other than a unit?": {
@@ -4566,7 +4566,7 @@
     },
     "swap": {
       "official|Can this effect swap cards into different regions?": {
-        "a": "いいえ。入れ替える2枚の両方を対象に取り、対象は唱え手と同じリージョンにいなければなりません。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
+        "a": "いいえ。入れ替える2枚の両方を対象に取り、対象はスペルキャスターと同じリージョンにいなければなりません。詳しくは写本室（Codex）の「呪文を唱える（Casting Spells）」を参照してください。",
         "q": "この効果でカードを別のリージョンへ入れ替えられますか？"
       },
       "official|How exactly do I resolve a \"swap\" effect?": {
@@ -4732,11 +4732,11 @@
         "q": "[[Feast for Crows]]をプレイするときにこのカード名を指定したらどうなりますか？"
       },
       "official|What happens if my opponent searches my spellbook but doesn't see this card when searching?": {
-        "a": "これがあなたの呪文書にあり、相手が見ることのできる範囲にあったなら、[[The Inquisition]]は誘発して召喚されます！ このカードが呪文書にあることを相手に伝え、公開してください。\n相手が呪文書の一部だけを探している場合（例: [[Haystack]]）、[[The Inquisition]]が実際に探された範囲にあったときだけ誘発します。疑義があれば、ジャッジが[[The Inquisition]]がそこになかったことを確認できます。",
-        "q": "相手が私の呪文書を探したものの、探索中にこのカードを見つけなかった場合はどうなりますか？"
+        "a": "これがあなたのスペルブックにあり、相手が見ることのできる範囲にあったなら、[[The Inquisition]]は誘発して召喚されます！ このカードがスペルブックにあることを相手に伝え、公開してください。\n相手がスペルブックの一部だけを探している場合（例: [[Haystack]]）、[[The Inquisition]]が実際に探された範囲にあったときだけ誘発します。疑義があれば、ジャッジが[[The Inquisition]]がそこになかったことを確認できます。",
+        "q": "相手が私のスペルブックを探したものの、探索中にこのカードを見つけなかった場合はどうなりますか？"
       },
       "official|When does this ability trigger?": {
-        "a": "効果によって手札や呪文書からこれを公開させられたとき、または相手があなたの呪文書を探すときです。",
+        "a": "効果によって手札やスペルブックからこれを公開させられたとき、または相手があなたのスペルブックを探すときです。",
         "q": "この能力はいつ誘発しますか？"
       }
     },
@@ -4940,7 +4940,7 @@
         "q": "これは回復として数えますか？"
       },
       "official|For purposes of cards that care about the mana cost of spells, what is the mana cost of a spell with X?": {
-        "a": "その呪文を唱えるなら、マナコストはXの値です。たとえば2マナで唱えたなら、[[The Immortal Throne]]はそれをコスト2の呪文として見ます。一方、唱えているのではなく単に手札や呪文書などにある場合、実際に唱えるまでXは0です。",
+        "a": "その呪文を唱えるなら、マナコストはXの値です。たとえば2マナで唱えたなら、[[The Immortal Throne]]はそれをコスト2の呪文として見ます。一方、唱えているのではなく単に手札やスペルブックなどにある場合、実際に唱えるまでXは0です。",
         "q": "呪文のマナコストを参照するカードにとって、コストがXの呪文のマナコストはいくつですか？"
       },
       "official|What happens if I cast this when I’m at death’s door?": {
@@ -5098,7 +5098,7 @@
         "q": "アバターはスペルキャスターなので、[[Vivien, the Enchantress]]はスペルキャスターですか？"
       },
       "official|What does “wherever she is\" mean?": {
-        "a": "どこでも、です！ レルム、あなたの手札、墓地、さらには呪文書の途中にあっても。",
+        "a": "どこでも、です！ レルム、あなたの手札、墓地、さらにはスペルブックの途中にあっても。",
         "q": "「彼女がどこにいても（wherever she is）」とはどういう意味ですか？"
       },
       "official|What happens if Vivien uses the Druid’s ability to summon Bruin and flip?": {

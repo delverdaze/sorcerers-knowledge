@@ -36,6 +36,8 @@ slug（カードID）が分からないときは [data/slugs.json](data/slugs.js
     // 刷り（プロモなど）で英文の違うタイプ行・フレーバーは variants に「英文 → 和訳」で書く。鍵は印刷の英文をそのまま写す
     // （引用符の字形や末尾の句点の違いは同じ文とみなされる）。typeText / flavor は既定の刷りの英文の訳のまま:
     // "variants": { "typeText": { "Your Avatar left the contest victorious": "…" }, "flavor": { "The illusion is broken, its beauty undone.": "…" } }
+    // カードには刷られておらず公式のデータにだけあるフレーバー（Highland Princess ほか 11 枚）の訳も variants.flavor に、データの英文を鍵にして書く。
+    // flavor はカードに刷られている文の訳（刷られていないカードは flavor を書かない）
   }
 }
 ```
@@ -81,6 +83,7 @@ slug（カードID）が分からないときは [data/slugs.json](data/slugs.js
 
 - **裁定は常に英語原文が優先** — 訳は理解の助けであって、原文の代わりにはなりません
 - ゲーム用語（Genesis, Deathrite, スレッショルド等）はサイト内の既訳と揃える — 迷ったら既存の類似カードの訳を検索
+- プレイヤーがふだん使う呼び名で書く: spellbook は「スペルブック」（「呪文書」とは書かない）、caster / spellcaster は「スペルキャスター」（「唱え手」とは書かない）
 - 機械翻訳そのままの投稿はご遠慮ください（下訳に使うのは問題ありません）
 
 ## サイトへの反映
